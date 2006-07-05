@@ -1,0 +1,13 @@
+cidlookup (1.0.1)
+
+ * Added possibility to cache in astDB
+ * Added lookup from cache before querying external source
+ * Added this ChangeLog
+
+ -- Edoardo, 2006-06-25
+
+cidlookup (1.0.0)
+
+ * Initial phonebook release
+
+ -- Edoardo, 2006-05-29

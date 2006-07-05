@@ -1,0 +1,13 @@
+<module>
+	<rawname>cidlookup</rawname>
+	<name>Caller ID Lookup</name>
+	<version>1.0.1</version>
+	<type>setup</type>
+	<category>Basic</category>
+	<menuitems>
+		<cidlookup>Caller Name Lookup Sources</cidlookup>
+	</menuitems>
+	<location>release/cidlookup-1.0.1.tgz</location>
+	<md5sum>xx</md5sum>
+	<info>http://freepbx.org/wiki/CallerIDLookup</info>
+</module>
