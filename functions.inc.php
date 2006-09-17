@@ -259,7 +259,7 @@ function cidlookup_add($post){
 	if(!cidlookup_chk($post))
 		return false;
 	extract($post);
-	if ($cache != 1)
+	if (!isset($cache))
 		$cache = 0;
 	$results = sql("
 		INSERT INTO cidlookup
