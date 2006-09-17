@@ -301,5 +301,4 @@ function cidlookup_chk($post){
 	// TODO: Add sanity checks on $_POST
 	return true;
 }
-
 ?>

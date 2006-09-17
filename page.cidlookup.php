@@ -63,6 +63,8 @@ if ($action == 'delete') {
 	if ($itemid){ 
 		//get details for this source
 		$thisItem = cidlookup_get($itemid);
+	} else {
+		$thisItem = Array( 'description' => null, 'sourcetype' => null, 'cache' => null);
 	}
 
 	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
