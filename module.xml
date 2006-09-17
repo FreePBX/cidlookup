@@ -8,6 +8,6 @@
 		<cidlookup>Caller Name Lookup Sources</cidlookup>
 	</menuitems>
 	<location>release/2.2/cidlookup-1.0.2.tgz</location>
-	<md5sum>43f3df34312b13cd8a200b4baaae283a</md5sum>
+	<md5sum>46b5432c85f2c77464c45d017688819e</md5sum>
 	<info>http://freepbx.org/wiki/CallerIDLookup</info>
 </module>
