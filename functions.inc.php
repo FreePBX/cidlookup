@@ -230,7 +230,7 @@ function cidlookup_did_list() {
 
 function cidlookup_list() {
 	// TODO: discuss department isolation of sources
-	// $allowed = array(array('cidlookup_id' => 0, 'description' => _("None")));
+	$allowed = array(array('cidlookup_id' => 0, 'description' => _("None")));
 	$results = sql("SELECT * FROM cidlookup","getAll",DB_FETCHMODE_ASSOC);
 	if(is_array($results)){
 		foreach($results as $result){
