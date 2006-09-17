@@ -45,6 +45,8 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 function cidlookup_hookProcess_core($viewing_itemid, $request) {
 	
 	// TODO: move sql to functions cidlookup_did_(add, del, edit)
+	if (!isset($request['action']) 
+		return;
 	switch ($request['action'])	{
 		case 'addIncoming':
 			$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum, channel) VALUES ("%d", "%s", "%s", "%s")', 
@@ -127,7 +129,7 @@ function cidlookup_get_config($engine) {
 					switch($item['sourcetype']) {
 
 						case "internal":
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_lookupcidname());
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_lookupcidname(''));
 						break;
 
 						case "enum":
@@ -186,7 +188,7 @@ function cidlookup_get_config($engine) {
 						// TODO: implement SugarCRM lookup, look at code snippet at http://nerdvittles.com/index.php?p=82
 						case "sugarcrm":
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_noop('SugarCRM not yet implemented'));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_return());
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_return(''));
 						break;
 					}
 
@@ -195,12 +197,12 @@ function cidlookup_get_config($engine) {
 						if ($item['cache'] == 1 && $item['sourcetype'] != 'internal') {
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_db_put('cidname', '${CALLERID(num)}', '${CALLERID(name)}' ));
 						}
-						$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_return());
+						$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_return(''));
 					}
 				}
 
-				$ext->add('cidlookup', 'cidlookup_return', '', new ext_lookupcidname());
-				$ext->add('cidlookup', 'cidlookup_return', '', new ext_return());
+				$ext->add('cidlookup', 'cidlookup_return', '', new ext_lookupcidname(''));
+				$ext->add('cidlookup', 'cidlookup_return', '', new ext_return(''));
 			}
 		break;
 	}
@@ -223,11 +225,7 @@ function cidlookup_did_get($did){
 
 function cidlookup_did_list() {
 	$results = sql("SELECT * FROM cidlookup_incoming","getAll",DB_FETCHMODE_ASSOC);
-	if(is_array($results)){
-		return $results;
-	} else { 
-		return null;
-	}
+	return is_array($results)?$results:null;
 }
 
 function cidlookup_list() {
@@ -243,12 +241,12 @@ function cidlookup_list() {
 			}
 		}
 	}
-	return $allowed;
+	return isset($allowed)?$allowed:null;
 }
 
 function cidlookup_get($id){
 	$results = sql("SELECT * FROM cidlookup WHERE cidlookup_id = '$id'","getRow",DB_FETCHMODE_ASSOC);
-	return $results;
+	return isset($results)?$results:null;
 }
 
 function cidlookup_del($id){
