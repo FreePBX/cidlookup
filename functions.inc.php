@@ -45,7 +45,7 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 function cidlookup_hookProcess_core($viewing_itemid, $request) {
 	
 	// TODO: move sql to functions cidlookup_did_(add, del, edit)
-	if (!isset($request['action']) 
+	if (!isset($request['action']))
 		return;
 	switch ($request['action'])	{
 		case 'addIncoming':
@@ -230,7 +230,7 @@ function cidlookup_did_list() {
 
 function cidlookup_list() {
 	// TODO: discuss department isolation of sources
-	$allowed = array(array('cidlookup_id' => 0, 'description' => _("None")));
+	// $allowed = array(array('cidlookup_id' => 0, 'description' => _("None")));
 	$results = sql("SELECT * FROM cidlookup","getAll",DB_FETCHMODE_ASSOC);
 	if(is_array($results)){
 		foreach($results as $result){
