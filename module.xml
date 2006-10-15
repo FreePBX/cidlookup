@@ -1,13 +1,24 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
+	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
-	<category>Basic</category>
+	<category>Utilities</category>
 	<menuitems>
 		<cidlookup>Caller Name Lookup Sources</cidlookup>
 	</menuitems>
+	<depends>
+		<engine>asterisk 1.2</engine>
+	</depends>
 	<location>release/2.2/cidlookup-1.0.3.tgz</location>
 	<md5sum>6c97d155113aa5f9dd37ffbf6319a432</md5sum>
 	<info>http://freepbx.org/wiki/CallerIDLookup</info>
+	<changelog>
+		*1.0.4* Updated module.xml format
+		*1.0.3* Fixes from #999
+		*1.0.1* Added possibility to cache in astDB
+			Added lookup from cache before querying external source
+		*1.0.0* First release
+	</changelog>
 </module>
