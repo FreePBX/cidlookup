@@ -4,7 +4,7 @@
 	<version>1.0.4</version>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
-	<category>CID/Number Management</category>
+	<category>CID &amp; Number Management</category>
 	<menuitems>
 		<cidlookup>Caller Name Lookup Sources</cidlookup>
 	</menuitems>
