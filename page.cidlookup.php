@@ -43,7 +43,7 @@ $cidsources = cidlookup_list();
 </div> <!-- end content div so we can display rnav properly-->
 
 <!-- right side menu -->
-<div class="rnav">
+<div class="rnav"><ul>
     <li><a id="<?php echo ($itemid=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add CID Lookup Source")?></a></li>
 <?php
 if (isset($cidsources)) {
@@ -53,7 +53,7 @@ if (isset($cidsources)) {
 	}
 }
 ?>
-</div>
+</ul></div>
 
 <div class="content">
 <?php
