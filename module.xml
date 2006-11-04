@@ -1,7 +1,7 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>1.0.4</version>
+	<version>1.1</version>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
 	<category>CID &amp; Number Management</category>
@@ -11,10 +11,11 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.2/cidlookup-1.0.4.tgz</location>
-	<md5sum>784fd7fbdd644a006c10909785185f1c</md5sum>
+	<location>release/2.2/cidlookup-1.1.tgz</location>
+	<md5sum>069bf88bc5cb14fd9b267a7264659c09</md5sum>
 	<info>http://freepbx.org/wiki/CallerIDLookup</info>
 	<changelog>
+		*1.1* First release for FreePBX 2.2 - Fixed compatibility issue with new UI
 		*1.0.4* Updated module.xml format
 		*1.0.3* Fixes from #999
 		*1.0.1* Added possibility to cache in astDB
