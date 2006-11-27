@@ -24,12 +24,12 @@ if(isset($_POST['action'])) {
 		case "add":
 			cidlookup_add($_POST);
 			needreload();
-			redirect_standard('itemid');
+			redirect_standard();
 		break;
 		case "delete":
 			cidlookup_del($itemid);
 			needreload();
-			redirect_standard('itemid');
+			redirect_standard();
 		break;
 		case "edit":
 			cidlookup_edit($itemid,$_POST);
