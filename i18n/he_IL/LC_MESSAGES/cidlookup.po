@@ -1,0 +1,190 @@
+# Hebrew version for CID Lookup FreePBX Module.
+# Copyright (C) 2006
+# This file is distributed under the same license as the PACKAGE package.
+# Shimi <shimi@shimi.net>, 2006.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-17 17:20+0300\n"
+"PO-Revision-Date: 2006-10-17 17:30+0300\n"
+"Last-Translator: Shimi <shimi@shimi.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:19
+msgid "CID Lookup Source"
+msgstr "מקור חיפוש זיהוי שיחה"
+
+#: functions.inc.php:23
+msgid "Source"
+msgstr "מקור"
+
+#: functions.inc.php:23
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
+
+#: functions.inc.php:233
+msgid "None"
+msgstr "אף אחד"
+
+#: page.cidlookup.php:47
+msgid "Add CID Lookup Source"
+msgstr "הוסף מקור חיפוש זיהוי שיחה"
+
+#: page.cidlookup.php:61
+msgid "CID Lookup source"
+msgstr "מקור חיפוש זיהוי שיחה"
+
+#: page.cidlookup.php:61
+msgid "deleted"
+msgstr "נמחק"
+
+#: page.cidlookup.php:76
+msgid "Delete CID Lookup source"
+msgstr "מחק מקור חיפוש זיהוי שיחה"
+
+#: page.cidlookup.php:81
+msgid "Source:"
+msgstr "מקור:"
+
+#: page.cidlookup.php:81 page.cidlookup.php:92
+msgid "Add Source"
+msgstr "הוסף מקור"
+
+#: page.cidlookup.php:83
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric caller IDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with informations taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr "מקור חיפוש מאפשר לך לציין מקור לתרגום מספרים ממערכת זיהוי השיחה של שיחות נכנסות, כך שתוכל לקשר נתיב שיחה נכנסת למקור שיחה מסויים. פעולה זו יכולה גם ליצור דוחות שיחה מפורטים יותר באמצעות נתונים הנלקחים ישירות מה CRM שלך. אתה יכול גם להתקין את מודול ספר הטלפונים כדי שיהיה לך שיוך קטן של מספר טלפון >-< שם. שים לב, חיפוש שמות עשוי להאט את המרכזיה שלך!"
+
+#: page.cidlookup.php:92
+msgid "Edit Source"
+msgstr "ערוך מקור"
+
+#: page.cidlookup.php:99
+msgid "Source Description:"
+msgstr "תיאור המקור:"
+
+#: page.cidlookup.php:99
+msgid "Enter a description for this source."
+msgstr "הכנס תיאור עבור מקור זה."
+
+#: page.cidlookup.php:103
+msgid "Source type:"
+msgstr "סוג המקור:"
+
+#: page.cidlookup.php:103
+msgid ""
+"Enter the source type, you can choose beetwen:<ul><li>Internal: use astdb as "
+"lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to "
+"lookup caller names, it uses ENUM lookup zones as configured in enum.conf</"
+"li><li>HTTP: It executes an HTTP GET passing the caller number as argument "
+"to retrieve the correct name</li><li>MySQL: It queryes a MySQL database to "
+"retrieve caller name</li></ul>"
+msgstr "הכנס את סוג המקור, אתה יכול לבחור בין:<ul><li>פנימי: השתמש ב astdb בתור מקור החיפוש, והשתמש במודול ספר הטלפונים כדי לשנות בו נתונים</li><li>ENUM: שימוש ב DNS כדי לחפש שמות מתקשרים, פעולה זו משתמשת באיזור חיפוש ENUM כפי שמוגדרים ב enum.conf</li><li>HTTP: מבצע פעולת HTTP GET המעבירה את מספר המתקשר בתור ארגומנט כדי לקבל את השם הנכון</li>li>MySQL: מבצע שאילתה על מסד נתונים מסוג MySQL כדי למשוך את שם המשתמש</li></ul>"
+
+#: page.cidlookup.php:115
+msgid "Cache results:"
+msgstr "שמור תוצאות במטמון:"
+
+#: page.cidlookup.php:115
+msgid ""
+"Decide wether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behaviour"
+msgstr "החלט אם לשמור או לא לשמור את התוצאות ב astDB; פעולה זו תדרוס ערכים קיימים. היא אינה משפיעה על התנהגות המקורות הפנימיים"
+
+#: page.cidlookup.php:123
+msgid "HTTP"
+msgstr "HTTP"
+
+#: page.cidlookup.php:126 page.cidlookup.php:165
+msgid "Host:"
+msgstr "שם מחשב מארח:"
+
+#: page.cidlookup.php:126
+msgid "Host name or IP address"
+msgstr "שם מחשב מארח או כתובת IP"
+
+#: page.cidlookup.php:131
+msgid "Port:"
+msgstr "יציאה:"
+
+#: page.cidlookup.php:131
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "יציאה (פורט) שבו שרת ה HTTP מאזין (בברירת מחדל 80)"
+
+#: page.cidlookup.php:136 page.cidlookup.php:178
+msgid "Username:"
+msgstr "שם משתמש:"
+
+#: page.cidlookup.php:136
+msgid "Username to use in HTTP authentication"
+msgstr "שם משתמש שבו יש להשתמש באימות HTTP"
+
+#: page.cidlookup.php:141 page.cidlookup.php:182
+msgid "Password:"
+msgstr "סיסמא:"
+
+#: page.cidlookup.php:141
+msgid "Password to use in HTTP authentication"
+msgstr "סיסמא שבה יש להשתמש באימות HTTP"
+
+#: page.cidlookup.php:146
+msgid "Path:"
+msgstr "נתיב:"
+
+#: page.cidlookup.php:146
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr "נתיב לקובץ שיועבר לפקודה GET<br />לדוגמא: /cidlookup.php"
+
+#: page.cidlookup.php:151 page.cidlookup.php:173
+msgid "Query:"
+msgstr "שאילתא:"
+
+#: page.cidlookup.php:151
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr "מחרוזת השאילתא. הטוקן המיוחד '[NUMBER]' יוחלף עם מספר הטלפון של המתקשר<br />לדוגמא: number=[NUMBER]&source=crm"
+
+#: page.cidlookup.php:162
+msgid "MySQL"
+msgstr "MySQL"
+
+#: page.cidlookup.php:165
+msgid "MySQL Host"
+msgstr "כתובת המארח של MySQL"
+
+#: page.cidlookup.php:169
+msgid "Database:"
+msgstr "מסד הנתונים:"
+
+#: page.cidlookup.php:169
+msgid "Database name"
+msgstr "שם מסד הנתונים"
+
+#: page.cidlookup.php:173
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr "שאילתא, כאשר הטוקן המיוחד '[NUMBER]' יוחלף במספר הטלפון של המתקשר<br />לדוגמא: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+
+#: page.cidlookup.php:178
+msgid "MySQL Username"
+msgstr "שם משתמש ב MySQL"
+
+#: page.cidlookup.php:182
+msgid "MySQL Password"
+msgstr "סיסמת משתמש ב MySQL"
+
+#: page.cidlookup.php:193
+msgid "SugarCRM"
+msgstr "SugarCRM"
