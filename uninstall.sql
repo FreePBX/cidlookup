@@ -1,4 +1,4 @@
-DROP TABLE cidlookup;
-DROP TABLE cidlookup_incoming;
+DROP TABLE IF EXISTS cidlookup;
+DROP TABLE IF EXISTS cidlookup_incoming;
 
 
