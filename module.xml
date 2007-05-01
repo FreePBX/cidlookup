@@ -11,8 +11,8 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.3/cidlookup-1.1.1.tgz</location>
-	<md5sum>3fe9ff51c3cb1ec79b3a4e82f444c02a</md5sum>
+	<location>release/2.3/cidlookup-1.2.0.tgz</location>
+	<md5sum>4d26017ad8ab1413b5e9b848fd6399fc</md5sum>
 	<info>http://freepbx.org/wiki/CallerIDLookup</info>
 	<changelog>
 		*1.2.0* Added SQLite3 support, fixes ticket:1796 (freePBX 2.3 only)
