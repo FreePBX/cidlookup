@@ -1,7 +1,7 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>1.2.0</version>
+	<version>1.2.1</version>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
 	<category>CID &amp; Number Management</category>
@@ -11,10 +11,11 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.3/cidlookup-1.2.0.tgz</location>
-	<md5sum>4d26017ad8ab1413b5e9b848fd6399fc</md5sum>
+	<location>release/2.3/cidlookup-1.2.1.tgz</location>
+	<md5sum>5d9f59852f4ccf99216535aaa8f602ef</md5sum>
 	<info>http://freepbx.org/wiki/CallerIDLookup</info>
 	<changelog>
+		*1.2.1* changed freePBX to FreePBX
 		*1.2.0* Added SQLite3 support, fixes ticket:1796 (FreePBX 2.3 only)
 		*1.1.1* Add he_IL translation
 		*1.1* First release for FreePBX 2.2 - Fixed compatibility issue with new UI
