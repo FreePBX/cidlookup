@@ -11,8 +11,8 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.3/cidlookup-1.2.1.tgz</location>
-	<md5sum>5d9f59852f4ccf99216535aaa8f602ef</md5sum>
+	<location>release/2.3/cidlookup-1.2.1.1.tgz</location>
+	<md5sum>002b685958799040a0fa8aa3ffbe22c7</md5sum>
 	<info>http://freepbx.org/wiki/CallerIDLookup</info>
 	<changelog>
 		*1.2.1.1* shorten menu name
