@@ -26,7 +26,7 @@ $sql = "CREATE TABLE IF NOT EXISTS cidlookup (
 );";
 $check = $db->query($sql);
 if (DB::IsError($check)) {
-        die( "Can not create `cidlookup` table: " . $check->getMessage() .  "\n");
+        die_freepbx( "Can not create `cidlookup` table: " . $check->getMessage() .  "\n");
 }
 
 
@@ -38,7 +38,7 @@ $sql = "CREATE TABLE IF NOT EXISTS cidlookup_incoming (
 );";
 $check = $db->query($sql);
 if (DB::IsError($check)) {
-        die( "Can not create `cidlookup_incomming` table: " . $check->getMessage() .  "\n");
+        die_freepbx( "Can not create `cidlookup_incomming` table: " . $check->getMessage() .  "\n");
 }
 
 // first update
@@ -49,7 +49,7 @@ if (DB::IsError($check)) {
 	$sql = "ALTER TABLE cidlookup ADD cache INTEGER NOT NULL DEFAULT 0;";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
-		die($result->getMessage());
+		die_freepbx($result->getMessage());
 	}
 }
 
@@ -60,7 +60,7 @@ if (DB::IsError($check)) {
 	$sql = "ALTER TABLE incoming ADD cidlookup INT(2);";
 	$check = $db->query($sql);
 	if (DB::IsError($check)) {
-		die( "Can not alter `incoming` table: " . $check->getMessage() .  "\n");
+		die_freepbx( "Can not alter `incoming` table: " . $check->getMessage() .  "\n");
 	}
 }
 
