@@ -11,8 +11,8 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.3/cidlookup-1.2.1.1.tgz</location>
-	<md5sum>002b685958799040a0fa8aa3ffbe22c7</md5sum>
+	<location>release/2.3/cidlookup-1.2.1.2.tgz</location>
+	<md5sum>3c633027d46dbd51e66c67401839af77</md5sum>
 	<changelog>
 		*1.2.1.2* bump for rc1
 		*1.2.1.1* shorten menu name
