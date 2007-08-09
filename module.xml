@@ -1,7 +1,7 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>1.2.1.1</version>
+	<version>1.2.1.2</version>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
 	<category>CID &amp; Number Management</category>
@@ -13,8 +13,8 @@
 	</depends>
 	<location>release/2.3/cidlookup-1.2.1.1.tgz</location>
 	<md5sum>002b685958799040a0fa8aa3ffbe22c7</md5sum>
-	<info>http://freepbx.org/wiki/CallerIDLookup</info>
 	<changelog>
+		*1.2.1.2* bump for rc1
 		*1.2.1.1* shorten menu name
 		*1.2.1* changed freePBX to FreePBX
 		*1.2.0* Added SQLite3 support, fixes ticket:1796 (FreePBX 2.3 only)
