@@ -122,7 +122,7 @@ function cidlookup_get_config($engine) {
 					// Search for number in the cache, if found lookupcidnum and return
 					if ($item['cidlookup_id'] != 0)	{
 						if ($item['cache'] == 1 && $item['sourcetype'] != 'internal') {
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_gotoif('$[${DB_EXISTS(cidname/${CALLERID(num)})} = 1]', 'cidlookup|cidlookup_return|1'));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_gotoif('$[${DB_EXISTS(cidname/${CALLERID(num)})} = 1]', 'cidlookup,cidlookup_return,1'));
 						}
 					}
 
