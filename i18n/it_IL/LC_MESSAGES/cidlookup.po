@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-23 18:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Francesco Romano\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:19
+msgid "CID Lookup Source"
+msgstr "Sorgente Risoluzione CID"
+
+#: functions.inc.php:23
+msgid "Source"
+msgstr "Sorgente"
+
+#: functions.inc.php:23
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "Le sorgenti possono essere aggiunte nella sezione Risoluzione Nome Chiamante"
+
+#: functions.inc.php:233
+msgid "None"
+msgstr "Nessuna"
+
+#: page.cidlookup.php:50
+msgid "Add CID Lookup Source"
+msgstr "Aggiungi Sorgente Risoluzione CID"
+
+#: page.cidlookup.php:64
+msgid "CID Lookup source"
+msgstr "Sorgente Risoluzione CID"
+
+#: page.cidlookup.php:64
+msgid "deleted"
+msgstr "eliminato"
+
+#: page.cidlookup.php:79
+msgid "Delete CID Lookup source"
+msgstr "Elimina sorgente Risoluzione CID"
+
+#: page.cidlookup.php:84
+msgid "Source:"
+msgstr "Sorgente:"
+
+#: page.cidlookup.php:84 page.cidlookup.php:95
+msgid "Add Source"
+msgstr "Aggiungi Sorgente"
+
+#: page.cidlookup.php:86
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric caller IDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with informations taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr "Da qui è possibile specificare una sorgente per la risoluzione del Numero Identificativo Chiamante nelle chiamate in entrata; successivamente si potrà creare un collegamento nelle Rotte in Entrata ad una delle sorgenti qui specificate. In questo modo si avranno le informazioni sui clienti prese direttamente dal proprio CRM e visualizzabili nei Rapporti Chiamate. Si può installare anche il modulo Rubrica che permette di associare in maniera veloce il numero di telefono al nome in Rubrica. Stare molto attenti però, la Risoluzione dei nomi potrebbe rallentare il PBX."
+
+#: page.cidlookup.php:95
+msgid "Edit Source"
+msgstr "Modifica Sorgente"
+
+#: page.cidlookup.php:102
+msgid "Source Description:"
+msgstr "Descrizione Sorgente:"
+
+#: page.cidlookup.php:102
+msgid "Enter a description for this source."
+msgstr "Immettere una descrizione per questa sorgente."
+
+#: page.cidlookup.php:106
+msgid "Source type:"
+msgstr "Tipo sorgente:"
+
+#: page.cidlookup.php:106
+msgid ""
+"Enter the source type, you can choose beetwen:<ul><li>Internal: use astdb as "
+"lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to "
+"lookup caller names, it uses ENUM lookup zones as configured in enum.conf</"
+"li><li>HTTP: It executes an HTTP GET passing the caller number as argument "
+"to retrieve the correct name</li><li>MySQL: It queryes a MySQL database to "
+"retrieve caller name</li></ul>"
+msgstr "Selezionare il tipo di sorgente, si può scegliere tra:<ul><li>Interna: utilizza astdb come sorgente e il modulo rubrica per l'inserimento</li><li>ENUM: utilizza il sistema DNS come sorgente di risoluzione e le zone ENUM come configurate in enum.conf</li><li>HTTP: esegue un GET HTTP passando il numero di telefono come argomento per risolvere il nome</li><li>MySQL esegue una query ad un database MySQL per la risoluzione dei nomi</li></ul>"
+
+#: page.cidlookup.php:118
+msgid "Cache results:"
+msgstr "Salva risultati:"
+
+#: page.cidlookup.php:118
+msgid ""
+"Decide wether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behaviour"
+msgstr "Decide se salvare o no i dati in astDB; questo comporterà la sovrascrittura di eventuali dati già presenti. Questo non influisce sul comportamento della sorgente Interna."
+
+#: page.cidlookup.php:126
+msgid "HTTP"
+msgstr "HTTP"
+
+#: page.cidlookup.php:129 page.cidlookup.php:168
+msgid "Host:"
+msgstr "Host:"
+
+#: page.cidlookup.php:129
+msgid "Host name or IP address"
+msgstr "Nome host o Indirizzo IP"
+
+#: page.cidlookup.php:134
+msgid "Port:"
+msgstr "Porta:"
+
+#: page.cidlookup.php:134
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "Porta HTTP di ascolto (predefinita 80)"
+
+#: page.cidlookup.php:139 page.cidlookup.php:181
+msgid "Username:"
+msgstr "Nome utente:"
+
+#: page.cidlookup.php:139
+msgid "Username to use in HTTP authentication"
+msgstr "Il Nome utente utilizzato nell'autenticazione HTTP"
+
+#: page.cidlookup.php:144 page.cidlookup.php:185
+msgid "Password:"
+msgstr "Password:"
+
+#: page.cidlookup.php:144
+msgid "Password to use in HTTP authentication"
+msgstr "La password utilizzata nell'autenticazione HTTP"
+
+#: page.cidlookup.php:149
+msgid "Path:"
+msgstr "Percorso:"
+
+#: page.cidlookup.php:149
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr "Il percorso del file GET<br/>e.s.: /cidlookup.php"
+
+#: page.cidlookup.php:154 page.cidlookup.php:176
+msgid "Query:"
+msgstr "Query:"
+
+#: page.cidlookup.php:154
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di telefono<br/>e.s.: number=[NUMBER]&source=crm"
+
+#: page.cidlookup.php:165
+msgid "MySQL"
+msgstr "MySQL"
+
+#: page.cidlookup.php:168
+msgid "MySQL Host"
+msgstr "Host MySQL"
+
+#: page.cidlookup.php:172
+msgid "Database:"
+msgstr "Database:"
+
+#: page.cidlookup.php:172
+msgid "Database name"
+msgstr "Nome Database"
+
+#: page.cidlookup.php:176
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+
+#: page.cidlookup.php:181
+msgid "MySQL Username"
+msgstr "Nome utente MySQL"
+
+#: page.cidlookup.php:185
+msgid "MySQL Password"
+msgstr "Password MySQL"
+
+#: page.cidlookup.php:196
+msgid "SugarCRM"
+msgstr "SugarCRM"
+
+msgid "Submit Changes"
+msgstr "Applica"
+
+msgid "Not yet implemented"
+msgstr "Non ancora implementato"
+
+msgid "Internal"
+msgstr "Interno"
