@@ -49,20 +49,20 @@ function cidlookup_hookProcess_core($viewing_itemid, $request) {
 		return;
 	switch ($request['action'])	{
 		case 'addIncoming':
-			$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum, channel) VALUES ("%d", "%s", "%s", "%s")', 
-				$request['cidlookup_id'], $request['extension'], $request['cidnum'], $request['channel']));
+			$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum) VALUES ("%d", "%s", "%s")', 
+				$request['cidlookup_id'], $request['extension'], $request['cidnum']));
 		break;
 		case 'delIncoming':
-			$extarray = explode('/', $request['extdisplay'], 3);
-			$results = sql(sprintf("DELETE FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s' AND channel = '%s'",
-				$extarray[0], $extarray[1], $extarray[2]));
+			$extarray = explode('/', $request['extdisplay'], 2);
+			$results = sql(sprintf("DELETE FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s'",
+				$extarray[0], $extarray[1]));
 		break;
 		case 'edtIncoming':	// deleting and adding as in core module
-			$extarray = explode('/', $request['extdisplay'], 3);
-			$results = sql(sprintf("DELETE FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s' AND channel = '%s'",
-				$extarray[0], $extarray[1], $extarray[2]));
-			$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum, channel) VALUES ("%d", "%s", "%s", "%s")', 
-				$request['cidlookup_id'], $request['extension'], $request['cidnum'], $request['channel']));
+			$extarray = explode('/', $request['extdisplay'], 2);
+			$results = sql(sprintf("DELETE FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s'",
+				$extarray[0], $extarray[1]));
+			$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum) VALUES ("%d", "%s", "%s")', 
+				$request['cidlookup_id'], $request['extension'], $request['cidnum']));
 		break;
 	}
 }
@@ -82,15 +82,11 @@ function cidlookup_hookGet_config($engine) {
 						// Code from modules/core/functions.inc.php core_get_config inbound routes
 						$exten = $item['extension'];
 						$cidnum = $item['cidnum'];
-						$channel = $item['channel'];
 						
 						$exten = (empty($exten)?"s":$exten);
 						$exten = $exten.(empty($cidnum)?"":"/".$cidnum); //if a CID num is defined, add it
 
-						if (empty($channel))
-							$context = "ext-did";
-						else 
-							$context = "macro-from-zaptel-{$channel}";
+						$context = "ext-did";
 
 						$ext->splice($context, $exten, 1, new ext_gosub('1', 'cidlookup_'.$item['cidlookup_id'], 'cidlookup'));
 					
@@ -210,9 +206,9 @@ function cidlookup_get_config($engine) {
 
 
 function cidlookup_did_get($did){
-	$extarray = explode('/', $did, 3);
-	if(count($extarray) == 3)	{ // differentiate beetween '//' (Any did / any cid and '' empty string)
-		$sql = sprintf("SELECT cidlookup_id FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s' AND channel = '%s'", $extarray[0], $extarray[1], $extarray[2]);
+	$extarray = explode('/', $did, 2);
+	if(count($extarray) == 2)	{ // differentiate beetween '//' (Any did / any cid and '' empty string)
+		$sql = sprintf("SELECT cidlookup_id FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s'", $extarray[0], $extarray[1]);
 		$result = sql($sql, "getRow", DB_FETCHMODE_ASSOC);
 		if(is_array($result)){
 			return $result['cidlookup_id'];

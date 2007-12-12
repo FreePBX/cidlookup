@@ -3,6 +3,18 @@
 global $db;
 global $amp_conf;
 
+if (! function_exists("out")) {
+	function out($text) {
+		echo $text."<br />";
+	}
+}
+
+if (! function_exists("outn")) {
+	function outn($text) {
+		echo $text;
+	}
+}
+
 $autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "AUTOINCREMENT":"AUTO_INCREMENT";
 
 // create the tables
@@ -33,8 +45,7 @@ if (DB::IsError($check)) {
 $sql = "CREATE TABLE IF NOT EXISTS cidlookup_incoming (
 	cidlookup_id INT NOT NULL,
 	extension VARCHAR(50),
-	cidnum VARCHAR(30),
-	channel VARCHAR(30)
+	cidnum VARCHAR(30)
 );";
 $check = $db->query($sql);
 if (DB::IsError($check)) {
@@ -64,6 +75,29 @@ if (DB::IsError($check)) {
 	}
 }
 
+outn("Migrating channel routing to Zap DID routing..");
+$sql = "SELECT channel FROM cidlookup_incoming";
+$check = $db->query($sql);
+if (!DB::IsError($check)) {
+	$chan_prefix = 'zapchan';
+	$sql = "UPDATE cidlookup_incoming SET extension=CONCAT('$chan_prefix',channel), channel='' WHERE channel != ''";
+	$results = $db->query($sql);
+	if (DB::IsError($results)) { 
+ 		out("FATAL: failed to transform old routes: ".$results->getMessage());
+	} else {
+		out("OK");
+		outn("Removing deprecated channel field from incoming..");
+		$sql = "ALTER TABLE cidlookup_incoming DROP channel";
+		$results = $db->query($sql);
+		if (DB::IsError($results)) { 
+ 			out("ERROR: failed: ".$results->getMessage());
+		} else {
+			out("OK");
+		}
+	}
+} else {
+	out("Not Needed");
+}
 
 ?>
 
