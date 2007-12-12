@@ -11,8 +11,8 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.4/cidlookup-2.4.0.tgz</location>
-	<md5sum>9a8abe97ebe61961ab53d7c378557ab5</md5sum>
+	<location>release/2.4/cidlookup-2.4.0.1.tgz</location>
+	<md5sum>78e01979da819759863bf9fe6a7b08bc</md5sum>
 	<changelog>
 		*2.4.0.1* #2541 migrate from channel routing and re-enable functionality
 		*2.4.0* it translations, bump for 2.4
