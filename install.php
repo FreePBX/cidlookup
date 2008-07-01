@@ -64,17 +64,6 @@ if (DB::IsError($check)) {
 	}
 }
 
-// second update
-$sql = "SELECT cidlookup from incoming;";
-$check = $db->query($sql);
-if (DB::IsError($check)) {
-	$sql = "ALTER TABLE incoming ADD cidlookup INT(2);";
-	$check = $db->query($sql);
-	if (DB::IsError($check)) {
-		die_freepbx( "Can not alter `incoming` table: " . $check->getMessage() .  "\n");
-	}
-}
-
 outn("Migrating channel routing to Zap DID routing..");
 $sql = "SELECT channel FROM cidlookup_incoming";
 $check = $db->query($sql);
@@ -97,6 +86,18 @@ if (!DB::IsError($check)) {
 	}
 } else {
 	out("Not Needed");
+}
+
+// This field had been wrongfully added to incoming quite some time ago
+// this should maybe be added to core as well
+//
+outn("Checking for cidlookup field in core's incoming table..");
+$sql = "ALTER TABLE incoming DROP cidlookup";
+$results = $db->query($sql);
+if (DB::IsError($results)) { 
+	out("not present");
+} else {
+	out("removed");
 }
 
 ?>
