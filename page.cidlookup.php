@@ -100,12 +100,12 @@ if ($action == 'delete') {
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Source Description:")?><span><?php echo _("Enter a description for this source.")?></span></a></td>
-		<td><input type="text" name="description" value="<?php echo (isset($thisItem['description']) ? $thisItem['description'] : ''); ?>"></td>
+		<td><input type="text" name="description" value="<?php echo (isset($thisItem['description']) ? $thisItem['description'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Source type:")?><span><?php echo _("Enter the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queryes a MySQL database to retrieve caller name</li></ul>")?></span></a></td>
 		<td>
-			<select id="sourcetype" name="sourcetype" onChange="javascript:displaySourceParameters(this, this.selectedIndex)">
+			<select id="sourcetype" name="sourcetype" onChange="javascript:displaySourceParameters(this, this.selectedIndex)" tabindex="<?php echo ++$tabindex;?>">
 				<option value="internal" <?php echo ($thisItem['sourcetype'] == 'internal' ? 'selected' : '')?>>Internal</option>
 				<option value="enum" <?php echo ($thisItem['sourcetype'] == 'enum' ? 'selected' : '')?>>ENUM</option>
 				<option value="http" <?php echo ($thisItem['sourcetype'] == 'http' ? 'selected' : '')?>>HTTP</option>
@@ -116,7 +116,7 @@ if ($action == 'delete') {
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Cache results:")?><span><?php echo _("Decide wether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behaviour")?></span></a></td>
-		<td><input type="checkbox" name="cache" value="1" <?php echo ($thisItem['cache'] == 1 ? 'checked' : ''); ?>"></td>
+		<td><input type="checkbox" name="cache" value="1" <?php echo ($thisItem['cache'] == 1 ? 'checked' : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -127,32 +127,32 @@ if ($action == 'delete') {
 	
 					<tr>
 						<td width="50%"><a href="#" class="info"><?php echo _("Host:")?><span><?php echo _("Host name or IP address")?></span></a></td>
-						<td><input type="text" name="http_host" value="<?php echo (isset($thisItem['http_host']) ? $thisItem['http_host'] : ''); ?>"></td>
+						<td><input type="text" name="http_host" value="<?php echo (isset($thisItem['http_host']) ? $thisItem['http_host'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 	
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Port:")?><span><?php echo _("Port HTTP server is listening at (default 80)")?></span></a></td>
-						<td><input type="text" name="http_port" value="<?php echo (isset($thisItem['http_port']) ? $thisItem['http_port'] : ''); ?>"></td>
+						<td><input type="text" name="http_port" value="<?php echo (isset($thisItem['http_port']) ? $thisItem['http_port'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 					
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Username:")?><span><?php echo _("Username to use in HTTP authentication")?></span></a></td>
-						<td><input type="text" name="http_username" value="<?php echo (isset($thisItem['http_username']) ? $thisItem['http_username'] : ''); ?>"></td>
+						<td><input type="text" name="http_username" value="<?php echo (isset($thisItem['http_username']) ? $thisItem['http_username'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 				
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Password:")?><span><?php echo _("Password to use in HTTP authentication")?></span></a></td>
-						<td><input type="text" name="http_password" value="<?php echo (isset($thisItem['http_password']) ? $thisItem['http_password'] : ''); ?>"></td>
+						<td><input type="text" name="http_password" value="<?php echo (isset($thisItem['http_password']) ? $thisItem['http_password'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 				
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Path:")?><span><?php echo _("Path of the file to GET<br/>e.g.: /cidlookup.php")?></span></a></td>
-						<td><input type="text" name="http_path" value="<?php echo (isset($thisItem['http_path']) ? $thisItem['http_path'] : ''); ?>"></td>
+						<td><input type="text" name="http_path" value="<?php echo (isset($thisItem['http_path']) ? $thisItem['http_path'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 				
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Query:")?><span><?php echo _("Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm")?></span></a></td>
-						<td><input type="text" name="http_query" value="<?php echo (isset($thisItem['http_query']) ? $thisItem['http_query'] : ''); ?>"></td>
+						<td><input type="text" name="http_query" value="<?php echo (isset($thisItem['http_query']) ? $thisItem['http_query'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 				</table>
 			</div>
@@ -166,24 +166,24 @@ if ($action == 'delete') {
 				
 					<tr>
 						<td width="50%"><a href="#" class="info"><?php echo _("Host:")?><span><?php echo _("MySQL Host")?></span></a></td>
-						<td><input type="text" name="mysql_host" value="<?php echo (isset($thisItem['mysql_host']) ? $thisItem['mysql_host'] : ''); ?>"></td>
+						<td><input type="text" name="mysql_host" value="<?php echo (isset($thisItem['mysql_host']) ? $thisItem['mysql_host'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Database:")?><span><?php echo _("Database name")?></span></a></td>
-						<td><input type="text" name="mysql_dbname" value="<?php echo (isset($thisItem['mysql_dbname']) ? $thisItem['mysql_dbname'] : ''); ?>"></td>
+						<td><input type="text" name="mysql_dbname" value="<?php echo (isset($thisItem['mysql_dbname']) ? $thisItem['mysql_dbname'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Query:")?><span><?php echo _("Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'")?></span></a></td>
-						<td><input type="text" name="mysql_query" value="<?php echo (isset($thisItem['mysql_query']) ? $thisItem['mysql_query'] : ''); ?>"></td>
+						<td><input type="text" name="mysql_query" value="<?php echo (isset($thisItem['mysql_query']) ? $thisItem['mysql_query'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 				
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Username:")?><span><?php echo _("MySQL Username")?></span></a></td>
-						<td><input type="text" name="mysql_username" value="<?php echo (isset($thisItem['mysql_username']) ? $thisItem['mysql_username'] : ''); ?>"></td>
+						<td><input type="text" name="mysql_username" value="<?php echo (isset($thisItem['mysql_username']) ? $thisItem['mysql_username'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Password:")?><span><?php echo _("MySQL Password")?></span></a></td>
-						<td><input type="text" name="mysql_password" value="<?php echo (isset($thisItem['mysql_password']) ? $thisItem['mysql_password'] : ''); ?>"></td>
+						<td><input type="text" name="mysql_password" value="<?php echo (isset($thisItem['mysql_password']) ? $thisItem['mysql_password'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
 				</table>
 			</div>
@@ -201,7 +201,7 @@ if ($action == 'delete') {
 	</tr>
 
 	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
 	</tr>
 	</table>
 
