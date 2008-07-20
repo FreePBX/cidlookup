@@ -11,8 +11,8 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.4/cidlookup-2.4.0.3.tgz</location>
-	<md5sum>e922b0af1eabc7799d5a676131fe7799</md5sum>
+	<location>release/2.5/cidlookup-2.5.0.tgz</location>
+	<md5sum>d61c3266943fb7df0e2e222655b879d9</md5sum>
 	<changelog>
 		*2.5.0* #2845 tabindex
 		*2.4.0.3* remove cidlookup field from core incoming table - should never have been there
