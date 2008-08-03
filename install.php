@@ -66,7 +66,7 @@ if (DB::IsError($check)) {
 
 outn("Migrating channel routing to Zap DID routing..");
 $sql = "SELECT channel FROM cidlookup_incoming";
-$check = $db->query($sql);
+$check = @$db->query($sql);
 if (!DB::IsError($check)) {
 	$chan_prefix = 'zapchan';
 	$sql = "UPDATE cidlookup_incoming SET extension=CONCAT('$chan_prefix',channel), channel='' WHERE channel != ''";
@@ -75,13 +75,16 @@ if (!DB::IsError($check)) {
  		out("FATAL: failed to transform old routes: ".$results->getMessage());
 	} else {
 		out("OK");
-		outn("Removing deprecated channel field from incoming..");
-		$sql = "ALTER TABLE cidlookup_incoming DROP channel";
-		$results = $db->query($sql);
-		if (DB::IsError($results)) { 
+		// ALTER...DROP is not supported by sqlite3.  This table was setup properly in the CREATE anyway
+		if($amp_conf["AMPDBENGINE"] != "sqlite3")  {
+			outn("Removing deprecated channel field from incoming..");
+			$sql = "ALTER TABLE cidlookup_incoming DROP channel";
+			$results = $db->query($sql);
+			if (DB::IsError($results)) { 
  			out("ERROR: failed: ".$results->getMessage());
-		} else {
-			out("OK");
+			} else {
+				out("OK");
+			}
 		}
 	}
 } else {
@@ -91,14 +94,17 @@ if (!DB::IsError($check)) {
 // This field had been wrongfully added to incoming quite some time ago
 // this should maybe be added to core as well
 //
-outn("Checking for cidlookup field in core's incoming table..");
-$sql = "ALTER TABLE incoming DROP cidlookup";
-$results = $db->query($sql);
-if (DB::IsError($results)) { 
-	out("not present");
-} else {
-	out("removed");
-}
+// ALTER...DROP is not supported by sqlite3.  This table was setup properly in the CREATE anyway
+if($amp_conf["AMPDBENGINE"] != "sqlite3")  {
 
+	outn("Checking for cidlookup field in core's incoming table..");
+	$sql = "ALTER TABLE incoming DROP cidlookup";
+	$results = $db->query($sql);
+	if (DB::IsError($results)) { 
+		out("not present");
+	} else {
+	out("removed");
+	}
+}
 ?>
 
