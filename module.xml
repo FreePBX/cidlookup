@@ -1,7 +1,7 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>2.5.0</version>
+	<version>2.5.0.1</version>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
 	<category>Inbound Call Control</category>
@@ -11,9 +11,10 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.5/cidlookup-2.5.0.tgz</location>
-	<md5sum>d61c3266943fb7df0e2e222655b879d9</md5sum>
+	<location>release/2.5/cidlookup-2.5.0.1.tgz</location>
+	<md5sum>c27e7addf1980bda004258a0557a08aa</md5sum>
 	<changelog>
+		*2.5.0.1* #2987, #3001 sqlite3 install script and spelling fixes
 		*2.5.0* #2845 tabindex
 		*2.4.0.3* remove cidlookup field from core incoming table - should never have been there
 		*2.4.0.2* #2843 Russian Translation
