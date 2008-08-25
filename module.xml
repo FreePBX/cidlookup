@@ -11,8 +11,8 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.5/cidlookup-2.5.0.1.tgz</location>
-	<md5sum>c27e7addf1980bda004258a0557a08aa</md5sum>
+	<location>release/2.5/cidlookup-2.5.0.2.tgz</location>
+	<md5sum>0c306ec00dd5d888776119650b6c9cec</md5sum>
 	<changelog>
 		*2.5.0.2* #3100, #3101 changes to work with new inbound route changes and fixes previous bug
 		*2.5.0.1* #2987, #3001 sqlite3 install script and spelling fixes
