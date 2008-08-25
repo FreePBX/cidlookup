@@ -80,13 +80,21 @@ function cidlookup_hookGet_config($engine) {
 					if ($item['cidlookup_id'] != 0) {
 
 						// Code from modules/core/functions.inc.php core_get_config inbound routes
-						$exten = $item['extension'];
-						$cidnum = $item['cidnum'];
+						$exten = trim($item['extension']);
+						$cidnum = trim($item['cidnum']);
 						
+						if ($cidnum != '' && $exten == '') {
+							$exten = '_.';
+							$pricid = ($item['pricid']) ? true:false;
+						} else if (($cidnum != '' && $exten != '') || ($cidnum == '' && $exten == '')) {
+							$pricid = true;
+						} else {
+							$pricid = false;
+						}
+						$context = ($pricid) ? "ext-did-0001":"ext-did-0002";
+
 						$exten = (empty($exten)?"s":$exten);
 						$exten = $exten.(empty($cidnum)?"":"/".$cidnum); //if a CID num is defined, add it
-
-						$context = "ext-did";
 
 						$ext->splice($context, $exten, 1, new ext_gosub('1', 'cidlookup_'.$item['cidlookup_id'], 'cidlookup'));
 					
@@ -220,7 +228,14 @@ function cidlookup_did_get($did){
 }
 
 function cidlookup_did_list() {
-	$results = sql("SELECT * FROM cidlookup_incoming","getAll",DB_FETCHMODE_ASSOC);
+	$sql = "
+	SELECT cidlookup_id, a.extension extension, a.cidnum cidnum, pricid FROM cidlookup_incoming a 
+	INNER JOIN incoming b
+	ON a.extension = b.extension AND a.cidnum = b.cidnum
+	";
+
+	//$results = sql("SELECT * FROM cidlookup_incoming","getAll",DB_FETCHMODE_ASSOC);
+	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 	return is_array($results)?$results:null;
 }
 
