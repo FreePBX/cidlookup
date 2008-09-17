@@ -103,7 +103,7 @@ if ($action == 'delete') {
 		<td><input type="text" name="description" value="<?php echo (isset($thisItem['description']) ? $thisItem['description'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Source type:")?><span><?php echo _("Enter the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Source type:")?><span><?php echo _("Select the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>")?></span></a></td>
 		<td>
 			<select id="sourcetype" name="sourcetype" onChange="javascript:displaySourceParameters(this, this.selectedIndex)" tabindex="<?php echo ++$tabindex;?>">
 				<option value="internal" <?php echo ($thisItem['sourcetype'] == 'internal' ? 'selected' : '')?>>Internal</option>
@@ -194,7 +194,7 @@ if ($action == 'delete') {
 			<div id="sugarcrm" style="display: none">
 				<table cellpadding="2" cellspacing="0" width="100%">
 				  <tr><td colspan="2"><h5><?php echo _("SugarCRM") ?><hr></h5></td></tr>
-				  <tr><td colspan="2">Not yet implemented</td></tr>
+				  <tr><td colspan="2"><?php echo _("Not yet implemented")?></td></tr>
 				</table>
 			</div>
 		</td>
