@@ -1,0 +1,261 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-16 17:03+0200\n"
+"PO-Revision-Date: 2008-02-07 20:54+0100\n"
+"Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
+"Language-Team: Magyar <support@freepbx.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: functions.inc.php:19
+msgid "CID Lookup Source"
+msgstr "CID meghatározó forrás"
+
+#: functions.inc.php:23
+msgid "Source"
+msgstr "Forrás"
+
+#: functions.inc.php:23
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
+
+#: functions.inc.php:244
+msgid "None"
+msgstr "Nincs"
+
+#: install.php:67
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr ""
+
+#: install.php:75
+msgid "FATAL: failed to transform old routes: "
+msgstr ""
+
+#: install.php:77 install.php:86
+msgid "OK"
+msgstr ""
+
+#: install.php:80
+msgid "Removing deprecated channel field from incoming.."
+msgstr ""
+
+#: install.php:84
+msgid "ERROR: failed: "
+msgstr ""
+
+#: install.php:91
+msgid "Not Needed"
+msgstr ""
+
+#: install.php:100
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr ""
+
+#: install.php:104
+msgid "not present"
+msgstr ""
+
+#: install.php:106
+msgid "removed"
+msgstr ""
+
+#: page.cidlookup.php:50
+msgid "Add CID Lookup Source"
+msgstr "CID-forrás hozzáadása"
+
+#: page.cidlookup.php:64
+msgid "CID Lookup source"
+msgstr "CID meghatározó forrás"
+
+#: page.cidlookup.php:64
+msgid "deleted"
+msgstr "törölt"
+
+#: page.cidlookup.php:79
+msgid "Delete CID Lookup source"
+msgstr "CID meghatározó forrás törlése"
+
+#: page.cidlookup.php:84
+msgid "Source:"
+msgstr "Forrás:"
+
+#: page.cidlookup.php:84 page.cidlookup.php:95
+msgid "Add Source"
+msgstr "Forrás hozzáadása"
+
+#: page.cidlookup.php:86
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric caller IDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with informations taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+"A CID meghatározó forrás használatakor a hívó szám alapján a forrásban "
+"meghatározott név kiválasztásra kerül. Ehhez mindössze a bejövő hívásnál ki "
+"kell jelölnöd egy CID forrást. Ezen az úton átmenő hívások részletesebb, "
+"értelmezhetőbb CDR jelentést produkálnak, aminek nagy hasznát tudod venni "
+"például egy CDM-ben. A Telefonkönyv modullal egy kis szám <-> név "
+"kapcsolatot tudsz kialakítani. Hátránya, hogy a névfeloldás lassabbá teheti "
+"a PBX rendszert."
+
+#: page.cidlookup.php:95
+msgid "Edit Source"
+msgstr "Forrás szerkesztése"
+
+#: page.cidlookup.php:102
+msgid "Source Description:"
+msgstr "Forrás neve:"
+
+#: page.cidlookup.php:102
+msgid "Enter a description for this source."
+msgstr "Adj meg egy nevet ehhez a forráshoz."
+
+#: page.cidlookup.php:106
+msgid "Source type:"
+msgstr "Forrás típusa:"
+
+#: page.cidlookup.php:106
+msgid ""
+"Select the source type, you can choose beetwen:<ul><li>Internal: use astdb "
+"as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
+"to lookup caller names, it uses ENUM lookup zones as configured in enum."
+"conf</li><li>HTTP: It executes an HTTP GET passing the caller number as "
+"argument to retrieve the correct name</li><li>MySQL: It queries a MySQL "
+"database to retrieve caller name</li></ul>"
+msgstr ""
+"Add meg a forrás típusát az alábbiak alapján:<ul><li>Belső: az astdb-t "
+"használja forrásként. Használdd a Telefonkönyv modult a feltöltéséhez.</"
+"li><li>ENUM: DNS lekérdezést használ a hívó nevének meghatározásához. Az "
+"ENUM zónák meghatározásához az enum.conf-ot kell használnod.</"
+"li><li>HTTP: A GET parancs lesz használva, amelynek a visszatérési "
+"értékének kell a hívó pontos nevének lennie.</li><li>MySQL: A lekérdezés "
+"eredményének a hívó pontos nevének kell lennie.</li></ul>"
+
+#: page.cidlookup.php:118
+msgid "Cache results:"
+msgstr "Cache használata:"
+
+#: page.cidlookup.php:118
+msgid ""
+"Decide wether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+"Legyen, vagy ne legyen a lekérdezés cachelve a belső astDB-ben; ez "
+"különbözhet az mindenkori értéktől. Nincs a belső adatbázisra értelmezve."
+
+#: page.cidlookup.php:126
+msgid "HTTP"
+msgstr "HTTP"
+
+#: page.cidlookup.php:129 page.cidlookup.php:168
+msgid "Host:"
+msgstr "Cím:"
+
+#: page.cidlookup.php:129
+msgid "Host name or IP address"
+msgstr "Gépnév vagy IP-cím"
+
+#: page.cidlookup.php:134
+msgid "Port:"
+msgstr "Port:"
+
+#: page.cidlookup.php:134
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "Az a port, amin a HTTP szerver figyel (általában 80)"
+
+#: page.cidlookup.php:139 page.cidlookup.php:181
+msgid "Username:"
+msgstr "Felhasználónév:"
+
+#: page.cidlookup.php:139
+msgid "Username to use in HTTP authentication"
+msgstr "Felhasználónév a HTTP azonosításhoz"
+
+#: page.cidlookup.php:144 page.cidlookup.php:185
+msgid "Password:"
+msgstr "Jelszó:"
+
+#: page.cidlookup.php:144
+msgid "Password to use in HTTP authentication"
+msgstr "Jelszó a HTTP azonosításhoz"
+
+#: page.cidlookup.php:149
+msgid "Path:"
+msgstr "Útvonal:"
+
+#: page.cidlookup.php:149
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr "A fájlnév a GET-hez<br/> Pl.: /cidlookup.php"
+
+#: page.cidlookup.php:154 page.cidlookup.php:176
+msgid "Query:"
+msgstr "Lekérdezés:"
+
+#: page.cidlookup.php:154
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr ""
+"Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: number="
+"[NUMBER]&source=crm"
+
+#: page.cidlookup.php:165
+msgid "MySQL"
+msgstr "MySQL"
+
+#: page.cidlookup.php:168
+msgid "MySQL Host"
+msgstr "MySQL gép"
+
+#: page.cidlookup.php:172
+msgid "Database:"
+msgstr "Adatbázis:"
+
+#: page.cidlookup.php:172
+msgid "Database name"
+msgstr "Adatbázis neve"
+
+#: page.cidlookup.php:176
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+"Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: SELECT name "
+"FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+
+#: page.cidlookup.php:181
+msgid "MySQL Username"
+msgstr "MySQL felhasználónév"
+
+#: page.cidlookup.php:185
+msgid "MySQL Password"
+msgstr "MySQL jelszó"
+
+#: page.cidlookup.php:196
+msgid "SugarCRM"
+msgstr "SugarCRM"
+
+#: page.cidlookup.php:197
+msgid "Not yet implemented"
+msgstr ""
+
+#: page.cidlookup.php:204
+msgid "Submit Changes"
+msgstr ""
+
+#: module.xml:3
+msgid "Caller ID Lookup"
+msgstr ""
+
+#: module.xml:9
+msgid "CallerID Lookup Sources"
+msgstr ""
+
