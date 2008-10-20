@@ -1,7 +1,7 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>2.5.0.3</version>
+	<version>2.5.0.4</version>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
 	<category>Inbound Call Control</category>
@@ -11,9 +11,10 @@
 	<depends>
 		<engine>asterisk 1.2</engine>
 	</depends>
-	<location>release/2.5/cidlookup-2.5.0.3.tgz</location>
-	<md5sum>45ca54974a243ec13dd9500ba2c6ab91</md5sum>
+	<location>release/2.5/cidlookup-2.5.0.4.tgz</location>
+	<md5sum>312c8e4b082edd1cb8a90f83d3e77aad</md5sum>
 	<changelog>
+		*2.5.0.4* #3260, other localization work
 		*2.5.0.3* localization fixes, Swedish
 		*2.5.0.2* #3100, #3101 changes to work with new inbound route changes and fixes previous bug
 		*2.5.0.1* #2987, #3001 sqlite3 install script and spelling fixes
