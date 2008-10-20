@@ -234,7 +234,6 @@ function cidlookup_did_list() {
 	ON a.extension = b.extension AND a.cidnum = b.cidnum
 	";
 
-	//$results = sql("SELECT * FROM cidlookup_incoming","getAll",DB_FETCHMODE_ASSOC);
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 	return is_array($results)?$results:null;
 }
@@ -267,49 +266,73 @@ function cidlookup_del($id){
 }
 
 function cidlookup_add($post){
-	if(!cidlookup_chk($post))
-		return false;
-	extract($post);
-	if (!isset($cache))
-		$cache = 0;
+	global $db;
+
+	$description = $db->escapeSimple($post['description']);
+	$sourcetype = $db->escapeSimple($post['sourcetype']);
+	$deptname = $db->escapeSimple($post['deptname']);
+	$http_host = $db->escapeSimple($post['http_host']);
+	$http_port = $db->escapeSimple($post['http_port']);
+	$http_username = $db->escapeSimple($post['http_username']);
+	$http_password = $db->escapeSimple($post['http_password']);
+	$http_path = $db->escapeSimple($post['http_path']);
+	$http_query = $db->escapeSimple($post['http_query']);
+	$mysql_host = $db->escapeSimple($post['mysql_host']);
+	$mysql_dbname = $db->escapeSimple($post['mysql_dbname']);
+	$mysql_query = $db->escapeSimple($post['mysql_query']);
+	$mysql_username = $db->escapeSimple($post['mysql_username']);
+	$mysql_password = $db->escapeSimple($post['mysql_password']);
+
+	$cache = isset($post['cache']) ? $db->escapeSimple($post['cache']) : 0;
+
 	$results = sql("
 		INSERT INTO cidlookup
 			(description, sourcetype, cache, deptname, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password)
 		VALUES 
-			(\"$description\", \"$sourcetype\", \"$cache\", \"$deptname\", \"$http_host\", \"$http_port\", \"$http_username\", \"$http_password\", \"$http_path\", \"$http_query\", \"$mysql_host\", \"$mysql_dbname\", \"$mysql_query\", \"$mysql_username\", \"$mysql_password\")
+			('$description', '$sourcetype', '$cache', '$deptname', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password')
 		");
 }
 
 function cidlookup_edit($id,$post){
-	if(!cidlookup_chk($post))
-		return false;
-	extract($post);
-	if ($cache != 1)
+	global $db;
+
+	$description = $db->escapeSimple($post['description']);
+	$sourcetype = $db->escapeSimple($post['sourcetype']);
+	$deptname = $db->escapeSimple($post['deptname']);
+	$http_host = $db->escapeSimple($post['http_host']);
+	$http_port = $db->escapeSimple($post['http_port']);
+	$http_username = $db->escapeSimple($post['http_username']);
+	$http_password = $db->escapeSimple($post['http_password']);
+	$http_path = $db->escapeSimple($post['http_path']);
+	$http_query = $db->escapeSimple($post['http_query']);
+	$mysql_host = $db->escapeSimple($post['mysql_host']);
+	$mysql_dbname = $db->escapeSimple($post['mysql_dbname']);
+	$mysql_query = $db->escapeSimple($post['mysql_query']);
+	$mysql_username = $db->escapeSimple($post['mysql_username']);
+	$mysql_password = $db->escapeSimple($post['mysql_password']);
+
+	if (isset($post['cache']) && $post['cache'] != 1) {
 		$cache = 0;
+	}
+
 	$results = sql("
 		UPDATE cidlookup 
 		SET 
-			description = \"$description\", 
-			deptname = \"$deptname\", 
-			sourcetype = \"$sourcetype\" ,
-			cache = \"$cache\",
-			http_host = \"$http_host\",
-			http_port = \"$http_port\",
-			http_username = \"$http_username\",
-			http_password = \"$http_password\",
-			http_path = \"$http_path\",
-			http_query = \"$http_query\",
-			mysql_host = \"$mysql_host\",
-			mysql_dbname = \"$mysql_dbname\",
-			mysql_query = \"$mysql_query\",
-			mysql_username = \"$mysql_username\",
-			mysql_password  = \"$mysql_password\"
-		WHERE cidlookup_id = \"$id\"");
-}
-
-// ensures post vars is valid
-function cidlookup_chk($post){
-	// TODO: Add sanity checks on $_POST
-	return true;
+			description = '$description', 
+			deptname = '$deptname', 
+			sourcetype = '$sourcetype' ,
+			cache = '$cache',
+			http_host = '$http_host',
+			http_port = '$http_port',
+			http_username = '$http_username',
+			http_password = '$http_password',
+			http_path = '$http_path',
+			http_query = '$http_query',
+			mysql_host = '$mysql_host',
+			mysql_dbname = '$mysql_dbname',
+			mysql_query = '$mysql_query',
+			mysql_username = '$mysql_username',
+			mysql_password  = '$mysql_password'
+		WHERE cidlookup_id = '$id'");
 }
 ?>
