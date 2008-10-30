@@ -1,7 +1,7 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>2.5.0.4</version>
+	<version>2.5.0.5</version>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
 	<category>Inbound Call Control</category>
@@ -10,10 +10,12 @@
 	</menuitems>
 	<depends>
 		<engine>asterisk 1.2</engine>
+		<module>core ge 2.5.1.2</module>
 	</depends>
-	<location>release/2.5/cidlookup-2.5.0.4.tgz</location>
-	<md5sum>312c8e4b082edd1cb8a90f83d3e77aad</md5sum>
+	<location>release/2.5/cidlookup-2.5.0.5.tgz</location>
+	<md5sum>28fef73b27256deb1a6bbde1d4bc5354</md5sum>
 	<changelog>
+		*2.5.0.5* #3345
 		*2.5.0.4* #3260, other localization work
 		*2.5.0.3* localization fixes, Swedish
 		*2.5.0.2* #3100, #3101 changes to work with new inbound route changes and fixes previous bug
