@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-15 13:53+0200\n"
-"PO-Revision-Date: 2008-09-17 18:51+0100\n"
+"POT-Creation-Date: 2008-09-16 17:03+0200\n"
+"PO-Revision-Date: 2008-11-03 17:51+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -38,9 +38,8 @@ msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Migrerar kanalvägar till Zap direktvägar.."
 
 #: install.php:75
-#, php-format
-msgid "FATAL: failed to transform old routes: %s"
-msgstr "FEL: kunde inte transformera gamla vägar: %s"
+msgid "FATAL: failed to transform old routes: "
+msgstr "FEL: kunde inte transformera gamla vägar: "
 
 #: install.php:77
 #: install.php:86
@@ -52,9 +51,8 @@ msgid "Removing deprecated channel field from incoming.."
 msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
 
 #: install.php:84
-#, php-format
-msgid "ERROR: failed: %s"
-msgstr "FEL: misslyckades %s"
+msgid "ERROR: failed: "
+msgstr "FEL: misslyckades: "
 
 #: install.php:91
 msgid "Not Needed"

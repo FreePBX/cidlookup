@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-23 18:34+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Francesco Romano\n"
+"POT-Creation-Date: 2008-09-16 17:03+0200\n"
+"PO-Revision-Date: 2008-11-06 14:49+0100\n"
+"Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
 
 #: functions.inc.php:19
 msgid "CID Lookup Source"
-msgstr "Sorgente Risoluzione CID"
+msgstr "Sorgente Risoluzione ID"
 
 #: functions.inc.php:23
 msgid "Source"
@@ -28,17 +29,54 @@ msgstr "Sorgente"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Le sorgenti possono essere aggiunte nella sezione Risoluzione Nome Chiamante"
 
-#: functions.inc.php:233
+#: functions.inc.php:244
 msgid "None"
 msgstr "Nessuna"
 
+#: install.php:67
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "Migrazione rotta canali verso rotta Selezione Passante Zap.."
+
+#: install.php:75
+msgid "FATAL: failed to transform old routes: "
+msgstr "FATALE: fallita trasformazione vecchie rotte:"
+
+#: install.php:77
+#: install.php:86
+msgid "OK"
+msgstr "OK"
+
+#: install.php:80
+msgid "Removing deprecated channel field from incoming.."
+msgstr "Rimozione campo canale obsoleto dall'entrata.."
+
+#: install.php:84
+msgid "ERROR: failed: "
+msgstr "ERRORE: fallito:"
+
+#: install.php:91
+msgid "Not Needed"
+msgstr "Non Necessario"
+
+#: install.php:100
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr "Controllo"
+
+#: install.php:104
+msgid "not present"
+msgstr "non presente"
+
+#: install.php:106
+msgid "removed"
+msgstr "rimosso"
+
 #: page.cidlookup.php:50
 msgid "Add CID Lookup Source"
-msgstr "Aggiungi Sorgente Risoluzione CID"
+msgstr "Aggiungi Sorgente Risoluzione ID Chiamante"
 
 #: page.cidlookup.php:64
 msgid "CID Lookup source"
-msgstr "Sorgente Risoluzione CID"
+msgstr "Sorgente Risoluzione ID Chiamante"
 
 #: page.cidlookup.php:64
 msgid "deleted"
@@ -46,25 +84,20 @@ msgstr "eliminato"
 
 #: page.cidlookup.php:79
 msgid "Delete CID Lookup source"
-msgstr "Elimina sorgente Risoluzione CID"
+msgstr "Elimina sorgente Risoluzione ID Chiamante"
 
 #: page.cidlookup.php:84
 msgid "Source:"
 msgstr "Sorgente:"
 
-#: page.cidlookup.php:84 page.cidlookup.php:95
+#: page.cidlookup.php:84
+#: page.cidlookup.php:95
 msgid "Add Source"
 msgstr "Aggiungi Sorgente"
 
 #: page.cidlookup.php:86
-msgid ""
-"A Lookup Source let you specify a source for resolving numeric caller IDs of "
-"incoming calls, you can then link an Inbound route to a specific CID source. "
-"This way you will have more detailed CDR reports with informations taken "
-"directly from your CRM. You can also install the phonebook module to have a "
-"small number <-> name association. Pay attention, name lookup may slow down "
-"your PBX"
-msgstr "Da qui Ë possibile specificare una sorgente per la risoluzione del Numero Identificativo Chiamante nelle chiamate in entrata; successivamente si potr‡ creare un collegamento nelle Rotte in Entrata ad una delle sorgenti qui specificate. In questo modo si avranno le informazioni sui clienti prese direttamente dal proprio CRM e visualizzabili nei Rapporti Chiamate. Si puÚ installare anche il modulo Rubrica che permette di associare in maniera veloce il numero di telefono al nome in Rubrica. Stare molto attenti perÚ, la Risoluzione dei nomi potrebbe rallentare il PBX."
+msgid "A Lookup Source let you specify a source for resolving numeric caller IDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with informations taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX"
+msgstr "Da qui √® possibile specificare una sorgente per la risoluzione del Numero Identificativo Chiamante nelle chiamate in entrata; successivamente si potr√† creare un collegamento nelle Rotte in Entrata ad una delle sorgenti qui specificate. In questo modo si avranno le informazioni sui clienti prese direttamente dal proprio CRM e visualizzabili nei Rapporti Chiamate. Si pu√≤ installare anche il modulo Rubrica che permette di associare in maniera veloce il numero di telefono al nome in Rubrica. Stare molto attenti per√≤, la Risoluzione dei nomi potrebbe rallentare il PBX."
 
 #: page.cidlookup.php:95
 msgid "Edit Source"
@@ -83,30 +116,23 @@ msgid "Source type:"
 msgstr "Tipo sorgente:"
 
 #: page.cidlookup.php:106
-msgid ""
-"Enter the source type, you can choose beetwen:<ul><li>Internal: use astdb as "
-"lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to "
-"lookup caller names, it uses ENUM lookup zones as configured in enum.conf</"
-"li><li>HTTP: It executes an HTTP GET passing the caller number as argument "
-"to retrieve the correct name</li><li>MySQL: It queryes a MySQL database to "
-"retrieve caller name</li></ul>"
-msgstr "Selezionare il tipo di sorgente, si puÚ scegliere tra:<ul><li>Interna: utilizza astdb come sorgente e il modulo rubrica per l'inserimento</li><li>ENUM: utilizza il sistema DNS come sorgente di risoluzione e le zone ENUM come configurate in enum.conf</li><li>HTTP: esegue un GET HTTP passando il numero di telefono come argomento per risolvere il nome</li><li>MySQL esegue una query ad un database MySQL per la risoluzione dei nomi</li></ul>"
+msgid "Select the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
+msgstr "Selezionare il tipo di sorgente, si pu√≤ scegliere tra:<ul><li>Interna: utilizza astdb come sorgente e il modulo rubrica per l'inserimento</li><li>ENUM: utilizza il sistema DNS come sorgente di risoluzione e le zone ENUM come configurate in enum.conf</li><li>HTTP: esegue un GET HTTP passando il numero di telefono come argomento per risolvere il nome</li><li>MySQL esegue una query ad un database MySQL per la risoluzione dei nomi</li></ul>"
 
 #: page.cidlookup.php:118
 msgid "Cache results:"
 msgstr "Salva risultati:"
 
 #: page.cidlookup.php:118
-msgid ""
-"Decide wether or not cache the results to astDB; it will overwrite present "
-"values. It does not affect Internal source behaviour"
-msgstr "Decide se salvare o no i dati in astDB; questo comporter‡ la sovrascrittura di eventuali dati gi‡ presenti. Questo non influisce sul comportamento della sorgente Interna."
+msgid "Decide wether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgstr "Decide se salvare o no i dati in astDB; questo comporter√† la sovrascrittura di eventuali dati gi√† presenti. Questo non influisce sul comportamento della sorgente Interna."
 
 #: page.cidlookup.php:126
 msgid "HTTP"
 msgstr "HTTP"
 
-#: page.cidlookup.php:129 page.cidlookup.php:168
+#: page.cidlookup.php:129
+#: page.cidlookup.php:168
 msgid "Host:"
 msgstr "Host:"
 
@@ -122,7 +148,8 @@ msgstr "Porta:"
 msgid "Port HTTP server is listening at (default 80)"
 msgstr "Porta HTTP di ascolto (predefinita 80)"
 
-#: page.cidlookup.php:139 page.cidlookup.php:181
+#: page.cidlookup.php:139
+#: page.cidlookup.php:181
 msgid "Username:"
 msgstr "Nome utente:"
 
@@ -130,7 +157,8 @@ msgstr "Nome utente:"
 msgid "Username to use in HTTP authentication"
 msgstr "Il Nome utente utilizzato nell'autenticazione HTTP"
 
-#: page.cidlookup.php:144 page.cidlookup.php:185
+#: page.cidlookup.php:144
+#: page.cidlookup.php:185
 msgid "Password:"
 msgstr "Password:"
 
@@ -146,15 +174,14 @@ msgstr "Percorso:"
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr "Il percorso del file GET<br/>e.s.: /cidlookup.php"
 
-#: page.cidlookup.php:154 page.cidlookup.php:176
+#: page.cidlookup.php:154
+#: page.cidlookup.php:176
 msgid "Query:"
 msgstr "Query:"
 
 #: page.cidlookup.php:154
-msgid ""
-"Query string, special token '[NUMBER]' will be replaced with caller "
-"number<br/>e.g.: number=[NUMBER]&source=crm"
-msgstr "Query, il campo speciale '[NUMBER]' sar‡ sostituito dal numero di telefono<br/>e.s.: number=[NUMBER]&source=crm"
+msgid "Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr "Query, il campo speciale '[NUMBER]' sar√† sostituito dal numero di telefono<br/>e.s.: number=[NUMBER]&source=crm"
 
 #: page.cidlookup.php:165
 msgid "MySQL"
@@ -173,10 +200,8 @@ msgid "Database name"
 msgstr "Nome Database"
 
 #: page.cidlookup.php:176
-msgid ""
-"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
-"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-msgstr "Query, il campo speciale '[NUMBER]' sar‡ sostituito dal numero di telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgid "Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr "Query, il campo speciale '[NUMBER]' sar√† sostituito dal numero di telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
 #: page.cidlookup.php:181
 msgid "MySQL Username"
@@ -190,11 +215,22 @@ msgstr "Password MySQL"
 msgid "SugarCRM"
 msgstr "SugarCRM"
 
-msgid "Submit Changes"
-msgstr "Applica"
-
+#: page.cidlookup.php:197
 msgid "Not yet implemented"
 msgstr "Non ancora implementato"
 
-msgid "Internal"
-msgstr "Interno"
+#: page.cidlookup.php:204
+msgid "Submit Changes"
+msgstr "Conferma Cambiamenti"
+
+#: module.xml:3
+msgid "Caller ID Lookup"
+msgstr "Risoluzione ID Chiamante (CID)"
+
+#: module.xml:9
+msgid "CallerID Lookup Sources"
+msgstr "Sorgenti Risoluzione CID"
+
+#~ msgid "Internal"
+#~ msgstr "Interno"
+
