@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-16 17:03+0200\n"
+"PO-Revision-Date: 2009-01-31 21:02+0800\n"
+"Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
+"Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: functions.inc.php:19
+msgid "CID Lookup Source"
+msgstr "CID查找源"
+
+#: functions.inc.php:23
+msgid "Source"
+msgstr "源"
+
+#: functions.inc.php:23
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "可以向呼叫者姓名查找源小节添加源"
+
+#: functions.inc.php:244
+msgid "None"
+msgstr "无"
+
+#: install.php:67
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "正在将频道路由迁移到Zap DID路由。。。"
+
+#: install.php:75
+msgid "FATAL: failed to transform old routes: "
+msgstr "致命错误：无法转换旧的路由（线路）："
+
+#: install.php:77
+#: install.php:86
+msgid "OK"
+msgstr "完成"
+
+#: install.php:80
+msgid "Removing deprecated channel field from incoming.."
+msgstr "正在从incoming表中移除废弃的channel字段。。。"
+
+#: install.php:84
+msgid "ERROR: failed: "
+msgstr "错误：失败："
+
+#: install.php:91
+msgid "Not Needed"
+msgstr "没有必要"
+
+#: install.php:100
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr "正在检查incoming表的cidlookup字段。。。"
+
+#: install.php:104
+msgid "not present"
+msgstr "没有出现"
+
+#: install.php:106
+msgid "removed"
+msgstr "已移除"
+
+#: page.cidlookup.php:50
+msgid "Add CID Lookup Source"
+msgstr "添加CID查找源"
+
+#: page.cidlookup.php:64
+msgid "CID Lookup source"
+msgstr "CID查找源"
+
+#: page.cidlookup.php:64
+msgid "deleted"
+msgstr "已删除"
+
+#: page.cidlookup.php:79
+msgid "Delete CID Lookup source"
+msgstr "删除CID查找源"
+
+#: page.cidlookup.php:84
+msgid "Source:"
+msgstr "源："
+
+#: page.cidlookup.php:84
+#: page.cidlookup.php:95
+msgid "Add Source"
+msgstr "添加源"
+
+#: page.cidlookup.php:86
+msgid "A Lookup Source let you specify a source for resolving numeric caller IDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with informations taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX"
+msgstr "查找源是你指定的用来解析入局的数字主叫ID的源，你可以把一条入局线路与特定的CID源链接起来。在这种工作方式下，你将获得更详细的CDR报告，报告中将包含直接从你的CRM里获取的内容。你也可以安装电话簿模块以提供简易的数字<->名字关联。请注意，名字查找将会减慢你的PBX服务器。"
+
+#: page.cidlookup.php:95
+msgid "Edit Source"
+msgstr "编辑源"
+
+#: page.cidlookup.php:102
+msgid "Source Description:"
+msgstr "源的描述："
+
+#: page.cidlookup.php:102
+msgid "Enter a description for this source."
+msgstr "为此源添加描述。"
+
+#: page.cidlookup.php:106
+msgid "Source type:"
+msgstr "源类型："
+
+#: page.cidlookup.php:106
+msgid "Select the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
+msgstr "选择源的类型，你可以在以下几项中选择：<ul><li>内部：使用astdb查询源，可以使用电话簿模块来填充它</li><li>ENUM：使用DNS来查询CID名字，它使用ENUM查询区域，可以在enum.conf中配置</li><li>HTTP:它执行一个HTTP GET请求，将主叫号码作为参数发送出去，以获取正确的名字</li><li>MySQL：到MySQL数据库中查询主叫姓名</li></ul>"
+
+#: page.cidlookup.php:118
+msgid "Cache results:"
+msgstr "缓存结果："
+
+#: page.cidlookup.php:118
+msgid "Decide wether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgstr "设置是否将查询结果缓存到astDB；它将覆盖当前设置。它不影响内部源的行为"
+
+#: page.cidlookup.php:126
+msgid "HTTP"
+msgstr "HTTP"
+
+#: page.cidlookup.php:129
+#: page.cidlookup.php:168
+msgid "Host:"
+msgstr "主机："
+
+#: page.cidlookup.php:129
+msgid "Host name or IP address"
+msgstr "主机名或者IP地址"
+
+#: page.cidlookup.php:134
+msgid "Port:"
+msgstr "端口："
+
+#: page.cidlookup.php:134
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "HTTP服务器监听的端口（默认为80）"
+
+#: page.cidlookup.php:139
+#: page.cidlookup.php:181
+msgid "Username:"
+msgstr "用户名："
+
+#: page.cidlookup.php:139
+msgid "Username to use in HTTP authentication"
+msgstr "用于HTTP鉴权的用户名"
+
+#: page.cidlookup.php:144
+#: page.cidlookup.php:185
+msgid "Password:"
+msgstr "密码："
+
+#: page.cidlookup.php:144
+msgid "Password to use in HTTP authentication"
+msgstr "用于HTTP鉴权的密码"
+
+#: page.cidlookup.php:149
+msgid "Path:"
+msgstr "路径："
+
+#: page.cidlookup.php:149
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr "要请求的文件的路径<br/>例如：/cidlookup.php"
+
+#: page.cidlookup.php:154
+#: page.cidlookup.php:176
+msgid "Query:"
+msgstr "查询："
+
+#: page.cidlookup.php:154
+msgid "Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr "设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：number=[NUMBER]&source=crm"
+
+#: page.cidlookup.php:165
+msgid "MySQL"
+msgstr "MySQL"
+
+#: page.cidlookup.php:168
+msgid "MySQL Host"
+msgstr "MySQL主机"
+
+#: page.cidlookup.php:172
+msgid "Database:"
+msgstr "数据库："
+
+#: page.cidlookup.php:172
+msgid "Database name"
+msgstr "数据库名"
+
+#: page.cidlookup.php:176
+msgid "Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr "设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+
+#: page.cidlookup.php:181
+msgid "MySQL Username"
+msgstr "MySQL用户名"
+
+#: page.cidlookup.php:185
+msgid "MySQL Password"
+msgstr "MySQL密码"
+
+#: page.cidlookup.php:196
+msgid "SugarCRM"
+msgstr "SugarCRM"
+
+#: page.cidlookup.php:197
+msgid "Not yet implemented"
+msgstr "尚未实现"
+
+#: page.cidlookup.php:204
+msgid "Submit Changes"
+msgstr "提交更改"
+
+#: module.xml:3
+msgid "Caller ID Lookup"
+msgstr "主叫ID查询"
+
+#: module.xml:9
+msgid "CallerID Lookup Sources"
+msgstr "主叫ID查询"
+
