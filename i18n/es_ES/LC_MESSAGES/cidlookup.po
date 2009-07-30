@@ -112,7 +112,7 @@ msgid "Source type:"
 msgstr "Tipo de fuente:"
 
 #: page.cidlookup.php:106
-msgid "Select the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
+msgid "Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
 msgstr "Seleccione el tipo de fuente. Puede elegir entre:<ul><li>Interno: utiliza astdb como fuente de búsqueda, utiliza el modulo \"Listín telefónico\".</li><li>ENUM: Utiliza DNS para buscar los nombres de las personas que llaman. ENUM utiliza como zonas de búsqueda las configuradas en enum.conf.</li><li>HTTP: ejecuta una solictud  HTTP GET pasando el número de la persona que llama como argumento para recuperar el nombre de la persona a la que pertenece.</li><li>MySQL: consulta una base de datos MySQL para extraer el nombre de la persona que llama.</li></ul>"
 
 #: page.cidlookup.php:118
@@ -120,7 +120,7 @@ msgid "Cache results:"
 msgstr "Resultados de la caché:"
 
 #: page.cidlookup.php:118
-msgid "Decide wether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
 msgstr "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los valores actuales. No afecta el comportamiento de la fuente interna."
 
 #: page.cidlookup.php:126

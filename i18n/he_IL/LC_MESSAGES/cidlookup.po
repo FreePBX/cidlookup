@@ -83,7 +83,7 @@ msgstr "סוג המקור:"
 
 #: page.cidlookup.php:103
 msgid ""
-"Enter the source type, you can choose beetwen:<ul><li>Internal: use astdb as "
+"Enter the source type, you can choose between:<ul><li>Internal: use astdb as "
 "lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to "
 "lookup caller names, it uses ENUM lookup zones as configured in enum.conf</"
 "li><li>HTTP: It executes an HTTP GET passing the caller number as argument "
@@ -97,7 +97,7 @@ msgstr "שמור תוצאות במטמון:"
 
 #: page.cidlookup.php:115
 msgid ""
-"Decide wether or not cache the results to astDB; it will overwrite present "
+"Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behaviour"
 msgstr "החלט אם לשמור או לא לשמור את התוצאות ב astDB; פעולה זו תדרוס ערכים קיימים. היא אינה משפיעה על התנהגות המקורות הפנימיים"
 

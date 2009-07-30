@@ -117,7 +117,7 @@ msgid "Source type:"
 msgstr "源类型："
 
 #: page.cidlookup.php:106
-msgid "Select the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
+msgid "Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
 msgstr "选择源的类型，你可以在以下几项中选择：<ul><li>内部：使用astdb查询源，可以使用电话簿模块来填充它</li><li>ENUM：使用DNS来查询CID名字，它使用ENUM查询区域，可以在enum.conf中配置</li><li>HTTP:它执行一个HTTP GET请求，将主叫号码作为参数发送出去，以获取正确的名字</li><li>MySQL：到MySQL数据库中查询主叫姓名</li></ul>"
 
 #: page.cidlookup.php:118
@@ -125,7 +125,7 @@ msgid "Cache results:"
 msgstr "缓存结果："
 
 #: page.cidlookup.php:118
-msgid "Decide wether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
 msgstr "设置是否将查询结果缓存到astDB；它将覆盖当前设置。它不影响内部源的行为"
 
 #: page.cidlookup.php:126

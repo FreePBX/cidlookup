@@ -92,7 +92,7 @@ msgstr "Тип источника:"
 
 #: page.cidlookup.php:106
 msgid ""
-"Select the source type, you can choose beetwen:<ul><li>Internal: use astdb "
+"Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
 "to lookup caller names, it uses ENUM lookup zones as configured in enum."
 "conf</li><li>HTTP: It executes an HTTP GET passing the caller number as "
@@ -113,7 +113,7 @@ msgstr "Кэшированные результаты:"
 
 #: page.cidlookup.php:118
 msgid ""
-"Decide wether or not cache the results to astDB; it will overwrite present "
+"Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
 "Определитесь, нужно ли кэшировать результаты запросов в astDB; результаты кэш "

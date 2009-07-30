@@ -1,7 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2009 FreePBX
 #
 #, fuzzy
 msgid ""
@@ -120,7 +132,7 @@ msgstr ""
 
 #: page.cidlookup.php:106
 msgid ""
-"Select the source type, you can choose beetwen:<ul><li>Internal: use astdb "
+"Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
 "to lookup caller names, it uses ENUM lookup zones as configured in enum."
 "conf</li><li>HTTP: It executes an HTTP GET passing the caller number as "
@@ -134,7 +146,7 @@ msgstr ""
 
 #: page.cidlookup.php:118
 msgid ""
-"Decide wether or not cache the results to astDB; it will overwrite present "
+"Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
 

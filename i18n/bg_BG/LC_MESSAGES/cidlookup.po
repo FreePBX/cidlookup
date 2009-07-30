@@ -117,7 +117,7 @@ msgid "Source type:"
 msgstr "Тип на източник:"
 
 #: page.cidlookup.php:106
-msgid "Select the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
+msgid "Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
 msgstr "Изберете тип на източника, можете да избирате между:<ul><li>Вътрешен: Използва astdb като източник на следене, използва модул Телефонен Указател за попълването си</li><li>ENUM: Използва DNS да следи имената на обаждащите се, използва ENUM зони за следене кофигурирани в enum.conf</li><li>HTTP: Изпълнява  HTTP GET одобрение номера на обаждащия се като аргумент за възстановяване на правилното име</li><li>MySQL: Запитва MySQL базата данни за възстановяване на правилното име</li></ul>"
 
 #: page.cidlookup.php:118
@@ -125,7 +125,7 @@ msgid "Cache results:"
 msgstr "Кеширане на резултати:"
 
 #: page.cidlookup.php:118
-msgid "Decide wether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
 msgstr "Преценете дали да кеширате или не резултатите в astDB; това ще отмени настоящите настройки. Не се отразява на  Вътрешните източници"
 
 #: page.cidlookup.php:126

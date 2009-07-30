@@ -116,7 +116,7 @@ msgid "Source type:"
 msgstr "Tipo sorgente:"
 
 #: page.cidlookup.php:106
-msgid "Select the source type, you can choose beetwen:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
+msgid "Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
 msgstr "Selezionare il tipo di sorgente, si può scegliere tra:<ul><li>Interna: utilizza astdb come sorgente e il modulo rubrica per l'inserimento</li><li>ENUM: utilizza il sistema DNS come sorgente di risoluzione e le zone ENUM come configurate in enum.conf</li><li>HTTP: esegue un GET HTTP passando il numero di telefono come argomento per risolvere il nome</li><li>MySQL esegue una query ad un database MySQL per la risoluzione dei nomi</li></ul>"
 
 #: page.cidlookup.php:118
@@ -124,7 +124,7 @@ msgid "Cache results:"
 msgstr "Salva risultati:"
 
 #: page.cidlookup.php:118
-msgid "Decide wether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
 msgstr "Decide se salvare o no i dati in astDB; questo comporterà la sovrascrittura di eventuali dati già presenti. Questo non influisce sul comportamento della sorgente Interna."
 
 #: page.cidlookup.php:126
