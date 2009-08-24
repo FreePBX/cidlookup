@@ -137,8 +137,9 @@ function cidlookup_get_config($engine) {
 						break;
 
 						case "enum":
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_txtcidname('${CALLERID(num)}'));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_setvar('CALLERID(name)', '${TXTCIDNAME}'));
+              $ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_setvar('CALLERID(name)', '${TXTCIDNAME(${CALLERID(num)})}'));
+
+
 						break;
 
 						case "http":
