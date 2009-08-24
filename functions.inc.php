@@ -117,6 +117,7 @@ function cidlookup_get_config($engine) {
 	// TODO: discuss if mysql and http lookup should be implemented in dialplan or in an external AGI
 	global $ext;  // is this the best way to pass this?
 	global $asterisk_conf;
+  global $version;
 	switch($engine) {
 		case "asterisk":
 			$sources = cidlookup_list();
@@ -166,9 +167,9 @@ function cidlookup_get_config($engine) {
 						break;
 
 						case "mysql":
-							//Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
-
-							$replacements = array (
+              if (version_compare($version, "1.6", "lt")) {
+							  //Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
+							  $replacements = array (
 							  	'\\' => '\\\\',
 							  	'"' => '\\"',
 							  	'\'' => '\\\'',
@@ -178,9 +179,11 @@ function cidlookup_get_config($engine) {
 							  	')' => '\\)',
 							  	'.' => '\\.',
 							  	'|' => '\\|'
-							);
-							
-							$query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
+							  );
+                $query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
+              } else {
+                $query = $item['mysql_query'];
+              }
 							$query = str_replace('[NUMBER]', '${CALLERID(num)}', $query);
 
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_connect('connid', $item['mysql_host'],  $item['mysql_username'],  $item['mysql_password'],  $item['mysql_dbname']));							
