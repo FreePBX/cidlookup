@@ -1,14 +1,26 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2009 Chavdar Iliev <chavdar_75@yahoo.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-16 17:03+0200\n"
-"PO-Revision-Date: 2009-01-16 13:46+0200\n"
+"POT-Creation-Date: 2010-01-23 13:42+0100\n"
+"PO-Revision-Date: 2010-01-23 00:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
 "MIME-Version: 1.0\n"
@@ -30,197 +42,230 @@ msgstr "Източник"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Източниците могат да бъдат добавяни в меню 'CallerID Следене'"
 
-#: functions.inc.php:244
+#: functions.inc.php:247
 msgid "None"
 msgstr "Няма"
 
-#: install.php:67
+#: install.php:82
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Преместване на маршрут на канал в Zap DID маршрут.."
 
-#: install.php:75
+#: install.php:90
 msgid "FATAL: failed to transform old routes: "
 msgstr "ГРЕШКА: не мога да трансформирам старите маршрути: "
 
-#: install.php:77
-#: install.php:86
+#: install.php:92 install.php:101
 msgid "OK"
 msgstr "OK"
 
-#: install.php:80
+#: install.php:95
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Премахване полета на неизползвани канали от входящи.."
 
-#: install.php:84
+#: install.php:99
 msgid "ERROR: failed: "
 msgstr "ГРЕШКА: неуспех: "
 
-#: install.php:91
+#: install.php:106
 msgid "Not Needed"
 msgstr "Не е Необходимо"
 
-#: install.php:100
+#: install.php:115
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "Проверка за cidlookup поле в таблицата за входящи на ядрото.."
 
-#: install.php:104
+#: install.php:119
 msgid "not present"
 msgstr "не присъства"
 
-#: install.php:106
+#: install.php:121
 msgid "removed"
 msgstr "премахнат"
 
-#: page.cidlookup.php:50
+#: page.cidlookup.php:52
 msgid "Add CID Lookup Source"
 msgstr "Добави Източник на CID Следене"
 
-#: page.cidlookup.php:64
+#: page.cidlookup.php:66
 msgid "CID Lookup source"
 msgstr "Източник на CID следене"
 
-#: page.cidlookup.php:64
+#: page.cidlookup.php:66
 msgid "deleted"
 msgstr "изтрит"
 
-#: page.cidlookup.php:79
+#: page.cidlookup.php:81
 msgid "Delete CID Lookup source"
 msgstr "Изтрий източник на CID Следене"
 
-#: page.cidlookup.php:84
+#: page.cidlookup.php:86
 msgid "Source:"
 msgstr "Източник:"
 
-#: page.cidlookup.php:84
-#: page.cidlookup.php:95
+#: page.cidlookup.php:86 page.cidlookup.php:97
 msgid "Add Source"
 msgstr "Добави Източник"
 
-#: page.cidlookup.php:86
-msgid "A Lookup Source let you specify a source for resolving numeric caller IDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with informations taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX"
-msgstr "Източникът на Следене ви позволява да определите източник за анализиране на цифрови CallerID-та на входящите обаждания, след което можете да свържете Входящ Маршрут с определен CID източник. По този начин ще имате по-детайлни CDR отчети с информация взета директно от CRM. Също така можете да инсталирате модула Телефонен Указател за да имате някаква номер <-> име асоциация. Имайте впредвид, че следенето може да натовари вашата телефонна централа."
+#: page.cidlookup.php:88
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric caller IDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with informations taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+"Източникът на Следене ви позволява да определите източник за анализиране на "
+"цифрови CallerID-та на входящите обаждания, след което можете да свържете "
+"Входящ Маршрут с определен CID източник. По този начин ще имате по-детайлни "
+"CDR отчети с информация взета директно от CRM. Също така можете да "
+"инсталирате модула Телефонен Указател за да имате някаква номер <-> име "
+"асоциация. Имайте впредвид, че следенето може да натовари вашата телефонна "
+"централа."
 
-#: page.cidlookup.php:95
+#: page.cidlookup.php:97
 msgid "Edit Source"
 msgstr "Редактирай Източник"
 
-#: page.cidlookup.php:102
+#: page.cidlookup.php:104
 msgid "Source Description:"
 msgstr "Описание на Източник:"
 
-#: page.cidlookup.php:102
+#: page.cidlookup.php:104
 msgid "Enter a description for this source."
 msgstr "Въведете описание за този източник"
 
-#: page.cidlookup.php:106
+#: page.cidlookup.php:108
 msgid "Source type:"
 msgstr "Тип на източник:"
 
-#: page.cidlookup.php:106
-msgid "Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
-msgstr "Изберете тип на източника, можете да избирате между:<ul><li>Вътрешен: Използва astdb като източник на следене, използва модул Телефонен Указател за попълването си</li><li>ENUM: Използва DNS да следи имената на обаждащите се, използва ENUM зони за следене кофигурирани в enum.conf</li><li>HTTP: Изпълнява  HTTP GET одобрение номера на обаждащия се като аргумент за възстановяване на правилното име</li><li>MySQL: Запитва MySQL базата данни за възстановяване на правилното име</li></ul>"
+#: page.cidlookup.php:108
+msgid ""
+"Select the source type, you can choose between:<ul><li>Internal: use astdb "
+"as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
+"to lookup caller names, it uses ENUM lookup zones as configured in enum."
+"conf</li><li>HTTP: It executes an HTTP GET passing the caller number as "
+"argument to retrieve the correct name</li><li>MySQL: It queries a MySQL "
+"database to retrieve caller name</li></ul>"
+msgstr ""
+"Изберете тип на източника, можете да избирате между:<ul><li>Вътрешен: "
+"Използва astdb като източник на следене, използва модул Телефонен Указател "
+"за попълването си</li><li>ENUM: Използва DNS да следи имената на обаждащите "
+"се, използва ENUM зони за следене кофигурирани в enum.conf</li><li>HTTP: "
+"Изпълнява  HTTP GET одобрение номера на обаждащия се като аргумент за "
+"възстановяване на правилното име</li><li>MySQL: Запитва MySQL базата данни "
+"за възстановяване на правилното име</li></ul>"
 
-#: page.cidlookup.php:118
+#: page.cidlookup.php:120
 msgid "Cache results:"
 msgstr "Кеширане на резултати:"
 
-#: page.cidlookup.php:118
-msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
-msgstr "Преценете дали да кеширате или не резултатите в astDB; това ще отмени настоящите настройки. Не се отразява на  Вътрешните източници"
+#: page.cidlookup.php:120
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+"Преценете дали да кеширате или не резултатите в astDB; това ще отмени "
+"настоящите настройки. Не се отразява на  Вътрешните източници"
 
-#: page.cidlookup.php:126
+#: page.cidlookup.php:128
 msgid "HTTP"
 msgstr "HTTP"
 
-#: page.cidlookup.php:129
-#: page.cidlookup.php:168
+#: page.cidlookup.php:131 page.cidlookup.php:170
 msgid "Host:"
 msgstr "Хост:"
 
-#: page.cidlookup.php:129
+#: page.cidlookup.php:131
 msgid "Host name or IP address"
 msgstr "Ине на хост или IP адрес"
 
-#: page.cidlookup.php:134
+#: page.cidlookup.php:136
 msgid "Port:"
 msgstr "Порт:"
 
-#: page.cidlookup.php:134
+#: page.cidlookup.php:136
 msgid "Port HTTP server is listening at (default 80)"
 msgstr "Порт на който HTTP сървъра слуша (по-подразбиране 80)"
 
-#: page.cidlookup.php:139
-#: page.cidlookup.php:181
+#: page.cidlookup.php:141 page.cidlookup.php:183
 msgid "Username:"
 msgstr "Потребителско Име:"
 
-#: page.cidlookup.php:139
+#: page.cidlookup.php:141
 msgid "Username to use in HTTP authentication"
 msgstr "Потребителско Име за HTTP оторизиране"
 
-#: page.cidlookup.php:144
-#: page.cidlookup.php:185
+#: page.cidlookup.php:146 page.cidlookup.php:187
 msgid "Password:"
 msgstr "Парола:"
 
-#: page.cidlookup.php:144
+#: page.cidlookup.php:146
 msgid "Password to use in HTTP authentication"
 msgstr "Парола за HTTP оторизиране"
 
-#: page.cidlookup.php:149
+#: page.cidlookup.php:151
 msgid "Path:"
 msgstr "Път:"
 
-#: page.cidlookup.php:149
+#: page.cidlookup.php:151
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr "Път до файла за GET<br/>например: /cidlookup.php"
 
-#: page.cidlookup.php:154
-#: page.cidlookup.php:176
+#: page.cidlookup.php:156 page.cidlookup.php:178
 msgid "Query:"
 msgstr "Запитване:"
 
-#: page.cidlookup.php:154
-msgid "Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm"
-msgstr "Стринг за запитване, определеното означение '[NUMBER]' ще бъде заменено с номера на обаждащия се<br/>например: number=[NUMBER]&source=crm"
+#: page.cidlookup.php:156
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr ""
+"Стринг за запитване, определеното означение '[NUMBER]' ще бъде заменено с "
+"номера на обаждащия се<br/>например: number=[NUMBER]&source=crm"
 
-#: page.cidlookup.php:165
+#: page.cidlookup.php:167
 msgid "MySQL"
 msgstr "MySQL"
 
-#: page.cidlookup.php:168
+#: page.cidlookup.php:170
 msgid "MySQL Host"
 msgstr "MySQL Хост"
 
-#: page.cidlookup.php:172
+#: page.cidlookup.php:174
 msgid "Database:"
 msgstr "База Данни:"
 
-#: page.cidlookup.php:172
+#: page.cidlookup.php:174
 msgid "Database name"
 msgstr "Име на База Данни"
 
-#: page.cidlookup.php:176
-msgid "Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-msgstr "Запитване, определеното означение '[NUMBER]' ще бъде заменено с номера на обаждащия се<br/>например: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+#: page.cidlookup.php:178
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+"Запитване, определеното означение '[NUMBER]' ще бъде заменено с номера на "
+"обаждащия се<br/>например: SELECT name FROM phonebook WHERE number LIKE '%"
+"[NUMBER]%'"
 
-#: page.cidlookup.php:181
+#: page.cidlookup.php:183
 msgid "MySQL Username"
 msgstr "MySQL Потребителско Име"
 
-#: page.cidlookup.php:185
+#: page.cidlookup.php:187
 msgid "MySQL Password"
 msgstr "MySQL Парола"
 
-#: page.cidlookup.php:196
+#: page.cidlookup.php:198
 msgid "SugarCRM"
 msgstr "SugarCRM"
 
-#: page.cidlookup.php:197
+#: page.cidlookup.php:199
 msgid "Not yet implemented"
 msgstr "Все още не е реализиран"
 
-#: page.cidlookup.php:204
+#: page.cidlookup.php:206
 msgid "Submit Changes"
 msgstr "Приеми Промените"
 
@@ -232,3 +277,5 @@ msgstr "CallerID Следене"
 msgid "CallerID Lookup Sources"
 msgstr "CallerID Следене"
 
+msgid "Internal"
+msgstr ""

@@ -1,3 +1,18 @@
+#This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
 # Russian freePBX ver. translation
 # Copyright (c) 2006-2008 PostMet Corporation
 # This file is distributed under the same license as the freePBX package.
@@ -9,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-19 21:45+0100\n"
-"PO-Revision-Date: 2008-01-16 16:38+0100\n"
+"POT-Creation-Date: 2010-01-23 13:42+0100\n"
+"PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
@@ -29,35 +44,71 @@ msgstr "Источник"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Источник может быть добавлен в секцию Сервис поиска Номера ИД"
 
-#: functions.inc.php:233
+#: functions.inc.php:247
 msgid "None"
 msgstr "Нет"
 
-#: page.cidlookup.php:50
+#: install.php:82
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr ""
+
+#: install.php:90
+msgid "FATAL: failed to transform old routes: "
+msgstr ""
+
+#: install.php:92 install.php:101
+msgid "OK"
+msgstr ""
+
+#: install.php:95
+msgid "Removing deprecated channel field from incoming.."
+msgstr ""
+
+#: install.php:99
+msgid "ERROR: failed: "
+msgstr ""
+
+#: install.php:106
+msgid "Not Needed"
+msgstr ""
+
+#: install.php:115
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr ""
+
+#: install.php:119
+msgid "not present"
+msgstr ""
+
+#: install.php:121
+msgid "removed"
+msgstr ""
+
+#: page.cidlookup.php:52
 msgid "Add CID Lookup Source"
 msgstr "Добавить источник поиска CID"
 
-#: page.cidlookup.php:64
+#: page.cidlookup.php:66
 msgid "CID Lookup source"
 msgstr "Источник поиска CID"
 
-#: page.cidlookup.php:64
+#: page.cidlookup.php:66
 msgid "deleted"
 msgstr "удалено"
 
-#: page.cidlookup.php:79
+#: page.cidlookup.php:81
 msgid "Delete CID Lookup source"
 msgstr "Удалить источник поиска CID"
 
-#: page.cidlookup.php:84
+#: page.cidlookup.php:86
 msgid "Source:"
 msgstr "Источник:"
 
-#: page.cidlookup.php:84 page.cidlookup.php:95
+#: page.cidlookup.php:86 page.cidlookup.php:97
 msgid "Add Source"
 msgstr "Добавить Источник"
 
-#: page.cidlookup.php:86
+#: page.cidlookup.php:88
 msgid ""
 "A Lookup Source let you specify a source for resolving numeric caller IDs of "
 "incoming calls, you can then link an Inbound route to a specific CID source. "
@@ -66,31 +117,32 @@ msgid ""
 "small number <-> name association. Pay attention, name lookup may slow down "
 "your PBX"
 msgstr ""
-"Сервис поиска по Номеру ИД поможет превращать поступающие звонки из номеров в "
-"узнаваемые имена или названия, которые затем можно сопоставлять со сценариями "
-"входящей маршрутизации для каждого. Ещё одно преимущество - более понятный и "
-"детальный список входящих в отчетах о звонках, с добавлением информации прямо из "
-"вашей программы CRM. Также можно инсталлировать и использовать модуль Телефонная "
-"книга для сопоставления коротких номеров и имен. Внимание! Сервис поиска может "
-"затормаживать быстродействие вашей ИП-АТС, если её ресурсы скромны."  
+"Сервис поиска по Номеру ИД поможет превращать поступающие звонки из номеров "
+"в узнаваемые имена или названия, которые затем можно сопоставлять со "
+"сценариями входящей маршрутизации для каждого. Ещё одно преимущество - более "
+"понятный и детальный список входящих в отчетах о звонках, с добавлением "
+"информации прямо из вашей программы CRM. Также можно инсталлировать и "
+"использовать модуль Телефонная книга для сопоставления коротких номеров и "
+"имен. Внимание! Сервис поиска может затормаживать быстродействие вашей ИП-"
+"АТС, если её ресурсы скромны."
 
-#: page.cidlookup.php:95
+#: page.cidlookup.php:97
 msgid "Edit Source"
 msgstr "Изменить источник"
 
-#: page.cidlookup.php:102
+#: page.cidlookup.php:104
 msgid "Source Description:"
 msgstr "Описание источника:"
 
-#: page.cidlookup.php:102
+#: page.cidlookup.php:104
 msgid "Enter a description for this source."
 msgstr "Создайте краткое описание источника."
 
-#: page.cidlookup.php:106
+#: page.cidlookup.php:108
 msgid "Source type:"
 msgstr "Тип источника:"
 
-#: page.cidlookup.php:106
+#: page.cidlookup.php:108
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -101,98 +153,99 @@ msgid ""
 msgstr ""
 "Выберите тип источника. Можно выбрать из:<ul><li>Внутренний: используется "
 "внутренняя база Астериск в качестве источника данных, используется модуль "
-"Телефонная книга для отображения этих данных.</li><li>ENUM: используется сервис "
-"ДНС для поиска имён, который, в свою очередь, просматривает специальные зоны ENUM, "
-"указанные в файле enum.conf</li><li>HTTP: используются запросы HTTP GET используя "
-"номер позвонившего в качестве аргумента для получения его имени.</li><li>MySQL: "
-"запросы в базу данных MySQL для получения его имени."
- 
-#: page.cidlookup.php:118
+"Телефонная книга для отображения этих данных.</li><li>ENUM: используется "
+"сервис ДНС для поиска имён, который, в свою очередь, просматривает "
+"специальные зоны ENUM, указанные в файле enum.conf</li><li>HTTP: "
+"используются запросы HTTP GET используя номер позвонившего в качестве "
+"аргумента для получения его имени.</li><li>MySQL: запросы в базу данных "
+"MySQL для получения его имени."
+
+#: page.cidlookup.php:120
 msgid "Cache results:"
 msgstr "Кэшированные результаты:"
 
-#: page.cidlookup.php:118
+#: page.cidlookup.php:120
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
-"Определитесь, нужно ли кэшировать результаты запросов в astDB; результаты кэш "
-"могут не всегда совпадать с действительными. Не влияет на поведение и достоверность "
-"внутренних источников."
+"Определитесь, нужно ли кэшировать результаты запросов в astDB; результаты "
+"кэш могут не всегда совпадать с действительными. Не влияет на поведение и "
+"достоверность внутренних источников."
 
-#: page.cidlookup.php:126
+#: page.cidlookup.php:128
 msgid "HTTP"
 msgstr "HTTP"
 
-#: page.cidlookup.php:129 page.cidlookup.php:168
+#: page.cidlookup.php:131 page.cidlookup.php:170
 msgid "Host:"
 msgstr "Хост:"
 
-#: page.cidlookup.php:129
+#: page.cidlookup.php:131
 msgid "Host name or IP address"
 msgstr "Имя хоста или его IP адрес"
 
-#: page.cidlookup.php:134
+#: page.cidlookup.php:136
 msgid "Port:"
 msgstr "Порт:"
 
-#: page.cidlookup.php:134
+#: page.cidlookup.php:136
 msgid "Port HTTP server is listening at (default 80)"
 msgstr "HTTP порт сервера, слушающего запросы (по умолчанию 80)"
 
-#: page.cidlookup.php:139 page.cidlookup.php:181
+#: page.cidlookup.php:141 page.cidlookup.php:183
 msgid "Username:"
 msgstr "Имя пользователя:"
 
-#: page.cidlookup.php:139
+#: page.cidlookup.php:141
 msgid "Username to use in HTTP authentication"
 msgstr "Имя пользователя для аутентификации по HTTP"
 
-#: page.cidlookup.php:144 page.cidlookup.php:185
+#: page.cidlookup.php:146 page.cidlookup.php:187
 msgid "Password:"
 msgstr "Пароль:"
 
-#: page.cidlookup.php:144
+#: page.cidlookup.php:146
 msgid "Password to use in HTTP authentication"
 msgstr "Пароль для аутентификации по HTTP"
 
-#: page.cidlookup.php:149
+#: page.cidlookup.php:151
 msgid "Path:"
 msgstr "Путь:"
 
-#: page.cidlookup.php:149
+#: page.cidlookup.php:151
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr "Путь к файлу для GET запроса<br/>например: /cidlookup.php"
 
-#: page.cidlookup.php:154 page.cidlookup.php:176
+#: page.cidlookup.php:156 page.cidlookup.php:178
 msgid "Query:"
 msgstr "Запрос:"
 
-#: page.cidlookup.php:154
+#: page.cidlookup.php:156
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm"
 msgstr ""
-"Переменная запроса, содержащая '[NUMBER]', которая получает значение Номер ИД "
-"<br/>например: number=[NUMBER]&source=crm"
+"Переменная запроса, содержащая '[NUMBER]', которая получает значение Номер "
+"ИД <br/>например: number=[NUMBER]&source=crm"
 
-#: page.cidlookup.php:165
+#: page.cidlookup.php:167
 msgid "MySQL"
 msgstr "MySQL"
 
-#: page.cidlookup.php:168
+#: page.cidlookup.php:170
 msgid "MySQL Host"
 msgstr "Хост MySQL"
 
-#: page.cidlookup.php:172
+#: page.cidlookup.php:174
 msgid "Database:"
 msgstr "База данных:"
 
-#: page.cidlookup.php:172
+#: page.cidlookup.php:174
 msgid "Database name"
 msgstr "Имя базы данных"
 
-#: page.cidlookup.php:176
+#: page.cidlookup.php:178
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -200,23 +253,33 @@ msgstr ""
 "Строка запроса, содержащая '[NUMBER]', которая получает значение Номер ИД "
 "<br/>например: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: page.cidlookup.php:181
+#: page.cidlookup.php:183
 msgid "MySQL Username"
 msgstr "Имя пользователя MySQL"
 
-#: page.cidlookup.php:185
+#: page.cidlookup.php:187
 msgid "MySQL Password"
 msgstr "Пароль MySQL"
 
-#: page.cidlookup.php:196
+#: page.cidlookup.php:198
 msgid "SugarCRM"
 msgstr "SugarCRM"
 
+#: page.cidlookup.php:199
+msgid "Not yet implemented"
+msgstr "Пока не обеспечивается"
+
+#: page.cidlookup.php:206
 msgid "Submit Changes"
 msgstr "Применить изменения"
 
-msgid "Not yet implemented"
-msgstr "Пока не обеспечивается"
+#: module.xml:3
+msgid "Caller ID Lookup"
+msgstr ""
+
+#: module.xml:9
+msgid "CallerID Lookup Sources"
+msgstr ""
 
 msgid "Internal"
 msgstr "Внутренний"
