@@ -1,4 +1,4 @@
-#This file is part of FreePBX.
+# This file is part of FreePBX.
 #
 #    FreePBX is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -13,13 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Copyright (C) 2009 FreePBX
+# FreePBX language template for cidlookup
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-23 13:42+0100\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,83 +28,101 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:19
+#: cidlookup/cidlookup.i18n.php:5
+msgid "Caller ID Lookup"
+msgstr ""
+
+#: cidlookup/cidlookup.i18n.php:7
+msgid "Inbound Call Control"
+msgstr ""
+
+#: cidlookup/cidlookup.i18n.php:9
+msgid ""
+"Allows Caller ID Lookup of incoming calls against different sources (MySQL, "
+"HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
+#: cidlookup/cidlookup.i18n.php:11
+msgid "CallerID Lookup Sources"
+msgstr ""
+
+#: cidlookup/functions.inc.php:19
 msgid "CID Lookup Source"
 msgstr ""
 
-#: functions.inc.php:23
+#: cidlookup/functions.inc.php:23
 msgid "Source"
 msgstr ""
 
-#: functions.inc.php:23
+#: cidlookup/functions.inc.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
-#: functions.inc.php:247
+#: cidlookup/functions.inc.php:247
 msgid "None"
 msgstr ""
 
-#: install.php:82
+#: cidlookup/install.php:82
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr ""
 
-#: install.php:90
+#: cidlookup/install.php:90
 msgid "FATAL: failed to transform old routes: "
 msgstr ""
 
-#: install.php:92 install.php:101
+#: cidlookup/install.php:92 cidlookup/install.php:101
 msgid "OK"
 msgstr ""
 
-#: install.php:95
+#: cidlookup/install.php:95
 msgid "Removing deprecated channel field from incoming.."
 msgstr ""
 
-#: install.php:99
+#: cidlookup/install.php:99
 msgid "ERROR: failed: "
 msgstr ""
 
-#: install.php:106
+#: cidlookup/install.php:106
 msgid "Not Needed"
 msgstr ""
 
-#: install.php:115
+#: cidlookup/install.php:115
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr ""
 
-#: install.php:119
+#: cidlookup/install.php:119
 msgid "not present"
 msgstr ""
 
-#: install.php:121
+#: cidlookup/install.php:121
 msgid "removed"
 msgstr ""
 
-#: page.cidlookup.php:52
+#: cidlookup/page.cidlookup.php:52
 msgid "Add CID Lookup Source"
 msgstr ""
 
-#: page.cidlookup.php:66
+#: cidlookup/page.cidlookup.php:66
 msgid "CID Lookup source"
 msgstr ""
 
-#: page.cidlookup.php:66
+#: cidlookup/page.cidlookup.php:66
 msgid "deleted"
 msgstr ""
 
-#: page.cidlookup.php:81
+#: cidlookup/page.cidlookup.php:81
 msgid "Delete CID Lookup source"
 msgstr ""
 
-#: page.cidlookup.php:86
+#: cidlookup/page.cidlookup.php:86
 msgid "Source:"
 msgstr ""
 
-#: page.cidlookup.php:86 page.cidlookup.php:97
+#: cidlookup/page.cidlookup.php:86 cidlookup/page.cidlookup.php:97
 msgid "Add Source"
 msgstr ""
 
-#: page.cidlookup.php:88
+#: cidlookup/page.cidlookup.php:88
 msgid ""
 "A Lookup Source let you specify a source for resolving numeric caller IDs of "
 "incoming calls, you can then link an Inbound route to a specific CID source. "
@@ -113,23 +132,23 @@ msgid ""
 "your PBX"
 msgstr ""
 
-#: page.cidlookup.php:97
+#: cidlookup/page.cidlookup.php:97
 msgid "Edit Source"
 msgstr ""
 
-#: page.cidlookup.php:104
+#: cidlookup/page.cidlookup.php:104
 msgid "Source Description:"
 msgstr ""
 
-#: page.cidlookup.php:104
+#: cidlookup/page.cidlookup.php:104
 msgid "Enter a description for this source."
 msgstr ""
 
-#: page.cidlookup.php:108
+#: cidlookup/page.cidlookup.php:108
 msgid "Source type:"
 msgstr ""
 
-#: page.cidlookup.php:108
+#: cidlookup/page.cidlookup.php:108
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -139,119 +158,108 @@ msgid ""
 "database to retrieve caller name</li></ul>"
 msgstr ""
 
-#: page.cidlookup.php:120
+#: cidlookup/page.cidlookup.php:120
 msgid "Cache results:"
 msgstr ""
 
-#: page.cidlookup.php:120
+#: cidlookup/page.cidlookup.php:120
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
 
-#: page.cidlookup.php:128
+#: cidlookup/page.cidlookup.php:128
 msgid "HTTP"
 msgstr ""
 
-#: page.cidlookup.php:131 page.cidlookup.php:170
+#: cidlookup/page.cidlookup.php:131 cidlookup/page.cidlookup.php:170
 msgid "Host:"
 msgstr ""
 
-#: page.cidlookup.php:131
+#: cidlookup/page.cidlookup.php:131
 msgid "Host name or IP address"
 msgstr ""
 
-#: page.cidlookup.php:136
+#: cidlookup/page.cidlookup.php:136
 msgid "Port:"
 msgstr ""
 
-#: page.cidlookup.php:136
+#: cidlookup/page.cidlookup.php:136
 msgid "Port HTTP server is listening at (default 80)"
 msgstr ""
 
-#: page.cidlookup.php:141 page.cidlookup.php:183
+#: cidlookup/page.cidlookup.php:141 cidlookup/page.cidlookup.php:183
 msgid "Username:"
 msgstr ""
 
-#: page.cidlookup.php:141
+#: cidlookup/page.cidlookup.php:141
 msgid "Username to use in HTTP authentication"
 msgstr ""
 
-#: page.cidlookup.php:146 page.cidlookup.php:187
+#: cidlookup/page.cidlookup.php:146 cidlookup/page.cidlookup.php:187
 msgid "Password:"
 msgstr ""
 
-#: page.cidlookup.php:146
+#: cidlookup/page.cidlookup.php:146
 msgid "Password to use in HTTP authentication"
 msgstr ""
 
-#: page.cidlookup.php:151
+#: cidlookup/page.cidlookup.php:151
 msgid "Path:"
 msgstr ""
 
-#: page.cidlookup.php:151
+#: cidlookup/page.cidlookup.php:151
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr ""
 
-#: page.cidlookup.php:156 page.cidlookup.php:178
+#: cidlookup/page.cidlookup.php:156 cidlookup/page.cidlookup.php:178
 msgid "Query:"
 msgstr ""
 
-#: page.cidlookup.php:156
+#: cidlookup/page.cidlookup.php:156
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm"
 msgstr ""
 
-#: page.cidlookup.php:167
+#: cidlookup/page.cidlookup.php:167
 msgid "MySQL"
 msgstr ""
 
-#: page.cidlookup.php:170
+#: cidlookup/page.cidlookup.php:170
 msgid "MySQL Host"
 msgstr ""
 
-#: page.cidlookup.php:174
+#: cidlookup/page.cidlookup.php:174
 msgid "Database:"
 msgstr ""
 
-#: page.cidlookup.php:174
+#: cidlookup/page.cidlookup.php:174
 msgid "Database name"
 msgstr ""
 
-#: page.cidlookup.php:178
+#: cidlookup/page.cidlookup.php:178
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 
-#: page.cidlookup.php:183
+#: cidlookup/page.cidlookup.php:183
 msgid "MySQL Username"
 msgstr ""
 
-#: page.cidlookup.php:187
+#: cidlookup/page.cidlookup.php:187
 msgid "MySQL Password"
 msgstr ""
 
-#: page.cidlookup.php:198
+#: cidlookup/page.cidlookup.php:198
 msgid "SugarCRM"
 msgstr ""
 
-#: page.cidlookup.php:199
+#: cidlookup/page.cidlookup.php:199
 msgid "Not yet implemented"
 msgstr ""
 
-#: page.cidlookup.php:206
+#: cidlookup/page.cidlookup.php:206
 msgid "Submit Changes"
-msgstr ""
-
-#: module.xml:3
-msgid "Caller ID Lookup"
-msgstr ""
-
-#: module.xml:9
-msgid "CallerID Lookup Sources"
-msgstr ""
-
-msgid "Internal"
 msgstr ""
