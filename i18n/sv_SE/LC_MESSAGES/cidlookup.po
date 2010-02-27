@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-23 13:42+0100\n"
+"POT-Creation-Date: 2010-02-27 13:45+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -29,84 +29,80 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: functions.inc.php:19
+msgid "Caller ID Lookup"
+msgstr "Nummerpresentation"
+
+msgid "Inbound Call Control"
+msgstr "Inkommande samtal"
+
+msgid ""
+"Allows Caller ID Lookup of incoming calls against different sources (MySQL, "
+"HTTP, ENUM, Phonebook Module)"
+msgstr ""
+"Tillhandahåller uppslag av nummerpresentation mot olika källor (MySQL, "
+"HTTP, ENUM, Telefonboksmodulen)"
+
+msgid "CallerID Lookup Sources"
+msgstr "Källa f. nummerpresentation"
+
 msgid "CID Lookup Source"
 msgstr "Källa för nummerpresentation"
 
-#: functions.inc.php:23
 msgid "Source"
 msgstr "Källa"
 
-#: functions.inc.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Källor kan läggas till i Källor för nummerpresentation"
 
-#: functions.inc.php:247
 msgid "None"
 msgstr "Ingen"
 
-#: install.php:82
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Migrerar kanalvägar till Zap direktvägar.."
 
-#: install.php:90
 msgid "FATAL: failed to transform old routes: "
 msgstr "FEL: kunde inte transformera gamla vägar: "
 
-#: install.php:92 install.php:101
 msgid "OK"
 msgstr "OK"
 
-#: install.php:95
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
 
-#: install.php:99
 msgid "ERROR: failed: "
 msgstr "FEL: misslyckades: "
 
-#: install.php:106
 msgid "Not Needed"
 msgstr "Behövs inte"
 
-#: install.php:115
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr ""
 "Kontrollerar om det fältet cidlookup finns i tabellen för inkommande vägar.."
 
-#: install.php:119
 msgid "not present"
 msgstr "inte tillgänglig"
 
-#: install.php:121
 msgid "removed"
 msgstr "borttagen"
 
-#: page.cidlookup.php:52
 msgid "Add CID Lookup Source"
 msgstr "Lägg till källa för nummerpresentation"
 
-#: page.cidlookup.php:66
 msgid "CID Lookup source"
 msgstr "Källa för nummerpresentation"
 
-#: page.cidlookup.php:66
 msgid "deleted"
 msgstr "borttagen"
 
-#: page.cidlookup.php:81
 msgid "Delete CID Lookup source"
 msgstr "Ta bort källa för nummerpresentation"
 
-#: page.cidlookup.php:86
 msgid "Source:"
 msgstr "Källa:"
 
-#: page.cidlookup.php:86 page.cidlookup.php:97
 msgid "Add Source"
 msgstr "Lägg till källa"
 
-#: page.cidlookup.php:88
 msgid ""
 "A Lookup Source let you specify a source for resolving numeric caller IDs of "
 "incoming calls, you can then link an Inbound route to a specific CID source. "
@@ -123,23 +119,18 @@ msgstr ""
 "in. Tänk på att namnuppslag kan orsaka fördröjningar innan samtalet kopplas "
 "upp."
 
-#: page.cidlookup.php:97
 msgid "Edit Source"
 msgstr "Redigera källa"
 
-#: page.cidlookup.php:104
 msgid "Source Description:"
 msgstr "Källbeskrivning:"
 
-#: page.cidlookup.php:104
 msgid "Enter a description for this source."
 msgstr "Skriv en kortfattad beskrivning för denna källa."
 
-#: page.cidlookup.php:108
 msgid "Source type:"
 msgstr "Källtyp:"
 
-#: page.cidlookup.php:108
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -155,11 +146,9 @@ msgstr ""
 "använder HTTP GET med uppringarens nummer som argument</li><li>MySQL: "
 "använder en MySQLdatabas för att slå upp namn</li></ul>"
 
-#: page.cidlookup.php:120
 msgid "Cache results:"
 msgstr "Lagra resultat"
 
-#: page.cidlookup.php:120
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
@@ -167,55 +156,42 @@ msgstr ""
 "Välj om du ska mellanlagra resultaten i astDB; det kommer att skriva över "
 "eventuella poster som redan finns. Används inte om källa är Internal."
 
-#: page.cidlookup.php:128
 msgid "HTTP"
 msgstr "HTTP"
 
-#: page.cidlookup.php:131 page.cidlookup.php:170
 msgid "Host:"
 msgstr "Dator:"
 
-#: page.cidlookup.php:131
 msgid "Host name or IP address"
 msgstr "Datornamn eller IP-adress"
 
-#: page.cidlookup.php:136
 msgid "Port:"
 msgstr "Port:"
 
-#: page.cidlookup.php:136
 msgid "Port HTTP server is listening at (default 80)"
 msgstr "Porten HTTP-servern lyssnar på (standard 80)"
 
-#: page.cidlookup.php:141 page.cidlookup.php:183
 msgid "Username:"
 msgstr "Användarnamn:"
 
-#: page.cidlookup.php:141
 msgid "Username to use in HTTP authentication"
 msgstr "Användarnamn att använda vid HTTP-autentisering"
 
-#: page.cidlookup.php:146 page.cidlookup.php:187
 msgid "Password:"
 msgstr "Lösenord:"
 
-#: page.cidlookup.php:146
 msgid "Password to use in HTTP authentication"
 msgstr "Lösenord att använda vid HTTP-autentisering"
 
-#: page.cidlookup.php:151
 msgid "Path:"
 msgstr "Sökväg:"
 
-#: page.cidlookup.php:151
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr "Sökväg till filen via GET<br>t.ex. /cidlookup.php"
 
-#: page.cidlookup.php:156 page.cidlookup.php:178
 msgid "Query:"
 msgstr "Fråga:"
 
-#: page.cidlookup.php:156
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm"
@@ -223,23 +199,18 @@ msgstr ""
 "Frågesträng, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
 "nummerpresentation<br>t.ex. nummer=[NUMBER]&source=crm"
 
-#: page.cidlookup.php:167
 msgid "MySQL"
 msgstr "MySQL"
 
-#: page.cidlookup.php:170
 msgid "MySQL Host"
 msgstr "MySQL-dator"
 
-#: page.cidlookup.php:174
 msgid "Database:"
 msgstr "Databas:"
 
-#: page.cidlookup.php:174
 msgid "Database name"
 msgstr "Databasnamn"
 
-#: page.cidlookup.php:178
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -248,33 +219,20 @@ msgstr ""
 "nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE '%"
 "[NUMBER]%'"
 
-#: page.cidlookup.php:183
 msgid "MySQL Username"
 msgstr "Användarnamn för MySQL"
 
-#: page.cidlookup.php:187
 msgid "MySQL Password"
 msgstr "Lösenord för MySQL"
 
-#: page.cidlookup.php:198
 msgid "SugarCRM"
 msgstr "SugarCRM"
 
-#: page.cidlookup.php:199
 msgid "Not yet implemented"
 msgstr "Inte implementerad"
 
-#: page.cidlookup.php:206
 msgid "Submit Changes"
 msgstr "Spara ändringar"
-
-#: module.xml:3
-msgid "Caller ID Lookup"
-msgstr "Nummerpresentation"
-
-#: module.xml:9
-msgid "CallerID Lookup Sources"
-msgstr "Källa f. nummerpresentation"
 
 msgid "Internal"
 msgstr "Intern"
