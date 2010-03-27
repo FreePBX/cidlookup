@@ -1,7 +1,7 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<name>Caller ID Lookup</name>
-	<version>2.7.0.1</version>
+	<version>2.7.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
@@ -17,6 +17,7 @@
 	<location>release/2.8/cidlookup-2.7.0.1.tgz</location>
 	<md5sum>dd95f150fcd8e2b34308542ac99bf276</md5sum>
 	<changelog>
+		*2.7.0.2* #3979
 		*2.7.0.1* might effect #3979
 		*2.7.0.0* localizations
 		*2.6.0.1* #3599, #3821

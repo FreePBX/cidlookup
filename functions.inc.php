@@ -120,7 +120,7 @@ function cidlookup_get_config($engine) {
   global $version;
 	switch($engine) {
 		case "asterisk":
-			$sources = cidlookup_list();
+			$sources = cidlookup_list(true);
 			if(is_array($sources)) {
 				foreach($sources as $item) {
 
@@ -245,14 +245,13 @@ function cidlookup_did_list($id=false) {
 	return is_array($results)?$results:array();
 }
 
-function cidlookup_list() {
-	// TODO: discuss department isolation of sources
+function cidlookup_list($all=false) {
 	$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
 	$results = sql("SELECT * FROM cidlookup","getAll",DB_FETCHMODE_ASSOC);
 	if(is_array($results)){
 		foreach($results as $result){
 			// check to see if we have a dept match for the current AMP User.
-			if (checkDept($result['deptname'])){
+			if ($all || checkDept($result['deptname'])){
 				// return this item
 				$allowed[] = $result;
 			}
