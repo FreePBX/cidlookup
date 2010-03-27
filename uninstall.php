@@ -15,6 +15,6 @@
 //    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-needreload();
-
+sql('DROP TABLE IF EXISTS cidlookup');
+sql('DROP TABLE IF EXISTS cidlookup_incoming');
 ?>

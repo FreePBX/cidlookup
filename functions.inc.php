@@ -231,15 +231,18 @@ function cidlookup_did_get($did){
 	}
 }
 
-function cidlookup_did_list() {
+function cidlookup_did_list($id=false) {
 	$sql = "
 	SELECT cidlookup_id, a.extension extension, a.cidnum cidnum, pricid FROM cidlookup_incoming a 
 	INNER JOIN incoming b
 	ON a.extension = b.extension AND a.cidnum = b.cidnum
 	";
+  if ($id !== false && ctype_digit($id)) {
+    $sql .= " WHERE cidlookup_id = '$id'";
+  }
 
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
-	return is_array($results)?$results:null;
+	return is_array($results)?$results:array();
 }
 
 function cidlookup_list() {

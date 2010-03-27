@@ -68,22 +68,25 @@ if ($action == 'delete') {
 	if ($itemid){ 
 		//get details for this source
 		$thisItem = cidlookup_get($itemid);
-	} else {
-		$thisItem = Array( 'description' => null, 'sourcetype' => null, 'cache' => null);
-	}
-
-	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
-	$delButton = "
+	  $delButton = "
 			<form name=delete action=\"{$_SERVER['PHP_SELF']}\" method=POST>
 				<input type=\"hidden\" name=\"display\" value=\"{$dispnum}\">
 				<input type=\"hidden\" name=\"itemid\" value=\"{$itemid}\">
 				<input type=\"hidden\" name=\"action\" value=\"delete\">
 				<input type=submit value=\""._("Delete CID Lookup source")."\">
 			</form>";
-	
-?>
+    $dids_using_arr = cidlookup_did_list($itemid);
+    $dids_using = count($dids_using_arr);
+    if ($dids_using) {
+      $delButton .= '<small>'.sprintf(_("There are %s DIDs using this source that will no longer have lookups if deleted."),$dids_using).'</small>';
+    }
+    $thisItem_description = isset($thisItem['description']) ? htmlspecialchars($thisItem['description']):'';
 
-	<h2><?php echo ($itemid ? _("Source:")." ". $itemid : _("Add Source")); ?></h2>
+	} else {
+		$thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null);
+	}
+?>
+	<h2><?php echo ($itemid ? sprintf(_("Source: %s (id %s)"),$thisItem_description,$itemid) : _("Add Source")); ?></h2>
 	
 	<p style="width: 80%"><?php echo ($itemid ? '' : _("A Lookup Source let you specify a source for resolving numeric caller IDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with informations taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX")); ?></p>
 
@@ -102,7 +105,7 @@ if ($action == 'delete') {
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Source Description:")?><span><?php echo _("Enter a description for this source.")?></span></a></td>
-		<td><input type="text" name="description" value="<?php echo (isset($thisItem['description']) ? $thisItem['description'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+		<td><input type="text" name="description" value="<?php echo $thisItem_description; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Source type:")?><span><?php echo _("Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>")?></span></a></td>
