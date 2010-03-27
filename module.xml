@@ -14,8 +14,8 @@
 		<engine>asterisk 1.2</engine>
 		<module>core ge 2.5.1.2</module>
 	</depends>
-	<location>release/2.7/cidlookup-2.7.0.1.tgz</location>
-	<md5sum>45a30d653996845025a9ba510edde5b5</md5sum>
+	<location>release/2.8/cidlookup-2.7.0.1.tgz</location>
+	<md5sum>1240af8a8615f3b2a72949e17e14addc</md5sum>
 	<changelog>
 		*2.7.0.1* might effect #3979
 		*2.7.0.0* localizations
