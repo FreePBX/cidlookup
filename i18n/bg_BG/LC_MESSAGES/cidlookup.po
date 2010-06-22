@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2010-01-23 00:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -95,8 +95,15 @@ msgstr "изтрит"
 msgid "Delete CID Lookup source"
 msgstr "Изтрий източник на CID Следене"
 
-msgid "Source:"
-msgstr "Източник:"
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Източник: %s (id %s)"
 
 msgid "Add Source"
 msgstr "Добави Източник"
@@ -129,9 +136,6 @@ msgstr "Въведете описание за този източник"
 msgid "Source type:"
 msgstr "Тип на източник:"
 
-msgid "Internal"
-msgstr ""
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -147,6 +151,9 @@ msgstr ""
 "Изпълнява  HTTP GET одобрение номера на обаждащия се като аргумент за "
 "възстановяване на правилното име</li><li>MySQL: Запитва MySQL базата данни "
 "за възстановяване на правилното име</li></ul>"
+
+msgid "Internal"
+msgstr ""
 
 msgid "Cache results:"
 msgstr "Кеширане на резултати:"

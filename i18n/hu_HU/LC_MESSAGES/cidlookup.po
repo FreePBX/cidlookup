@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -95,8 +95,15 @@ msgstr "törölt"
 msgid "Delete CID Lookup source"
 msgstr "CID meghatározó forrás törlése"
 
-msgid "Source:"
-msgstr "Forrás:"
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Forrás: %s (id %s)"
 
 msgid "Add Source"
 msgstr "Forrás hozzáadása"
@@ -129,9 +136,6 @@ msgstr "Adj meg egy nevet ehhez a forráshoz."
 msgid "Source type:"
 msgstr "Forrás típusa:"
 
-msgid "Internal"
-msgstr ""
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -147,6 +151,9 @@ msgstr ""
 "GET parancs lesz használva, amelynek a visszatérési értékének kell a hívó "
 "pontos nevének lennie.</li><li>MySQL: A lekérdezés eredményének a hívó "
 "pontos nevének kell lennie.</li></ul>"
+
+msgid "Internal"
+msgstr ""
 
 msgid "Cache results:"
 msgstr "Cache használata:"

@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -97,8 +97,15 @@ msgstr "удалено"
 msgid "Delete CID Lookup source"
 msgstr "Удалить источник поиска CID"
 
-msgid "Source:"
-msgstr "Источник:"
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Источник: %s (id %s)"
 
 msgid "Add Source"
 msgstr "Добавить Источник"
@@ -132,9 +139,6 @@ msgstr "Создайте краткое описание источника."
 msgid "Source type:"
 msgstr "Тип источника:"
 
-msgid "Internal"
-msgstr "Внутренний"
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -151,6 +155,9 @@ msgstr ""
 "используются запросы HTTP GET используя номер позвонившего в качестве "
 "аргумента для получения его имени.</li><li>MySQL: запросы в базу данных "
 "MySQL для получения его имени."
+
+msgid "Internal"
+msgstr "Внутренний"
 
 msgid "Cache results:"
 msgstr "Кэшированные результаты:"
@@ -239,3 +246,4 @@ msgstr "Пока не обеспечивается"
 
 msgid "Submit Changes"
 msgstr "Применить изменения"
+

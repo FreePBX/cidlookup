@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -97,8 +97,15 @@ msgstr "eliminado"
 msgid "Delete CID Lookup source"
 msgstr "Eliminar fuente de búsqueda de CID"
 
-msgid "Source:"
-msgstr "Fuente:"
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Fuente: %s (id %s)"
 
 msgid "Add Source"
 msgstr "Añadir fuente"
@@ -130,9 +137,6 @@ msgstr "Introduzca una descripción para este origen."
 msgid "Source type:"
 msgstr "Tipo de fuente:"
 
-msgid "Internal"
-msgstr ""
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -149,6 +153,9 @@ msgstr ""
 "que llama como argumento para recuperar el nombre de la persona a la que "
 "pertenece.</li><li>MySQL: consulta una base de datos MySQL para extraer el "
 "nombre de la persona que llama.</li></ul>"
+
+msgid "Internal"
+msgstr ""
 
 msgid "Cache results:"
 msgstr "Resultados de la caché:"
@@ -237,3 +244,4 @@ msgstr "Este método no se ha implementado todavía."
 
 msgid "Submit Changes"
 msgstr "Enviar cambios"
+

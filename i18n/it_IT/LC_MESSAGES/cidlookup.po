@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 20§0-01-23 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -95,8 +95,15 @@ msgstr "eliminato"
 msgid "Delete CID Lookup source"
 msgstr "Elimina sorgente Risoluzione ID Chiamante"
 
-msgid "Source:"
-msgstr "Sorgente:"
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Sorgente: %s (id %s)"
 
 msgid "Add Source"
 msgstr "Aggiungi Sorgente"
@@ -130,9 +137,6 @@ msgstr "Immettere una descrizione per questa sorgente."
 msgid "Source type:"
 msgstr "Tipo sorgente:"
 
-msgid "Internal"
-msgstr "Interno"
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -147,6 +151,9 @@ msgstr ""
 "ENUM come configurate in enum.conf</li><li>HTTP: esegue un GET HTTP passando "
 "il numero di telefono come argomento per risolvere il nome</li><li>MySQL "
 "esegue una query ad un database MySQL per la risoluzione dei nomi</li></ul>"
+
+msgid "Internal"
+msgstr "Interno"
 
 msgid "Cache results:"
 msgstr "Salva risultati:"

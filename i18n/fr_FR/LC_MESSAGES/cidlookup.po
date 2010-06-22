@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -94,8 +94,15 @@ msgstr "supprimé"
 msgid "Delete CID Lookup source"
 msgstr "Supprimer une Source de Consultation CID"
 
-msgid "Source:"
-msgstr "Source :"
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Source: %s (id %s)"
 
 msgid "Add Source"
 msgstr "Ajouter une Source"
@@ -128,9 +135,6 @@ msgstr "Entrez une description pour cette source."
 msgid "Source type:"
 msgstr "Type de Source : "
 
-msgid "Internal"
-msgstr ""
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -147,6 +151,9 @@ msgstr ""
 "GET en passant le numéro de l'appelant comme argument  pour récupérer le nom "
 "exact</li><li>MySQL : Requiert une Base de Données MySQL pour récupérer le "
 "nom de l'appelant</li></ul>"
+
+msgid "Internal"
+msgstr ""
 
 msgid "Cache results:"
 msgstr "Résulats du Cache :"

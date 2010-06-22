@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2009-01-31 21:02+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -83,8 +83,15 @@ msgstr "已删除"
 msgid "Delete CID Lookup source"
 msgstr "删除CID查找源"
 
-msgid "Source:"
-msgstr "源："
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "源：%s (id %s)"
 
 msgid "Add Source"
 msgstr "添加源"
@@ -114,9 +121,6 @@ msgstr "为此源添加描述。"
 msgid "Source type:"
 msgstr "源类型："
 
-msgid "Internal"
-msgstr ""
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -129,6 +133,9 @@ msgstr ""
 "电话簿模块来填充它</li><li>ENUM：使用DNS来查询CID名字，它使用ENUM查询区域，可"
 "以在enum.conf中配置</li><li>HTTP:它执行一个HTTP GET请求，将主叫号码作为参数发"
 "送出去，以获取正确的名字</li><li>MySQL：到MySQL数据库中查询主叫姓名</li></ul>"
+
+msgid "Internal"
+msgstr ""
 
 msgid "Cache results:"
 msgstr "缓存结果："
@@ -214,3 +221,4 @@ msgstr "尚未实现"
 
 msgid "Submit Changes"
 msgstr "提交更改"
+

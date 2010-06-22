@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 23:30+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -97,8 +97,17 @@ msgstr "borttagen"
 msgid "Delete CID Lookup source"
 msgstr "Ta bort källa för nummerpresentation"
 
-msgid "Source:"
-msgstr "Källa:"
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+"Det finns %s Inkommande vägar för denna källa, om denna källa tas bort kommmer "
+"ingen nummeruppslagning att ske"
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Källa: %s (id %s)"
 
 msgid "Add Source"
 msgstr "Lägg till källa"
@@ -131,9 +140,6 @@ msgstr "Skriv en kortfattad beskrivning för denna källa."
 msgid "Source type:"
 msgstr "Källtyp:"
 
-msgid "Internal"
-msgstr "Intern"
-
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
 "as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
@@ -148,6 +154,9 @@ msgstr ""
 "nummerpresentation. ENUM-zoner konfigureras i enum.conf.</li><li>HTTP: "
 "använder HTTP GET med uppringarens nummer som argument</li><li>MySQL: "
 "använder en MySQLdatabas för att slå upp namn</li></ul>"
+
+msgid "Internal"
+msgstr "Intern"
 
 msgid "Cache results:"
 msgstr "Lagra resultat"
