@@ -145,7 +145,7 @@ function cidlookup_get_config($engine) {
 
 						case "http":
 							if (!empty($item['http_username']) && !empty($item['http_password']))
-								$auth = sprintf('%s:%s@', $item['http_username'], $item['http_password']);
+								$auth = sprintf('%s:%s@', $item['http_username'], urlencode($item['http_password']));
 							else
 								$auth = '';
 								
