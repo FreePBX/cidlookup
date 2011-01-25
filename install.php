@@ -18,18 +18,6 @@
 global $db;
 global $amp_conf;
 
-if (! function_exists("out")) {
-	function out($text) {
-		echo $text."<br />";
-	}
-}
-
-if (! function_exists("outn")) {
-	function outn($text) {
-		echo $text;
-	}
-}
-
 $autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "AUTOINCREMENT":"AUTO_INCREMENT";
 
 // create the tables
