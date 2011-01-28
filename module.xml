@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>Caller ID Lookup</name>
-	<version>2.9.0.0</version>
+	<version>2.9.0.1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
@@ -15,9 +15,10 @@
 		<engine>asterisk 1.2</engine>
 		<module>core ge 2.5.1.2</module>
 	</depends>
-	<location>release/2.9/cidlookup-2.9.0.0.tgz</location>
-	<md5sum>b1750bad8abc0a928cbbae8abdc7c0b1</md5sum>
+	<location>release/2.9/cidlookup-2.9.0.1.tgz</location>
+	<md5sum>692469ead3e2614e090155ff6b89d1b1</md5sum>
 	<changelog>
+		*2.9.0.1* removed duplicate functions
 		*2.9.0.0* #4679
 		*2.8.0.0* update to 2.8
 		*2.7.0.2* #3979
