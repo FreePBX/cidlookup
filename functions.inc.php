@@ -317,10 +317,14 @@ function cidlookup_edit($id,$post){
 	$mysql_username = $db->escapeSimple($post['mysql_username']);
 	$mysql_password = $db->escapeSimple($post['mysql_password']);
 
-	if (isset($post['cache']) && $post['cache'] != 1) {
-		$cache = 0;
-	}
-
+  if (!isset($post['cache'])) {
+   $cache = 0;
+  }
+  else {
+   if($sourcetype != "internal") {
+		 $cache = 1;
+	 }
+  }
 	$results = sql("
 		UPDATE cidlookup 
 		SET 
