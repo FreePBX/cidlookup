@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>Caller ID Lookup</name>
-	<version>2.9.0.2</version>
+	<version>2.9.0.3</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
@@ -18,6 +18,7 @@
 	<location>release/2.9/cidlookup-2.9.0.2.tgz</location>
 	<md5sum>15cdd6143a06132b003db1ecaf45873c</md5sum>
 	<changelog>
+		*2.9.0.3* #4823
 		*2.9.0.2* #4791
 		*2.9.0.1* removed duplicate functions
 		*2.9.0.0* #4679

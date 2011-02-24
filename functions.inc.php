@@ -122,6 +122,7 @@ function cidlookup_get_config($engine) {
 		case "asterisk":
 			$sources = cidlookup_list(true);
 			if(is_array($sources)) {
+        $ast_ge_162 = version_compare($version,'1.6.2','ge');
 				foreach($sources as $item) {
 
 					// Search for number in the cache, if found lookupcidnum and return
@@ -163,7 +164,12 @@ function cidlookup_get_config($engine) {
 							$url = sprintf('http://%s%s/%s?%s', $auth, $host, $path, $query);
 							$curl = sprintf('${CURL(%s)}', $url);
 							
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_setvar('CALLERID(name)', $curl));
+              // Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
+              //
+              if ($ast_ge_162) {
+							  $ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CURLOPT(httptimeout)', '7'));
+              }
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', $curl));
 						break;
 
 						case "mysql":
