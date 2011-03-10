@@ -41,7 +41,7 @@ if(isset($_POST['action'])) {
 	}
 }
 
-//get list of callerid lookup sources
+//get list of CallerID lookup sources
 $cidsources = cidlookup_list();
 ?>
 
@@ -88,7 +88,7 @@ if ($action == 'delete') {
 ?>
 	<h2><?php echo ($itemid ? sprintf(_("Source: %s (id %s)"),$thisItem_description,$itemid) : _("Add Source")); ?></h2>
 	
-	<p style="width: 80%"><?php echo ($itemid ? '' : _("A Lookup Source let you specify a source for resolving numeric caller IDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with informations taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX")); ?></p>
+	<p style="width: 80%"><?php echo ($itemid ? '' : _("A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX")); ?></p>
 
 <?php		if ($itemid){  echo $delButton; 	} ?>
 

@@ -1,11 +1,11 @@
 <module>
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
-	<name>Caller ID Lookup</name>
+	<name>CallerID Lookup</name>
 	<version>2.9.0.3</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<description>Allows Caller ID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
+	<description>Allows CallerID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<type>setup</type>
 	<category>Inbound Call Control</category>
 	<menuitems>

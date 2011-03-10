@@ -12,7 +12,7 @@
 //GNU General Public License for more details.
 
 function cidlookup_hook_core($viewing_itemid, $target_menuid) {
-	// TODO: add option to avoid callerid lookup if the telco already supply a callerid name (Overwrite checkbox ? )
+	// TODO: add option to avoid CallerID lookup if the telco already supply a CallerID name (Overwrite checkbox ? )
 	$html = '';
 	if ($target_menuid == 'did')	{
 		$html = '<tr><td colspan="2"><h5>';
@@ -70,7 +70,7 @@ function cidlookup_hookProcess_core($viewing_itemid, $request) {
 
 function cidlookup_hookGet_config($engine) {
 	// TODO: integrating with direct extension <-> DID association
-	// TODO: add option to avoid callerid lookup if the telco already supply a callerid name (GosubIf)
+	// TODO: add option to avoid CallerID lookup if the telco already supply a CallerID name (GosubIf)
 	global $ext;  // is this the best way to pass this?
 	switch($engine) {
 		case "asterisk":
