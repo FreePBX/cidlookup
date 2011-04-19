@@ -121,7 +121,7 @@ if ($action == 'delete') {
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Cache results:")?><span><?php echo _("Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior")?></span></a></td>
-		<td><input type="checkbox" name="cache" value="1" <?php echo ($thisItem['cache'] == 1 ? 'checked' : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+		<td><input type="checkbox" name="cache" value="1" <?php echo ($thisItem['cache'] == 1 ? 'checked' : ''); ?> tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td colspan="2">
