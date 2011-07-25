@@ -42,31 +42,35 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 	
 }
 
-function cidlookup_hookProcess_core($viewing_itemid, $request) {
-	
-	// TODO: move sql to functions cidlookup_did_(add, del, edit)
-	if (!isset($request['action']))
-		return;
-	switch ($request['action'])	{
-		case 'addIncoming':
-			$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum) VALUES ("%d", "%s", "%s")', 
-				$request['cidlookup_id'], $request['extension'], $request['cidnum']));
-		break;
-		case 'delIncoming':
-			$extarray = explode('/', $request['extdisplay'], 2);
-			$results = sql(sprintf("DELETE FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s'",
-				$extarray[0], $extarray[1]));
-		break;
-		case 'edtIncoming':	// deleting and adding as in core module
-			$extarray = explode('/', $request['extdisplay'], 2);
-			$results = sql(sprintf("DELETE FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s'",
-				$extarray[0], $extarray[1]));
-			$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum) VALUES ("%d", "%s", "%s")', 
-				$request['cidlookup_id'], $request['extension'], $request['cidnum']));
-		break;
-	}
+
+function cidlookup_did_add($cidlookupid, $extension, $cidnum) {
+		$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum) VALUES ("%d", "%s", "%s")',
+		$cidlookupid, $extension, $cidnum));
 }
 
+function cidlookup_did_del($extension, $cidnum) {
+		$results = sql(sprintf("DELETE FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s'", $extension, $cidnum));
+}
+
+function cidlookup_hookProcess_core($viewing_itemid, $request) {
+
+		if (!isset($request['action']))
+			return;
+		switch ($request['action']) {
+			case 'addIncoming':
+				cidlookup_did_add($request['cidlookup_id'], $request['extension'], $request['cidnum']);
+				break;
+			case 'delIncoming':
+				$extarray = explode('/', $request['extdisplay'], 2);
+				cidlookup_did_del($extarray[0], $extarray[1]);
+                break;
+			case 'edtIncoming':     // deleting and adding as in core module
+				$extarray = explode('/', $request['extdisplay'], 2);
+				cidlookup_did_del($extarray[0], $extarray[1]);
+				cidlookup_did_add($request['cidlookup_id'], $request['extension'], $request['cidnum']);
+				break;
+		}
+}
 
 function cidlookup_hookGet_config($engine) {
 	// TODO: integrating with direct extension <-> DID association
