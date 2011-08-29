@@ -6,8 +6,7 @@
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<description>Allows CallerID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
-	<type>setup</type>
-	<category>Inbound Call Control</category>
+	<category>Apps</category>
 	<menuitems>
 		<cidlookup>CallerID Lookup Sources</cidlookup>
 	</menuitems>

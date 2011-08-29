@@ -45,8 +45,6 @@ if(isset($_POST['action'])) {
 $cidsources = cidlookup_list();
 ?>
 
-</div> <!-- end content div so we can display rnav properly-->
-
 <!-- right side menu -->
 <div class="rnav"><ul>
     <li><a id="<?php echo ($itemid=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add CID Lookup Source")?></a></li>
@@ -60,7 +58,6 @@ if (isset($cidsources)) {
 ?>
 </ul></div>
 
-<div class="content">
 <?php
 if ($action == 'delete') {
 	echo '<br><h3>'._("CID Lookup source").' '.$itemid.' '._("deleted").'!</h3>';
