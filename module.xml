@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>2.9.0.5</version>
+	<version>2.10.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<description>Allows CallerID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)</description>
@@ -14,9 +14,10 @@
 		<engine>asterisk 1.2</engine>
 		<module>core ge 2.5.1.2</module>
 	</depends>
-	<location>release/2.9/cidlookup-2.9.0.5.tgz</location>
-	<md5sum>ac56489434df398de9a58ef2e0820771</md5sum>
+	<location>release/2.10/cidlookup-2.10.0.0.tgz</location>
+	<md5sum>ab09204ac638515b3e64b2778e98f011</md5sum>
 	<changelog>
+		*2.10.0.0* new version changes
 	  *2.9.0.5* #4791, fixes one more issue with caching
 		*2.9.0.4* spellings, localizaions
 		*2.9.0.3* #4823
