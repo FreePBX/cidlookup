@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-22 19:14+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "CallerID Lookup"
 msgstr "主叫ID查询"
 
-msgid "Inbound Call Control"
+msgid "Admin"
 msgstr ""
 
 msgid ""
@@ -221,4 +221,3 @@ msgstr "尚未实现"
 
 msgid "Submit Changes"
 msgstr "提交更改"
-

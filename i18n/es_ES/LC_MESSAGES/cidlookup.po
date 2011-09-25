@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-22 19:14+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "CallerID Lookup"
 msgstr "Búsqueda de identificador de llamante"
 
-msgid "Inbound Call Control"
+msgid "Admin"
 msgstr ""
 
 msgid ""
@@ -244,4 +244,3 @@ msgstr "Este método no se ha implementado todavía."
 
 msgid "Submit Changes"
 msgstr "Enviar cambios"
-
