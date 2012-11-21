@@ -38,12 +38,28 @@ $sql = "CREATE TABLE IF NOT EXISTS cidlookup (
 	mysql_dbname varchar(60) default NULL,
 	mysql_query text,
 	mysql_username varchar(30) default NULL,
-	mysql_password varchar(30) default NULL
+	mysql_password varchar(30) default NULL,
+	opencnam_account_sid varchar(34) default NULL,
+	opencnam_auth_token varchar(34) default NULL
 );";
 $check = $db->query($sql);
 if (DB::IsError($check)) {
         die_freepbx( "Can not create `cidlookup` table: " . $check->getMessage() .  "\n");
+} else {
+
+	// Install a default OpenCNAM Caller ID lookup source, if we're installing this
+	// module for the very first time.
+	outn(_("Installing OpenCNAM CallerID Lookup Sources..."));
+	$sql = "INSERT INTO cidlookup (description, sourcetype) VALUES ('OpenCNAM', 'opencnam')";
+	$results = @$db->query($sql);
+	if (DB::IsError($results)) {
+		out(_("Failed to add OpenCNAM CallerID Lookup Source: ").$results->getMessage());
+	} else {
+		out(_("Done!"));
+	}
+
 }
+
 
 
 $sql = "CREATE TABLE IF NOT EXISTS cidlookup_incoming (
@@ -75,7 +91,7 @@ if (!DB::IsError($check)) {
 	$chan_prefix = 'zapchan';
 	$sql = "UPDATE cidlookup_incoming SET extension=CONCAT('$chan_prefix',channel), channel='' WHERE channel != ''";
 	$results = $db->query($sql);
-	if (DB::IsError($results)) { 
+	if (DB::IsError($results)) {
  		out(_("FATAL: failed to transform old routes: ").$results->getMessage());
 	} else {
 		out(_("OK"));
@@ -84,7 +100,7 @@ if (!DB::IsError($check)) {
 			outn(_("Removing deprecated channel field from incoming.."));
 			$sql = "ALTER TABLE cidlookup_incoming DROP channel";
 			$results = $db->query($sql);
-			if (DB::IsError($results)) { 
+			if (DB::IsError($results)) {
  			out(_("ERROR: failed: ").$results->getMessage());
 			} else {
 				out(_("OK"));
@@ -96,19 +112,49 @@ if (!DB::IsError($check)) {
 }
 
 // This field had been wrongfully added to incoming quite some time ago
-// this should maybe be added to core as well
-//
-// ALTER...DROP is not supported by sqlite3.  This table was setup properly in the CREATE anyway
-if($amp_conf["AMPDBENGINE"] != "sqlite3")  {
-
-	outn(_("Checking for cidlookup field in core's incoming table.."));
-	$sql = "ALTER TABLE incoming DROP cidlookup";
-	$results = $db->query($sql);
-	if (DB::IsError($results)) { 
-		out(_("not present"));
-	} else {
+// this should maybe be added to core as well.
+// NOTE: ALTER / DROP isn't supported in SQLite3 prior to 3.1.3.
+outn(_("Checking for cidlookup field in core's incoming table.."));
+$sql = "ALTER TABLE incoming DROP cidlookup";
+$results = $db->query($sql);
+if (DB::IsError($results)) {
+	out(_("not present"));
+} else {
 	out(_("removed"));
-	}
 }
-?>
 
+// Add the new opencnam_account_sid and opencnam_auth_token columns
+// if they do not already exist. This makes backwards compatibiility work
+// as OpenCNAM support was not included in the cidlookup module prior to
+// 2.10.0.2.
+$sql = "SELECT opencnam_account_sid, opencnam_auth_token FROM cidlookup";
+$check = @$db->query($sql);
+if (DB::IsError($check)) {
+
+	// NOTE: ALTER / DROP isn't supported in SQLite3 prior to 3.1.3.
+	outn(_("Adding opencnam account columns to the cidlookup table..."));
+	$sql = "ALTER TABLE cidlookup ADD opencnam_account_sid VARCHAR(34) DEFAULT NULL";
+	$results = $db->query($sql);
+	if (DB::IsError($results)) {
+		out(_("Could not add opencnam_account_sid column to cidlookup table."));
+	}
+
+	$sql = "ALTER TABLE cidlookup ADD opencnam_auth_token VARCHAR(34) DEFAULT NULL";
+	$results = $db->query($sql);
+	if (DB::IsError($results)) {
+		out(_("Could not add opencnam_auth_token column to cidlookup table."));
+	}
+	out(_("Done!"));
+
+	outn(_("Installing OpenCNAM CallerID Lookup Sources..."));
+	$sql = "INSERT INTO cidlookup (description, sourcetype) VALUES ('OpenCNAM', 'opencnam')";
+	$results = @$db->query($sql);
+	if (DB::IsError($results)) {
+		out(_("Failed to add OpenCNAM CallerID Lookup Source: ").$results->getMessage());
+	} else {
+		out(_("Done!"));
+	}
+
+}
+
+?>

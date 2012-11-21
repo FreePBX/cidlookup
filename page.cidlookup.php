@@ -63,7 +63,7 @@ if (isset($cidsources)) {
 if ($action == 'delete') {
 	echo '<br><h3>'._("CID Lookup source").' '.$itemid.' '._("deleted").'!</h3>';
 } else {
-	if ($itemid){ 
+	if ($itemid){
 		//get details for this source
 		$thisItem = cidlookup_get($itemid);
 	  $delButton = "
@@ -85,7 +85,7 @@ if ($action == 'delete') {
 	}
 ?>
 	<h2><?php echo ($itemid ? sprintf(_("Source: %s (id %s)"),$thisItem_description,$itemid) : _("Add Source")); ?></h2>
-	
+
 	<p style="width: 80%"><?php echo ($itemid ? '' : _("A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX")); ?></p>
 
 <?php		if ($itemid){  echo $delButton; 	} ?>
@@ -109,6 +109,7 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Source type:")?><span><?php echo _("Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>")?></span></a></td>
 		<td>
 			<select id="sourcetype" name="sourcetype" onChange="javascript:displaySourceParameters(this, this.selectedIndex)" tabindex="<?php echo ++$tabindex;?>">
+				<option value="opencnam" <?php echo ($thisItem['sourcetype'] == 'opencnam' ? 'selected' : '')?>><?php echo _("OpenCNAM")?></option>
 				<option value="internal" <?php echo ($thisItem['sourcetype'] == 'internal' ? 'selected' : '')?>><?php echo _("Internal")?></option>
 				<option value="enum" <?php echo ($thisItem['sourcetype'] == 'enum' ? 'selected' : '')?>>ENUM</option>
 				<option value="http" <?php echo ($thisItem['sourcetype'] == 'http' ? 'selected' : '')?>>HTTP</option>
@@ -117,9 +118,32 @@ if ($action == 'delete') {
 			</select>
 		</td>
 	</tr>
-	<tr>
+	<tr id="cache_results">
 		<td><a href="#" class="info"><?php echo _("Cache results:")?><span><?php echo _("Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior")?></span></a></td>
 		<td><input type="checkbox" name="cache" value="1" <?php echo ($thisItem['cache'] == 1 ? 'checked' : ''); ?> tabindex="<?php echo ++$tabindex;?>"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<div id="opencnam" style="display: none">
+				<h5><?php echo _("OpenCNAM") ?><hr></h5>
+				<p style="display:block;max-width:345px;max-height:40px;margin-left:auto;margin-right:auto;margin-bottom:40px;font-style:italic;font-size:12px;"><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 cached CallerID lookups per hour. If you get more than 60 incoming calls per hour, or want real-time CallerID information (more accurate), you should use the Professional Tier.</p>
+				<p style="display:block;max-width:345px;max-height:40px;margin-left:auto;margin-right:auto;margin-bottom:20px;font-style:italic;font-size:12px;">If you'd like to create an OpenCNAM Professional Tier account, you can do so on their website: <a href="https://www.opencnam.com/register" target="_blank">https://www.opencnam.com/register</a></p>
+				<table cellpadding="2" cellspacing="0" width="100%">
+					<tr>
+						<td width="50%"><a href="#" class="info"><?php echo _("Use Professional Tier?")?><span><?php echo _("OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as you want, for a small fee. This is recommended for business users.")?></span></a></td>
+						<td><input type="checkbox" onChange="opencnamPlanToggle(this.checked ? false : true)" id="opencnam_professional_tier" name="opencnam_professional_tier" value="1" <?php echo ($thisItem['opencnam_account_sid'] && $thisItem['opencnam_auth_token'] ? 'checked' : ''); ?> tabindex="<?php echo ++$tabindex;?>"></td>
+					</tr>
+					<tr id="opencnam_account_sid_display">
+						<td width="50%"><a href="#" class="info"><?php echo _("Account SID:")?><span><?php echo _("Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard")?></span></a></td>
+						<td><input type="text" name="opencnam_account_sid" value="<?php echo (isset($thisItem['opencnam_account_sid']) ? $thisItem['opencnam_account_sid'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+					</tr>
+					<tr id="opencnam_auth_token_display">
+						<td><a href="#" class="info"><?php echo _("Auth Token:")?><span><?php echo _("Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard")?></span></a></td>
+						<td><input type="text" name="opencnam_auth_token" value="<?php echo (isset($thisItem['opencnam_auth_token']) ? $thisItem['opencnam_auth_token'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+					</tr>
+				</table>
+			</div>
+		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
@@ -127,32 +151,32 @@ if ($action == 'delete') {
 				<table cellpadding="2" cellspacing="0" width="100%">
 
 					<tr><td colspan="2"><h5><?php echo _("HTTP") ?><hr></h5></div></td></tr>
-	
+
 					<tr>
 						<td width="50%"><a href="#" class="info"><?php echo _("Host:")?><span><?php echo _("Host name or IP address")?></span></a></td>
 						<td><input type="text" name="http_host" value="<?php echo (isset($thisItem['http_host']) ? $thisItem['http_host'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
-	
+
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Port:")?><span><?php echo _("Port HTTP server is listening at (default 80)")?></span></a></td>
 						<td><input type="text" name="http_port" value="<?php echo (isset($thisItem['http_port']) ? $thisItem['http_port'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
-					
+
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Username:")?><span><?php echo _("Username to use in HTTP authentication")?></span></a></td>
 						<td><input type="text" name="http_username" value="<?php echo (isset($thisItem['http_username']) ? $thisItem['http_username'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
-				
+
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Password:")?><span><?php echo _("Password to use in HTTP authentication")?></span></a></td>
 						<td><input type="text" name="http_password" value="<?php echo (isset($thisItem['http_password']) ? $thisItem['http_password'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
-				
+
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Path:")?><span><?php echo _("Path of the file to GET<br/>e.g.: /cidlookup.php")?></span></a></td>
 						<td><input type="text" name="http_path" value="<?php echo (isset($thisItem['http_path']) ? $thisItem['http_path'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
-				
+
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Query:")?><span><?php echo _("Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm")?></span></a></td>
 						<td><input type="text" name="http_query" value="<?php echo (isset($thisItem['http_query']) ? $thisItem['http_query'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
@@ -166,7 +190,7 @@ if ($action == 'delete') {
 			<div id="mysql" style="display: none">
 				<table cellpadding="2" cellspacing="0" width="100%">
 					<tr><td colspan="2"><h5><?php echo _("MySQL") ?><hr></h5></td></tr>
-				
+
 					<tr>
 						<td width="50%"><a href="#" class="info"><?php echo _("Host:")?><span><?php echo _("MySQL Host")?></span></a></td>
 						<td><input type="text" name="mysql_host" value="<?php echo (isset($thisItem['mysql_host']) ? $thisItem['mysql_host'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
@@ -179,7 +203,7 @@ if ($action == 'delete') {
 						<td><a href="#" class="info"><?php echo _("Query:")?><span><?php echo _("Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'")?></span></a></td>
 						<td><input type="text" name="mysql_query" value="<?php echo (isset($thisItem['mysql_query']) ? $thisItem['mysql_query'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 					</tr>
-				
+
 					<tr>
 						<td><a href="#" class="info"><?php echo _("Username:")?><span><?php echo _("MySQL Username")?></span></a></td>
 						<td><input type="text" name="mysql_username" value="<?php echo (isset($thisItem['mysql_username']) ? $thisItem['mysql_username'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
@@ -204,12 +228,19 @@ if ($action == 'delete') {
 	</tr>
 
 	<tr>
-		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
 	</tr>
 	</table>
 
 
 <script language="javascript">
+
+// By default, don't display OpenCNAM professional stuff unless needed.
+if (<?php echo ($thisItem['opencnam_account_sid'] && $thisItem['opencnam_auth_token'] ? 'false': 'true'); ?>) {
+	document.getElementById('opencnam_account_sid_display').style.display = 'none';
+	document.getElementById('opencnam_auth_token_display').style.display = 'none';
+}
+
 <!--
 
 /* TODO: improve client side checking for different values of sourcetype */
@@ -220,7 +251,7 @@ theForm.description.focus();
 displaySourceParameters(document.getElementById('sourcetype'), document.getElementById('sourcetype').selectedIndex);
 
 function edit_onsubmit() {
-		
+
 	defaultEmptyOK = false;
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, "Please enter a valid Description");
@@ -236,7 +267,7 @@ function edit_onsubmit() {
 
 		if (isEmpty(theForm.mysql_dbname.value))
 			return warnInvalid(theForm.mysql_dbname, "Please enter a valid MySQL Database name");
-			
+
 		if (isEmpty(theForm.mysql_query.value))
 			return warnInvalid(theForm.mysql_query, "Please enter a valid MySQL Query string");
 
@@ -244,24 +275,48 @@ function edit_onsubmit() {
 			return warnInvalid(theForm.mysql_username, "Please enter a valid MySQL Username");
 
 	}
-			
+
 	return true;
 }
 
+function opencnamPlanToggle(enabled) {
+	if (enabled) {
+		document.getElementById('opencnam_account_sid_display').style.display = 'none';
+		document.getElementById('opencnam_auth_token_display').style.display = 'none';
+	} else {
+		document.getElementById('opencnam_account_sid_display').style.display = '';
+		document.getElementById('opencnam_auth_token_display').style.display = '';
+	}
+}
+
 function displaySourceParameters(sourcetypeSelect, key) {
-	if (sourcetypeSelect.options[key].value == 'http') {
+	if (sourcetypeSelect.options[key].value == 'opencnam') {
+		document.getElementById('cache_results').style.display = 'none';
+		document.getElementById('opencnam').style.display = '';
+		document.getElementById('http').style.display = 'none';
+		document.getElementById('mysql').style.display = 'none';
+		document.getElementById('sugarcrm').style.display = 'none';
+	} else if (sourcetypeSelect.options[key].value == 'http') {
+		document.getElementById('cache_results').style.display = '';
+		document.getElementById('opencnam').style.display = 'none';
 		document.getElementById('http').style.display = '';
 		document.getElementById('mysql').style.display = 'none';
 		document.getElementById('sugarcrm').style.display = 'none';
 	} else if (sourcetypeSelect.options[key].value == 'mysql') {
+		document.getElementById('cache_results').style.display = '';
+		document.getElementById('opencnam').style.display = 'none';
 		document.getElementById('http').style.display = 'none';
 		document.getElementById('mysql').style.display = '';
 		document.getElementById('sugarcrm').style.display = 'none';
 	} else if (sourcetypeSelect.options[key].value == 'sugarcrm') {
+		document.getElementById('cache_results').style.display = '';
+		document.getElementById('opencnam').style.display = 'none';
 		document.getElementById('http').style.display = 'none';
 		document.getElementById('mysql').style.display = 'none';
 		document.getElementById('sugarcrm').style.display = '';
 	} else {
+		document.getElementById('cache_results').style.display = '';
+		document.getElementById('opencnam').style.display = 'none';
 		document.getElementById('http').style.display = 'none';
 		document.getElementById('mysql').style.display = 'none';
 		document.getElementById('sugarcrm').style.display = 'none';
@@ -272,6 +327,6 @@ function displaySourceParameters(sourcetypeSelect, key) {
 
 
 	</form>
-<?php		
+<?php
 } //end if action == delete
 ?>
