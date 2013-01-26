@@ -56,7 +56,6 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 
 }
 
-
 function cidlookup_did_add($cidlookupid, $extension, $cidnum) {
 		$results = sql(sprintf('INSERT INTO cidlookup_incoming (cidlookup_id, extension, cidnum) VALUES ("%d", "%s", "%s")',
 		$cidlookupid, $extension, $cidnum));
@@ -396,7 +395,7 @@ function cidlookup_edit($id,$post){
 			deptname = '$deptname',
 			sourcetype = '$sourcetype' ,
 			cache = '$cache',
-			http_host = '$http_host',
+		    http_host = '$http_host',
 			http_port = '$http_port',
 			http_username = '$http_username',
 			http_password = '$http_password',
@@ -411,4 +410,3 @@ function cidlookup_edit($id,$post){
 			opencnam_auth_token = '$opencnam_auth_token'
 		WHERE cidlookup_id = '$id'");
 }
-?>
