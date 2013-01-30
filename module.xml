@@ -14,8 +14,8 @@
 		<engine>asterisk 1.6</engine>
 		<module>core ge 2.10</module>
 	</depends>
-	<location>release/2.11/cidlookup-2.11.1.0.tgz</location>
-	<md5sum>3d701673c2656171146df86e2aa64403</md5sum>
+	<location>release/2.11/cidlookup-2.11.1.1.tgz</location>
+	<md5sum>b44b5b134f42f4446e26340834ec9eb8</md5sum>
 	<changelog>
         *2.11.1.1* Fixes #6374 Reorder placement of CID lookups to after blacklist. This will prevent useless dips.
         *2.11.1.0* Restructure module to MVC standards. Use jQuery. Setup simple module structure (future). Clean up all the junk
