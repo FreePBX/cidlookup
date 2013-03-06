@@ -14,8 +14,8 @@
 		<engine>asterisk 1.6</engine>
 		<module>core ge 2.10</module>
 	</depends>
-	<location>release/2.11/cidlookup-2.11.1.1.tgz</location>
-	<md5sum>b44b5b134f42f4446e26340834ec9eb8</md5sum>
+	<location>release/2.11/cidlookup-2.11.1.2.tgz</location>
+	<md5sum>e77c5c3657a03e1a2eba2c82e783f08a</md5sum>
 	<changelog>
 		*2.11.1.2* Fixes #6390 - add id to input element to fix js validation on http_host
         *2.11.1.1* Fixes #6374 Reorder placement of CID lookups to after blacklist. This will prevent useless dips.
