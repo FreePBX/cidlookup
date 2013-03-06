@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>2.11.1.1</version>
+	<version>2.11.1.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
@@ -17,6 +17,7 @@
 	<location>release/2.11/cidlookup-2.11.1.1.tgz</location>
 	<md5sum>b44b5b134f42f4446e26340834ec9eb8</md5sum>
 	<changelog>
+		*2.11.1.2* Fixes #6390 - add id to input element to fix js validation on http_host
         *2.11.1.1* Fixes #6374 Reorder placement of CID lookups to after blacklist. This will prevent useless dips.
         *2.11.1.0* Restructure module to MVC standards. Use jQuery. Setup simple module structure (future). Clean up all the junk
 		*2.11.0.0* new version change, #6094 (Added OpenCNAM)
