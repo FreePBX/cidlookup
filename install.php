@@ -127,9 +127,9 @@ if (DB::IsError($results)) {
 // if they do not already exist. This makes backwards compatibiility work
 // as OpenCNAM support was not included in the cidlookup module prior to
 // 2.10.0.2.
-$sql = "SELECT opencnam_account_sid, opencnam_auth_token FROM cidlookup";
-$check = @$db->query($sql);
-if (DB::IsError($check)) {
+$sql='describe cidlookup';
+$fields=$db->getAssoc($sql);
+if (!array_key_exists('opencnam_account_sid',$fields) && !array_key_exists('opencnam_auth_token',$fields)) {
 
 	// NOTE: ALTER / DROP isn't supported in SQLite3 prior to 3.1.3.
 	outn(_("Adding opencnam account columns to the cidlookup table..."));
@@ -154,7 +154,24 @@ if (DB::IsError($check)) {
 	} else {
 		out(_("Done!"));
 	}
+} else {
+	outn(_("Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."));
+	$sql = "SELECT * FROM cidlookup WHERE description = 'OpenCNAM' AND sourcetype = 'opencnam'";
+	$stuff = sql($sql,'getAll',DB_FETCHMODE_ASSOC);
 
+	$total = count($stuff);
+	for($i = 0;$i < $total;$i++) {
+		//If we are in a pro-tier then skip the fix
+		if(!empty($stuff[$i]['opencnam_account_sid'])) {
+			continue;
+		}
+	
+		//don't delete the last remaining line!
+		if($i != ($total - 1)) {
+			$sql = "DELETE FROM cidlookup WHERE cidlookup_id=".$stuff[$i]['cidlookup_id'];
+			sql($sql);
+		}
+	}
+	out(_("Done!"));
 }
-
 ?>

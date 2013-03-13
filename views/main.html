@@ -1,6 +1,6 @@
 <!-- right side menu -->
 <div class="rnav"><ul>
-    <li><a id="<?php echo ($itemid=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add CID Lookup Source")?></a></li>
+    <li><a id="<?php echo ($itemid=='' ? 'current':'') ?>" href="config.php?display=cidlookup"><?php echo _("Add CID Lookup Source")?></a></li>
     <?php
     if (isset($cidsources)) {
     	foreach ($cidsources as $cidsource) {
