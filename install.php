@@ -157,18 +157,18 @@ if (!array_key_exists('opencnam_account_sid',$fields) && !array_key_exists('open
 } else {
 	outn(_("Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."));
 	$sql = "SELECT * FROM cidlookup WHERE description = 'OpenCNAM' AND sourcetype = 'opencnam'";
-	$stuff = sql($sql,'getAll',DB_FETCHMODE_ASSOC);
+	$sources = sql($sql,'getAll',DB_FETCHMODE_ASSOC);
 
-	$total = count($stuff);
+	$total = count($sources);
 	for($i = 0;$i < $total;$i++) {
 		//If we are in a pro-tier then skip the fix
-		if(!empty($stuff[$i]['opencnam_account_sid'])) {
+		if(!empty($sources[$i]['opencnam_account_sid'])) {
 			continue;
 		}
 	
 		//don't delete the last remaining line!
 		if($i != ($total - 1)) {
-			$sql = "DELETE FROM cidlookup WHERE cidlookup_id=".$stuff[$i]['cidlookup_id'];
+			$sql = "DELETE FROM cidlookup WHERE cidlookup_id=".$sources[$i]['cidlookup_id'];
 			sql($sql);
 		}
 	}
