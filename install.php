@@ -39,6 +39,7 @@ $sql = "CREATE TABLE IF NOT EXISTS cidlookup (
 	mysql_query text,
 	mysql_username varchar(30) default NULL,
 	mysql_password varchar(30) default NULL,
+	mysql_charset varchar(30) default NULL,
 	opencnam_account_sid varchar(34) default NULL,
 	opencnam_auth_token varchar(34) default NULL
 );";
@@ -174,4 +175,8 @@ if (!array_key_exists('opencnam_account_sid',$fields) && !array_key_exists('open
 	}
 	out(_("Done!"));
 }
-?>
+
+if (!$db->getAll('SHOW COLUMNS FROM cidlookup WHERE FIELD = "mysql_charset"')) {
+	out("Adding MySQL charset field");
+	sql('ALTER TABLE cidlookup ADD mysql_charset varchar(30) default NULL AFTER mysql_password');
+}

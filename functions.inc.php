@@ -226,26 +226,25 @@ function cidlookup_get_config($engine) {
 						break;
 
 						case "mysql":
-              if (version_compare($version, "1.6", "lt")) {
-							  //Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
-							  $replacements = array (
-							  	'\\' => '\\\\',
-							  	'"' => '\\"',
-							  	'\'' => '\\\'',
-							  	' ' => '\\ ',
-							  	',' => '\\,',
-							  	'(' => '\\(',
-							  	')' => '\\)',
-							  	'.' => '\\.',
-							  	'|' => '\\|'
-							  );
-                $query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
-              } else {
-                $query = $item['mysql_query'];
-              }
+			              if (version_compare($version, "1.6", "lt")) {
+										  //Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
+										  $replacements = array (
+										  	'\\' => '\\\\',
+										  	'"' => '\\"',
+										  	'\'' => '\\\'',
+										  	' ' => '\\ ',
+										  	',' => '\\,',
+										  	'(' => '\\(',
+										  	')' => '\\)',
+										  	'.' => '\\.',
+										  	'|' => '\\|'
+										  );
+			                $query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
+			              } else {
+			                $query = $item['mysql_query'];
+			              }
 							$query = str_replace('[NUMBER]', '${CALLERID(num)}', $query);
-
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_connect('connid', $item['mysql_host'],  $item['mysql_username'],  $item['mysql_password'],  $item['mysql_dbname']));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_connect('connid', $item['mysql_host'],  $item['mysql_username'],  $item['mysql_password'],  $item['mysql_dbname'],  $item['mysql_charset']));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_query('resultid', 'connid', $query));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_fetch('fetchid', 'resultid', 'CALLERID(name)'));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_clear('resultid'));
@@ -347,6 +346,7 @@ function cidlookup_add($post){
 	$mysql_query = $db->escapeSimple($post['mysql_query']);
 	$mysql_username = $db->escapeSimple($post['mysql_username']);
 	$mysql_password = $db->escapeSimple($post['mysql_password']);
+	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
 	$opencnam_auth_token = $db->escapeSimple($post['opencnam_auth_token']);
 
@@ -354,9 +354,9 @@ function cidlookup_add($post){
 
 	$results = sql("
 		INSERT INTO cidlookup
-			(description, sourcetype, cache, deptname, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, opencnam_account_sid, opencnam_auth_token)
+			(description, sourcetype, cache, deptname, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token)
 		VALUES
-			('$description', '$sourcetype', '$cache', '$deptname', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$opencnam_account_sid', '$opencnam_auth_token')
+			('$description', '$sourcetype', '$cache', '$deptname', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$mysql_charset', '$opencnam_account_sid', '$opencnam_auth_token')
 		");
 }
 
@@ -377,6 +377,7 @@ function cidlookup_edit($id,$post){
 	$mysql_query = $db->escapeSimple($post['mysql_query']);
 	$mysql_username = $db->escapeSimple($post['mysql_username']);
 	$mysql_password = $db->escapeSimple($post['mysql_password']);
+	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_professional_tier']) ? $db->escapeSimple($post['opencnam_account_sid']) : '';
 	$opencnam_auth_token = $db->escapeSimple($post['opencnam_professional_tier']) ? $db->escapeSimple($post['opencnam_auth_token']) : '';
 
@@ -406,6 +407,7 @@ function cidlookup_edit($id,$post){
 			mysql_query = '$mysql_query',
 			mysql_username = '$mysql_username',
 			mysql_password  = '$mysql_password',
+			mysql_charset = '$mysql_charset',
 			opencnam_account_sid = '$opencnam_account_sid',
 			opencnam_auth_token = '$opencnam_auth_token'
 		WHERE cidlookup_id = '$id'");

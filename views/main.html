@@ -223,6 +223,14 @@
                                 <input type="text" id="mysql_password" name="mysql_password" value="<?php echo (isset($thisItem['mysql_password']) ? $thisItem['mysql_password'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>">
                             </td>
     					</tr>
+    					<tr>
+    						<td>
+                                <a href="#" class="info"><?php echo _("Character Set:")?><span><?php echo _("MySQL Character Set. Leave blank for MySQL default latin1")?></span></a>
+                            </td>
+    						<td>
+                                <input type="text" id="mysql_charset" name="mysql_charset" value="<?php echo (isset($thisItem['mysql_charset']) ? $thisItem['mysql_charset'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>">
+                            </td>
+    					</tr>
     				</table>
     			</div>
     		</td>
