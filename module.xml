@@ -14,8 +14,8 @@
 		<engine>asterisk 1.6</engine>
 		<module>framework ge 2.11.0.0rc1.6</module>
 	</depends>
-	<location>release/2.11/cidlookup-2.11.1.4.tgz</location>
-	<md5sum>01e14511c5030d860ec5379d4e609549</md5sum>
+	<location>release/2.11/cidlookup-2.11.1.6.tgz</location>
+	<md5sum>ccd00232f0b9f69696c5b11743a500f1</md5sum>
 	<changelog>
 		*2.11.1.6* #6382
 		*2.11.1.5* Add charset to MySQL lookups
