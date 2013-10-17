@@ -48,7 +48,7 @@ if ($action != 'delete') {
     }
 }
 
-require_once('views/main.html');
+require_once('views/main.html.php');
 ?>
 <script>
 var cid_modules = <?php echo json_encode($cid_modules)?>
