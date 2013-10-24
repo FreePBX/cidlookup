@@ -2,9 +2,9 @@ function edit_onsubmit() {
 	defaultEmptyOK = false;
     if (!$.trim($('#form_description').val()).length)
         return warnInvalid($('#form_description'), "Description Can Not Be Blank!");
-	if ($('#sourcetype').val() == 'http')	{
+	if ($('#sourcetype').val() == 'http' || $('#sourcetype').val().value == 'https')	{
 		if (!$.trim($('#http_host').val()).length)
-			return warnInvalid($('#http_host'), "Please enter a valid HTTP Host name");
+			return warnInvalid($('#http_host'), "Please enter a valid HTTP(S) Host name");
 	}
 	if ($('#sourcetype').val() == 'mysql')	{
         if (!$.trim($('#mysql_host').val()).length)

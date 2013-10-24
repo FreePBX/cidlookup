@@ -196,7 +196,8 @@ function cidlookup_get_config($engine) {
 							}
 
 						break;
-
+						
+						case "https":
 						case "http":
 							if (!empty($item['http_username']) && !empty($item['http_password']))
 								$auth = sprintf('%s:%s@', $item['http_username'], urlencode($item['http_password']));
@@ -214,7 +215,7 @@ function cidlookup_get_config($engine) {
 								$path = $item['http_path'];
 
 							$query = str_replace('[NUMBER]', '${CALLERID(num)}', $item['http_query']);
-							$url = sprintf('http://%s%s/%s?%s', $auth, $host, $path, $query);
+							$url = sprintf('%s://%s%s/%s?%s', $item['sourcetype'],$auth, $host, $path, $query);
 							$curl = sprintf('${CURL(%s)}', $url);
 
               // Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
