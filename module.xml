@@ -60,4 +60,4 @@
 			Added lookup from cache before querying external source
 		*1.0.0* First release
 	</changelog>
-</module>
+<supported><version>2.11</version></supported></module>
