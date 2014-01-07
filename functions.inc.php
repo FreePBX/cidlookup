@@ -111,7 +111,11 @@ function cidlookup_hookGet_config($engine) {
 						}
 						$context = ($pricid) ? "ext-did-0001":"ext-did-0002";
 
-						$exten = (empty($exten)?"s":$exten);
+                        if (function_exists('empty_freepbx')) {
+                            $exten = (empty_freepbx($exten)?"s":$exten);
+                        } else {
+                            $exten = (empty($exten)?"s":$exten);
+                        }
 						$exten = $exten.(empty($cidnum)?"":"/".$cidnum); //if a CID num is defined, add it
 
 						$ext->splice($context, $exten, 2, new ext_gosub('1', 'cidlookup_'.$item['cidlookup_id'], 'cidlookup'));
@@ -180,9 +184,9 @@ function cidlookup_get_config($engine) {
 							}
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', $curl));
 
-							// If the user is using the OpenCNAM Hobbyist Tier, 
-							// track hourly query stats--this allows us to alert 
-							// the user if they go past their free usage limits 
+							// If the user is using the OpenCNAM Hobbyist Tier,
+							// track hourly query stats--this allows us to alert
+							// the user if they go past their free usage limits
 							// and need to upgrade their OpenCNAM plan.
 							if (!$auth) {
 								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('current_hour', '${STRFTIME(,,%Y-%m-%d %H)}'));
@@ -196,7 +200,7 @@ function cidlookup_get_config($engine) {
 							}
 
 						break;
-						
+
 						case "https":
 						case "http":
 							if (!empty($item['http_username']) && !empty($item['http_password']))
