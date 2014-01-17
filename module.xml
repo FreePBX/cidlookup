@@ -7,15 +7,6 @@
 	<license>GPLv2+</license>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
-	<menuitems>
-		<cidlookup>CallerID Lookup Sources</cidlookup>
-	</menuitems>
-	<depends>
-		<engine>asterisk 1.6</engine>
-		<module>framework ge 2.11.0.0rc1.6</module>
-	</depends>
-	<location>release/2.11/cidlookup-2.11.1.7.tgz</location>
-	<md5sum>f559516b403088de2cfb2b7c517d2ff6</md5sum>
 	<changelog>
 		*2.11.1.7* HTTPS Support #6477
 		*2.11.1.6* #6382
@@ -28,39 +19,17 @@
 		*2.11.0.0* new version change, #6094 (Added OpenCNAM)
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
-        *2.9.0.5* #4791, fixes one more issue with caching
-		*2.9.0.4* spellings, localizaions
-		*2.9.0.3* #4823
-		*2.9.0.2* #4791
-		*2.9.0.1* removed duplicate functions
-		*2.9.0.0* #4679
-		*2.8.0.0* update to 2.8
-		*2.7.0.2* #3979
-		*2.7.0.1* might effect #3979
-		*2.7.0.0* localizations
-		*2.6.0.1* #3599, #3821
-		*2.6.0.0* localizations, misc
-		*2.5.0.5* #3345
-		*2.5.0.4* #3260, other localization work
-		*2.5.0.3* localization fixes, Swedish
-		*2.5.0.2* #3100, #3101 changes to work with new inbound route changes and fixes previous bug
-		*2.5.0.1* #2987, #3001 sqlite3 install script and spelling fixes
-		*2.5.0* #2845 tabindex
-		*2.4.0.3* remove cidlookup field from core incoming table - should never have been there
-		*2.4.0.2* #2843 Russian Translation
-		*2.4.0.1* #2541 migrate from channel routing and re-enable functionality
-		*2.4.0* it translations, bump for 2.4
-		*1.2.1.3* #2172 deprecated use of |, changed categories
-		*1.2.1.2* bump for rc1
-		*1.2.1.1* shorten menu name
-		*1.2.1* changed freePBX to FreePBX
-		*1.2.0* Added SQLite3 support, fixes ticket:1796 (FreePBX 2.3 only)
-		*1.1.1* Add he_IL translation
-		*1.1* First release for FreePBX 2.2 - Fixed compatibility issue with new UI
-		*1.0.4* Updated module.xml format
-		*1.0.3* Fixes from #999
-		*1.0.1* Added possibility to cache in astDB
-			Added lookup from cache before querying external source
-		*1.0.0* First release
 	</changelog>
+	<menuitems>
+		<cidlookup>CallerID Lookup Sources</cidlookup>
+	</menuitems>
+	<depends>
+		<engine>asterisk 1.6</engine>
+		<module>framework ge 2.11.0.0rc1.6</module>
+	</depends>
+	<supported>
+		<version>2.11</version>
+	</supported>
+	<location>release/2.11/cidlookup-2.11.1.7.tgz</location>
+	<md5sum>f559516b403088de2cfb2b7c517d2ff6</md5sum>
 </module>
