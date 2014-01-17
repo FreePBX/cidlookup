@@ -54,4 +54,7 @@
 			Added lookup from cache before querying external source
 		*1.0.0* First release
 	</changelog>
+	<supported>
+		<version>2.10</version>
+	</supported>
 </module>
