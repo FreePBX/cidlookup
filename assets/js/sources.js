@@ -2,7 +2,7 @@ function edit_onsubmit() {
 	defaultEmptyOK = false;
     if (!$.trim($('#form_description').val()).length)
         return warnInvalid($('#form_description'), "Description Can Not Be Blank!");
-	if ($('#sourcetype').val() == 'http' || $('#sourcetype').val().value == 'https')	{
+	if ($('#sourcetype').val() == 'http' || $('#sourcetype').val() == 'https')	{
 		if (!$.trim($('#http_host').val()).length)
 			return warnInvalid($('#http_host'), "Please enter a valid HTTP(S) Host name");
 	}
@@ -28,30 +28,31 @@ function edit_onsubmit() {
     }
 	return true;
 }
-    
+
 $('#sourcetype').focus(function () {
     prev_source = $(this).val();
 }).change(function() {
     $('#'+prev_source).hide();
     source = $(this).val();
+	source = (source == 'https') ? 'http' : source;
     $('#'+source).show();
-    prev_source = source
-        
-})
-    
+    prev_source = source;
+});
+
 $('#opencnam_professional_tier').change(function() {
     if($(this).is(':checked')) {
-        $('.opencnam_pro').show()
+        $('.opencnam_pro').show();
     } else {
-        $('.opencnam_pro').hide()
+        $('.opencnam_pro').hide();
     }
-})
+});
 
 function displayInitalSourceParameters() {
     $.each(cid_modules, function(index, value) {
       $('#'+value).hide();
     });
     source = $('#sourcetype').val();
+	source = (source == 'https') ? 'http' : source;
     $('#'+source).show();
 }
 
