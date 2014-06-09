@@ -17,7 +17,7 @@
 <div id="cid_message"><?php echo $message?></div>
 <h2><?php echo ($itemid ? sprintf(_("Source: %s (id %s)"),$thisItem_description,$itemid) : _("Add Source")); ?></h2>
 <p style="width: 80%"><?php echo ($itemid ? '' : _("A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX")); ?></p>
-    
+
 <?php if ($itemid){ ?>
     <a href='config.php?display=cidlookup&amp;action=delete&amp;itemid=<?php echo $itemid?>'><img src='images/user_delete.png'> <?php echo _("Delete CID Lookup source")?></a>
     <?php if($dids_using) {?>
@@ -120,7 +120,7 @@
     				<table cellpadding="2" cellspacing="0" width="100%">
     					<tr>
                             <td colspan="2">
-                                <h5><?php echo _("HTTP") ?></h5><hr>
+                                <h5>HTTP(S)</h5><hr>
                             </td>
                         </tr>
     					<tr>
