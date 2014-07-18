@@ -25,7 +25,7 @@
     <?php } ?>
 <?php } ?>
 
-<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
+<form autocomplete="off" name="edit" action="" method="post" onsubmit="return edit_onsubmit();">
 	<input type="hidden" name="display" value="cidlookup">
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
 	<input type="hidden" name="deptname" value="<?php echo $_SESSION["AMP_user"]->_deptname ?>">
