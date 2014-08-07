@@ -2,12 +2,15 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>2.11.1.8</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>2.11.1.10</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*2.11.1.10* FREEPBX-7453 HTTPS lookup type does not display a form for settings
+		*2.11.1.9* Update license
 		*2.11.1.8* Use FreePBX Empty Function
 		*2.11.1.7* HTTPS Support #6477
 		*2.11.1.6* #6382
@@ -18,7 +21,7 @@
         *2.11.1.1* Fixes #6374 Reorder placement of CID lookups to after blacklist. This will prevent useless dips.
         *2.11.1.0* Restructure module to MVC standards. Use jQuery. Setup simple module structure (future). Clean up all the junk
 		*2.11.0.0* new version change, #6094 (Added OpenCNAM)
-		*2.10.0.1* #5478 
+		*2.10.0.1* #5478
 		*2.10.0.0* new version changes
 	</changelog>
 	<menuitems>
