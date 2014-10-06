@@ -18,8 +18,8 @@
 # This file is distributed under the same license as the freePBX package.
 # Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
 #
-# ёбЯЮЫмЧЮТРвм iconv cidlookup.pot -f UTF-8 -t ISO-8859-5 -o cidlookup.po
-# fuzzy
+# РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ iconv cidlookup.pot -f UTF-8 -t ISO-8859-5 -o cidlookup.po
+
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
@@ -29,93 +29,93 @@ msgstr ""
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-5\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "CallerID Lookup"
-msgstr "їЮШбЪ ЯЮ ЅЮЬХаг ёґ"
+msgstr "РџРѕРёСЃРє РїРѕ Caller ID"
 
 msgid "Admin"
-msgstr ""
+msgstr "РђРґРјРёРЅ"
 
 msgid ""
 "Allows CallerID Lookup of incoming calls against different sources (MySQL, "
 "HTTP, ENUM, Phonebook Module)"
 msgstr ""
-"ґРсв ТЮЧЬЮЦЭЮбвм ТлЯЮЫЭШвм ЯЮШбЪ ЭЮЬХаР ЯаШ ТеЮФпйХЬ ЧТЮЭЪХ Ш ЯЮФбвРТШвм ШЬп "
-"РСЮЭХЭвР ШбЯЮЫмЧгп аРЧЫШзЭлХ ШбвЮзЭШЪШ (MySQL, HTTP-ЧРЯаЮб, бХаТШб ENUM, ШЫШ "
-"ТЭгваХЭЭШЩ ЬЮФгЫм ВХЫХдЮЭЭРп ЪЭШУР °бвХаШбЪ."
+"Р”Р°С‘С‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РІС‹РїРѕР»РЅРёС‚СЊ РїРѕРёСЃРє РЅРѕРјРµСЂР° РїСЂРё РІС…РѕРґСЏС‰РµРј Р·РІРѕРЅРєРµ Рё РїРѕРґСЃС‚Р°РІРёС‚СЊ РёРјСЏ "
+"Р°Р±РѕРЅРµРЅС‚Р° РёСЃРїРѕР»СЊР·СѓСЏ СЂР°Р·Р»РёС‡РЅС‹Рµ РёСЃС‚РѕС‡РЅРёРєРё (MySQL, HTTP-Р·Р°РїСЂРѕСЃ, СЃРµСЂРІРёСЃ ENUM, РёР»Рё "
+"РІРЅСѓС‚СЂРµРЅРЅРёР№ РјРѕРґСѓР»СЊ РўРµР»РµС„РѕРЅРЅР°СЏ РєРЅРёРіР° РђСЃС‚РµСЂРёСЃРє."
 
 msgid "CallerID Lookup Sources"
-msgstr "ёбвЮзЭШЪШ ЯЮШбЪР ЅЮЬХаР ёґ"
+msgstr "РСЃС‚РѕС‡РЅРёРєРё РїРѕРёСЃРєР° Caller ID"
 
 msgid "CID Lookup Source"
-msgstr "ёбвЮзЭШЪ ЯЮШбЪР CID"
+msgstr "РСЃС‚РѕС‡РЅРёРє РїРѕРёСЃРєР° CID"
 
 msgid "Source"
-msgstr "ёбвЮзЭШЪ"
+msgstr "РСЃС‚РѕС‡РЅРёРє"
 
 msgid "Sources can be added in Caller Name Lookup Sources section"
-msgstr "ёбвЮзЭШЪ ЬЮЦХв Слвм ФЮСРТЫХЭ Т бХЪжШо БХаТШб ЯЮШбЪР ЅЮЬХаР ёґ"
+msgstr "РСЃС‚РѕС‡РЅРёРє РјРѕР¶РµС‚ Р±С‹С‚СЊ РґРѕР±Р°РІР»РµРЅ РІ СЃРµРєС†РёСЋ РЎРµСЂРІРёСЃ РїРѕРёСЃРєР° Caller ID"
 
 msgid "None"
-msgstr "ЅХв"
+msgstr "РќРµС‚"
 
 msgid "Migrating channel routing to Zap DID routing.."
-msgstr "їХаХЭЮб ЬРаиагвШЧРжШШ ЪРЭРЫЮТ Т ЬРаиагвШЧРжШо ЯЮ Zap DID"
+msgstr "РџРµСЂРµРЅРѕСЃ РјР°СЂС€СЂСѓС‚РёР·Р°С†РёРё РєР°РЅР°Р»РѕРІ РІ РјР°СЂС€СЂСѓС‚РёР·Р°С†РёСЋ РїРѕ Zap DID"
 
 msgid "FATAL: failed to transform old routes: "
-msgstr "Ѕµ БГґМ±°: ЮиШСЪР ЯаШ ЯХаХЭЮбХ бвРале ЬРаиагвЮТ: "
+msgstr "РќР• РЎРЈР”Р¬Р‘Рђ: РѕС€РёР±РєР° РїСЂРё РїРµСЂРµРЅРѕСЃРµ СЃС‚Р°СЂС‹С… РјР°СЂС€СЂСѓС‚РѕРІ: "
 
 msgid "OK"
-msgstr "ѕє"
+msgstr "РћРљ"
 
 msgid "Removing deprecated channel field from incoming.."
-msgstr "ГФРЫХЭШХ гбвРаХТиХУЮ ЯЮЫп ЪРЭРЫР ШЧ ТеЮФпйШе.."
+msgstr "РЈРґР°Р»РµРЅРёРµ СѓСЃС‚Р°СЂРµРІС€РµРіРѕ РїРѕР»СЏ РєР°РЅР°Р»Р° РёР· РІС…РѕРґСЏС‰РёС….."
 
 msgid "ERROR: failed: "
-msgstr "ѕИё±є°: ЭХ ЯЮЫгзШЫЮбм: "
+msgstr "РћРЁРР‘РљРђ: РЅРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ: "
 
 msgid "Not Needed"
-msgstr "ЅХ ЭРФЮСЭЮбвШ"
+msgstr "РќРµ РЅР°РґРѕР±РЅРѕСЃС‚Рё"
 
 msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "їаЮТХаЪР ЯЮЫп cidlookup Т бвагЪвгаХ вРСЫШжл ТеЮФпйШе.."
+msgstr "РџСЂРѕРІРµСЂРєР° РїРѕР»СЏ cidlookup РІ СЃС‚СЂСѓРєС‚СѓСЂРµ С‚Р°Р±Р»РёС†С‹ РІС…РѕРґСЏС‰РёС….."
 
 msgid "not present"
-msgstr "ЮвбгвбвТгХв"
+msgstr "РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚"
 
 msgid "removed"
-msgstr "гФРЫХЭЮ"
+msgstr "СѓРґР°Р»РµРЅРѕ"
 
 msgid "Add CID Lookup Source"
-msgstr "ґЮСРТШвм ШбвЮзЭШЪ ЯЮШбЪР CID"
+msgstr "Р”РѕР±Р°РІРёС‚СЊ РёСЃС‚РѕС‡РЅРёРє РїРѕРёСЃРєР° CID"
 
 msgid "CID Lookup source"
-msgstr "ёбвЮзЭШЪ ЯЮШбЪР CID"
+msgstr "РСЃС‚РѕС‡РЅРёРє РїРѕРёСЃРєР° CID"
 
 msgid "deleted"
-msgstr "гФРЫХЭЮ"
+msgstr "СѓРґР°Р»РµРЅРѕ"
 
 msgid "Delete CID Lookup source"
-msgstr "ГФРЫШвм ШбвЮзЭШЪ ЯЮШбЪР CID"
+msgstr "РЈРґР°Р»РёС‚СЊ РёСЃС‚РѕС‡РЅРёРє РїРѕРёСЃРєР° CID"
 
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
 "deleted."
 msgstr ""
-"БЫХФгойШХ ЭЮЬХаР DID %s ЭХ бЬЮУгв СЮЫмиХ ШбЯЮЫмЧЮТРвм нвЮв ШбвЮзЭШЪ ХбЫШ ЮЭ "
-"СгФХв гФРЫсЭ."
+"РЎР»РµРґСѓСЋС‰РёРµ РЅРѕРјРµСЂР° DID %s РЅРµ СЃРјРѕРіСѓС‚ Р±РѕР»СЊС€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЌС‚РѕС‚ РёСЃС‚РѕС‡РЅРёРє РµСЃР»Рё РѕРЅ "
+"Р±СѓРґРµС‚ СѓРґР°Р»С‘РЅ."
 
 #, php-format
 msgid "Source: %s (id %s)"
-msgstr "ёбвЮзЭШЪ: %s (id %s)"
+msgstr "РСЃС‚РѕС‡РЅРёРє: %s (id %s)"
 
 msgid "Add Source"
-msgstr "ґЮСРТШвм ёбвЮзЭШЪ"
+msgstr "Р”РѕР±Р°РІРёС‚СЊ РСЃС‚РѕС‡РЅРёРє"
 
-#, fuzzy
+
 msgid ""
 "A Lookup Source let you specify a source for resolving numeric CallerIDs of "
 "incoming calls, you can then link an Inbound route to a specific CID source. "
@@ -124,26 +124,26 @@ msgid ""
 "small number <-> name association. Pay attention, name lookup may slow down "
 "your PBX"
 msgstr ""
-"БХаТШб ЯЮШбЪР ЯЮ ЅЮЬХаг ёґ ЯЮЬЮЦХв ЯаХТаРйРвм ЯЮбвгЯРойШХ ЧТЮЭЪШ ШЧ ЭЮЬХаЮТ "
-"Т гЧЭРТРХЬлХ ШЬХЭР ШЫШ ЭРЧТРЭШп, ЪЮвЮалХ ЧРвХЬ ЬЮЦЭЮ бЮЯЮбвРТЫпвм бЮ "
-"бжХЭРаШпЬШ ТеЮФпйХЩ ЬРаиагвШЧРжШШ ФЫп ЪРЦФЮУЮ. µйс ЮФЭЮ ЯаХШЬгйХбвТЮ - СЮЫХХ "
-"ЯЮЭпвЭлЩ Ш ФХвРЫмЭлЩ бЯШбЮЪ ТеЮФпйШе Т ЮвзХвРе Ю ЧТЮЭЪРе, б ФЮСРТЫХЭШХЬ "
-"ШЭдЮаЬРжШШ ЯапЬЮ ШЧ ТРиХЩ ЯаЮУаРЬЬл CRM. ВРЪЦХ ЬЮЦЭЮ ШЭбвРЫЫШаЮТРвм Ш "
-"ШбЯЮЫмЧЮТРвм ЬЮФгЫм ВХЫХдЮЭЭРп ЪЭШУР ФЫп бЮЯЮбвРТЫХЭШп ЪЮаЮвЪШе ЭЮЬХаЮТ Ш "
-"ШЬХЭ. ІЭШЬРЭШХ! БХаТШб ЯЮШбЪР ЬЮЦХв ЧРвЮаЬРЦШТРвм СлбваЮФХЩбвТШХ ТРиХЩ ёї-"
-"°ВБ, ХбЫШ Хс аХбгабл бЪаЮЬЭл."
+"РЎРµСЂРІРёСЃ РїРѕРёСЃРєР° РїРѕ Caller ID РїРѕРјРѕР¶РµС‚ РїСЂРµРІСЂР°С‰Р°С‚СЊ РїРѕСЃС‚СѓРїР°СЋС‰РёРµ Р·РІРѕРЅРєРё РёР· РЅРѕРјРµСЂРѕРІ "
+"РІ СѓР·РЅР°РІР°РµРјС‹Рµ РёРјРµРЅР° РёР»Рё РЅР°Р·РІР°РЅРёСЏ, РєРѕС‚РѕСЂС‹Рµ Р·Р°С‚РµРј РјРѕР¶РЅРѕ СЃРѕРїРѕСЃС‚Р°РІР»СЏС‚СЊ СЃРѕ "
+"СЃС†РµРЅР°СЂРёСЏРјРё РІС…РѕРґСЏС‰РµР№ РјР°СЂС€СЂСѓС‚РёР·Р°С†РёРё РґР»СЏ РєР°Р¶РґРѕРіРѕ. Р•С‰С‘ РѕРґРЅРѕ РїСЂРµРёРјСѓС‰РµСЃС‚РІРѕ - Р±РѕР»РµРµ "
+"РїРѕРЅСЏС‚РЅС‹Р№ Рё РґРµС‚Р°Р»СЊРЅС‹Р№ СЃРїРёСЃРѕРє РІС…РѕРґСЏС‰РёС… РІ РѕС‚С‡РµС‚Р°С… Рѕ Р·РІРѕРЅРєР°С…, СЃ РґРѕР±Р°РІР»РµРЅРёРµРј "
+"РёРЅС„РѕСЂРјР°С†РёРё РїСЂСЏРјРѕ РёР· РІР°С€РµР№ РїСЂРѕРіСЂР°РјРјС‹ CRM. РўР°РєР¶Рµ РјРѕР¶РЅРѕ РёРЅСЃС‚Р°Р»Р»РёСЂРѕРІР°С‚СЊ Рё "
+"РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјРѕРґСѓР»СЊ РўРµР»РµС„РѕРЅРЅР°СЏ РєРЅРёРіР° РґР»СЏ СЃРѕРїРѕСЃС‚Р°РІР»РµРЅРёСЏ РєРѕСЂРѕС‚РєРёС… РЅРѕРјРµСЂРѕРІ Рё "
+"РёРјРµРЅ. Р’РЅРёРјР°РЅРёРµ! РЎРµСЂРІРёСЃ РїРѕРёСЃРєР° РјРѕР¶РµС‚ Р·Р°С‚РѕСЂРјР°Р¶РёРІР°С‚СЊ Р±С‹СЃС‚СЂРѕРґРµР№СЃС‚РІРёРµ РІР°С€РµР№ РРџ-"
+"РђРўРЎ, РµСЃР»Рё РµС‘ СЂРµСЃСѓСЂСЃС‹ СЃРєСЂРѕРјРЅС‹."
 
 msgid "Edit Source"
-msgstr "ёЧЬХЭШвм ШбвЮзЭШЪ"
+msgstr "РР·РјРµРЅРёС‚СЊ РёСЃС‚РѕС‡РЅРёРє"
 
 msgid "Source Description:"
-msgstr "ѕЯШбРЭШХ ШбвЮзЭШЪР:"
+msgstr "РћРїРёСЃР°РЅРёРµ РёСЃС‚РѕС‡РЅРёРєР°:"
 
 msgid "Enter a description for this source."
-msgstr "БЮЧФРЩвХ ЪаРвЪЮХ ЮЯШбРЭШХ ШбвЮзЭШЪР."
+msgstr "РЎРѕР·РґР°Р№С‚Рµ РєСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ РёСЃС‚РѕС‡РЅРёРєР°."
 
 msgid "Source type:"
-msgstr "ВШЯ ШбвЮзЭШЪР:"
+msgstr "РўРёРї РёСЃС‚РѕС‡РЅРёРєР°:"
 
 msgid ""
 "Select the source type, you can choose between:<ul><li>Internal: use astdb "
@@ -153,105 +153,105 @@ msgid ""
 "argument to retrieve the correct name</li><li>MySQL: It queries a MySQL "
 "database to retrieve caller name</li></ul>"
 msgstr ""
-"ІлСХаШвХ вШЯ ШбвЮзЭШЪР. јЮЦЭЮ ТлСаРвм ШЧ:<ul><li>ІЭгваХЭЭШЩ: ШбЯЮЫмЧгХвбп "
-"ТЭгваХЭЭпп СРЧР °бвХаШбЪ Т ЪРзХбвТХ ШбвЮзЭШЪР ФРЭЭле, ШбЯЮЫмЧгХвбп ЬЮФгЫм "
-"ВХЫХдЮЭЭРп ЪЭШУР ФЫп ЮвЮСаРЦХЭШп нвШе ФРЭЭле.</li><li>ENUM: ШбЯЮЫмЧгХвбп "
-"бХаТШб ґЅБ ФЫп ЯЮШбЪР ШЬсЭ, ЪЮвЮалЩ, Т бТЮо ЮзХаХФм, ЯаЮбЬРваШТРХв "
-"бЯХжШРЫмЭлХ ЧЮЭл ENUM, гЪРЧРЭЭлХ Т дРЩЫХ enum.conf</li><li>HTTP: "
-"ШбЯЮЫмЧговбп ЧРЯаЮбл HTTP GET ШбЯЮЫмЧгп ЭЮЬХа ЯЮЧТЮЭШТиХУЮ Т ЪРзХбвТХ "
-"РаУгЬХЭвР ФЫп ЯЮЫгзХЭШп ХУЮ ШЬХЭШ.</li><li>MySQL: ЧРЯаЮбл Т СРЧг ФРЭЭле "
-"MySQL ФЫп ЯЮЫгзХЭШп ХУЮ ШЬХЭШ."
+"Р’С‹Р±РµСЂРёС‚Рµ С‚РёРї РёСЃС‚РѕС‡РЅРёРєР°. РњРѕР¶РЅРѕ РІС‹Р±СЂР°С‚СЊ РёР·:<ul><li>Р’РЅСѓС‚СЂРµРЅРЅРёР№: РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ "
+"РІРЅСѓС‚СЂРµРЅРЅСЏСЏ Р±Р°Р·Р° РђСЃС‚РµСЂРёСЃРє РІ РєР°С‡РµСЃС‚РІРµ РёСЃС‚РѕС‡РЅРёРєР° РґР°РЅРЅС‹С…, РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РјРѕРґСѓР»СЊ "
+"РўРµР»РµС„РѕРЅРЅР°СЏ РєРЅРёРіР° РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ СЌС‚РёС… РґР°РЅРЅС‹С….</li><li>ENUM: РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ "
+"СЃРµСЂРІРёСЃ Р”РќРЎ РґР»СЏ РїРѕРёСЃРєР° РёРјС‘РЅ, РєРѕС‚РѕСЂС‹Р№, РІ СЃРІРѕСЋ РѕС‡РµСЂРµРґСЊ, РїСЂРѕСЃРјР°С‚СЂРёРІР°РµС‚ "
+"СЃРїРµС†РёР°Р»СЊРЅС‹Рµ Р·РѕРЅС‹ ENUM, СѓРєР°Р·Р°РЅРЅС‹Рµ РІ С„Р°Р№Р»Рµ enum.conf</li><li>HTTP: "
+"РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ Р·Р°РїСЂРѕСЃС‹ HTTP GET РёСЃРїРѕР»СЊР·СѓСЏ РЅРѕРјРµСЂ РїРѕР·РІРѕРЅРёРІС€РµРіРѕ РІ РєР°С‡РµСЃС‚РІРµ "
+"Р°СЂРіСѓРјРµРЅС‚Р° РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РµРіРѕ РёРјРµРЅРё.</li><li>MySQL: Р·Р°РїСЂРѕСЃС‹ РІ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… "
+"MySQL РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РµРіРѕ РёРјРµРЅРё."
 
 msgid "Internal"
-msgstr "ІЭгваХЭЭШЩ"
+msgstr "Р’РЅСѓС‚СЂРµРЅРЅРёР№"
 
 msgid "Cache results:"
-msgstr "єниШаЮТРЭЭлХ аХЧгЫмвРвл:"
+msgstr "РљСЌС€РёСЂРѕРІР°РЅРЅС‹Рµ СЂРµР·СѓР»СЊС‚Р°С‚С‹:"
 
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
-"ѕЯаХФХЫШвХбм, ЭгЦЭЮ ЫШ ЪниШаЮТРвм аХЧгЫмвРвл ЧРЯаЮбЮТ Т astDB; аХЧгЫмвРвл "
-"Ъни ЬЮУгв ЭХ ТбХУФР бЮТЯРФРвм б ФХЩбвТШвХЫмЭлЬШ. ЅХ ТЫШпХв ЭР ЯЮТХФХЭШХ Ш "
-"ФЮбвЮТХаЭЮбвм ТЭгваХЭЭШе ШбвЮзЭШЪЮТ."
+"РћРїСЂРµРґРµР»РёС‚РµСЃСЊ, РЅСѓР¶РЅРѕ Р»Рё РєСЌС€РёСЂРѕРІР°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚С‹ Р·Р°РїСЂРѕСЃРѕРІ РІ astDB; СЂРµР·СѓР»СЊС‚Р°С‚С‹ "
+"РєСЌС€ РјРѕРіСѓС‚ РЅРµ РІСЃРµРіРґР° СЃРѕРІРїР°РґР°С‚СЊ СЃ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹РјРё. РќРµ РІР»РёСЏРµС‚ РЅР° РїРѕРІРµРґРµРЅРёРµ Рё "
+"РґРѕСЃС‚РѕРІРµСЂРЅРѕСЃС‚СЊ РІРЅСѓС‚СЂРµРЅРЅРёС… РёСЃС‚РѕС‡РЅРёРєРѕРІ."
 
 msgid "HTTP"
 msgstr "HTTP"
 
 msgid "Host:"
-msgstr "ЕЮбв:"
+msgstr "РҐРѕСЃС‚:"
 
 msgid "Host name or IP address"
-msgstr "ёЬп еЮбвР ШЫШ ХУЮ IP РФаХб"
+msgstr "РРјСЏ С…РѕСЃС‚Р° РёР»Рё РµРіРѕ IP Р°РґСЂРµСЃ"
 
 msgid "Port:"
-msgstr "їЮав:"
+msgstr "РџРѕСЂС‚:"
 
 msgid "Port HTTP server is listening at (default 80)"
-msgstr "HTTP ЯЮав бХаТХаР, бЫгиРойХУЮ ЧРЯаЮбл (ЯЮ гЬЮЫзРЭШо 80)"
+msgstr "HTTP РїРѕСЂС‚ СЃРµСЂРІРµСЂР°, СЃР»СѓС€Р°СЋС‰РµРіРѕ Р·Р°РїСЂРѕСЃС‹ (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ 80)"
 
 msgid "Username:"
-msgstr "ёЬп ЯЮЫмЧЮТРвХЫп:"
+msgstr "РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ:"
 
 msgid "Username to use in HTTP authentication"
-msgstr "ёЬп ЯЮЫмЧЮТРвХЫп ФЫп РгвХЭвШдШЪРжШШ ЯЮ HTTP"
+msgstr "РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РґР»СЏ Р°СѓС‚РµРЅС‚РёС„РёРєР°С†РёРё РїРѕ HTTP"
 
 msgid "Password:"
-msgstr "їРаЮЫм:"
+msgstr "РџР°СЂРѕР»СЊ:"
 
 msgid "Password to use in HTTP authentication"
-msgstr "їРаЮЫм ФЫп РгвХЭвШдШЪРжШШ ЯЮ HTTP"
+msgstr "РџР°СЂРѕР»СЊ РґР»СЏ Р°СѓС‚РµРЅС‚РёС„РёРєР°С†РёРё РїРѕ HTTP"
 
 msgid "Path:"
-msgstr "їгвм:"
+msgstr "РџСѓС‚СЊ:"
 
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
-msgstr "їгвм Ъ дРЩЫг ФЫп GET ЧРЯаЮбР<br/>ЭРЯаШЬХа: /cidlookup.php"
+msgstr "РџСѓС‚СЊ Рє С„Р°Р№Р»Сѓ РґР»СЏ GET Р·Р°РїСЂРѕСЃР°<br/>РЅР°РїСЂРёРјРµСЂ: /cidlookup.php"
 
 msgid "Query:"
-msgstr "·РЯаЮб:"
+msgstr "Р—Р°РїСЂРѕСЃ:"
 
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm"
 msgstr ""
-"їХаХЬХЭЭРп ЧРЯаЮбР, бЮФХаЦРйРп '[NUMBER]', ЪЮвЮаРп ЯЮЫгзРХв ЧЭРзХЭШХ ЅЮЬХа "
-"ёґ <br/>ЭРЯаШЬХа: number=[NUMBER]&source=crm"
+"РџРµСЂРµРјРµРЅРЅР°СЏ Р·Р°РїСЂРѕСЃР°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ '[NUMBER]', РєРѕС‚РѕСЂР°СЏ РїРѕР»СѓС‡Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ Caller  "
+"ID <br/>РЅР°РїСЂРёРјРµСЂ: number=[NUMBER]&source=crm"
 
 msgid "MySQL"
 msgstr "MySQL"
 
 msgid "MySQL Host"
-msgstr "ЕЮбв MySQL"
+msgstr "РҐРѕСЃС‚ MySQL"
 
 msgid "Database:"
-msgstr "±РЧР ФРЭЭле:"
+msgstr "Р‘Р°Р·Р° РґР°РЅРЅС‹С…:"
 
 msgid "Database name"
-msgstr "ёЬп СРЧл ФРЭЭле"
+msgstr "РРјСЏ Р±Р°Р·С‹ РґР°РЅРЅС‹С…"
 
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
-"БваЮЪР ЧРЯаЮбР, бЮФХаЦРйРп '[NUMBER]', ЪЮвЮаРп ЯЮЫгзРХв ЧЭРзХЭШХ ЅЮЬХа ёґ "
-"<br/>ЭРЯаШЬХа: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+"РЎС‚СЂРѕРєР° Р·Р°РїСЂРѕСЃР°, СЃРѕРґРµСЂР¶Р°С‰Р°СЏ '[NUMBER]', РєРѕС‚РѕСЂР°СЏ РїРѕР»СѓС‡Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ Caller ID "
+"<br/>РЅР°РїСЂРёРјРµСЂ: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
 msgid "MySQL Username"
-msgstr "ёЬп ЯЮЫмЧЮТРвХЫп MySQL"
+msgstr "РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ MySQL"
 
 msgid "MySQL Password"
-msgstr "їРаЮЫм MySQL"
+msgstr "РџР°СЂРѕР»СЊ MySQL"
 
 msgid "SugarCRM"
 msgstr "SugarCRM"
 
 msgid "Not yet implemented"
-msgstr "їЮЪР ЭХ ЮСХбЯХзШТРХвбп"
+msgstr "РџРѕРєР° РЅРµ РѕР±РµСЃРїРµС‡РёРІР°РµС‚СЃСЏ"
 
 msgid "Submit Changes"
-msgstr "їаШЬХЭШвм ШЧЬХЭХЭШп"
+msgstr "РџСЂРёРјРµРЅРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ"
 
 #~ msgid "Inbound Call Control"
-#~ msgstr "єЮЭваЮЫм ТеЮФпйШе бЮХФШЭХЭШЩ"
+#~ msgstr "РљРѕРЅС‚СЂРѕР»СЊ РІС…РѕРґСЏС‰РёС… СЃРѕРµРґРёРЅРµРЅРёР№"

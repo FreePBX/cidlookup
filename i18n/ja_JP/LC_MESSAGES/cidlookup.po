@@ -1,0 +1,353 @@
+# CREDITS for JAPANESE TRANSLATION
+# ================================
+# Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
+# Inquiries: info@qloog.com / www.qloog.com
+# 
+# This translation is a culmination of the hard work of
+# several outstanding individuals, which started in 2009 with the 
+# first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
+# and Kazuhiro Tokuyama (FreePBX Japanized Project).
+#
+# Beginning in 2013, with the approval of the original authors, 
+# QLOOG undertook a large scale overhaul of the translation to 
+# expand it for compatibility with FreePBX 2.11. Our work is, 
+# of course, released under the same GPLv2 license as FreePBX. 
+# We only ask that you kindly retain these credits in honor of 
+# the time and effort that all of us have contributed. Enjoy!
+# 
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for cidlookup
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.10.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-05 19:32+0900\n"
+"PO-Revision-Date: 2014-02-25 05:01+0200\n"
+"Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
+"Language-Team: Japanese "
+"<http://192.168.30.85/projects/freepbx/cidlookup/ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 1.8\n"
+
+msgid "Installing OpenCNAM CallerID Lookup Sources..."
+msgstr "OpenCNAM発信者番号検索ソースをインストール中…"
+
+msgid "Failed to add OpenCNAM CallerID Lookup Source: "
+msgstr "OpenCNAM発信者番号検索ソースの追加に失敗しました。"
+
+msgid "Done!"
+msgstr "完了"
+
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "チャネルルーティングからZapダイヤルインルーティングに移行.."
+
+msgid "FATAL: failed to transform old routes: "
+msgstr "FATAL： 古い経路の変換に失敗しました："
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Removing deprecated channel field from incoming.."
+msgstr "着信から、重複チャネルフィールドを削除.."
+
+msgid "ERROR: failed: "
+msgstr "ERROR： 失敗："
+
+msgid "Not Needed"
+msgstr "必要なし"
+
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr "コアの着信テーブルから発信者番号検索フィールドをチェック.."
+
+msgid "not present"
+msgstr "存在しません"
+
+msgid "removed"
+msgstr "削除済み"
+
+msgid "Adding opencnam account columns to the cidlookup table..."
+msgstr "opencnamアカウントコラムをcidlookupテーブルに追加中.."
+
+msgid "Could not add opencnam_account_sid column to cidlookup table."
+msgstr "opencnam_account_sidコラムをcidlookupテーブルに追加できませんでした。"
+
+msgid "Could not add opencnam_auth_token column to cidlookup table."
+msgstr "opencnam_auth_tokenコラムをcidlookupテーブルに追加できませんでした。"
+
+msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
+msgstr "重複したOpenCNAM着信者番号検索ソースを整理中…"
+
+msgid "OpenCNAM Throttle Reached!"
+msgstr "OpenCNAM 制限に達しました！"
+
+msgid ""
+"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
+"getting caller ID name information, you need to create an OpenCNAM "
+"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
+"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
+"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
+"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
+"<br/>"
+msgstr ""
+"OpenCNAMの無料利用制限を超過しました。<br/><br/>caller "
+"ID名情報の取得し続けるには、OpenCNAMプロフェッショナルアカウントを作成する必要があります。<br/><br/>作成するには ：<a href="
+"\"https://www.opencnam.com/register\">https://www.opencnam.com/register</a>にアク"
+"セスしてください。<br/><br/>アカウント作成後、CallerIDルックアップソースのメニューを開き、アカウント情報(OpenCNAM "
+"Professional Tier credentials)を入力してください。<br/>"
+
+msgid "CallerID Lookup"
+msgstr "発信者番号検索"
+
+msgid "Admin"
+msgstr "アドミン"
+
+msgid ""
+"Allows CallerID Lookup of incoming calls against different sources "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+"別のソースに対して、着信呼の発信者番号の検索を許可する（OpenCNAM, MySQL、"
+"HTTP、ENUM、電話帳のモジュール）"
+
+msgid "CallerID Lookup Sources"
+msgstr "発信者番号検索ソース"
+
+msgid "Add CID Lookup Source"
+msgstr "発信者番号検索ソースを追加"
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "ソース: %s (id %s)"
+
+msgid "Add Source"
+msgstr "ソースを追加"
+
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric CallerIDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with information taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+"検索ソースによって、着信呼の膨大な発信者番号を解決するためにソースを特定する"
+"ことができます。そして、インバウンドルートを特定の発信者番号ソースにリンクす"
+"ることができます。この方法によって、CRMからダイレクトに取得した情報を持つCDレ"
+"ポートを得ることができます。小さい番号<->名前の関連付けを持つために、電話帳モ"
+"ジュールをインストールすることもできます。注意、名前の検索はPBXを遅くすること"
+"があります。"
+
+msgid "Delete CID Lookup source"
+msgstr "発信者番号検索ソースを追加"
+
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+"このソースを使用しているダイヤルインが%s個あり、削除した場合は検索できませ"
+"ん。"
+
+msgid "Edit Source"
+msgstr "ソースを編集"
+
+msgid "Source Description:"
+msgstr "ソース説明："
+
+msgid "Enter a description for this source."
+msgstr "このソースの説明を入力。"
+
+msgid "Source type:"
+msgstr "ソースタイプ："
+
+msgid ""
+"Select the source type, you can choose between:<ul>\n"
+"                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]</"
+"li>\n"
+"                    <li>Internal: use astdb as lookup source, use phonebook "
+"module to populate it</li>\n"
+"                    <li>ENUM: Use DNS to lookup caller names, it uses ENUM "
+"lookup zones as configured in enum.conf</li>\n"
+"                    <li>HTTP: It executes an HTTP GET passing the caller "
+"number as argument to retrieve the correct name</li>\n"
+"                    <li>MySQL: It queries a MySQL database to retrieve "
+"caller name</li>\n"
+"                    </ul>"
+msgstr ""
+"ソースタイプを以下から選択してください：<ul>\n"
+"                    <li>OpenCNAM: OpenCNAM "
+"[https://www.opencnam.com/]を使用</li>\n"
+"                    <li>インターナル: "
+"ソースを検索するのにastdbを使用し、それを設定する為に電話帳モジュールを使用します</li>\n"
+"                    <li>ENUM: 発信者の名前を検索するのにDNSを使用し、enum.conf内で設定されたENUM "
+"lookup zonesを使用します</li>\n"
+"                    <li>HTTP: 正しい名前を検索するために、発信者番号を引数にHTTP GETを実行します</li>\n"
+"                    <li>MySQL: 発信者の名前を検索するための、MySQLデータベースクエリー</li>\n"
+"                    </ul>"
+
+msgid "OpenCNAM"
+msgstr "OpenCNAM"
+
+msgid "Internal"
+msgstr "インターナル"
+
+msgid "Cache results:"
+msgstr "キャッシュ結果："
+
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+"astDBへの結果をキャッシュするかどうかを決定します；現在の値を上書きします。イ"
+"ンターナルソースの挙動には影響しません。"
+
+msgid "Use Professional Tier?"
+msgstr "Professional Tierを使用しますか？"
+
+msgid ""
+"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
+"you want, for a small fee. This is recommended for business users."
+msgstr "OpenCNAMのProfessional Tierでは、CNAMリアルタイムクエリーの制限がないため、ビジネス利用の場合はお勧めです。"
+
+msgid "Account SID:"
+msgstr "アカウントSID:"
+
+msgid ""
+"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
+"page: https://www.opencnam.com/dashboard"
+msgstr ""
+"OpenCNAMのアカウントSID。OpenCNAMのダッシュボードページで確認できます：https://www.opencnam.com/dashbo"
+"ard"
+
+msgid "Auth Token:"
+msgstr "認証トークン："
+
+msgid ""
+"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
+"https://www.opencnam.com/dashboard"
+msgstr ""
+"OpenCNAMの認証トークン。OpenCNAMのダッシュボードページで確認できます：https://www.opencnam.com/dashboar"
+"d"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "Host:"
+msgstr "ホスト："
+
+msgid "Host name or IP address"
+msgstr "ホスト名 or IPアドレス"
+
+msgid "Port:"
+msgstr "ポート："
+
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "HTTPサービスがListenしているポート(デフォルト80)"
+
+msgid "Username:"
+msgstr "ユーザー名："
+
+msgid "Username to use in HTTP authentication"
+msgstr "HTTP認証で使用するユーザー名"
+
+msgid "Password:"
+msgstr "パスワード："
+
+msgid "Password to use in HTTP authentication"
+msgstr "HTTP認証で使用するパスワード"
+
+msgid "Path:"
+msgstr "パス："
+
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr "GETをするファイルのパス<br/>例：/cidlookup.php"
+
+msgid "Query:"
+msgstr "クエリー："
+
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr ""
+"クエリー文字列、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>"
+"例： number=[NUMBER]&source=crm"
+
+msgid "MySQL"
+msgstr "MySQL"
+
+msgid "MySQL Host"
+msgstr "MySQL ホスト"
+
+msgid "Database:"
+msgstr "データベース:"
+
+msgid "Database name"
+msgstr "データベース名"
+
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+"クエリー、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例："
+"SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+
+msgid "MySQL Username"
+msgstr "MySQLユーザー名"
+
+msgid "MySQL Password"
+msgstr "MySQLパスワード"
+
+msgid "Character Set:"
+msgstr "文字コード："
+
+msgid "MySQL Character Set. Leave blank for MySQL default latin1"
+msgstr "MySQLの文字コード。空にすると、MySQLデフォルトのlatin1に設定されます"
+
+msgid "SugarCRM"
+msgstr "SugarCRM"
+
+msgid "Not yet implemented"
+msgstr "未実装"
+
+msgid "Superfecta"
+msgstr "Superfecta"
+
+msgid "Submit Changes"
+msgstr "変更を適用"
+
+msgid "CID Lookup Source"
+msgstr "CID検索ソース"
+
+msgid "Source"
+msgstr "ソース"
+
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "ソースは発信者名検索ソースセクションで追加できます。"
+
+msgid "None"
+msgstr "なし"
+
+#~ msgid "CID Lookup source"
+#~ msgstr "発信者番号検索ソース"
+
+#~ msgid "deleted"
+#~ msgstr "削除されました"
