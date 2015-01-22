@@ -8,31 +8,54 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 	// TODO: add option to avoid CallerID lookup if the telco already supply a CallerID name (Overwrite checkbox ? )
 	$html = '';
 	if ($target_menuid == 'did')	{
-		$html = '<tr><td colspan="2"><h5>';
-		$html .= _("CID Lookup Source");
-		$html .= '<hr></h5></td></tr>';
-		$html .= '<tr>';
-		$html .= '<td><a href="#" class="info">';
-		$html .= _("Source").'<span>'._("Sources can be added in Caller Name Lookup Sources section").'.</span></a>:</td>';
-		$html .= '<script type="text/javascript">';
-		$html .= 'function openCNAMNoteDisplay(source, key) {';
-		$html .= ' if (source.options[key].text === "OpenCNAM") {';
-		$html .= '  document.getElementById("opencnam_hobbyist_note").style.display="";';
-		$html .= ' } else {';
-		$html .= '  document.getElementById("opencnam_hobbyist_note").style.display="none";';
-		$html .= ' }';
-		$html .= '}';
-		$html .= '</script>';
-		$html .= '<td><select name="cidlookup_id" onChange="javascript:openCNAMNoteDisplay(this, this.selectedIndex)">';
-		$sources = cidlookup_list();
-		$current = cidlookup_did_get($viewing_itemid);
-		foreach ($sources as $source)
-			$html .= sprintf('<option value="%d" %s>%s</option>', $source['cidlookup_id'], ($current == $source['cidlookup_id']?'selected':''), $source['description']);
-		$html .= '</select></td></tr>';
-		$html .= '<tr style="display:none" id="opencnam_hobbyist_note"><td colspan="2">';
-		$html .= '<p style="max-width:345px;max-height:40px;font-style:italic;font-size:12px;margin-bottom:40px;"><b>NOTE:</b> OpenCNAM\'s Hobbyist Tier only allows you to do 10 cached CID lookups per hour. If you get more than 10 incoming calls per hour, or want real-time CID information (which is more accurate), you should use the Professional Tier, which is configurable via the CallerID Lookup Sources menu.</td></p>';
-		$html .= '</tr>';
-
+		$html .= '
+		<!--cidlookup hook -->
+		<!--CID Lookup Source-->
+		<div class="element-container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="form-group">
+							<div class="col-md-3">
+								<label class="control-label" for="cidlookup_id"><?php echo _("CID Lookup Source") ?></label>
+								<i class="fa fa-question-circle fpbx-help-icon" data-for="cidlookup_id"></i>
+							</div>
+							<div class="col-md-9">
+								<select name="cidlookup_id" id="cidlookup_id" class="form-control" onChange="javascript:openCNAMNoteDisplay(this, this.selectedIndex)">
+								';
+								$sources = cidlookup_list();
+								$current = cidlookup_did_get($viewing_itemid);
+								foreach ($sources as $source){
+									$html .= sprintf('<option value="%d" %s>%s</option>', $source['cidlookup_id'], ($current == $source['cidlookup_id']?'selected':''), $source['description']);
+								}
+								$html .='
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<span id="cidlookup_id-help" class="help-block fpbx-help-block"><?php echo _("Sources can be added in Caller Name Lookup Sources section")?></span>
+					<div class="well well-info hidden" id="opencnam_hobbyist_note">
+						<b>NOTE:</b> OpenCNAM\'s Hobbyist Tier only allows you to do 10 cached CID lookups per hour. If you get more than 10 incoming calls per hour, or want real-time CID information (which is more accurate), you should use the Professional Tier, which is configurable via the CallerID Lookup Sources menu.
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--END CID Lookup Source-->
+		<script type="text/javascript">
+			function openCNAMNoteDisplay(source, key) {
+				if (source.options[key].text === "OpenCNAM") {
+					$("#opencnam_hobbyist_note").removeClass("hidden");
+				} else {
+					$("#opencnam_hobbyist_note").addClass("hidden");
+		 		}
+			}
+		</script>
+		<!--END cidlookup hook-->
+		';
 /*
 		// Not yet fully implemented
 		$html .= '<tr>';
