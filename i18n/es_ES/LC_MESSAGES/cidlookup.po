@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:37-0500\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -30,86 +30,7 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-msgid "CallerID Lookup"
-msgstr "Búsqueda de identificador de llamante"
-
-msgid "Admin"
-msgstr ""
-
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources (MySQL, "
-"HTTP, ENUM, Phonebook Module)"
-msgstr ""
-
-msgid "CallerID Lookup Sources"
-msgstr "Búsqueda de llamantes"
-
-msgid "CID Lookup Source"
-msgstr "Búsqueda de CID"
-
-msgid "Source"
-msgstr "Fuente"
-
-msgid "Sources can be added in Caller Name Lookup Sources section"
-msgstr ""
-"Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres de "
-"llamantes"
-
-msgid "None"
-msgstr "Ninguno"
-
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
-
-msgid "FATAL: failed to transform old routes: "
-msgstr "FATAL: No se pudieron transformar las rutas antiguas:"
-
-msgid "OK"
-msgstr "OK"
-
-msgid "Removing deprecated channel field from incoming.."
-msgstr "Eliminando campo de canal obsoleto de entrantes..."
-
-msgid "ERROR: failed: "
-msgstr "ERROR:"
-
-msgid "Not Needed"
-msgstr "No es necesario"
-
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Comprobando el campo cidlookup en la table entrante del núcleo"
-
-msgid "not present"
-msgstr "no está presente"
-
-msgid "removed"
-msgstr "eliminado"
-
-msgid "Add CID Lookup Source"
-msgstr "Añadir fuente de búsqueda de CID"
-
-msgid "CID Lookup source"
-msgstr "Fuente de búsqueda de CID"
-
-msgid "deleted"
-msgstr "eliminado"
-
-msgid "Delete CID Lookup source"
-msgstr "Eliminar fuente de búsqueda de CID"
-
-#, php-format
-msgid ""
-"There are %s DIDs using this source that will no longer have lookups if "
-"deleted."
-msgstr ""
-
-#, php-format
-msgid "Source: %s (id %s)"
-msgstr "Fuente: %s (id %s)"
-
-msgid "Add Source"
-msgstr "Añadir fuente"
-
+#: /usr/src/freepbx/cidlookup/views/main.html.php:19
 msgid ""
 "A Lookup Source let you specify a source for resolving numeric CallerIDs of "
 "incoming calls, you can then link an Inbound route to a specific CID source. "
@@ -125,41 +46,60 @@ msgstr ""
 "número <-> nombre. Tenga cuidado, ya que la búsqueda de nombres puede "
 "penalizar el rendimiento de su PBX"
 
-msgid "Edit Source"
-msgstr "Editar fuente"
-
-msgid "Source Description:"
-msgstr "Descripción de la fuente:"
-
-msgid "Enter a description for this source."
-msgstr "Introduzca una descripción para este origen."
-
-msgid "Source type:"
-msgstr "Tipo de fuente:"
-
-msgid ""
-"Select the source type, you can choose between:<ul><li>Internal: use astdb "
-"as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
-"to lookup caller names, it uses ENUM lookup zones as configured in enum."
-"conf</li><li>HTTP: It executes an HTTP GET passing the caller number as "
-"argument to retrieve the correct name</li><li>MySQL: It queries a MySQL "
-"database to retrieve caller name</li></ul>"
-msgstr ""
-"Seleccione el tipo de fuente. Puede elegir entre:<ul><li>Interno: utiliza "
-"astdb como fuente de búsqueda, utiliza el modulo \"Listín telefónico\".</"
-"li><li>ENUM: Utiliza DNS para buscar los nombres de las personas que llaman. "
-"ENUM utiliza como zonas de búsqueda las configuradas en enum.conf.</"
-"li><li>HTTP: ejecuta una solictud  HTTP GET pasando el número de la persona "
-"que llama como argumento para recuperar el nombre de la persona a la que "
-"pertenece.</li><li>MySQL: consulta una base de datos MySQL para extraer el "
-"nombre de la persona que llama.</li></ul>"
-
-msgid "Internal"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:99
+msgid "Account SID:"
 msgstr ""
 
+#: /usr/src/freepbx/cidlookup/views/main.html.php:3
+msgid "Add CID Lookup Source"
+msgstr "Añadir fuente de búsqueda de CID"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:18
+#: /usr/src/freepbx/cidlookup/views/main.html.php:38
+msgid "Add Source"
+msgstr "Añadir fuente"
+
+#: /usr/src/freepbx/cidlookup/install.php:121
+msgid "Adding opencnam account columns to the cidlookup table..."
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:107
+msgid "Auth Token:"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:76
 msgid "Cache results:"
 msgstr "Resultados de la caché:"
 
+#: /usr/src/freepbx/cidlookup/views/main.html.php:229
+msgid "Character Set:"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/install.php:103
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr "Comprobando el campo cidlookup en la table entrante del núcleo"
+
+#: /usr/src/freepbx/cidlookup/install.php:144
+msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/install.php:125
+msgid "Could not add opencnam_account_sid column to cidlookup table."
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/install.php:131
+msgid "Could not add opencnam_auth_token column to cidlookup table."
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:197
+msgid "Database name"
+msgstr "Nombre de la base de datos"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:197
+msgid "Database:"
+msgstr "Base de datos:"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:76
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
@@ -167,42 +107,139 @@ msgstr ""
 "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
 "valores actuales. No afecta el comportamiento de la fuente interna."
 
-msgid "HTTP"
-msgstr "HTTP:"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:22
+msgid "Delete CID Lookup source"
+msgstr "Eliminar fuente de búsqueda de CID"
 
-msgid "Host:"
-msgstr "Servidor:"
+#: /usr/src/freepbx/cidlookup/install.php:44
+#: /usr/src/freepbx/cidlookup/install.php:133
+#: /usr/src/freepbx/cidlookup/install.php:141
+#: /usr/src/freepbx/cidlookup/install.php:161
+msgid "Done!"
+msgstr ""
 
+#: /usr/src/freepbx/cidlookup/install.php:90
+msgid "ERROR: failed: "
+msgstr "ERROR:"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:38
+msgid "Edit Source"
+msgstr "Editar fuente"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:43
+msgid "Enter a description for this source."
+msgstr "Introduzca una descripción para este origen."
+
+#: /usr/src/freepbx/cidlookup/install.php:81
+msgid "FATAL: failed to transform old routes: "
+msgstr "FATAL: No se pudieron transformar las rutas antiguas:"
+
+#: /usr/src/freepbx/cidlookup/install.php:42
+#: /usr/src/freepbx/cidlookup/install.php:139
+msgid "Failed to add OpenCNAM CallerID Lookup Source: "
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:128
 msgid "Host name or IP address"
 msgstr "Nombre del servidor o IP"
 
-msgid "Port:"
-msgstr "Puerto:"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:128
+#: /usr/src/freepbx/cidlookup/views/main.html.php:189
+msgid "Host:"
+msgstr "Servidor:"
 
-msgid "Port HTTP server is listening at (default 80)"
-msgstr "Puerto en el que servidor HTTP está escuchando (normalmente es el 80)"
+#: /usr/src/freepbx/cidlookup/install.php:38
+#: /usr/src/freepbx/cidlookup/install.php:135
+msgid "Installing OpenCNAM CallerID Lookup Sources..."
+msgstr ""
 
-msgid "Username:"
-msgstr "Nombre de usuario:"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:64
+msgid "Internal"
+msgstr ""
 
-msgid "Username to use in HTTP authentication"
-msgstr "Nombre de usuario que se usará en la autentificación HTTP"
+#: /usr/src/freepbx/cidlookup/install.php:73
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
 
-msgid "Password:"
-msgstr "Contraseña:"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:184
+msgid "MySQL"
+msgstr "MySQL"
 
+#: /usr/src/freepbx/cidlookup/views/main.html.php:229
+msgid "MySQL Character Set. Leave blank for MySQL default latin1"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:189
+msgid "MySQL Host"
+msgstr "Servidor MySQL"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:221
+msgid "MySQL Password"
+msgstr "Contraseña MySQL:"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:213
+msgid "MySQL Username"
+msgstr "Nombre de usuario MySQL:"
+
+#: /usr/src/freepbx/cidlookup/functions.inc.php:327
+msgid "None"
+msgstr "Ninguno"
+
+#: /usr/src/freepbx/cidlookup/install.php:97
+msgid "Not Needed"
+msgstr "No es necesario"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:250
+#: /usr/src/freepbx/cidlookup/views/main.html.php:268
+msgid "Not yet implemented"
+msgstr "Este método no se ha implementado todavía."
+
+#: /usr/src/freepbx/cidlookup/install.php:83
+#: /usr/src/freepbx/cidlookup/install.php:92
+msgid "OK"
+msgstr "OK"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:63
+#: /usr/src/freepbx/cidlookup/views/main.html.php:85
+msgid "OpenCNAM"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/bin/opencnam-alert.php:25
+msgid "OpenCNAM Throttle Reached!"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:91
+msgid ""
+"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
+"you want, for a small fee. This is recommended for business users."
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:152
 msgid "Password to use in HTTP authentication"
 msgstr "Contraseña que se usará en la autentificación HTTP"
 
-msgid "Path:"
-msgstr "Ruta:"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:152
+#: /usr/src/freepbx/cidlookup/views/main.html.php:221
+msgid "Password:"
+msgstr "Contraseña:"
 
+#: /usr/src/freepbx/cidlookup/views/main.html.php:160
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr "Ruta del archivo a obtener<br/>Por ejemplo, /cidlookup.php"
 
-msgid "Query:"
-msgstr "Consulta:"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:160
+msgid "Path:"
+msgstr "Ruta:"
 
+#: /usr/src/freepbx/cidlookup/views/main.html.php:136
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "Puerto en el que servidor HTTP está escuchando (normalmente es el 80)"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:136
+msgid "Port:"
+msgstr "Puerto:"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:168
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm"
@@ -210,18 +247,7 @@ msgstr ""
 "Cadena de la consulta, el campo \"[NUMBER]\" sera sustituido con el número "
 "de la persona que llama.<br/>Por ejemplo, number=[NUMBER]&source=crm"
 
-msgid "MySQL"
-msgstr "MySQL"
-
-msgid "MySQL Host"
-msgstr "Servidor MySQL"
-
-msgid "Database:"
-msgstr "Base de datos:"
-
-msgid "Database name"
-msgstr "Nombre de la base de datos"
-
+#: /usr/src/freepbx/cidlookup/views/main.html.php:205
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -230,17 +256,146 @@ msgstr ""
 "de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
 "number LIKE '%[NUMBER]%'"
 
-msgid "MySQL Username"
-msgstr "Nombre de usuario MySQL:"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:168
+#: /usr/src/freepbx/cidlookup/views/main.html.php:205
+msgid "Query:"
+msgstr "Consulta:"
 
-msgid "MySQL Password"
-msgstr "Contraseña MySQL:"
+#: /usr/src/freepbx/cidlookup/install.php:86
+msgid "Removing deprecated channel field from incoming.."
+msgstr "Eliminando campo de canal obsoleto de entrantes..."
 
+#: /usr/src/freepbx/cidlookup/views/main.html.php:52
+msgid ""
+"Select the source type, you can choose between:<ul>\n"
+"                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]</"
+"li>\n"
+"                    <li>Internal: use astdb as lookup source, use phonebook "
+"module to populate it</li>\n"
+"                    <li>ENUM: Use DNS to lookup caller names, it uses ENUM "
+"lookup zones as configured in enum.conf</li>\n"
+"                    <li>HTTP: It executes an HTTP GET passing the caller "
+"number as argument to retrieve the correct name</li>\n"
+"                    <li>MySQL: It queries a MySQL database to retrieve "
+"caller name</li>\n"
+"                    </ul>"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:43
+msgid "Source Description:"
+msgstr "Descripción de la fuente:"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:51
+msgid "Source type:"
+msgstr "Tipo de fuente:"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:18
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Fuente: %s (id %s)"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:278
+msgid "Submit Changes"
+msgstr "Enviar cambios"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:245
 msgid "SugarCRM"
 msgstr "SugarCRM"
 
-msgid "Not yet implemented"
-msgstr "Este método no se ha implementado todavía."
+#: /usr/src/freepbx/cidlookup/views/main.html.php:263
+msgid "Superfecta"
+msgstr ""
 
-msgid "Submit Changes"
-msgstr "Enviar cambios"
+#: /usr/src/freepbx/cidlookup/views/main.html.php:24
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:91
+msgid "Use Professional Tier?"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:144
+msgid "Username to use in HTTP authentication"
+msgstr "Nombre de usuario que se usará en la autentificación HTTP"
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:144
+#: /usr/src/freepbx/cidlookup/views/main.html.php:213
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: /usr/src/freepbx/cidlookup/bin/opencnam-alert.php:25
+msgid ""
+"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
+"getting caller ID name information, you need to create an OpenCNAM "
+"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
+"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
+"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
+"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
+"<br/>"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:99
+msgid ""
+"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
+"page: https://www.opencnam.com/dashboard"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/views/main.html.php:107
+msgid ""
+"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
+"https://www.opencnam.com/dashboard"
+msgstr ""
+
+#: /usr/src/freepbx/cidlookup/install.php:107
+msgid "not present"
+msgstr "no está presente"
+
+#: /usr/src/freepbx/cidlookup/install.php:109
+msgid "removed"
+msgstr "eliminado"
+
+#~ msgid "CallerID Lookup"
+#~ msgstr "Búsqueda de identificador de llamante"
+
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "Búsqueda de llamantes"
+
+#~ msgid "CID Lookup Source"
+#~ msgstr "Búsqueda de CID"
+
+#~ msgid "Source"
+#~ msgstr "Fuente"
+
+#~ msgid "Sources can be added in Caller Name Lookup Sources section"
+#~ msgstr ""
+#~ "Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres "
+#~ "de llamantes"
+
+#~ msgid "CID Lookup source"
+#~ msgstr "Fuente de búsqueda de CID"
+
+#~ msgid "deleted"
+#~ msgstr "eliminado"
+
+#~ msgid ""
+#~ "Select the source type, you can choose between:<ul><li>Internal: use "
+#~ "astdb as lookup source, use phonebook module to populate it</li><li>ENUM: "
+#~ "Use DNS to lookup caller names, it uses ENUM lookup zones as configured "
+#~ "in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller "
+#~ "number as argument to retrieve the correct name</li><li>MySQL: It queries "
+#~ "a MySQL database to retrieve caller name</li></ul>"
+#~ msgstr ""
+#~ "Seleccione el tipo de fuente. Puede elegir entre:<ul><li>Interno: utiliza "
+#~ "astdb como fuente de búsqueda, utiliza el modulo \"Listín telefónico\".</"
+#~ "li><li>ENUM: Utiliza DNS para buscar los nombres de las personas que "
+#~ "llaman. ENUM utiliza como zonas de búsqueda las configuradas en enum.conf."
+#~ "</li><li>HTTP: ejecuta una solictud  HTTP GET pasando el número de la "
+#~ "persona que llama como argumento para recuperar el nombre de la persona a "
+#~ "la que pertenece.</li><li>MySQL: consulta una base de datos MySQL para "
+#~ "extraer el nombre de la persona que llama.</li></ul>"
+
+#~ msgid "HTTP"
+#~ msgstr "HTTP:"
