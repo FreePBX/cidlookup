@@ -1,55 +1,42 @@
 <?php /* $Id */
+//	License for all code of this FreePBX module can be found in the license file inside the module directory
+//	Copyright 2015 Sangoma Technologies.
+//
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
+$request = $_REQUEST;
+$heading = _("CIDLookup");
+$pageinfo = _("A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX");
 
-//Get Future Module information (This is only used for a few things right now)
-$root = dirname(__FILE__);
-$cid_modules = array();
-foreach (glob($root."/modules/*",GLOB_ONLYDIR) as $filename) {
-    $cid_modules[] = basename($filename);
+switch ($request['view']) {
+	case 'form':
+		$content = load_view(__DIR__.'/views/form.php', array('request' => $request));
+	break;
+	
+	default:
+		$content = load_view(__DIR__.'/views/grid.php', array('request' => $request));
+	break;
 }
 
-isset($_REQUEST['action']) ? ($action = $_REQUEST['action']) : $action='';
-isset($_REQUEST['itemid']) ? ($itemid = $_REQUEST['itemid']) : $itemid='';
-
-$tabindex = 0;
-
-//if submitting form, update database
-if(isset($_REQUEST['action'])) {
-	switch ($action) {
-		case "add":
-			cidlookup_add($_REQUEST);
-			needreload();
-			redirect_standard();
-		break;
-		case "delete":
-			cidlookup_del($itemid);
-			needreload();
-			redirect_standard();
-		break;
-		case "edit":
-			cidlookup_edit($itemid,$_REQUEST);
-			needreload();
-			redirect_standard('itemid');
-		break;
-	}
-}
-
-//get list of CallerID lookup sources
-$cidsources = cidlookup_list();
-
-if ($action != 'delete') {
-    if ($itemid){
-        $thisItem = cidlookup_get($itemid);
-        $dids_using_arr = cidlookup_did_list($itemid);
-        $dids_using = count($dids_using_arr);
-        $thisItem_description = isset($thisItem['description']) ? htmlspecialchars($thisItem['description']):'';
-    } else {
-        $thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null);
-    }
-}
-
-require_once('views/main.html.php');
 ?>
-<script>
-var cid_modules = <?php echo json_encode($cid_modules)?>
-</script>
+<div class="container-fluid">
+	<h1><?php echo $heading ?></h1>
+	<div class="well well-info">
+		<?php echo $pageinfo ?>
+	</div>
+	<div class = "display full-border">
+		<div class="row">
+			<div class="col-sm-9">
+				<div class="fpbx-container">
+					<div class="display full-border">
+						<?php echo $content?>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 hidden-xs bootnav">
+				<div class="list-group">
+					<?php echo load_view(__DIR__.'/views/bootnav.php', array('request' => $request))?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,3 +1,14 @@
+var cid_modules = {};
+$.ajax({
+    url: "/admin/config.php?display=cidlookup&action=getJSON&jdata=cid_modules&quietmode=1",
+    dataType: 'json',
+    success: function(data) {
+        cid_modules = data;
+    }
+});
+
+
+
 function edit_onsubmit() {
 	defaultEmptyOK = false;
     if (!$.trim($('#form_description').val()).length)
@@ -39,8 +50,8 @@ $('#sourcetype').focus(function () {
     prev_source = source;
 });
 
-$('#opencnam_professional_tier').change(function() {
-    if($(this).is(':checked')) {
+$('[name="opencnam_professional_tier"').change(function() {
+    if($(this).val() == '1') {
         $('.opencnam_pro').show();
     } else {
         $('.opencnam_pro').hide();
@@ -61,7 +72,7 @@ $(function() {
     $('#form_description').alphanumeric();
     displayInitalSourceParameters();
     // By default, don't display OpenCNAM professional stuff unless needed.
-    if(!$('#opencnam_professional_tier').is(':checked')) {
-        $('.opencnam_pro').hide()
+    if($('#opencnam_professional_tier').val() != '1') {
+        $('.opencnam_pro').hide();
     }
-})
+});
