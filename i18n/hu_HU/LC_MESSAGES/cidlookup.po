@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:07-0500\n"
+"POT-Creation-Date: 2015-03-09 12:32-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -104,11 +104,11 @@ msgstr ""
 msgid "Adding opencnam account columns to the cidlookup table..."
 msgstr ""
 
-#: cidlookup.i18n.php:4 cidlookup.i18n.php:10
+#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
 msgid "Admin"
 msgstr ""
 
-#: cidlookup.i18n.php:5 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:8
 msgid ""
 "Allows CallerID Lookup of incoming calls against different sources "
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
@@ -126,11 +126,11 @@ msgstr ""
 msgid "Cache Results"
 msgstr ""
 
-#: cidlookup.i18n.php:3 cidlookup.i18n.php:8
+#: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
 msgstr ""
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:14
+#: cidlookup.i18n.php:10
 msgid "CallerID Lookup Sources"
 msgstr ""
 
