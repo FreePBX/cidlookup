@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:07-0500\n"
-"PO-Revision-Date: 2015-03-23 22:27+0200\n"
+"PO-Revision-Date: 2015-03-23 22:29+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/cidlookup/es_ES/>\n"
@@ -140,7 +140,7 @@ msgstr "Token Autor"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
-msgstr "CIDLookup"
+msgstr "CID Lookup"
 
 #: views/form.php:112
 msgid "Cache Results"
@@ -188,7 +188,7 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
-"valores actuales. No afecta el comportamiento de la fuente interna."
+"valores actuales. No afecta el comportamiento de la fuente interna"
 
 #: Cidlookup.class.php:69
 msgid "Delete"
@@ -272,11 +272,11 @@ msgstr "Servidor MySQL"
 
 #: views/form.php:480
 msgid "MySQL Password"
-msgstr "Contraseña MySQL:"
+msgstr "Contraseña MySQL"
 
 #: views/form.php:456
 msgid "MySQL Username"
-msgstr "Nombre de usuario MySQL:"
+msgstr "Nombre de usuario MySQL"
 
 #: views/form.php:22
 msgid "MySQL:"
@@ -296,7 +296,7 @@ msgstr "No es necesario"
 
 #: views/form.php:513 views/form.php:518
 msgid "Not yet implemented"
-msgstr "Este método no se ha implementado todavía."
+msgstr "Este método no se ha implementado todavía"
 
 #: install.php:83 install.php:92
 msgid "OK"
@@ -304,7 +304,7 @@ msgstr "OK"
 
 #: views/form.php:84
 msgid "OpenCNAM"
-msgstr "OpenCNAM"
+msgstr "Open CNAM"
 
 #: bin/opencnam-alert.php:25
 msgid "OpenCNAM Throttle Reached!"
@@ -409,7 +409,7 @@ msgstr "Use nivel Profesional"
 
 #: views/form.php:272 views/form.php:444
 msgid "Username"
-msgstr "Username"
+msgstr "Nombre Usuario"
 
 #: views/form.php:284
 msgid "Username to use in HTTP authentication"
