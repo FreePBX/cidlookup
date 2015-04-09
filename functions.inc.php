@@ -327,15 +327,9 @@ function cidlookup_list($all=false) {
 	$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
 	$results = sql("SELECT * FROM cidlookup","getAll",DB_FETCHMODE_ASSOC);
 	if(is_array($results)){
-		foreach($results as $result){
-			// check to see if we have a dept match for the current AMP User.
-			if ($all || checkDept($result['deptname'])){
-				// return this item
-				$allowed[] = $result;
-			}
-		}
+		return $results;
 	}
-	return isset($allowed)?$allowed:null;
+	return null;
 }
 
 function cidlookup_get($id){
