@@ -4,11 +4,9 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 global $db;
 global $amp_conf;
 
-$autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "AUTOINCREMENT":"AUTO_INCREMENT";
-
 // create the tables
 $sql = "CREATE TABLE IF NOT EXISTS cidlookup (
-	cidlookup_id INTEGER NOT NULL PRIMARY KEY $autoincrement,
+	cidlookup_id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	description varchar(50) NOT NULL,
 	sourcetype varchar(100) NOT NULL,
 	cache tinyint(1) NOT NULL default '0',
@@ -30,16 +28,18 @@ $sql = "CREATE TABLE IF NOT EXISTS cidlookup (
 );";
 $check = $db->query($sql);
 if (DB::IsError($check)) {
-        die_freepbx( "Can not create `cidlookup` table: " . $check->getMessage() .  "\n");
+	die_freepbx( "Can not create `cidlookup` table: " . $check->getMessage() .  "\n");
+	return false;
 } else {
 
 	// Install a default OpenCNAM Caller ID lookup source, if we're installing this
 	// module for the very first time.
 	outn(_("Installing OpenCNAM CallerID Lookup Sources..."));
 	$sql = "INSERT INTO cidlookup (description, sourcetype) VALUES ('OpenCNAM', 'opencnam')";
-	$results = @$db->query($sql);
+	$results = $db->query($sql);
 	if (DB::IsError($results)) {
 		out(_("Failed to add OpenCNAM CallerID Lookup Source: ").$results->getMessage());
+		return false;
 	} else {
 		out(_("Done!"));
 	}
@@ -151,7 +151,7 @@ if (!array_key_exists('opencnam_account_sid',$fields) && !array_key_exists('open
 		if(!empty($sources[$i]['opencnam_account_sid'])) {
 			continue;
 		}
-	
+
 		//don't delete the last remaining line!
 		if($i != ($total - 1)) {
 			$sql = "DELETE FROM cidlookup WHERE cidlookup_id=".$sources[$i]['cidlookup_id'];

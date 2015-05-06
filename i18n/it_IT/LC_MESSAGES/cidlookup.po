@@ -30,21 +30,15 @@ msgstr ""
 "X-Poedit-Country: ITALY\n"
 
 #: views/form.php:20
-msgid ""
-" It executes an HTTP GET passing the caller number as argument to retrieve "
-"the correct name"
+msgid " It executes an HTTP GET passing the caller number as argument to retrieve the correct name"
 msgstr ""
 
 #: views/form.php:21
-msgid ""
-" It executes an HTTPS GET passing the caller number as argument to retrieve "
-"the correct name"
+msgid " It executes an HTTPS GET passing the caller number as argument to retrieve the correct name"
 msgstr ""
 
 #: views/form.php:19
-msgid ""
-" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
-"enum.conf"
+msgid " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf"
 msgstr ""
 
 #: views/form.php:17
@@ -56,37 +50,16 @@ msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
 
 #: views/form.php:135
-msgid ""
-"<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 "
-"cached CallerID lookups per hour. If you get more than 60 incoming calls per "
-"hour, or want real-time CallerID information (more accurate), you should use "
-"the Professional Tier.</p>"
+msgid "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 cached CallerID lookups per hour. If you get more than 60 incoming calls per hour, or want real-time CallerID information (more accurate), you should use the Professional Tier.</p>"
 msgstr ""
 
 #: views/form.php:136
-msgid ""
-"<p>If you'd like to create an OpenCNAM Professional Tier account, you can do "
-"so on their website: <a href=\"https://www.opencnam.com/register\" target="
-"\"_blank\">https://www.opencnam.com/register</a></p>"
+msgid "<p>If you'd like to create an OpenCNAM Professional Tier account, you can do so on their website: <a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www.opencnam.com/register</a></p>"
 msgstr ""
 
 #: page.cidlookup.php:8
-msgid ""
-"A Lookup Source let you specify a source for resolving numeric CallerIDs of "
-"incoming calls, you can then link an Inbound route to a specific CID source. "
-"This way you will have more detailed CDR reports with information taken "
-"directly from your CRM. You can also install the phonebook module to have a "
-"small number <-> name association. Pay attention, name lookup may slow down "
-"your PBX"
-msgstr ""
-"Da qui è possibile specificare una sorgente per la risoluzione del Numero "
-"Identificativo Chiamante nelle chiamate in entrata; successivamente si potrà "
-"creare un collegamento nelle Rotte in Entrata ad una delle sorgenti qui "
-"specificate. In questo modo si avranno le informazioni sui clienti prese "
-"direttamente dal proprio CRM e visualizzabili nei Rapporti Chiamate. Si può "
-"installare anche il modulo Rubrica che permette di associare in maniera "
-"veloce il numero di telefono al nome in Rubrica. Stare molto attenti però, "
-"la Risoluzione dei nomi potrebbe rallentare il PBX."
+msgid "A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX"
+msgstr "Da qui è possibile specificare una sorgente per la risoluzione del Numero Identificativo Chiamante nelle chiamate in entrata; successivamente si potrà creare un collegamento nelle Rotte in Entrata ad una delle sorgenti qui specificate. In questo modo si avranno le informazioni sui clienti prese direttamente dal proprio CRM e visualizzabili nei Rapporti Chiamate. Si può installare anche il modulo Rubrica che permette di associare in maniera veloce il numero di telefono al nome in Rubrica. Stare molto attenti però, la Risoluzione dei nomi potrebbe rallentare il PBX."
 
 #: views/form.php:172
 msgid "Account SID:"
@@ -109,9 +82,7 @@ msgid "Admin"
 msgstr ""
 
 #: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgid "Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
 
 #: views/form.php:196
@@ -163,13 +134,8 @@ msgid "Database Name"
 msgstr ""
 
 #: views/form.php:127
-msgid ""
-"Decide whether or not cache the results to astDB; it will overwrite present "
-"values. It does not affect Internal source behavior"
-msgstr ""
-"Decide se salvare o no i dati in astDB; questo comporterà la sovrascrittura "
-"di eventuali dati già presenti. Questo non influisce sul comportamento della "
-"sorgente Interna."
+msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgstr "Decide se salvare o no i dati in astDB; questo comporterà la sovrascrittura di eventuali dati già presenti. Questo non influisce sul comportamento della sorgente Interna."
 
 #: Cidlookup.class.php:69
 msgid "Delete"
@@ -292,9 +258,7 @@ msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
 #: views/form.php:160
-msgid ""
-"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
-"you want, for a small fee. This is recommended for business users."
+msgid "OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as you want, for a small fee. This is recommended for business users."
 msgstr ""
 
 #: views/form.php:17
@@ -330,20 +294,12 @@ msgid "Query"
 msgstr ""
 
 #: views/form.php:356
-msgid ""
-"Query string, special token '[NUMBER]' will be replaced with caller "
-"number<br/>e.g.: number=[NUMBER]&source=crm"
-msgstr ""
-"Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di "
-"telefono<br/>e.s.: number=[NUMBER]&source=crm"
+msgid "Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di telefono<br/>e.s.: number=[NUMBER]&source=crm"
 
 #: views/form.php:432
-msgid ""
-"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
-"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-msgstr ""
-"Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di "
-"telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgid "Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
 #: install.php:86
 msgid "Removing deprecated channel field from incoming.."
@@ -371,9 +327,7 @@ msgstr ""
 
 #: views/form.php:34
 #, php-format
-msgid ""
-"There are %s DIDs using this source that will no longer have lookups if "
-"deleted."
+msgid "There are %s DIDs using this source that will no longer have lookups if deleted."
 msgstr ""
 
 #: views/grid.php:23
@@ -397,26 +351,15 @@ msgid "Yes"
 msgstr ""
 
 #: bin/opencnam-alert.php:25
-msgid ""
-"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
-"getting caller ID name information, you need to create an OpenCNAM "
-"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
-"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
-"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
-"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
-"<br/>"
+msgid "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue getting caller ID name information, you need to create an OpenCNAM Professional Account.<br/><br/>You can create an OpenCNAM account at: <a href=\"https://www.opencnam.com/register\">https://www.opencnam.com/register</a>.<br/><br/>Once you have created an account, visit the CallerID Lookup Sources menu and enter your OpenCNAM Professional Tier credentials.<br/>"
 msgstr ""
 
 #: views/form.php:184
-msgid ""
-"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
-"page: https://www.opencnam.com/dashboard"
+msgid "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard"
 msgstr ""
 
 #: views/form.php:208
-msgid ""
-"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
-"https://www.opencnam.com/dashboard"
+msgid "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard"
 msgstr ""
 
 #: install.php:107
@@ -427,11 +370,44 @@ msgstr "non presente"
 msgid "removed"
 msgstr "rimosso"
 
+#: views/main.html.php:107
+msgid "Auth Token:"
+msgstr ""
+
+#: views/main.html.php:229
+msgid "Character Set:"
+msgstr ""
+
+#: views/main.html.php:52
+msgid ""
+"Select the source type, you can choose between:<ul>\n"
+"                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]</li>\n"
+"                    <li>Internal: use astdb as lookup source, use phonebook module to populate it</li>\n"
+"                    <li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li>\n"
+"                    <li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li>\n"
+"                    <li>MySQL: It queries a MySQL database to retrieve caller name</li>\n"
+"                    </ul>"
+msgstr ""
+
+#: views/main.html.php:263
+msgid "Superfecta"
+msgstr ""
+
+#: views/main.html.php:91
+msgid "Use Professional Tier?"
+msgstr ""
+
+msgid "Allows CallerID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "Aggiungi Sorgente Risoluzione ID Chiamante"
 
 #~ msgid "Add Source"
 #~ msgstr "Aggiungi Sorgente"
+
+#~ msgid "CID Lookup Source"
+#~ msgstr "Sorgente Risoluzione ID"
 
 #~ msgid "Cache results:"
 #~ msgstr "Salva risultati:"
@@ -469,6 +445,9 @@ msgstr "rimosso"
 #~ msgid "Query:"
 #~ msgstr "Query:"
 
+#~ msgid "Source"
+#~ msgstr "Sorgente"
+
 #~ msgid "Source Description:"
 #~ msgstr "Descrizione Sorgente:"
 
@@ -477,6 +456,9 @@ msgstr "rimosso"
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "Sorgente: %s (id %s)"
+
+#~ msgid "Sources can be added in Caller Name Lookup Sources section"
+#~ msgstr "Le sorgenti possono essere aggiunte nella sezione Risoluzione Nome Chiamante"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Conferma Cambiamenti"
@@ -487,38 +469,14 @@ msgstr "rimosso"
 #~ msgid "Username:"
 #~ msgstr "Nome utente:"
 
-#~ msgid "CID Lookup Source"
-#~ msgstr "Sorgente Risoluzione ID"
-
-#~ msgid "Source"
-#~ msgstr "Sorgente"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr ""
-#~ "Le sorgenti possono essere aggiunte nella sezione Risoluzione Nome "
-#~ "Chiamante"
-
 #~ msgid "CID Lookup source"
 #~ msgstr "Sorgente Risoluzione ID Chiamante"
 
-#~ msgid "deleted"
-#~ msgstr "eliminato"
-
-#~ msgid ""
-#~ "Select the source type, you can choose between:<ul><li>Internal: use "
-#~ "astdb as lookup source, use phonebook module to populate it</li><li>ENUM: "
-#~ "Use DNS to lookup caller names, it uses ENUM lookup zones as configured "
-#~ "in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller "
-#~ "number as argument to retrieve the correct name</li><li>MySQL: It queries "
-#~ "a MySQL database to retrieve caller name</li></ul>"
-#~ msgstr ""
-#~ "Selezionare il tipo di sorgente, si può scegliere tra:<ul><li>Interna: "
-#~ "utilizza astdb come sorgente e il modulo rubrica per l'inserimento</"
-#~ "li><li>ENUM: utilizza il sistema DNS come sorgente di risoluzione e le "
-#~ "zone ENUM come configurate in enum.conf</li><li>HTTP: esegue un GET HTTP "
-#~ "passando il numero di telefono come argomento per risolvere il nome</"
-#~ "li><li>MySQL esegue una query ad un database MySQL per la risoluzione dei "
-#~ "nomi</li></ul>"
-
 #~ msgid "HTTP"
 #~ msgstr "HTTP"
+
+#~ msgid "Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
+#~ msgstr "Selezionare il tipo di sorgente, si può scegliere tra:<ul><li>Interna: utilizza astdb come sorgente e il modulo rubrica per l'inserimento</li><li>ENUM: utilizza il sistema DNS come sorgente di risoluzione e le zone ENUM come configurate in enum.conf</li><li>HTTP: esegue un GET HTTP passando il numero di telefono come argomento per risolvere il nome</li><li>MySQL esegue una query ad un database MySQL per la risoluzione dei nomi</li></ul>"
+
+#~ msgid "deleted"
+#~ msgstr "eliminato"

@@ -40,8 +40,7 @@ msgstr ""
 "POT-Creation-Date: 2015-03-09 12:32-0400\n"
 "PO-Revision-Date: 2014-02-25 05:01+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
-"Language-Team: Japanese <http://192.168.30.85/projects/freepbx/cidlookup/ja/"
-">\n"
+"Language-Team: Japanese <http://192.168.30.85/projects/freepbx/cidlookup/ja/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,21 +49,15 @@ msgstr ""
 "X-Generator: Weblate 1.8\n"
 
 #: views/form.php:20
-msgid ""
-" It executes an HTTP GET passing the caller number as argument to retrieve "
-"the correct name"
+msgid " It executes an HTTP GET passing the caller number as argument to retrieve the correct name"
 msgstr ""
 
 #: views/form.php:21
-msgid ""
-" It executes an HTTPS GET passing the caller number as argument to retrieve "
-"the correct name"
+msgid " It executes an HTTPS GET passing the caller number as argument to retrieve the correct name"
 msgstr ""
 
 #: views/form.php:19
-msgid ""
-" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
-"enum.conf"
+msgid " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf"
 msgstr ""
 
 #: views/form.php:17
@@ -76,35 +69,16 @@ msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
 
 #: views/form.php:135
-msgid ""
-"<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 "
-"cached CallerID lookups per hour. If you get more than 60 incoming calls per "
-"hour, or want real-time CallerID information (more accurate), you should use "
-"the Professional Tier.</p>"
+msgid "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 cached CallerID lookups per hour. If you get more than 60 incoming calls per hour, or want real-time CallerID information (more accurate), you should use the Professional Tier.</p>"
 msgstr ""
 
 #: views/form.php:136
-msgid ""
-"<p>If you'd like to create an OpenCNAM Professional Tier account, you can do "
-"so on their website: <a href=\"https://www.opencnam.com/register\" target="
-"\"_blank\">https://www.opencnam.com/register</a></p>"
+msgid "<p>If you'd like to create an OpenCNAM Professional Tier account, you can do so on their website: <a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www.opencnam.com/register</a></p>"
 msgstr ""
 
 #: page.cidlookup.php:8
-msgid ""
-"A Lookup Source let you specify a source for resolving numeric CallerIDs of "
-"incoming calls, you can then link an Inbound route to a specific CID source. "
-"This way you will have more detailed CDR reports with information taken "
-"directly from your CRM. You can also install the phonebook module to have a "
-"small number <-> name association. Pay attention, name lookup may slow down "
-"your PBX"
-msgstr ""
-"検索ソースによって、着信呼の膨大な発信者番号を解決するためにソースを特定する"
-"ことができます。そして、インバウンドルートを特定の発信者番号ソースにリンクす"
-"ることができます。この方法によって、CRMからダイレクトに取得した情報を持つCDレ"
-"ポートを得ることができます。小さい番号<->名前の関連付けを持つために、電話帳モ"
-"ジュールをインストールすることもできます。注意、名前の検索はPBXを遅くすること"
-"があります。"
+msgid "A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX"
+msgstr "検索ソースによって、着信呼の膨大な発信者番号を解決するためにソースを特定することができます。そして、インバウンドルートを特定の発信者番号ソースにリンクすることができます。この方法によって、CRMからダイレクトに取得した情報を持つCDレポートを得ることができます。小さい番号<->名前の関連付けを持つために、電話帳モジュールをインストールすることもできます。注意、名前の検索はPBXを遅くすることがあります。"
 
 #: views/form.php:172
 msgid "Account SID:"
@@ -127,12 +101,8 @@ msgid "Admin"
 msgstr "アドミン"
 
 #: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
-"別のソースに対して、着信呼の発信者番号の検索を許可する（OpenCNAM, MySQL、"
-"HTTP、ENUM、電話帳のモジュール）"
+msgid "Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr "別のソースに対して、着信呼の発信者番号の検索を許可する（OpenCNAM, MySQL、HTTP、ENUM、電話帳のモジュール）"
 
 #: views/form.php:196
 msgid "Auth Token"
@@ -183,12 +153,8 @@ msgid "Database Name"
 msgstr ""
 
 #: views/form.php:127
-msgid ""
-"Decide whether or not cache the results to astDB; it will overwrite present "
-"values. It does not affect Internal source behavior"
-msgstr ""
-"astDBへの結果をキャッシュするかどうかを決定します；現在の値を上書きします。イ"
-"ンターナルソースの挙動には影響しません。"
+msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+msgstr "astDBへの結果をキャッシュするかどうかを決定します；現在の値を上書きします。インターナルソースの挙動には影響しません。"
 
 #: Cidlookup.class.php:69
 msgid "Delete"
@@ -311,12 +277,8 @@ msgid "OpenCNAM Throttle Reached!"
 msgstr "OpenCNAM 制限に達しました！"
 
 #: views/form.php:160
-msgid ""
-"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
-"you want, for a small fee. This is recommended for business users."
-msgstr ""
-"OpenCNAMのProfessional Tierでは、CNAMリアルタイムクエリーの制限がないため、ビ"
-"ジネス利用の場合はお勧めです。"
+msgid "OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as you want, for a small fee. This is recommended for business users."
+msgstr "OpenCNAMのProfessional Tierでは、CNAMリアルタイムクエリーの制限がないため、ビジネス利用の場合はお勧めです。"
 
 #: views/form.php:17
 msgid "OpenCNAM:"
@@ -351,20 +313,12 @@ msgid "Query"
 msgstr ""
 
 #: views/form.php:356
-msgid ""
-"Query string, special token '[NUMBER]' will be replaced with caller "
-"number<br/>e.g.: number=[NUMBER]&source=crm"
-msgstr ""
-"クエリー文字列、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>"
-"例： number=[NUMBER]&source=crm"
+msgid "Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr "クエリー文字列、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例： number=[NUMBER]&source=crm"
 
 #: views/form.php:432
-msgid ""
-"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
-"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-msgstr ""
-"クエリー、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例："
-"SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgid "Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr "クエリー、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例：SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
 #: install.php:86
 msgid "Removing deprecated channel field from incoming.."
@@ -392,12 +346,8 @@ msgstr ""
 
 #: views/form.php:34
 #, php-format
-msgid ""
-"There are %s DIDs using this source that will no longer have lookups if "
-"deleted."
-msgstr ""
-"このソースを使用しているダイヤルインが%s個あり、削除した場合は検索できませ"
-"ん。"
+msgid "There are %s DIDs using this source that will no longer have lookups if deleted."
+msgstr "このソースを使用しているダイヤルインが%s個あり、削除した場合は検索できません。"
 
 #: views/grid.php:23
 msgid "Type"
@@ -420,37 +370,16 @@ msgid "Yes"
 msgstr ""
 
 #: bin/opencnam-alert.php:25
-msgid ""
-"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
-"getting caller ID name information, you need to create an OpenCNAM "
-"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
-"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
-"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
-"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
-"<br/>"
-msgstr ""
-"OpenCNAMの無料利用制限を超過しました。<br/><br/>caller ID名情報の取得し続ける"
-"には、OpenCNAMプロフェッショナルアカウントを作成する必要があります。<br/><br/"
-">作成するには ：<a href=\"https://www.opencnam.com/register\">https://www."
-"opencnam.com/register</a>にアクセスしてください。<br/><br/>アカウント作成後、"
-"CallerIDルックアップソースのメニューを開き、アカウント情報(OpenCNAM "
-"Professional Tier credentials)を入力してください。<br/>"
+msgid "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue getting caller ID name information, you need to create an OpenCNAM Professional Account.<br/><br/>You can create an OpenCNAM account at: <a href=\"https://www.opencnam.com/register\">https://www.opencnam.com/register</a>.<br/><br/>Once you have created an account, visit the CallerID Lookup Sources menu and enter your OpenCNAM Professional Tier credentials.<br/>"
+msgstr "OpenCNAMの無料利用制限を超過しました。<br/><br/>caller ID名情報の取得し続けるには、OpenCNAMプロフェッショナルアカウントを作成する必要があります。<br/><br/>作成するには ：<a href=\"https://www.opencnam.com/register\">https://www.opencnam.com/register</a>にアクセスしてください。<br/><br/>アカウント作成後、CallerIDルックアップソースのメニューを開き、アカウント情報(OpenCNAM Professional Tier credentials)を入力してください。<br/>"
 
 #: views/form.php:184
-msgid ""
-"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
-"page: https://www.opencnam.com/dashboard"
-msgstr ""
-"OpenCNAMのアカウントSID。OpenCNAMのダッシュボードページで確認できます："
-"https://www.opencnam.com/dashboard"
+msgid "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard"
+msgstr "OpenCNAMのアカウントSID。OpenCNAMのダッシュボードページで確認できます：https://www.opencnam.com/dashboard"
 
 #: views/form.php:208
-msgid ""
-"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
-"https://www.opencnam.com/dashboard"
-msgstr ""
-"OpenCNAMの認証トークン。OpenCNAMのダッシュボードページで確認できます："
-"https://www.opencnam.com/dashboard"
+msgid "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard"
+msgstr "OpenCNAMの認証トークン。OpenCNAMのダッシュボードページで確認できます：https://www.opencnam.com/dashboard"
 
 #: install.php:107
 msgid "not present"
@@ -468,6 +397,9 @@ msgstr "削除済み"
 
 #~ msgid "Auth Token:"
 #~ msgstr "認証トークン："
+
+#~ msgid "CID Lookup Source"
+#~ msgstr "CID検索ソース"
 
 #~ msgid "Cache results:"
 #~ msgstr "キャッシュ結果："
@@ -510,30 +442,23 @@ msgstr "削除済み"
 
 #~ msgid ""
 #~ "Select the source type, you can choose between:<ul>\n"
-#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]"
-#~ "</li>\n"
-#~ "                    <li>Internal: use astdb as lookup source, use "
-#~ "phonebook module to populate it</li>\n"
-#~ "                    <li>ENUM: Use DNS to lookup caller names, it uses "
-#~ "ENUM lookup zones as configured in enum.conf</li>\n"
-#~ "                    <li>HTTP: It executes an HTTP GET passing the caller "
-#~ "number as argument to retrieve the correct name</li>\n"
-#~ "                    <li>MySQL: It queries a MySQL database to retrieve "
-#~ "caller name</li>\n"
+#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]</li>\n"
+#~ "                    <li>Internal: use astdb as lookup source, use phonebook module to populate it</li>\n"
+#~ "                    <li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li>\n"
+#~ "                    <li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li>\n"
+#~ "                    <li>MySQL: It queries a MySQL database to retrieve caller name</li>\n"
 #~ "                    </ul>"
 #~ msgstr ""
 #~ "ソースタイプを以下から選択してください：<ul>\n"
-#~ "                    <li>OpenCNAM: OpenCNAM [https://www.opencnam.com/]を使"
-#~ "用</li>\n"
-#~ "                    <li>インターナル: ソースを検索するのにastdbを使用し、"
-#~ "それを設定する為に電話帳モジュールを使用します</li>\n"
-#~ "                    <li>ENUM: 発信者の名前を検索するのにDNSを使用し、enum."
-#~ "conf内で設定されたENUM lookup zonesを使用します</li>\n"
-#~ "                    <li>HTTP: 正しい名前を検索するために、発信者番号を引数"
-#~ "にHTTP GETを実行します</li>\n"
-#~ "                    <li>MySQL: 発信者の名前を検索するための、MySQLデータ"
-#~ "ベースクエリー</li>\n"
+#~ "                    <li>OpenCNAM: OpenCNAM [https://www.opencnam.com/]を使用</li>\n"
+#~ "                    <li>インターナル: ソースを検索するのにastdbを使用し、それを設定する為に電話帳モジュールを使用します</li>\n"
+#~ "                    <li>ENUM: 発信者の名前を検索するのにDNSを使用し、enum.conf内で設定されたENUM lookup zonesを使用します</li>\n"
+#~ "                    <li>HTTP: 正しい名前を検索するために、発信者番号を引数にHTTP GETを実行します</li>\n"
+#~ "                    <li>MySQL: 発信者の名前を検索するための、MySQLデータベースクエリー</li>\n"
 #~ "                    </ul>"
+
+#~ msgid "Source"
+#~ msgstr "ソース"
 
 #~ msgid "Source Description:"
 #~ msgstr "ソース説明："
@@ -543,6 +468,9 @@ msgstr "削除済み"
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "ソース: %s (id %s)"
+
+#~ msgid "Sources can be added in Caller Name Lookup Sources section"
+#~ msgstr "ソースは発信者名検索ソースセクションで追加できます。"
 
 #~ msgid "Submit Changes"
 #~ msgstr "変更を適用"
@@ -559,20 +487,11 @@ msgstr "削除済み"
 #~ msgid "Username:"
 #~ msgstr "ユーザー名："
 
-#~ msgid "HTTP"
-#~ msgstr "HTTP"
-
-#~ msgid "CID Lookup Source"
-#~ msgstr "CID検索ソース"
-
-#~ msgid "Source"
-#~ msgstr "ソース"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr "ソースは発信者名検索ソースセクションで追加できます。"
-
 #~ msgid "CID Lookup source"
 #~ msgstr "発信者番号検索ソース"
+
+#~ msgid "HTTP"
+#~ msgstr "HTTP"
 
 #~ msgid "deleted"
 #~ msgstr "削除されました"

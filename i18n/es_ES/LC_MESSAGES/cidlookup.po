@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:32-0400\n"
+"POT-Creation-Date: 2015-05-05 21:35-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -30,63 +30,7 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/form.php:20
-msgid ""
-" It executes an HTTP GET passing the caller number as argument to retrieve "
-"the correct name"
-msgstr ""
-" Ejecuta un HTTP GET pasando el numero del llamante como argumento para "
-"obtener el nombre correcto"
-
-#: views/form.php:21
-msgid ""
-" It executes an HTTPS GET passing the caller number as argument to retrieve "
-"the correct name"
-msgstr ""
-" Ejecuta un HTTP GET pasando el numero del llamante como argumento para "
-"obtener el nombre correcto"
-
-#: views/form.php:19
-msgid ""
-" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
-"enum.conf"
-msgstr ""
-" Usa DNS para buscar el nombre del llamante, usa búsqueda de zonas ENUM tal "
-"como este configurado en enum.conf"
-
-#: views/form.php:17
-msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr " Usa OpenCNAM  [https://www.opencnam.com/]"
-
-#: views/form.php:18
-msgid " use astdb as lookup source, use phonebook module to populate it"
-msgstr ""
-" usa astdb como fuente de búsqueda, usa el modulo de listin telefónico para "
-"llenarlo"
-
-#: views/form.php:135
-msgid ""
-"<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 "
-"cached CallerID lookups per hour. If you get more than 60 incoming calls per "
-"hour, or want real-time CallerID information (more accurate), you should use "
-"the Professional Tier.</p>"
-msgstr ""
-"<p><b>NOTE:</b> OpenCNAM's Nivel Aficionado (defecto) solo permite hacer 60  "
-"búsquedas CallerID por hora. Si usted recibe mas de 60 llamadas por hora, o "
-"desea informacion precisa en tiempo real de CallerID, deberia usar el nivel "
-"profesional.</p>"
-
-#: views/form.php:136
-msgid ""
-"<p>If you'd like to create an OpenCNAM Professional Tier account, you can do "
-"so on their website: <a href=\"https://www.opencnam.com/register\" target="
-"\"_blank\">https://www.opencnam.com/register</a></p>"
-msgstr ""
-"<p>Si usted desea crear una cuenta  nivel profesional de OpenCNAM, puede "
-"hacerlo en su sitio web: <a href=\"https://www.opencnam.com/register\" "
-"target=\"_blank\">https://www.opencnam.com/register</a></p>"
-
-#: page.cidlookup.php:8
+#: views/main.html.php:19
 msgid ""
 "A Lookup Source let you specify a source for resolving numeric CallerIDs of "
 "incoming calls, you can then link an Inbound route to a specific CID source. "
@@ -102,187 +46,139 @@ msgstr ""
 "número <-> nombre. Tenga cuidado, ya que la búsqueda de nombres puede "
 "penalizar el rendimiento de su PBX"
 
-#: views/form.php:172
+#: views/main.html.php:99
 msgid "Account SID:"
-msgstr "Cuenta SID:"
+msgstr ""
 
-#: views/grid.php:24
-msgid "Actions"
-msgstr "Acciones"
+#: views/main.html.php:3
+msgid "Add CID Lookup Source"
+msgstr "Añadir fuente de búsqueda de CID"
 
-#: views/bootnav.php:6
-msgid "Add CIDLookup Source"
-msgstr "Agregar Fuente CIDLookup"
+#: views/main.html.php:18 views/main.html.php:38
+msgid "Add Source"
+msgstr "Añadir fuente"
 
 #: install.php:121
 msgid "Adding opencnam account columns to the cidlookup table..."
-msgstr "Agregando columnas cuenta opencnam a la tabla cidlookup ..."
-
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
-msgid "Admin"
-msgstr "Administrador"
-
-#: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
-"Permite búsqueda CallerID de llamadas entrantes contra diferentes fuentes "
-"(OpenCNAM, MySQL, HTTP, ENUM, Modulo Listin)"
 
-#: views/form.php:196
-msgid "Auth Token"
-msgstr "Token Autor"
+#: views/main.html.php:107
+msgid "Auth Token:"
+msgstr ""
 
-#: page.cidlookup.php:7
-msgid "CIDLookup"
-msgstr "CID Lookup"
+#: functions.inc.php:12
+msgid "CID Lookup Source"
+msgstr "Búsqueda de CID"
 
-#: views/form.php:112
-msgid "Cache Results"
-msgstr "Resultados Cache"
+#: views/main.html.php:76
+msgid "Cache results:"
+msgstr "Resultados de la caché:"
 
-#: cidlookup.i18n.php:4
-msgid "CallerID Lookup"
-msgstr "Búsqueda de identificador de llamante"
-
-#: cidlookup.i18n.php:10
-msgid "CallerID Lookup Sources"
-msgstr "Búsqueda de llamantes"
-
-#: views/form.php:492
-msgid "Character Set"
-msgstr "Conjunto de Caracteres"
+#: views/main.html.php:229
+msgid "Character Set:"
+msgstr ""
 
 #: install.php:103
 msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Comprobando el campo cidlookup en la table entrante del núcleo."
+msgstr "Comprobando el campo cidlookup en la table entrante del núcleo"
 
 #: install.php:144
 msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
-msgstr "Limpiando duplicados en fuentes de búsqueda CallerID OpenCNAM ..."
+msgstr ""
 
 #: install.php:125
 msgid "Could not add opencnam_account_sid column to cidlookup table."
-msgstr "No puede agregarse columna opencnam_account_sid  a la tabla cidlookup."
+msgstr ""
 
 #: install.php:131
 msgid "Could not add opencnam_auth_token column to cidlookup table."
-msgstr "No puede agregarse columna opencnam_auth_token  a la tabla cidlookup."
+msgstr ""
 
-#: views/form.php:396
-msgid "Database"
-msgstr "Base de datos"
+#: views/main.html.php:197
+msgid "Database name"
+msgstr "Nombre de la base de datos"
 
-#: views/form.php:408
-msgid "Database Name"
-msgstr "Nombre Base de Datos"
+#: views/main.html.php:197
+msgid "Database:"
+msgstr "Base de datos:"
 
-#: views/form.php:127
+#: views/main.html.php:76
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
 "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
-"valores actuales. No afecta el comportamiento de la fuente interna"
+"valores actuales. No afecta el comportamiento de la fuente interna."
 
-#: Cidlookup.class.php:69
-msgid "Delete"
-msgstr "Borrar"
-
-#: views/grid.php:22
-msgid "Description"
-msgstr "Descripcion"
+#: views/main.html.php:22
+msgid "Delete CID Lookup source"
+msgstr "Eliminar fuente de búsqueda de CID"
 
 #: install.php:44 install.php:133 install.php:141 install.php:161
 msgid "Done!"
-msgstr "hecho!"
-
-#: views/form.php:19
-msgid "ENUM:"
-msgstr "ENUM :"
+msgstr ""
 
 #: install.php:90
 msgid "ERROR: failed: "
-msgstr "ERROR: fallido: "
+msgstr "ERROR:"
 
-#: views/form.php:67
+#: views/main.html.php:38
+msgid "Edit Source"
+msgstr "Editar fuente"
+
+#: views/main.html.php:43
 msgid "Enter a description for this source."
 msgstr "Introduzca una descripción para este origen."
 
 #: install.php:81
 msgid "FATAL: failed to transform old routes: "
-msgstr "FATAL: No se pudieron transformar las rutas antiguas: "
+msgstr "FATAL: No se pudieron transformar las rutas antiguas:"
 
-#: install.php:42 install.php:139
+#: install.php:41 install.php:139
 msgid "Failed to add OpenCNAM CallerID Lookup Source: "
-msgstr "Falla al agregar fuente de búsqueda CalledID OpenCNAM "
+msgstr ""
 
-#: views/form.php:20
-msgid "HTTP:"
-msgstr "HTTP :"
-
-#: views/form.php:21
-msgid "HTTPS:"
-msgstr "HTTPS :"
-
-#: views/form.php:224 views/form.php:372
-msgid "Host"
-msgstr "Host"
-
-#: views/form.php:236
+#: views/main.html.php:128
 msgid "Host name or IP address"
 msgstr "Nombre del servidor o IP"
 
-#: install.php:38 install.php:135
+#: views/main.html.php:128 views/main.html.php:189
+msgid "Host:"
+msgstr "Servidor:"
+
+#: install.php:37 install.php:135
 msgid "Installing OpenCNAM CallerID Lookup Sources..."
-msgstr "Instalando fuentes de búsqueda CallerID OpenCNAM ..."
+msgstr ""
 
-#: views/form.php:85
+#: views/main.html.php:64
 msgid "Internal"
-msgstr "Interno"
-
-#: views/form.php:18
-msgid "Internal:"
-msgstr "Interno:"
-
-#: views/form.php:22
-msgid "It queries a MySQL database to retrieve caller name"
-msgstr "Solicita a MySQL para obtener en nombre del llamante"
-
-#: views/bootnav.php:5
-msgid "List CIDLookup Sources"
-msgstr "Lista de las fuentes de búsqueda CID"
+msgstr ""
 
 #: install.php:73
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
 
-#: views/form.php:504
-msgid "MySQL Character Set. Leave blank for MySQL default latin1"
-msgstr "Conjunto de caracteres MySQL. Déjelo en blanco para usar latin1"
+#: views/main.html.php:184
+msgid "MySQL"
+msgstr "MySQL"
 
-#: views/form.php:384
+#: views/main.html.php:229
+msgid "MySQL Character Set. Leave blank for MySQL default latin1"
+msgstr ""
+
+#: views/main.html.php:189
 msgid "MySQL Host"
 msgstr "Servidor MySQL"
 
-#: views/form.php:480
+#: views/main.html.php:221
 msgid "MySQL Password"
-msgstr "Contraseña MySQL"
+msgstr "Contraseña MySQL:"
 
-#: views/form.php:456
+#: views/main.html.php:213
 msgid "MySQL Username"
-msgstr "Nombre de usuario MySQL"
+msgstr "Nombre de usuario MySQL:"
 
-#: views/form.php:22
-msgid "MySQL:"
-msgstr "MySQL :"
-
-#: views/form.php:119 views/form.php:152
-msgid "No"
-msgstr "No"
-
-#: functions.inc.php:327
+#: functions.inc.php:304
 msgid "None"
 msgstr "Ninguno"
 
@@ -290,63 +186,53 @@ msgstr "Ninguno"
 msgid "Not Needed"
 msgstr "No es necesario"
 
-#: views/form.php:513 views/form.php:518
+#: views/main.html.php:250 views/main.html.php:268
 msgid "Not yet implemented"
-msgstr "Este método no se ha implementado todavía"
+msgstr "Este método no se ha implementado todavía."
 
 #: install.php:83 install.php:92
 msgid "OK"
 msgstr "OK"
 
-#: views/form.php:84
+#: views/main.html.php:63 views/main.html.php:85
 msgid "OpenCNAM"
-msgstr "Open CNAM"
+msgstr ""
 
 #: bin/opencnam-alert.php:25
 msgid "OpenCNAM Throttle Reached!"
-msgstr "OpenCNAM Throttle Alcanzado!"
+msgstr ""
 
-#: views/form.php:160
+#: views/main.html.php:91
 msgid ""
 "OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
 "you want, for a small fee. This is recommended for business users."
 msgstr ""
-"Nivel Profesional OpenCNAM le permite hacer tantos requerimientos en tiempo "
-"real CNAM como desee. Esto es recomendado para usuarios empresariales."
 
-#: views/form.php:17
-msgid "OpenCNAM:"
-msgstr "OpenCNAM :"
-
-#: views/form.php:296 views/form.php:468
-msgid "Password"
-msgstr "Contraseña"
-
-#: views/form.php:308
+#: views/main.html.php:152
 msgid "Password to use in HTTP authentication"
 msgstr "Contraseña que se usará en la autentificación HTTP"
 
-#: views/form.php:320
-msgid "Path"
-msgstr "Camino"
+#: views/main.html.php:152 views/main.html.php:221
+msgid "Password:"
+msgstr "Contraseña:"
 
-#: views/form.php:332
+#: views/main.html.php:160
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr "Ruta del archivo a obtener<br/>Por ejemplo, /cidlookup.php"
 
-#: views/form.php:248
-msgid "Port"
-msgstr "Puerto"
+#: views/main.html.php:160
+msgid "Path:"
+msgstr "Ruta:"
 
-#: views/form.php:260
-msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
-msgstr "Puerto donde escucha el server HTTP(s) (defecto http 80, https 443)"
+#: views/main.html.php:136
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "Puerto en el que servidor HTTP está escuchando (normalmente es el 80)"
 
-#: views/form.php:344 views/form.php:420
-msgid "Query"
-msgstr "Peticion"
+#: views/main.html.php:136
+msgid "Port:"
+msgstr "Puerto:"
 
-#: views/form.php:356
+#: views/main.html.php:168
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm"
@@ -354,7 +240,7 @@ msgstr ""
 "Cadena de la consulta, el campo \"[NUMBER]\" sera sustituido con el número "
 "de la persona que llama.<br/>Por ejemplo, number=[NUMBER]&source=crm"
 
-#: views/form.php:432
+#: views/main.html.php:205
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -363,57 +249,83 @@ msgstr ""
 "de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
 "number LIKE '%[NUMBER]%'"
 
+#: views/main.html.php:168 views/main.html.php:205
+msgid "Query:"
+msgstr "Consulta:"
+
 #: install.php:86
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Eliminando campo de canal obsoleto de entrantes..."
 
-#: Cidlookup.class.php:79
-msgid "Reset"
-msgstr "Restaura"
+#: views/main.html.php:52
+msgid ""
+"Select the source type, you can choose between:<ul>\n"
+"                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]</"
+"li>\n"
+"                    <li>Internal: use astdb as lookup source, use phonebook "
+"module to populate it</li>\n"
+"                    <li>ENUM: Use DNS to lookup caller names, it uses ENUM "
+"lookup zones as configured in enum.conf</li>\n"
+"                    <li>HTTP: It executes an HTTP GET passing the caller "
+"number as argument to retrieve the correct name</li>\n"
+"                    <li>MySQL: It queries a MySQL database to retrieve "
+"caller name</li>\n"
+"                    </ul>"
+msgstr ""
 
-#: views/form.php:15
-msgid "Select the source type, you can choose between:"
-msgstr "Seleccione el tipo de fuente, puede escoger entre:"
+#: functions.inc.php:16
+msgid "Source"
+msgstr "Fuente"
 
-#: views/form.php:55
-msgid "Source Description"
-msgstr "Fuente Descripcion"
+#: views/main.html.php:43
+msgid "Source Description:"
+msgstr "Descripción de la fuente:"
 
-#: views/form.php:79
-msgid "Source type"
-msgstr "Fuente tipo"
+#: views/main.html.php:51
+msgid "Source type:"
+msgstr "Tipo de fuente:"
 
-#: Cidlookup.class.php:74
-msgid "Submit"
-msgstr "Enviar"
+#: views/main.html.php:18
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Fuente: %s (id %s)"
 
-#: views/form.php:34
+#: functions.inc.php:16
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr ""
+"Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres de "
+"llamantes"
+
+#: views/main.html.php:278
+msgid "Submit Changes"
+msgstr "Enviar cambios"
+
+#: views/main.html.php:245
+msgid "SugarCRM"
+msgstr "SugarCRM"
+
+#: views/main.html.php:263
+msgid "Superfecta"
+msgstr ""
+
+#: views/main.html.php:24
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
 "deleted."
 msgstr ""
-"Hay %s DIDs usando esta fuente que perderán la búsqueda si es eliminada."
 
-#: views/grid.php:23
-msgid "Type"
-msgstr "Tipo"
+#: views/main.html.php:91
+msgid "Use Professional Tier?"
+msgstr ""
 
-#: views/form.php:145
-msgid "Use Professional Tier"
-msgstr "Use nivel Profesional"
-
-#: views/form.php:272 views/form.php:444
-msgid "Username"
-msgstr "Nombre Usuario"
-
-#: views/form.php:284
+#: views/main.html.php:144
 msgid "Username to use in HTTP authentication"
 msgstr "Nombre de usuario que se usará en la autentificación HTTP"
 
-#: views/form.php:117 views/form.php:150
-msgid "Yes"
-msgstr "Si"
+#: views/main.html.php:144 views/main.html.php:213
+msgid "Username:"
+msgstr "Nombre de usuario:"
 
 #: bin/opencnam-alert.php:25
 msgid ""
@@ -425,29 +337,18 @@ msgid ""
 "Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
 "<br/>"
 msgstr ""
-"Usted ha ido más allá de los límites de uso OpenCNAM libres. <br/><br/> Para "
-"seguir obteniendo información de la llamada, es necesario crear una Cuenta "
-"Profesional OpenCNAM. <br/><br/> Puede crear una cuenta en OpenCNAM :. <a "
-"href=\"https://www.opencnam.com/register\"> https://www.opencnam.com/"
-"register </a><br/><br/> una vez que haya creado una cuenta, visite el menú "
-"de búsqueda CallerID Fuentes e introduzca sus credenciales OpenCNAM Tier "
-"profesionales. <br/>"
 
-#: views/form.php:184
+#: views/main.html.php:99
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 msgstr ""
-"Su SID de cuenta OpenCNAM. Esta puede ser encontrada en su panel de OpenCNAM "
-"en pagina: https://www.opencnam.com/dashboard"
 
-#: views/form.php:208
+#: views/main.html.php:107
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
 msgstr ""
-"Su Token de autorización OpenCNAM/ Este puede ser encontrado en su panel de "
-"OpenCNAM en pagina: https://www.opencnam.com/dashboard"
 
 #: install.php:107
 msgid "not present"
@@ -457,57 +358,17 @@ msgstr "no está presente"
 msgid "removed"
 msgstr "eliminado"
 
-#~ msgid "Add CID Lookup Source"
-#~ msgstr "Añadir fuente de búsqueda de CID"
+#~ msgid "CallerID Lookup"
+#~ msgstr "Búsqueda de identificador de llamante"
 
-#~ msgid "Add Source"
-#~ msgstr "Añadir fuente"
-
-#~ msgid "CID Lookup Source"
-#~ msgstr "Búsqueda de CID"
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "Búsqueda de llamantes"
 
 #~ msgid "CID Lookup source"
 #~ msgstr "Fuente de búsqueda de CID"
 
-#~ msgid "Cache results:"
-#~ msgstr "Resultados de la caché:"
-
-#~ msgid "Database name"
-#~ msgstr "Nombre de la base de datos"
-
-#~ msgid "Database:"
-#~ msgstr "Base de datos:"
-
-#~ msgid "Delete CID Lookup source"
-#~ msgstr "Eliminar fuente de búsqueda de CID"
-
-#~ msgid "Edit Source"
-#~ msgstr "Editar fuente"
-
-#~ msgid "HTTP"
-#~ msgstr "HTTP:"
-
-#~ msgid "Host:"
-#~ msgstr "Servidor:"
-
-#~ msgid "MySQL"
-#~ msgstr "MySQL"
-
-#~ msgid "Password:"
-#~ msgstr "Contraseña:"
-
-#~ msgid "Path:"
-#~ msgstr "Ruta:"
-
-#~ msgid "Port HTTP server is listening at (default 80)"
-#~ msgstr ""
-#~ "Puerto en el que servidor HTTP está escuchando (normalmente es el 80)"
-
-#~ msgid "Port:"
-#~ msgstr "Puerto:"
-
-#~ msgid "Query:"
-#~ msgstr "Consulta:"
+#~ msgid "deleted"
+#~ msgstr "eliminado"
 
 #~ msgid ""
 #~ "Select the source type, you can choose between:<ul><li>Internal: use "
@@ -526,31 +387,5 @@ msgstr "eliminado"
 #~ "la que pertenece.</li><li>MySQL: consulta una base de datos MySQL para "
 #~ "extraer el nombre de la persona que llama.</li></ul>"
 
-#~ msgid "Source"
-#~ msgstr "Fuente"
-
-#~ msgid "Source Description:"
-#~ msgstr "Descripción de la fuente:"
-
-#~ msgid "Source type:"
-#~ msgstr "Tipo de fuente:"
-
-#~ msgid "Source: %s (id %s)"
-#~ msgstr "Fuente: %s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr ""
-#~ "Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres "
-#~ "de llamantes"
-
-#~ msgid "Submit Changes"
-#~ msgstr "Enviar cambios"
-
-#~ msgid "SugarCRM"
-#~ msgstr "SugarCRM"
-
-#~ msgid "Username:"
-#~ msgstr "Nombre de usuario:"
-
-#~ msgid "deleted"
-#~ msgstr "eliminado"
+#~ msgid "HTTP"
+#~ msgstr "HTTP:"
