@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>2.11.1.11</version>
+	<version>2.11.1.12</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*2.11.1.12* Attempt to fix FREEPBX-9208
 		*2.11.1.11* #8075 - Change number of OpenCNAM lookups on the free plan
 		*2.11.1.10* FREEPBX-7453 HTTPS lookup type does not display a form for settings
 		*2.11.1.9* Update license
