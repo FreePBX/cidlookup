@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:32-0400\n"
+"POT-Creation-Date: 2015-05-20 17:28-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -19,15 +19,21 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: views/form.php:20
-msgid " It executes an HTTP GET passing the caller number as argument to retrieve the correct name"
+msgid ""
+" It executes an HTTP GET passing the caller number as argument to retrieve "
+"the correct name"
 msgstr ""
 
 #: views/form.php:21
-msgid " It executes an HTTPS GET passing the caller number as argument to retrieve the correct name"
+msgid ""
+" It executes an HTTPS GET passing the caller number as argument to retrieve "
+"the correct name"
 msgstr ""
 
 #: views/form.php:19
-msgid " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf"
+msgid ""
+" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
+"enum.conf"
 msgstr ""
 
 #: views/form.php:17
@@ -38,23 +44,40 @@ msgstr ""
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
 
-#: views/form.php:135
-msgid "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 cached CallerID lookups per hour. If you get more than 60 incoming calls per hour, or want real-time CallerID information (more accurate), you should use the Professional Tier.</p>"
+#: views/form.php:131
+msgid ""
+"<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 "
+"cached CallerID lookups per hour. If you get more than 60 incoming calls per "
+"hour, or want real-time CallerID information (more accurate), you should use "
+"the Professional Tier.</p>"
 msgstr ""
 
-#: views/form.php:136
-msgid "<p>If you'd like to create an OpenCNAM Professional Tier account, you can do so on their website: <a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www.opencnam.com/register</a></p>"
+#: views/form.php:132
+msgid ""
+"<p>If you'd like to create an OpenCNAM Professional Tier account, you can do "
+"so on their website: <a href=\"https://www.opencnam.com/register\" target="
+"\"_blank\">https://www.opencnam.com/register</a></p>"
 msgstr ""
 
 #: page.cidlookup.php:8
-msgid "A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX"
-msgstr "查找源是你指定的用来解析入局的数字主叫ID的源，你可以把一条入局线路与特定的CID源链接起来。在这种工作方式下，你将获得更详细的CDR报告，报告中将包含直接从你的CRM里获取的内容。你也可以安装电话簿模块以提供简易的数字<->名字关联。请注意，名字查找将会减慢你的PBX服务器。"
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric CallerIDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with information taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+"查找源是你指定的用来解析入局的数字主叫ID的源，你可以把一条入局线路与特定的CID"
+"源链接起来。在这种工作方式下，你将获得更详细的CDR报告，报告中将包含直接从你的"
+"CRM里获取的内容。你也可以安装电话簿模块以提供简易的数字<->名字关联。请注意，"
+"名字查找将会减慢你的PBX服务器。"
 
-#: views/form.php:172
+#: views/form.php:168
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:25
 msgid "Actions"
 msgstr ""
 
@@ -66,15 +89,7 @@ msgstr ""
 msgid "Adding opencnam account columns to the cidlookup table..."
 msgstr ""
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
-msgid "Admin"
-msgstr ""
-
-#: cidlookup.i18n.php:8
-msgid "Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
-
-#: views/form.php:196
+#: views/form.php:192
 msgid "Auth Token"
 msgstr ""
 
@@ -82,19 +97,11 @@ msgstr ""
 msgid "CIDLookup"
 msgstr ""
 
-#: views/form.php:112
+#: views/form.php:108
 msgid "Cache Results"
 msgstr ""
 
-#: cidlookup.i18n.php:4
-msgid "CallerID Lookup"
-msgstr "主叫ID查询"
-
-#: cidlookup.i18n.php:10
-msgid "CallerID Lookup Sources"
-msgstr "主叫ID查询"
-
-#: views/form.php:492
+#: views/form.php:488
 msgid "Character Set"
 msgstr ""
 
@@ -114,23 +121,25 @@ msgstr ""
 msgid "Could not add opencnam_auth_token column to cidlookup table."
 msgstr ""
 
-#: views/form.php:396
+#: views/form.php:392
 msgid "Database"
 msgstr ""
 
-#: views/form.php:408
+#: views/form.php:404
 msgid "Database Name"
 msgstr ""
 
-#: views/form.php:127
-msgid "Decide whether or not cache the results to astDB; it will overwrite present values. It does not affect Internal source behavior"
+#: views/form.php:123
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
 msgstr "设置是否将查询结果缓存到astDB；它将覆盖当前设置。它不影响内部源的行为"
 
 #: Cidlookup.class.php:69
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:22
+#: views/grid.php:23
 msgid "Description"
 msgstr ""
 
@@ -146,7 +155,7 @@ msgstr ""
 msgid "ERROR: failed: "
 msgstr "错误：失败："
 
-#: views/form.php:67
+#: views/form.php:63
 msgid "Enter a description for this source."
 msgstr "为此源添加描述。"
 
@@ -154,7 +163,7 @@ msgstr "为此源添加描述。"
 msgid "FATAL: failed to transform old routes: "
 msgstr "致命错误：无法转换旧的路由（线路）："
 
-#: install.php:42 install.php:139
+#: install.php:41 install.php:139
 msgid "Failed to add OpenCNAM CallerID Lookup Source: "
 msgstr ""
 
@@ -166,19 +175,19 @@ msgstr ""
 msgid "HTTPS:"
 msgstr ""
 
-#: views/form.php:224 views/form.php:372
+#: views/form.php:220 views/form.php:368
 msgid "Host"
 msgstr ""
 
-#: views/form.php:236
+#: views/form.php:232
 msgid "Host name or IP address"
 msgstr "主机名或者IP地址"
 
-#: install.php:38 install.php:135
+#: install.php:37 install.php:135
 msgid "Installing OpenCNAM CallerID Lookup Sources..."
 msgstr ""
 
-#: views/form.php:85
+#: views/form.php:81
 msgid "Internal"
 msgstr ""
 
@@ -198,19 +207,19 @@ msgstr ""
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "正在将频道路由迁移到Zap DID路由。。。"
 
-#: views/form.php:504
+#: views/form.php:500
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
 
-#: views/form.php:384
+#: views/form.php:380
 msgid "MySQL Host"
 msgstr "MySQL主机"
 
-#: views/form.php:480
+#: views/form.php:476
 msgid "MySQL Password"
 msgstr "MySQL密码"
 
-#: views/form.php:456
+#: views/form.php:452
 msgid "MySQL Username"
 msgstr "MySQL用户名"
 
@@ -218,7 +227,7 @@ msgstr "MySQL用户名"
 msgid "MySQL:"
 msgstr ""
 
-#: views/form.php:119 views/form.php:152
+#: views/form.php:115 views/form.php:148
 msgid "No"
 msgstr ""
 
@@ -230,7 +239,7 @@ msgstr "无"
 msgid "Not Needed"
 msgstr "没有必要"
 
-#: views/form.php:513 views/form.php:518
+#: views/form.php:509 views/form.php:514
 msgid "Not yet implemented"
 msgstr "尚未实现"
 
@@ -238,7 +247,7 @@ msgstr "尚未实现"
 msgid "OK"
 msgstr "完成"
 
-#: views/form.php:84
+#: views/form.php:80
 msgid "OpenCNAM"
 msgstr ""
 
@@ -246,49 +255,59 @@ msgstr ""
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
-#: views/form.php:160
-msgid "OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as you want, for a small fee. This is recommended for business users."
+#: views/form.php:156
+msgid ""
+"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
+"you want, for a small fee. This is recommended for business users."
 msgstr ""
 
 #: views/form.php:17
 msgid "OpenCNAM:"
 msgstr ""
 
-#: views/form.php:296 views/form.php:468
+#: views/form.php:292 views/form.php:464
 msgid "Password"
 msgstr ""
 
-#: views/form.php:308
+#: views/form.php:304
 msgid "Password to use in HTTP authentication"
 msgstr "用于HTTP鉴权的密码"
 
-#: views/form.php:320
+#: views/form.php:316
 msgid "Path"
 msgstr ""
 
-#: views/form.php:332
+#: views/form.php:328
 msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 msgstr "要请求的文件的路径<br/>例如：/cidlookup.php"
 
-#: views/form.php:248
+#: views/form.php:244
 msgid "Port"
 msgstr ""
 
-#: views/form.php:260
+#: views/form.php:256
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: views/form.php:344 views/form.php:420
+#: views/form.php:340 views/form.php:416
 msgid "Query"
 msgstr ""
 
-#: views/form.php:356
-msgid "Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm"
-msgstr "设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：number=[NUMBER]&source=crm"
+#: views/form.php:352
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr ""
+"设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：number="
+"[NUMBER]&source=crm"
 
-#: views/form.php:432
-msgid "Query, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-msgstr "设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+#: views/form.php:428
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+"设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：SELECT name "
+"FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
 #: install.php:86
 msgid "Removing deprecated channel field from incoming.."
@@ -302,11 +321,11 @@ msgstr ""
 msgid "Select the source type, you can choose between:"
 msgstr ""
 
-#: views/form.php:55
+#: views/form.php:51
 msgid "Source Description"
 msgstr ""
 
-#: views/form.php:79
+#: views/form.php:75
 msgid "Source type"
 msgstr ""
 
@@ -316,39 +335,52 @@ msgstr ""
 
 #: views/form.php:34
 #, php-format
-msgid "There are %s DIDs using this source that will no longer have lookups if deleted."
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:24
 msgid "Type"
 msgstr ""
 
-#: views/form.php:145
+#: views/form.php:141
 msgid "Use Professional Tier"
 msgstr ""
 
-#: views/form.php:272 views/form.php:444
+#: views/form.php:268 views/form.php:440
 msgid "Username"
 msgstr ""
 
-#: views/form.php:284
+#: views/form.php:280
 msgid "Username to use in HTTP authentication"
 msgstr "用于HTTP鉴权的用户名"
 
-#: views/form.php:117 views/form.php:150
+#: views/form.php:113 views/form.php:146
 msgid "Yes"
 msgstr ""
 
 #: bin/opencnam-alert.php:25
-msgid "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue getting caller ID name information, you need to create an OpenCNAM Professional Account.<br/><br/>You can create an OpenCNAM account at: <a href=\"https://www.opencnam.com/register\">https://www.opencnam.com/register</a>.<br/><br/>Once you have created an account, visit the CallerID Lookup Sources menu and enter your OpenCNAM Professional Tier credentials.<br/>"
+msgid ""
+"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
+"getting caller ID name information, you need to create an OpenCNAM "
+"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
+"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
+"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
+"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
+"<br/>"
 msgstr ""
 
-#: views/form.php:184
-msgid "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard"
+#: views/form.php:180
+msgid ""
+"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
+"page: https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: views/form.php:208
-msgid "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard"
+#: views/form.php:204
+msgid ""
+"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
+"https://www.opencnam.com/dashboard"
 msgstr ""
 
 #: install.php:107
@@ -359,35 +391,11 @@ msgstr "没有出现"
 msgid "removed"
 msgstr "已移除"
 
-#: views/main.html.php:107
-msgid "Auth Token:"
-msgstr ""
+#~ msgid "CallerID Lookup"
+#~ msgstr "主叫ID查询"
 
-#: views/main.html.php:229
-msgid "Character Set:"
-msgstr ""
-
-#: views/main.html.php:52
-msgid ""
-"Select the source type, you can choose between:<ul>\n"
-"                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]</li>\n"
-"                    <li>Internal: use astdb as lookup source, use phonebook module to populate it</li>\n"
-"                    <li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li>\n"
-"                    <li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li>\n"
-"                    <li>MySQL: It queries a MySQL database to retrieve caller name</li>\n"
-"                    </ul>"
-msgstr ""
-
-#: views/main.html.php:263
-msgid "Superfecta"
-msgstr ""
-
-#: views/main.html.php:91
-msgid "Use Professional Tier?"
-msgstr ""
-
-msgid "Allows CallerID Lookup of incoming calls against different sources (MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "主叫ID查询"
 
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "添加CID查找源"
@@ -464,8 +472,19 @@ msgstr ""
 #~ msgid "HTTP"
 #~ msgstr "HTTP"
 
-#~ msgid "Select the source type, you can choose between:<ul><li>Internal: use astdb as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller number as argument to retrieve the correct name</li><li>MySQL: It queries a MySQL database to retrieve caller name</li></ul>"
-#~ msgstr "选择源的类型，你可以在以下几项中选择：<ul><li>内部：使用astdb查询源，可以使用电话簿模块来填充它</li><li>ENUM：使用DNS来查询CID名字，它使用ENUM查询区域，可以在enum.conf中配置</li><li>HTTP:它执行一个HTTP GET请求，将主叫号码作为参数发送出去，以获取正确的名字</li><li>MySQL：到MySQL数据库中查询主叫姓名</li></ul>"
+#~ msgid ""
+#~ "Select the source type, you can choose between:<ul><li>Internal: use "
+#~ "astdb as lookup source, use phonebook module to populate it</li><li>ENUM: "
+#~ "Use DNS to lookup caller names, it uses ENUM lookup zones as configured "
+#~ "in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller "
+#~ "number as argument to retrieve the correct name</li><li>MySQL: It queries "
+#~ "a MySQL database to retrieve caller name</li></ul>"
+#~ msgstr ""
+#~ "选择源的类型，你可以在以下几项中选择：<ul><li>内部：使用astdb查询源，可以"
+#~ "使用电话簿模块来填充它</li><li>ENUM：使用DNS来查询CID名字，它使用ENUM查询"
+#~ "区域，可以在enum.conf中配置</li><li>HTTP:它执行一个HTTP GET请求，将主叫号"
+#~ "码作为参数发送出去，以获取正确的名字</li><li>MySQL：到MySQL数据库中查询主"
+#~ "叫姓名</li></ul>"
 
 #~ msgid "deleted"
 #~ msgstr "已删除"
