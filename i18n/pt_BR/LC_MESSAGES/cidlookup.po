@@ -1,0 +1,405 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for cidlookup
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-09 12:32-0400\n"
+"PO-Revision-Date: 2015-04-29 08:49+0200\n"
+"Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/cidlookup/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: views/form.php:20
+msgid ""
+" It executes an HTTP GET passing the caller number as argument to retrieve "
+"the correct name"
+msgstr ""
+
+#: views/form.php:21
+msgid ""
+" It executes an HTTPS GET passing the caller number as argument to retrieve "
+"the correct name"
+msgstr ""
+
+#: views/form.php:19
+msgid ""
+" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
+"enum.conf"
+msgstr ""
+
+#: views/form.php:17
+msgid " Use OpenCNAM [https://www.opencnam.com/]"
+msgstr ""
+
+#: views/form.php:18
+msgid " use astdb as lookup source, use phonebook module to populate it"
+msgstr ""
+
+#: views/form.php:135
+msgid ""
+"<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 "
+"cached CallerID lookups per hour. If you get more than 60 incoming calls per "
+"hour, or want real-time CallerID information (more accurate), you should use "
+"the Professional Tier.</p>"
+msgstr ""
+
+#: views/form.php:136
+msgid ""
+"<p>If you'd like to create an OpenCNAM Professional Tier account, you can do "
+"so on their website: <a href=\"https://www.opencnam.com/register\" target="
+"\"_blank\">https://www.opencnam.com/register</a></p>"
+msgstr ""
+
+#: page.cidlookup.php:8
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric CallerIDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with information taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+
+#: views/form.php:172
+msgid "Account SID:"
+msgstr ""
+
+#: views/grid.php:24
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:6
+msgid "Add CIDLookup Source"
+msgstr ""
+
+#: install.php:121
+msgid "Adding opencnam account columns to the cidlookup table..."
+msgstr ""
+
+#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+msgid "Admin"
+msgstr ""
+
+#: cidlookup.i18n.php:8
+msgid ""
+"Allows CallerID Lookup of incoming calls against different sources "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
+#: views/form.php:196
+msgid "Auth Token"
+msgstr ""
+
+#: page.cidlookup.php:7
+msgid "CIDLookup"
+msgstr ""
+
+#: views/form.php:112
+msgid "Cache Results"
+msgstr ""
+
+#: cidlookup.i18n.php:4
+msgid "CallerID Lookup"
+msgstr ""
+
+#: cidlookup.i18n.php:10
+msgid "CallerID Lookup Sources"
+msgstr ""
+
+#: views/form.php:492
+msgid "Character Set"
+msgstr ""
+
+#: install.php:103
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr ""
+
+#: install.php:144
+msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
+msgstr ""
+
+#: install.php:125
+msgid "Could not add opencnam_account_sid column to cidlookup table."
+msgstr ""
+
+#: install.php:131
+msgid "Could not add opencnam_auth_token column to cidlookup table."
+msgstr ""
+
+#: views/form.php:396
+msgid "Database"
+msgstr ""
+
+#: views/form.php:408
+msgid "Database Name"
+msgstr ""
+
+#: views/form.php:127
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+
+#: Cidlookup.class.php:69
+msgid "Delete"
+msgstr "Apagar"
+
+#: views/grid.php:22
+msgid "Description"
+msgstr ""
+
+#: install.php:44 install.php:133 install.php:141 install.php:161
+msgid "Done!"
+msgstr ""
+
+#: views/form.php:19
+msgid "ENUM:"
+msgstr ""
+
+#: install.php:90
+msgid "ERROR: failed: "
+msgstr ""
+
+#: views/form.php:67
+msgid "Enter a description for this source."
+msgstr ""
+
+#: install.php:81
+msgid "FATAL: failed to transform old routes: "
+msgstr ""
+
+#: install.php:42 install.php:139
+msgid "Failed to add OpenCNAM CallerID Lookup Source: "
+msgstr ""
+
+#: views/form.php:20
+msgid "HTTP:"
+msgstr ""
+
+#: views/form.php:21
+msgid "HTTPS:"
+msgstr ""
+
+#: views/form.php:224 views/form.php:372
+msgid "Host"
+msgstr ""
+
+#: views/form.php:236
+msgid "Host name or IP address"
+msgstr ""
+
+#: install.php:38 install.php:135
+msgid "Installing OpenCNAM CallerID Lookup Sources..."
+msgstr ""
+
+#: views/form.php:85
+msgid "Internal"
+msgstr ""
+
+#: views/form.php:18
+msgid "Internal:"
+msgstr ""
+
+#: views/form.php:22
+msgid "It queries a MySQL database to retrieve caller name"
+msgstr ""
+
+#: views/bootnav.php:5
+msgid "List CIDLookup Sources"
+msgstr ""
+
+#: install.php:73
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr ""
+
+#: views/form.php:504
+msgid "MySQL Character Set. Leave blank for MySQL default latin1"
+msgstr ""
+
+#: views/form.php:384
+msgid "MySQL Host"
+msgstr ""
+
+#: views/form.php:480
+msgid "MySQL Password"
+msgstr ""
+
+#: views/form.php:456
+msgid "MySQL Username"
+msgstr ""
+
+#: views/form.php:22
+msgid "MySQL:"
+msgstr ""
+
+#: views/form.php:119 views/form.php:152
+msgid "No"
+msgstr ""
+
+#: functions.inc.php:327
+msgid "None"
+msgstr ""
+
+#: install.php:97
+msgid "Not Needed"
+msgstr ""
+
+#: views/form.php:513 views/form.php:518
+msgid "Not yet implemented"
+msgstr ""
+
+#: install.php:83 install.php:92
+msgid "OK"
+msgstr ""
+
+#: views/form.php:84
+msgid "OpenCNAM"
+msgstr ""
+
+#: bin/opencnam-alert.php:25
+msgid "OpenCNAM Throttle Reached!"
+msgstr ""
+
+#: views/form.php:160
+msgid ""
+"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
+"you want, for a small fee. This is recommended for business users."
+msgstr ""
+
+#: views/form.php:17
+msgid "OpenCNAM:"
+msgstr ""
+
+#: views/form.php:296 views/form.php:468
+msgid "Password"
+msgstr ""
+
+#: views/form.php:308
+msgid "Password to use in HTTP authentication"
+msgstr ""
+
+#: views/form.php:320
+msgid "Path"
+msgstr ""
+
+#: views/form.php:332
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr ""
+
+#: views/form.php:248
+msgid "Port"
+msgstr ""
+
+#: views/form.php:260
+msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
+msgstr ""
+
+#: views/form.php:344 views/form.php:420
+msgid "Query"
+msgstr ""
+
+#: views/form.php:356
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr ""
+
+#: views/form.php:432
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+
+#: install.php:86
+msgid "Removing deprecated channel field from incoming.."
+msgstr ""
+
+#: Cidlookup.class.php:79
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:15
+msgid "Select the source type, you can choose between:"
+msgstr ""
+
+#: views/form.php:55
+msgid "Source Description"
+msgstr ""
+
+#: views/form.php:79
+msgid "Source type"
+msgstr ""
+
+#: Cidlookup.class.php:74
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:34
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#: views/grid.php:23
+msgid "Type"
+msgstr ""
+
+#: views/form.php:145
+msgid "Use Professional Tier"
+msgstr ""
+
+#: views/form.php:272 views/form.php:444
+msgid "Username"
+msgstr ""
+
+#: views/form.php:284
+msgid "Username to use in HTTP authentication"
+msgstr ""
+
+#: views/form.php:117 views/form.php:150
+msgid "Yes"
+msgstr ""
+
+#: bin/opencnam-alert.php:25
+msgid ""
+"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
+"getting caller ID name information, you need to create an OpenCNAM "
+"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
+"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
+"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
+"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
+"<br/>"
+msgstr ""
+
+#: views/form.php:184
+msgid ""
+"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
+"page: https://www.opencnam.com/dashboard"
+msgstr ""
+
+#: views/form.php:208
+msgid ""
+"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
+"https://www.opencnam.com/dashboard"
+msgstr ""
+
+#: install.php:107
+msgid "not present"
+msgstr ""
+
+#: install.php:109
+msgid "removed"
+msgstr ""
