@@ -2,6 +2,7 @@
 //    License for all code of this FreePBX module can be found in the license file inside the module directory
 //    Copyright 2015 Sangoma Technologies.
 $cidsources = cidlookup_list();
+$srow = "";
 foreach ($cidsources as $source) {
     $srow .= '<tr>';
     $srow .= '<td>'.$source['description'].'</td>';
@@ -22,7 +23,7 @@ foreach ($cidsources as $source) {
         <th><?php echo _("Description")?></th>
         <th><?php echo _("Type")?></th>
         <th><?php echo _("Actions")?></th>
-    </tr>   
+    </tr>
 </thead>
 <tbody>
     <?php echo $srow ?>

@@ -348,7 +348,6 @@ function cidlookup_add($post){
 
 	$description = $db->escapeSimple($post['description']);
 	$sourcetype = $db->escapeSimple($post['sourcetype']);
-	$deptname = $db->escapeSimple($post['deptname']);
 	$http_host = $db->escapeSimple($post['http_host']);
 	$http_port = $db->escapeSimple($post['http_port']);
 	$http_username = $db->escapeSimple($post['http_username']);
@@ -368,9 +367,9 @@ function cidlookup_add($post){
 
 	$results = sql("
 		INSERT INTO cidlookup
-			(description, sourcetype, cache, deptname, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token)
+			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token)
 		VALUES
-			('$description', '$sourcetype', '$cache', '$deptname', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$mysql_charset', '$opencnam_account_sid', '$opencnam_auth_token')
+			('$description', '$sourcetype', '$cache', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$mysql_charset', '$opencnam_account_sid', '$opencnam_auth_token')
 		");
 }
 

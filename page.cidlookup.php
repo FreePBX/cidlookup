@@ -6,12 +6,12 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 $request = $_REQUEST;
 $heading = _("CIDLookup");
 $pageinfo = _("A Lookup Source let you specify a source for resolving numeric CallerIDs of incoming calls, you can then link an Inbound route to a specific CID source. This way you will have more detailed CDR reports with information taken directly from your CRM. You can also install the phonebook module to have a small number <-> name association. Pay attention, name lookup may slow down your PBX");
-
+$request['view'] = !empty($request['view']) ? $request['view'] : "";
 switch ($request['view']) {
 	case 'form':
 		$content = load_view(__DIR__.'/views/form.php', array('request' => $request));
 	break;
-	
+
 	default:
 		$content = load_view(__DIR__.'/views/grid.php', array('request' => $request));
 	break;

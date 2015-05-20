@@ -2,15 +2,15 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 extract($request);
-if ($action != 'delete') {
-    if ($itemid){
-        $thisItem = cidlookup_get($itemid);
-        $dids_using_arr = cidlookup_did_list($itemid);
-        $dids_using = count($dids_using_arr);
-        $thisItem_description = isset($thisItem['description']) ? htmlspecialchars($thisItem['description']):'';
-    } else {
-        $thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null);
-    }
+if (!empty($itemid)){
+    $thisItem = cidlookup_get($itemid);
+    $dids_using_arr = cidlookup_did_list($itemid);
+    $dids_using = count($dids_using_arr);
+    $thisItem_description = isset($thisItem['description']) ? htmlspecialchars($thisItem['description']):'';
+} else {
+    $thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null, 'itemid' => null, 'opencnam_account_sid' => null);
+    $thisItem_description = '';
+    $itemid = '';
 }
 $sthelphtml = _("Select the source type, you can choose between:")
 .'<ul>'
@@ -26,7 +26,7 @@ $sthelphtml = _("Select the source type, you can choose between:")
 $cnampro = false;
 if($thisItem['opencnam_account_sid'] && $thisItem['opencnam_auth_token']){
 	$cnampro = true;
-} 
+}
 
 //In Use Data
 if ($itemid && $dids_using > 0){
@@ -35,15 +35,11 @@ if ($itemid && $dids_using > 0){
 	$inusehtml .= '</div>';
 	echo $inusehtml;
 }
-if ($message){
-	echo '<div id="well">'.$message.'</div>';
-}
 ?>
 
 <form autocomplete="off" class="fpbx-submit" name="edit" id="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();" data-fpbx-delete="config.php?display=cidlookup&view=form&amp;itemid=<?php echo $itemid?>&amp;action=delete"">
 <input type="hidden" name="display" value="cidlookup">
 <input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
-<input type="hidden" name="deptname" value="<?php echo $_SESSION["AMP_user"]->_deptname ?>">
 
 <!--Source Description-->
 <div class="element-container">

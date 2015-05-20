@@ -81,12 +81,12 @@ class Cidlookup implements \BMO {
     			);
     		break;
     	}
-    	if ($request['extdisplay'] == "") {
+    	if (empty($request['extdisplay']) || $request['extdisplay'] == "") {
     		unset($buttons['delete']);
     	}
-    	if($request['view'] != 'form'){
-    		unset($buttons);
+    	if(empty($request['view']) || $request['view'] != 'form'){
+    		$buttons = array();
     	}
     	return $buttons;
-    }  
+    }
 }
