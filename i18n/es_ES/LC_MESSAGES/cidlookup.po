@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-20 17:28-0400\n"
-"PO-Revision-Date: 2015-05-25 01:41+0200\n"
+"PO-Revision-Date: 2015-05-25 02:01+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/cidlookup/es_ES/>\n"
@@ -120,7 +120,7 @@ msgstr "Agregar Fuente CIDLookup"
 
 #: install.php:121
 msgid "Adding opencnam account columns to the cidlookup table..."
-msgstr "Agregando columnas de cuenta opencnam a la tabla cidlookup..."
+msgstr "Agregando columnas de cuenta opencnam  en la tabla cidlookup..."
 
 #: views/form.php:192
 msgid "Auth Token"
@@ -140,7 +140,7 @@ msgstr "Conjunto de Caracterees"
 
 #: install.php:103
 msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Comprobando el campo cidlookup en la table entrante del núcleo"
+msgstr "Comprobando el campo cidlookup en la table entrante del núcleo.."
 
 #: install.php:144
 msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
@@ -168,7 +168,7 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
-"valores actuales. No afecta el comportamiento de la fuente interna."
+"valores actuales. No afecta el comportamiento de la fuente interna"
 
 #: Cidlookup.class.php:69
 msgid "Delete"
@@ -188,7 +188,7 @@ msgstr "ENUM:"
 
 #: install.php:90
 msgid "ERROR: failed: "
-msgstr "ERROR:"
+msgstr "ERROR: Fallido: "
 
 #: views/form.php:63
 msgid "Enter a description for this source."
@@ -196,7 +196,7 @@ msgstr "Introduzca una descripción para este origen."
 
 #: install.php:81
 msgid "FATAL: failed to transform old routes: "
-msgstr "FATAL: No se pudieron transformar las rutas antiguas:"
+msgstr "FATAL: No se pudieron transformar las rutas antiguas: "
 
 #: install.php:41 install.php:139
 msgid "Failed to add OpenCNAM CallerID Lookup Source: "
@@ -254,11 +254,11 @@ msgstr "Servidor MySQL"
 
 #: views/form.php:476
 msgid "MySQL Password"
-msgstr "Contraseña MySQL:"
+msgstr "Contraseña MySQL"
 
 #: views/form.php:452
 msgid "MySQL Username"
-msgstr "Nombre de usuario MySQL:"
+msgstr "Nombre de usuario MySQL"
 
 #: views/form.php:22
 msgid "MySQL:"
@@ -278,7 +278,7 @@ msgstr "No es necesario"
 
 #: views/form.php:509 views/form.php:514
 msgid "Not yet implemented"
-msgstr "Este método no se ha implementado todavía."
+msgstr "Este método no se ha implementado todavía"
 
 #: install.php:83 install.php:92
 msgid "OK"
