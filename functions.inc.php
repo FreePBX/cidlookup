@@ -17,7 +17,7 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-3">
-								<label class="control-label" for="cidlookup_id"><?php echo _("CID Lookup Source") ?></label>
+								<label class="control-label" for="cidlookup_id">'._("CID Lookup Source").'</label>
 								<i class="fa fa-question-circle fpbx-help-icon" data-for="cidlookup_id"></i>
 							</div>
 							<div class="col-md-9">
@@ -37,7 +37,7 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<span id="cidlookup_id-help" class="help-block fpbx-help-block"><?php echo _("Sources can be added in Caller Name Lookup Sources section")?></span>
+					<span id="cidlookup_id-help" class="help-block fpbx-help-block">'. _("Sources can be added in Caller Name Lookup Sources section").'</span>
 					<div class="well well-info hidden" id="opencnam_hobbyist_note">
 						<b>NOTE:</b> OpenCNAM\'s Hobbyist Tier only allows you to do 10 cached CID lookups per hour. If you get more than 10 incoming calls per hour, or want real-time CID information (which is more accurate), you should use the Professional Tier, which is configurable via the CallerID Lookup Sources menu.
 					</div>
@@ -327,9 +327,11 @@ function cidlookup_list($all=false) {
 	$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
 	$results = sql("SELECT * FROM cidlookup","getAll",DB_FETCHMODE_ASSOC);
 	if(is_array($results)){
-		return $results;
+		foreach ($results as $key => $value) {
+			$allowed[] = $value;
+		}
 	}
-	return null;
+	return $allowed;
 }
 
 function cidlookup_get($id){
