@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -92,6 +92,10 @@ msgstr ""
 #: views/form.php:192
 msgid "Auth Token"
 msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "CID查找源"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -329,6 +333,10 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "可以向呼叫者姓名查找源小节添加源"
+
 #: Cidlookup.class.php:74
 msgid "Submit"
 msgstr ""
@@ -403,9 +411,6 @@ msgstr "已移除"
 #~ msgid "Add Source"
 #~ msgstr "添加源"
 
-#~ msgid "CID Lookup Source"
-#~ msgstr "CID查找源"
-
 #~ msgid "Cache results:"
 #~ msgstr "缓存结果："
 
@@ -453,9 +458,6 @@ msgstr "已移除"
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "源：%s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr "可以向呼叫者姓名查找源小节添加源"
 
 #~ msgid "Submit Changes"
 #~ msgstr "提交更改"

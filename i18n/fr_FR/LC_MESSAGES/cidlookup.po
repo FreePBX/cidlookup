@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -104,6 +104,10 @@ msgstr ""
 #: views/form.php:192
 msgid "Auth Token"
 msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "Source de Consultation de CID"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -344,6 +348,12 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr ""
+"Les sources peuvent être ajoutées dans la section Sources de Consultation du "
+"Nom de l'Appelant"
+
 #: Cidlookup.class.php:74
 msgid "Submit"
 msgstr ""
@@ -418,9 +428,6 @@ msgstr "éliminé"
 #~ msgid "Add Source"
 #~ msgstr "Ajouter une Source"
 
-#~ msgid "CID Lookup Source"
-#~ msgstr "Source de Consultation de CID"
-
 #~ msgid "Cache results:"
 #~ msgstr "Résulats du Cache :"
 
@@ -468,11 +475,6 @@ msgstr "éliminé"
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "Source: %s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr ""
-#~ "Les sources peuvent être ajoutées dans la section Sources de Consultation "
-#~ "du Nom de l'Appelant"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Appliquer les Modifications"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2015-04-29 08:49+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -90,6 +90,10 @@ msgstr ""
 
 #: views/form.php:192
 msgid "Auth Token"
+msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
 msgstr ""
 
 #: page.cidlookup.php:7
@@ -322,6 +326,10 @@ msgstr ""
 
 #: views/form.php:75
 msgid "Source type"
+msgstr ""
+
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
 #: Cidlookup.class.php:74

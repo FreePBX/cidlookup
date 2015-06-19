@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -107,6 +107,10 @@ msgstr ""
 #: views/form.php:192
 msgid "Auth Token"
 msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "CID meghatározó forrás"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -346,6 +350,10 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
+
 #: Cidlookup.class.php:74
 msgid "Submit"
 msgstr ""
@@ -414,9 +422,6 @@ msgstr ""
 #~ msgid "Add Source"
 #~ msgstr "Forrás hozzáadása"
 
-#~ msgid "CID Lookup Source"
-#~ msgstr "CID meghatározó forrás"
-
 #~ msgid "Cache results:"
 #~ msgstr "Cache használata:"
 
@@ -464,9 +469,6 @@ msgstr ""
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "Forrás: %s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
 
 #~ msgid "SugarCRM"
 #~ msgstr "SugarCRM"

@@ -19,15 +19,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2015-05-25 02:01+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/cidlookup/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"cidlookup/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
@@ -87,8 +87,8 @@ msgid ""
 "\"_blank\">https://www.opencnam.com/register</a></p>"
 msgstr ""
 "<p>si desea crear una cuenta nivel profesional de OpenCNAM, puede hacerlo en "
-"su pagina web: <a href=\"https://www.opencnam.com/register\" target=\""
-"_blank\">https://www.opencnam.com/register</a></p>"
+"su pagina web: <a href=\"https://www.opencnam.com/register\" target=\"_blank"
+"\">https://www.opencnam.com/register</a></p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -125,6 +125,10 @@ msgstr "Agregando columnas de cuenta opencnam  en la tabla cidlookup..."
 #: views/form.php:192
 msgid "Auth Token"
 msgstr "Clave Autorizacion"
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "Búsqueda de CID"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -372,6 +376,12 @@ msgstr "Descripción de Fuente"
 msgid "Source type"
 msgstr "Tipo de Fuente"
 
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr ""
+"Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres de "
+"llamantes"
+
 #: Cidlookup.class.php:74
 msgid "Submit"
 msgstr "Enviar"
@@ -417,10 +427,10 @@ msgstr ""
 "Va a sobrepasar los niveles maximos de uso gratis de OpenCNAM.<br/><br/>Para "
 "continuar recibiendo informacion del nombre del caller ID, usted necesita "
 "una cuenta profesional de OpenCNAM.<br/><br/>Usted puede crear una cuenta de "
-"OpenCNAM ent: <a href=\"https://www.opencnam.com/register\""
-">https://www.opencnam.com/register</a>.<br/><br/>Una vez haya creado una "
-"cuenta, visite el menu de Fuentes de Busqueda de callerID e introduzca sus "
-"credenciales de cuenta de OpenCNAM.<br/>"
+"OpenCNAM ent: <a href=\"https://www.opencnam.com/register\">https://www."
+"opencnam.com/register</a>.<br/><br/>Una vez haya creado una cuenta, visite "
+"el menu de Fuentes de Busqueda de callerID e introduzca sus credenciales de "
+"cuenta de OpenCNAM.<br/>"
 
 #: views/form.php:180
 msgid ""
@@ -451,9 +461,6 @@ msgstr "eliminado"
 
 #~ msgid "Add Source"
 #~ msgstr "Añadir fuente"
-
-#~ msgid "CID Lookup Source"
-#~ msgstr "Búsqueda de CID"
 
 #~ msgid "Cache results:"
 #~ msgstr "Resultados de la caché:"
@@ -503,11 +510,6 @@ msgstr "eliminado"
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "Fuente: %s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr ""
-#~ "Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres "
-#~ "de llamantes"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Enviar cambios"

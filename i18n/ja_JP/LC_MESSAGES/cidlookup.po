@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2014-02-25 05:01+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://192.168.30.85/projects/freepbx/cidlookup/ja/"
@@ -125,6 +125,10 @@ msgstr "opencnamアカウントコラムをcidlookupテーブルに追加中.."
 #: views/form.php:192
 msgid "Auth Token"
 msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "CID検索ソース"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -366,6 +370,10 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "ソースは発信者名検索ソースセクションで追加できます。"
+
 #: Cidlookup.class.php:74
 msgid "Submit"
 msgstr ""
@@ -465,9 +473,6 @@ msgstr "削除済み"
 #~ msgid "Auth Token:"
 #~ msgstr "認証トークン："
 
-#~ msgid "CID Lookup Source"
-#~ msgstr "CID検索ソース"
-
 #~ msgid "Cache results:"
 #~ msgstr "キャッシュ結果："
 
@@ -545,9 +550,6 @@ msgstr "削除済み"
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "ソース: %s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr "ソースは発信者名検索ソースセクションで追加できます。"
 
 #~ msgid "Submit Changes"
 #~ msgstr "変更を適用"

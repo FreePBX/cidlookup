@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -104,6 +104,10 @@ msgstr ""
 #: views/form.php:192
 msgid "Auth Token"
 msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "מקור חיפוש זיהוי שיחה"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -343,6 +347,10 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
+
 #: Cidlookup.class.php:74
 msgid "Submit"
 msgstr ""
@@ -411,9 +419,6 @@ msgstr ""
 #~ msgid "Add Source"
 #~ msgstr "הוסף מקור"
 
-#~ msgid "CID Lookup Source"
-#~ msgstr "מקור חיפוש זיהוי שיחה"
-
 #~ msgid "Cache results:"
 #~ msgstr "שמור תוצאות במטמון:"
 
@@ -461,9 +466,6 @@ msgstr ""
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "מקור: %s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
 
 #~ msgid "SugarCRM"
 #~ msgstr "SugarCRM"

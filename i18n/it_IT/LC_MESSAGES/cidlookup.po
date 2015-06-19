@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 17:28-0400\n"
+"POT-Creation-Date: 2015-06-19 18:02-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -107,6 +107,10 @@ msgstr ""
 #: views/form.php:192
 msgid "Auth Token"
 msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "Sorgente Risoluzione ID"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -347,6 +351,11 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr ""
+"Le sorgenti possono essere aggiunte nella sezione Risoluzione Nome Chiamante"
+
 #: Cidlookup.class.php:74
 msgid "Submit"
 msgstr ""
@@ -421,9 +430,6 @@ msgstr "rimosso"
 #~ msgid "Add Source"
 #~ msgstr "Aggiungi Sorgente"
 
-#~ msgid "CID Lookup Source"
-#~ msgstr "Sorgente Risoluzione ID"
-
 #~ msgid "Cache results:"
 #~ msgstr "Salva risultati:"
 
@@ -471,11 +477,6 @@ msgstr "rimosso"
 
 #~ msgid "Source: %s (id %s)"
 #~ msgstr "Sorgente: %s (id %s)"
-
-#~ msgid "Sources can be added in Caller Name Lookup Sources section"
-#~ msgstr ""
-#~ "Le sorgenti possono essere aggiunte nella sezione Risoluzione Nome "
-#~ "Chiamante"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Conferma Cambiamenti"
