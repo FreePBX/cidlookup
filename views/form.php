@@ -349,7 +349,7 @@ if ($itemid && $dids_using > 0){
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="http_query-help" class="help-block fpbx-help-block"><?php echo _("Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm")?></span>
+			<span id="http_query-help" class="help-block fpbx-help-block"><?php echo _("Query string, special token '[NUMBER]' will be replaced with caller number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel language")?></span>
 		</div>
 	</div>
 </div>

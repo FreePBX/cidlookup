@@ -231,9 +231,10 @@ function cidlookup_get_config($engine) {
 							if (substr($item['http_path'], 0, 1) == '/')
 								$path = substr($item['http_path'], 1);
 							else
-								$path = $item['http_path'];
-
-							$query = str_replace('[NUMBER]', '${CALLERID(num)}', $item['http_query']);
+							$path = $item['http_path'];
+							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]');
+							$values = array('${CALLERID(num)}','${CALLERID(name)}','${CHANNEL(language)}');
+							$query = str_replace($tempst, $values, $item['http_query']);
 							$url = sprintf('%s://%s%s/%s?%s', $item['sourcetype'],$auth, $host, $path, $query);
 							$curl = sprintf('${CURL(%s)}', $url);
 
