@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 18:02-0400\n"
+"POT-Creation-Date: 2015-06-26 15:29-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -249,7 +249,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:327
+#: functions.inc.php:328
 msgid "None"
 msgstr "אף אחד"
 
@@ -314,10 +314,10 @@ msgstr ""
 #: views/form.php:352
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
-"number<br/>e.g.: number=[NUMBER]&source=crm"
+"number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
+"with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
+"language"
 msgstr ""
-"מחרוזת השאילתא. הטוקן המיוחד '[NUMBER]' יוחלף עם מספר הטלפון של המתקשר<br /"
-">לדוגמא: number=[NUMBER]&source=crm"
 
 #: views/form.php:428
 msgid ""
@@ -412,6 +412,13 @@ msgstr ""
 #: install.php:109
 msgid "removed"
 msgstr ""
+
+#~ msgid ""
+#~ "Query string, special token '[NUMBER]' will be replaced with caller "
+#~ "number<br/>e.g.: number=[NUMBER]&source=crm"
+#~ msgstr ""
+#~ "מחרוזת השאילתא. הטוקן המיוחד '[NUMBER]' יוחלף עם מספר הטלפון של "
+#~ "המתקשר<br />לדוגמא: number=[NUMBER]&source=crm"
 
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "הוסף מקור חיפוש זיהוי שיחה"

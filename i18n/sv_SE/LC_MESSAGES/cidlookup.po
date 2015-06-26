@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 18:02-0400\n"
+"POT-Creation-Date: 2015-06-26 15:29-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -252,7 +252,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:327
+#: functions.inc.php:328
 msgid "None"
 msgstr "Ingen"
 
@@ -317,10 +317,10 @@ msgstr ""
 #: views/form.php:352
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
-"number<br/>e.g.: number=[NUMBER]&source=crm"
+"number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
+"with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
+"language"
 msgstr ""
-"Frågesträng, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
-"nummerpresentation<br>t.ex. nummer=[NUMBER]&source=crm"
 
 #: views/form.php:428
 msgid ""
@@ -418,6 +418,13 @@ msgstr "inte tillgänglig"
 #: install.php:109
 msgid "removed"
 msgstr "borttagen"
+
+#~ msgid ""
+#~ "Query string, special token '[NUMBER]' will be replaced with caller "
+#~ "number<br/>e.g.: number=[NUMBER]&source=crm"
+#~ msgstr ""
+#~ "Frågesträng, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
+#~ "nummerpresentation<br>t.ex. nummer=[NUMBER]&source=crm"
 
 #~ msgid "CallerID Lookup"
 #~ msgstr "Nummerpresentation"

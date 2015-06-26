@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 18:02-0400\n"
+"POT-Creation-Date: 2015-06-26 15:29-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -253,7 +253,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:327
+#: functions.inc.php:328
 msgid "None"
 msgstr "Nessuna"
 
@@ -318,10 +318,10 @@ msgstr ""
 #: views/form.php:352
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
-"number<br/>e.g.: number=[NUMBER]&source=crm"
+"number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
+"with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
+"language"
 msgstr ""
-"Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di "
-"telefono<br/>e.s.: number=[NUMBER]&source=crm"
 
 #: views/form.php:428
 msgid ""
@@ -417,6 +417,13 @@ msgstr "non presente"
 #: install.php:109
 msgid "removed"
 msgstr "rimosso"
+
+#~ msgid ""
+#~ "Query string, special token '[NUMBER]' will be replaced with caller "
+#~ "number<br/>e.g.: number=[NUMBER]&source=crm"
+#~ msgstr ""
+#~ "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di "
+#~ "telefono<br/>e.s.: number=[NUMBER]&source=crm"
 
 #~ msgid "CallerID Lookup"
 #~ msgstr "Risoluzione ID Chiamante (CID)"

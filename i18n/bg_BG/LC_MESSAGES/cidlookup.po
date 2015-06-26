@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-19 18:02-0400\n"
+"POT-Creation-Date: 2015-06-26 15:29-0400\n"
 "PO-Revision-Date: 2014-07-21 15:37+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/cidlookup/"
@@ -256,7 +256,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:327
+#: functions.inc.php:328
 msgid "None"
 msgstr "Няма"
 
@@ -321,10 +321,10 @@ msgstr ""
 #: views/form.php:352
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
-"number<br/>e.g.: number=[NUMBER]&source=crm"
+"number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
+"with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
+"language"
 msgstr ""
-"Стринг за запитване, определеното означение '[NUMBER]' ще бъде заменено с "
-"номера на обаждащия се<br/>например: number=[NUMBER]&source=crm"
 
 #: views/form.php:428
 msgid ""
@@ -422,6 +422,13 @@ msgstr "не присъства"
 #: install.php:109
 msgid "removed"
 msgstr "премахнат"
+
+#~ msgid ""
+#~ "Query string, special token '[NUMBER]' will be replaced with caller "
+#~ "number<br/>e.g.: number=[NUMBER]&source=crm"
+#~ msgstr ""
+#~ "Стринг за запитване, определеното означение '[NUMBER]' ще бъде заменено с "
+#~ "номера на обаждащия се<br/>например: number=[NUMBER]&source=crm"
 
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "Добави Източник на CID Следене"
