@@ -341,7 +341,7 @@ if ($itemid && $dids_using > 0){
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_query"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control" id="http_query" name="http_query" value="<?php echo (isset($thisItem['http_path']) ? $thisItem['http_path'] : ''); ?>">
+						<input type="text" class="form-control" id="http_query" name="http_query" value="<?php echo (isset($thisItem['http_query']) ? $thisItem['http_query'] : ''); ?>">
 					</div>
 				</div>
 			</div>
