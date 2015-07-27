@@ -38,7 +38,7 @@ msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-26 15:29-0400\n"
-"PO-Revision-Date: 2015-07-27 10:31+0200\n"
+"PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese "
 "<http://weblate.freepbx.org/projects/freepbx/cidlookup/ja_JP/>\n"
@@ -234,7 +234,7 @@ msgstr "OpenCNAM発信者番号検索ソースをインストール中…"
 
 #: views/form.php:81
 msgid "Internal"
-msgstr "インターナル"
+msgstr "内部"
 
 #: views/form.php:18
 msgid "Internal:"
