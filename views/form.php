@@ -325,7 +325,7 @@ if ($itemid && $dids_using > 0){
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="http_path-help" class="help-block fpbx-help-block"><?php echo _("Path of the file to GET<br/>e.g.: /cidlookup.php")?></span>
+			<span id="http_path-help" class="help-block fpbx-help-block"><?php echo _("Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/>'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel language")?></span>
 		</div>
 	</div>
 </div>

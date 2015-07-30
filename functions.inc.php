@@ -235,7 +235,9 @@ function cidlookup_get_config($engine) {
 							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]');
 							$values = array('${CALLERID(num)}','${CALLERID(name)}','${CHANNEL(language)}');
 							$query = str_replace($tempst, $values, $item['http_query']);
-							$url = sprintf('%s://%s%s/%s?%s', $item['sourcetype'],$auth, $host, $path, $query);
+							$query = empty($query)?'':'?'.$query;
+							$path = str_replace($tempst, $values, $item['http_path']);
+							$url = sprintf('%s://%s%s/%s%s', $item['sourcetype'],$auth, $host, $path, $query);
 							$curl = sprintf('${CURL(%s)}', $url);
 
               // Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
