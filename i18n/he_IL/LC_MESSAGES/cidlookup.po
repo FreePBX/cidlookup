@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-26 15:29-0400\n"
+"POT-Creation-Date: 2015-09-11 10:12-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -249,7 +249,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:328
+#: functions.inc.php:330
 msgid "None"
 msgstr "אף אחד"
 
@@ -296,8 +296,12 @@ msgid "Path"
 msgstr ""
 
 #: views/form.php:328
-msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
-msgstr "נתיב לקובץ שיועבר לפקודה GET<br />לדוגמא: /cidlookup.php"
+msgid ""
+"Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
+"will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
+">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
+"will be replaced with channel language"
+msgstr ""
 
 #: views/form.php:244
 msgid "Port"
@@ -412,6 +416,9 @@ msgstr ""
 #: install.php:109
 msgid "removed"
 msgstr ""
+
+#~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+#~ msgstr "נתיב לקובץ שיועבר לפקודה GET<br />לדוגמא: /cidlookup.php"
 
 #~ msgid ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "

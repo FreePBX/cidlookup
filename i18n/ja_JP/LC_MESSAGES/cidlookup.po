@@ -37,15 +37,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-26 15:29-0400\n"
+"POT-Creation-Date: 2015-09-11 10:12-0700\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
-"Language-Team: Japanese "
-"<http://weblate.freepbx.org/projects/freepbx/cidlookup/ja_JP/>\n"
-"Language: ja_JP\n"
+"Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
+"cidlookup/ja_JP/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -65,7 +65,9 @@ msgstr " 名前を抽出するために、発信者番号を入れてHTTPS GET�
 msgid ""
 " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
 "enum.conf"
-msgstr " enum.confで設定したENUMルックアップゾーンを元にDNS経由で発信者情報を取得します。"
+msgstr ""
+" enum.confで設定したENUMルックアップゾーンを元にDNS経由で発信者情報を取得しま"
+"す。"
 
 #: views/form.php:17
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
@@ -83,8 +85,9 @@ msgid ""
 "the Professional Tier.</p>"
 msgstr ""
 "<p><b>注意:</b> OpenCNAMの Hobbyist Tier (デフォルト) では、1時間で最大 60件 "
-"の検索しかできません。1時間で60件以上の着信を見込む場合や、リアルタイムで更新されるCID情報がひつような場合は、OpenCNAMの "
-"Professional Tier をおすすめします。</p>"
+"の検索しかできません。1時間で60件以上の着信を見込む場合や、リアルタイムで更新"
+"されるCID情報がひつような場合は、OpenCNAMの Professional Tier をおすすめしま"
+"す。</p>"
 
 #: views/form.php:132
 msgid ""
@@ -92,9 +95,9 @@ msgid ""
 "so on their website: <a href=\"https://www.opencnam.com/register\" target="
 "\"_blank\">https://www.opencnam.com/register</a></p>"
 msgstr ""
-"<p>OpenCNAM Professional Tier アカウントをお持ちでない場合は、OpenCNAMのホームページから新規登録ができます: <a "
-"href=\"https://www.opencnam.com/register\" target=\"_blank\""
-">https://www.opencnam.com/register</a></p>"
+"<p>OpenCNAM Professional Tier アカウントをお持ちでない場合は、OpenCNAMのホー"
+"ムページから新規登録ができます: <a href=\"https://www.opencnam.com/register"
+"\" target=\"_blank\">https://www.opencnam.com/register</a></p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -276,7 +279,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "いいえ"
 
-#: functions.inc.php:328
+#: functions.inc.php:330
 msgid "None"
 msgstr "なし"
 
@@ -325,8 +328,12 @@ msgid "Path"
 msgstr "パス"
 
 #: views/form.php:328
-msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
-msgstr "GETをするファイルのパス<br/>例：/cidlookup.php"
+msgid ""
+"Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
+"will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
+">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
+"will be replaced with channel language"
+msgstr ""
 
 #: views/form.php:244
 msgid "Port"
@@ -334,7 +341,9 @@ msgstr "ポート"
 
 #: views/form.php:256
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
-msgstr "HTTP、若しくはHTTPSサーバーが待ち構えているポート番号 (デフォルト http 80、https 443)"
+msgstr ""
+"HTTP、若しくはHTTPSサーバーが待ち構えているポート番号 (デフォルト http 80、"
+"https 443)"
 
 #: views/form.php:340 views/form.php:416
 msgid "Query"
@@ -347,9 +356,9 @@ msgid ""
 "with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
 "language"
 msgstr ""
-"クエリのストリング。'[NUMBER]' は、クエリをかけるときに発信者番号に上書きされます。<br/>例: "
-"number=[NUMBER]&source=crm<br/>'[NAME]' をかけると既存のCID名に上書きします。<br/>'[LANGUAGE]"
-"' はAsteriskチャネルの言語になります。"
+"クエリのストリング。'[NUMBER]' は、クエリをかけるときに発信者番号に上書きされ"
+"ます。<br/>例: number=[NUMBER]&source=crm<br/>'[NAME]' をかけると既存のCID名"
+"に上書きします。<br/>'[LANGUAGE]' はAsteriskチャネルの言語になります。"
 
 #: views/form.php:428
 msgid ""
@@ -456,6 +465,9 @@ msgstr "存在しません"
 #: install.php:109
 msgid "removed"
 msgstr "削除済み"
+
+#~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+#~ msgstr "GETをするファイルのパス<br/>例：/cidlookup.php"
 
 #~ msgid ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "

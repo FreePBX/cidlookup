@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-26 15:29-0400\n"
+"POT-Creation-Date: 2015-09-11 10:12-0700\n"
 "PO-Revision-Date: 2015-04-29 08:49+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -234,7 +234,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:328
+#: functions.inc.php:330
 msgid "None"
 msgstr ""
 
@@ -281,7 +281,11 @@ msgid "Path"
 msgstr ""
 
 #: views/form.php:328
-msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgid ""
+"Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
+"will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
+">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
+"will be replaced with channel language"
 msgstr ""
 
 #: views/form.php:244

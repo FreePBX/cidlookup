@@ -19,15 +19,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-26 15:29-0400\n"
+"POT-Creation-Date: 2015-09-11 10:12-0700\n"
 "PO-Revision-Date: 2015-07-16 23:20+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/cidlookup/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"cidlookup/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
@@ -272,7 +272,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "No"
 
-#: functions.inc.php:328
+#: functions.inc.php:330
 msgid "None"
 msgstr "Ninguno"
 
@@ -322,8 +322,12 @@ msgid "Path"
 msgstr "Camino"
 
 #: views/form.php:328
-msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
-msgstr "Ruta del archivo a obtener<br/>Por ejemplo, /cidlookup.php"
+msgid ""
+"Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
+"will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
+">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
+"will be replaced with channel language"
+msgstr ""
 
 #: views/form.php:244
 msgid "Port"
@@ -459,6 +463,9 @@ msgstr "no está presente"
 #: install.php:109
 msgid "removed"
 msgstr "eliminado"
+
+#~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+#~ msgstr "Ruta del archivo a obtener<br/>Por ejemplo, /cidlookup.php"
 
 #~ msgid ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "
