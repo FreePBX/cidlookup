@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>13.0.5</version>
+	<version>13.0.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*13.0.6* Floating menu update
 		*13.0.5* FREEPBX-8172 Add tokens to path to allow path style lookups
 		*13.0.4* FREEPBX-9575 Run after privacy manager.
 		*13.0.3* FREEPBX-9578 Field Query in CIDLookup settings is loaded from database incorrectly
