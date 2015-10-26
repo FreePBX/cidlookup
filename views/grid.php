@@ -17,11 +17,21 @@ foreach ($cidsources as $source) {
     $srow .= '</td></tr>';
 }
 ?>
-<table class="table table-striped">
+<div id="toolbar-all">
+  <a href="config.php?display=cidlookup&amp;view=form" class="btn btn-default" ><i class="fa fa-plus"></i>&nbsp; <?php echo _("Add CIDLookup Source") ?></a>
+
+</div>
+<table id="cidlookupgrid"
+        data-cache="false"
+        data-toolbar="#toolbar-all"
+        data-toggle="table"
+        data-pagination="true"
+        data-search="true"
+        class="table table-striped">
 <thead>
     <tr>
-        <th><?php echo _("Description")?></th>
-        <th><?php echo _("Type")?></th>
+        <th data-sortable="true"><?php echo _("Description")?></th>
+        <th data-sortable="true"><?php echo _("Type")?></th>
         <th><?php echo _("Actions")?></th>
     </tr>
 </thead>
