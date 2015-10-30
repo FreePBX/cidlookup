@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-11 10:12-0700\n"
+"POT-Creation-Date: 2015-10-29 17:28-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -89,11 +89,11 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:25
+#: views/grid.php:35
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:6
+#: views/grid.php:21
 msgid "Add CIDLookup Source"
 msgstr ""
 
@@ -153,11 +153,11 @@ msgstr ""
 "החלט אם לשמור או לא לשמור את התוצאות ב astDB; פעולה זו תדרוס ערכים קיימים. "
 "היא אינה משפיעה על התנהגות המקורות הפנימיים"
 
-#: Cidlookup.class.php:69
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:33
 msgid "Description"
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
-#: views/bootnav.php:5
+#: views/bootnav.php:6
 msgid "List CIDLookup Sources"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "אף אחד"
 
@@ -335,13 +335,17 @@ msgstr ""
 msgid "Removing deprecated channel field from incoming.."
 msgstr ""
 
-#: Cidlookup.class.php:79
+#: Cidlookup.class.php:80
 msgid "Reset"
 msgstr ""
 
 #: views/form.php:15
 msgid "Select the source type, you can choose between:"
 msgstr ""
+
+#: views/bootnav.php:11
+msgid "Source"
+msgstr "מקור"
 
 #: views/form.php:51
 msgid "Source Description"
@@ -355,7 +359,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
 
-#: Cidlookup.class.php:74
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr ""
 
@@ -366,7 +370,7 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:34
 msgid "Type"
 msgstr ""
 
@@ -468,9 +472,6 @@ msgstr ""
 
 #~ msgid "Query:"
 #~ msgstr "שאילתא:"
-
-#~ msgid "Source"
-#~ msgstr "מקור"
 
 #~ msgid "Source Description:"
 #~ msgstr "תיאור המקור:"

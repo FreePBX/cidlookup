@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-11 10:12-0700\n"
+"POT-Creation-Date: 2015-10-29 17:28-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -89,11 +89,11 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:25
+#: views/grid.php:35
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:6
+#: views/grid.php:21
 msgid "Add CIDLookup Source"
 msgstr ""
 
@@ -153,11 +153,11 @@ msgstr ""
 "Décide de mettre en cache ou non les résultats dans astDB; cela écrasera les "
 "valeurs actuelles. N'affectera pas le comportement de source Interne"
 
-#: Cidlookup.class.php:69
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:33
 msgid "Description"
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
-#: views/bootnav.php:5
+#: views/bootnav.php:6
 msgid "List CIDLookup Sources"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "Aucun"
 
@@ -336,13 +336,17 @@ msgstr ""
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Suppression du champ canal obsolète de entrants..."
 
-#: Cidlookup.class.php:79
+#: Cidlookup.class.php:80
 msgid "Reset"
 msgstr ""
 
 #: views/form.php:15
 msgid "Select the source type, you can choose between:"
 msgstr ""
+
+#: views/bootnav.php:11
+msgid "Source"
+msgstr "Source"
 
 #: views/form.php:51
 msgid "Source Description"
@@ -358,7 +362,7 @@ msgstr ""
 "Les sources peuvent être ajoutées dans la section Sources de Consultation du "
 "Nom de l'Appelant"
 
-#: Cidlookup.class.php:74
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr ""
 
@@ -369,7 +373,7 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:34
 msgid "Type"
 msgstr ""
 
@@ -477,9 +481,6 @@ msgstr "éliminé"
 
 #~ msgid "Query:"
 #~ msgstr "Requête :"
-
-#~ msgid "Source"
-#~ msgstr "Source"
 
 #~ msgid "Source Description:"
 #~ msgstr "Description de la Source :"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-11 10:12-0700\n"
+"POT-Creation-Date: 2015-10-29 17:28-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,11 +72,11 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:25
+#: views/grid.php:35
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:6
+#: views/grid.php:21
 msgid "Add CIDLookup Source"
 msgstr ""
 
@@ -134,11 +134,11 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 
-#: Cidlookup.class.php:69
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:33
 msgid "Description"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgstr ""
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
-#: views/bootnav.php:5
+#: views/bootnav.php:6
 msgid "List CIDLookup Sources"
 msgstr ""
 
@@ -237,6 +237,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: Cidlookup.class.php:99
 #: functions.inc.php:330
 msgid "None"
 msgstr ""
@@ -325,12 +326,16 @@ msgstr ""
 msgid "Removing deprecated channel field from incoming.."
 msgstr ""
 
-#: Cidlookup.class.php:79
+#: Cidlookup.class.php:80
 msgid "Reset"
 msgstr ""
 
 #: views/form.php:15
 msgid "Select the source type, you can choose between:"
+msgstr ""
+
+#: views/bootnav.php:11
+msgid "Source"
 msgstr ""
 
 #: views/form.php:51
@@ -345,7 +350,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
-#: Cidlookup.class.php:74
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr ""
 
@@ -356,7 +361,7 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:34
 msgid "Type"
 msgstr ""
 

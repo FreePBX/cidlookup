@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-11 10:12-0700\n"
+"POT-Creation-Date: 2015-10-29 17:28-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -91,11 +91,11 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:25
+#: views/grid.php:35
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:6
+#: views/grid.php:21
 msgid "Add CIDLookup Source"
 msgstr ""
 
@@ -156,11 +156,11 @@ msgstr ""
 "Välj om du ska mellanlagra resultaten i astDB; det kommer att skriva över "
 "eventuella poster som redan finns. Används inte om källa är Internal."
 
-#: Cidlookup.class.php:69
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:33
 msgid "Description"
 msgstr ""
 
@@ -220,7 +220,7 @@ msgstr ""
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
-#: views/bootnav.php:5
+#: views/bootnav.php:6
 msgid "List CIDLookup Sources"
 msgstr ""
 
@@ -252,7 +252,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "Ingen"
 
@@ -339,13 +339,17 @@ msgstr ""
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
 
-#: Cidlookup.class.php:79
+#: Cidlookup.class.php:80
 msgid "Reset"
 msgstr ""
 
 #: views/form.php:15
 msgid "Select the source type, you can choose between:"
 msgstr ""
+
+#: views/bootnav.php:11
+msgid "Source"
+msgstr "Källa"
 
 #: views/form.php:51
 msgid "Source Description"
@@ -359,7 +363,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Källor kan läggas till i Källor för nummerpresentation"
 
-#: Cidlookup.class.php:74
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr ""
 
@@ -372,7 +376,7 @@ msgstr ""
 "Det finns %s Inkommande vägar för denna källa, om denna källa tas bort "
 "kommmer ingen nummeruppslagning att ske"
 
-#: views/grid.php:24
+#: views/grid.php:34
 msgid "Type"
 msgstr ""
 
@@ -480,9 +484,6 @@ msgstr "borttagen"
 
 #~ msgid "Query:"
 #~ msgstr "Fråga:"
-
-#~ msgid "Source"
-#~ msgstr "Källa"
 
 #~ msgid "Source Description:"
 #~ msgstr "Källbeskrivning:"

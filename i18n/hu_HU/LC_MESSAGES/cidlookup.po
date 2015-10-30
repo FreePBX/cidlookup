@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-11 10:12-0700\n"
+"POT-Creation-Date: 2015-10-29 17:28-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -92,11 +92,11 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:25
+#: views/grid.php:35
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:6
+#: views/grid.php:21
 msgid "Add CIDLookup Source"
 msgstr ""
 
@@ -156,11 +156,11 @@ msgstr ""
 "Legyen, vagy ne legyen a lekérdezés cachelve a belső astDB-ben; ez "
 "különbözhet az mindenkori értéktől. Nincs a belső adatbázisra értelmezve."
 
-#: Cidlookup.class.php:69
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:23
+#: views/grid.php:33
 msgid "Description"
 msgstr ""
 
@@ -220,7 +220,7 @@ msgstr ""
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
-#: views/bootnav.php:5
+#: views/bootnav.php:6
 msgid "List CIDLookup Sources"
 msgstr ""
 
@@ -252,7 +252,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "Nincs"
 
@@ -338,13 +338,17 @@ msgstr ""
 msgid "Removing deprecated channel field from incoming.."
 msgstr ""
 
-#: Cidlookup.class.php:79
+#: Cidlookup.class.php:80
 msgid "Reset"
 msgstr ""
 
 #: views/form.php:15
 msgid "Select the source type, you can choose between:"
 msgstr ""
+
+#: views/bootnav.php:11
+msgid "Source"
+msgstr "Forrás"
 
 #: views/form.php:51
 msgid "Source Description"
@@ -358,7 +362,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
 
-#: Cidlookup.class.php:74
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr ""
 
@@ -369,7 +373,7 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:34
 msgid "Type"
 msgstr ""
 
@@ -471,9 +475,6 @@ msgstr ""
 
 #~ msgid "Query:"
 #~ msgstr "Lekérdezés:"
-
-#~ msgid "Source"
-#~ msgstr "Forrás"
 
 #~ msgid "Source Description:"
 #~ msgstr "Forrás neve:"

@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-11 10:12-0700\n"
+"POT-Creation-Date: 2015-10-29 17:28-0700\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -119,11 +119,11 @@ msgstr ""
 msgid "Account SID:"
 msgstr "アカウントSID:"
 
-#: views/grid.php:25
+#: views/grid.php:35
 msgid "Actions"
 msgstr "アクション"
 
-#: views/bootnav.php:6
+#: views/grid.php:21
 msgid "Add CIDLookup Source"
 msgstr "CIDLookupソースを追加"
 
@@ -183,11 +183,11 @@ msgstr ""
 "astDBへの結果をキャッシュするかどうかを決定します；現在の値を上書きします。イ"
 "ンターナルソースの挙動には影響しません。"
 
-#: Cidlookup.class.php:69
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr "削除"
 
-#: views/grid.php:23
+#: views/grid.php:33
 msgid "Description"
 msgstr "説明"
 
@@ -247,7 +247,7 @@ msgstr "内部:"
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr "MySQLデータベースにクエリをかけて発信者情報を取得します。"
 
-#: views/bootnav.php:5
+#: views/bootnav.php:6
 msgid "List CIDLookup Sources"
 msgstr "CIDLookupソースを一覧表示"
 
@@ -279,7 +279,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "いいえ"
 
-#: functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "なし"
 
@@ -372,13 +372,17 @@ msgstr ""
 msgid "Removing deprecated channel field from incoming.."
 msgstr "着信から、重複チャネルフィールドを削除.."
 
-#: Cidlookup.class.php:79
+#: Cidlookup.class.php:80
 msgid "Reset"
 msgstr "リセット"
 
 #: views/form.php:15
 msgid "Select the source type, you can choose between:"
 msgstr "ソースの種類を以下から選択してください。"
+
+#: views/bootnav.php:11
+msgid "Source"
+msgstr "ソース"
 
 #: views/form.php:51
 msgid "Source Description"
@@ -392,7 +396,7 @@ msgstr "ソースの種類"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "ソースは発信者名検索ソースセクションで追加できます。"
 
-#: Cidlookup.class.php:74
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr "送信"
 
@@ -405,7 +409,7 @@ msgstr ""
 "このソースを使用しているダイヤルインが%s個あり、削除した場合は検索できませ"
 "ん。"
 
-#: views/grid.php:24
+#: views/grid.php:34
 msgid "Type"
 msgstr "種類"
 
@@ -566,9 +570,6 @@ msgstr "削除済み"
 #~ "                    <li>MySQL: 発信者の名前を検索するための、MySQLデータ"
 #~ "ベースクエリー</li>\n"
 #~ "                    </ul>"
-
-#~ msgid "Source"
-#~ msgstr "ソース"
 
 #~ msgid "Source Description:"
 #~ msgstr "ソース説明："
