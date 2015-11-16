@@ -133,7 +133,7 @@ function cidlookup_hookGet_config($engine) {
                         }
 						$exten = $exten.(empty($cidnum)?"":"/".$cidnum); //if a CID num is defined, add it
 
-						$ext->splice($context, $exten, 'dest-ext', new ext_gosub('1', 'cidlookup_'.$item['cidlookup_id'], 'cidlookup'));
+						$ext->splice($context, $exten, 'did-cid-hook', new ext_gosub('1', 'cidlookup_'.$item['cidlookup_id'], 'cidlookup'));
 
 					}
 				}
