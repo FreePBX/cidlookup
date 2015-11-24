@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 17:28-0700\n"
+"POT-Creation-Date: 2015-11-24 12:53-0800\n"
 "PO-Revision-Date: 2014-07-21 15:37+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/cidlookup/"
@@ -108,6 +108,16 @@ msgstr ""
 msgid "Adding opencnam account columns to the cidlookup table..."
 msgstr ""
 
+#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+msgid "Admin"
+msgstr "Админ"
+
+#: cidlookup.i18n.php:8
+msgid ""
+"Allows CallerID Lookup of incoming calls against different sources "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
 #: views/form.php:192
 msgid "Auth Token"
 msgstr ""
@@ -123,6 +133,14 @@ msgstr ""
 #: views/form.php:108
 msgid "Cache Results"
 msgstr ""
+
+#: cidlookup.i18n.php:4
+msgid "CallerID Lookup"
+msgstr "CallerID Следене"
+
+#: cidlookup.i18n.php:10
+msgid "CallerID Lookup Sources"
+msgstr "CallerID Следене"
 
 #: views/form.php:488
 msgid "Character Set"
@@ -225,7 +243,7 @@ msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
 #: views/bootnav.php:6
-msgid "List CIDLookup Sources"
+msgid "List Sources"
 msgstr ""
 
 #: install.php:73
@@ -351,7 +369,7 @@ msgstr ""
 msgid "Select the source type, you can choose between:"
 msgstr ""
 
-#: views/bootnav.php:11
+#: views/bootnav.php:16
 msgid "Source"
 msgstr "Източник"
 
@@ -501,21 +519,12 @@ msgstr "премахнат"
 #~ msgid "Username:"
 #~ msgstr "Потребителско Име:"
 
-#~ msgid "CallerID Lookup"
-#~ msgstr "CallerID Следене"
-
-#~ msgid "Admin"
-#~ msgstr "Админ"
-
 #~ msgid ""
 #~ "Allows CallerID Lookup of incoming calls against different sources "
 #~ "(MySQL, HTTP, ENUM, Phonebook Module)"
 #~ msgstr ""
 #~ "Предоставя CallerID Следене на входящите обаждания спрямо различни "
 #~ "източници (MySQL, HTTP, ENUM, Телефонен Указател)"
-
-#~ msgid "CallerID Lookup Sources"
-#~ msgstr "CallerID Следене"
 
 #~ msgid "CID Lookup source"
 #~ msgstr "Източник на CID следене"

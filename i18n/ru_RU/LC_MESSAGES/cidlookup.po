@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 17:28-0700\n"
+"POT-Creation-Date: 2015-11-24 12:53-0800\n"
 "PO-Revision-Date: 2015-05-31 00:21+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -127,6 +127,16 @@ msgstr "Добавить источник поиска CID"
 msgid "Adding opencnam account columns to the cidlookup table..."
 msgstr "Добавление колонок opencnam аккаунта к таблице cidlookup..."
 
+#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+msgid "Admin"
+msgstr "Админ"
+
+#: cidlookup.i18n.php:8
+msgid ""
+"Allows CallerID Lookup of incoming calls against different sources "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
 #: views/form.php:192
 msgid "Auth Token"
 msgstr "Авт. маркер"
@@ -142,6 +152,14 @@ msgstr "Поиск CID"
 #: views/form.php:108
 msgid "Cache Results"
 msgstr "Результаты кеша"
+
+#: cidlookup.i18n.php:4
+msgid "CallerID Lookup"
+msgstr "Поиск по Caller ID"
+
+#: cidlookup.i18n.php:10
+msgid "CallerID Lookup Sources"
+msgstr "Источники поиска Caller ID"
 
 #: views/form.php:488
 msgid "Character Set"
@@ -245,7 +263,7 @@ msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
 #: views/bootnav.php:6
-msgid "List CIDLookup Sources"
+msgid "List Sources"
 msgstr ""
 
 #: install.php:73
@@ -370,7 +388,7 @@ msgstr ""
 msgid "Select the source type, you can choose between:"
 msgstr ""
 
-#: views/bootnav.php:11
+#: views/bootnav.php:16
 msgid "Source"
 msgstr "Источник"
 
@@ -459,15 +477,6 @@ msgstr "удалено"
 #~ msgstr ""
 #~ "Переменная запроса, содержащая '[NUMBER]', которая получает значение "
 #~ "Caller  ID <br/>например: number=[NUMBER]&source=crm"
-
-#~ msgid "Admin"
-#~ msgstr "Админ"
-
-#~ msgid "CallerID Lookup"
-#~ msgstr "Поиск по Caller ID"
-
-#~ msgid "CallerID Lookup Sources"
-#~ msgstr "Источники поиска Caller ID"
 
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "Добавить источник поиска CID"

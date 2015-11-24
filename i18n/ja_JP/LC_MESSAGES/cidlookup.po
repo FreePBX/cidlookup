@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 17:28-0700\n"
+"POT-Creation-Date: 2015-11-24 12:53-0800\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -131,6 +131,18 @@ msgstr "CIDLookupソースを追加"
 msgid "Adding opencnam account columns to the cidlookup table..."
 msgstr "opencnamアカウントコラムをcidlookupテーブルに追加中.."
 
+#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+msgid "Admin"
+msgstr "アドミン"
+
+#: cidlookup.i18n.php:8
+msgid ""
+"Allows CallerID Lookup of incoming calls against different sources "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+"別のソースに対して、着信呼の発信者番号の検索を許可する（OpenCNAM, MySQL、"
+"HTTP、ENUM、電話帳のモジュール）"
+
 #: views/form.php:192
 msgid "Auth Token"
 msgstr "認証トークン"
@@ -146,6 +158,14 @@ msgstr "CIDLookup"
 #: views/form.php:108
 msgid "Cache Results"
 msgstr "結果をキャッシュ"
+
+#: cidlookup.i18n.php:4
+msgid "CallerID Lookup"
+msgstr "発信者番号検索"
+
+#: cidlookup.i18n.php:10
+msgid "CallerID Lookup Sources"
+msgstr "発信者番号検索ソース"
 
 #: views/form.php:488
 msgid "Character Set"
@@ -248,8 +268,8 @@ msgid "It queries a MySQL database to retrieve caller name"
 msgstr "MySQLデータベースにクエリをかけて発信者情報を取得します。"
 
 #: views/bootnav.php:6
-msgid "List CIDLookup Sources"
-msgstr "CIDLookupソースを一覧表示"
+msgid "List Sources"
+msgstr ""
 
 #: install.php:73
 msgid "Migrating channel routing to Zap DID routing.."
@@ -380,7 +400,7 @@ msgstr "リセット"
 msgid "Select the source type, you can choose between:"
 msgstr "ソースの種類を以下から選択してください。"
 
-#: views/bootnav.php:11
+#: views/bootnav.php:16
 msgid "Source"
 msgstr "ソース"
 
@@ -470,6 +490,9 @@ msgstr "存在しません"
 msgid "removed"
 msgstr "削除済み"
 
+#~ msgid "List CIDLookup Sources"
+#~ msgstr "CIDLookupソースを一覧表示"
+
 #~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 #~ msgstr "GETをするファイルのパス<br/>例：/cidlookup.php"
 
@@ -479,22 +502,6 @@ msgstr "削除済み"
 #~ msgstr ""
 #~ "クエリー文字列、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/"
 #~ ">例： number=[NUMBER]&source=crm"
-
-#~ msgid "Admin"
-#~ msgstr "アドミン"
-
-#~ msgid ""
-#~ "Allows CallerID Lookup of incoming calls against different sources "
-#~ "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-#~ msgstr ""
-#~ "別のソースに対して、着信呼の発信者番号の検索を許可する（OpenCNAM, MySQL、"
-#~ "HTTP、ENUM、電話帳のモジュール）"
-
-#~ msgid "CallerID Lookup"
-#~ msgstr "発信者番号検索"
-
-#~ msgid "CallerID Lookup Sources"
-#~ msgstr "発信者番号検索ソース"
 
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "発信者番号検索ソースを追加"
