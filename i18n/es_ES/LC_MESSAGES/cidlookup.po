@@ -20,14 +20,14 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-24 12:53-0800\n"
-"PO-Revision-Date: 2015-09-15 00:25+0200\n"
+"PO-Revision-Date: 2016-01-07 02:12+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
-"cidlookup/es_ES/>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/cidlookup/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
@@ -124,13 +124,15 @@ msgstr "Agregando columnas de cuenta opencnam  en la tabla cidlookup..."
 
 #: cidlookup.i18n.php:6 cidlookup.i18n.php:12
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: cidlookup.i18n.php:8
 msgid ""
 "Allows CallerID Lookup of incoming calls against different sources "
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
+"Permite búsqueda CallerID de las llamadas entrantes contra de diferentes "
+"fuentes (OpenCNAM, MySQL, HTTP, ENUM, Módulo de la guía telefónica)"
 
 #: views/form.php:192
 msgid "Auth Token"
@@ -258,7 +260,7 @@ msgstr "Solicita a base de datos MySQL el recuperar el nombre de quien llamada"
 
 #: views/bootnav.php:6
 msgid "List Sources"
-msgstr ""
+msgstr "Lista de Fuentes"
 
 #: install.php:73
 msgid "Migrating channel routing to Zap DID routing.."
