@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-24 12:53-0800\n"
-"PO-Revision-Date: 2016-02-05 11:16+0200\n"
+"PO-Revision-Date: 2016-02-06 07:16+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/cidlookup/fr_FR/>\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: views/form.php:17
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr ""
+msgstr " Utilise OpenCNAM [https://www.opencnam.com/]"
 
 #: views/form.php:18
 msgid " use astdb as lookup source, use phonebook module to populate it"
