@@ -86,7 +86,10 @@ function cidlookup_hookProcess_core($viewing_itemid, $request) {
 			return;
 		switch ($request['action']) {
 			case 'addIncoming':
-				cidlookup_did_add($request['cidlookup_id'], $request['extension'], $request['cidnum']);
+				$invalidDIDChars = array('<', '>');
+				$extension = trim(str_replace($invalidDIDChars, "", $request['extension']));
+				$cidnum = trim(str_replace($invalidDIDChars, "", $request['cidnum']));
+				cidlookup_did_add($request['cidlookup_id'], $extension, $cidnum);
 				break;
 			case 'delIncoming':
 				$extarray = explode('/', $request['extdisplay'], 2);
@@ -94,8 +97,11 @@ function cidlookup_hookProcess_core($viewing_itemid, $request) {
                 break;
 			case 'edtIncoming':     // deleting and adding as in core module
 				$extarray = explode('/', $request['extdisplay'], 2);
+				$invalidDIDChars = array('<', '>');
+				$extension = trim(str_replace($invalidDIDChars, "", $request['extension']));
+				$cidnum = trim(str_replace($invalidDIDChars, "", $request['cidnum']));
 				cidlookup_did_del($extarray[0], $extarray[1]);
-				cidlookup_did_add($request['cidlookup_id'], $request['extension'], $request['cidnum']);
+				cidlookup_did_add($request['cidlookup_id'], $extension, $cidnum);
 				break;
 		}
 }
