@@ -186,6 +186,12 @@ function cidlookup_get_config($engine) {
 							if (!empty($item['opencnam_account_sid']) && !empty($item['opencnam_auth_token'])) {
 								$auth = sprintf('%s:%s@', urlencode($item['opencnam_account_sid']), urlencode($item['opencnam_auth_token']));
 							} else {
+								$nt = \notifications::create();
+								$rawname = 'cidlookup';
+								$uid = 'noauth';
+								if(!$nt->exists($rawname, $uid)) {
+									$nt->add_warning($rawname, $uid, _("OpenCNAM Requires Authentication"), _("Unauthenticated calls to the OpenCNAM API will soon fail. You will need an Open CNAM account to continue using their API"), "http://opencnam.com", true, true);
+								}
 								$auth = '';
 							}
 

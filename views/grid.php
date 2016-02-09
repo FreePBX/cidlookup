@@ -4,6 +4,9 @@
 $cidsources = cidlookup_list();
 $srow = "";
 foreach ($cidsources as $source) {
+    if($source['sourcetype'] === null){
+      continue;
+    }
     $srow .= '<tr>';
     $srow .= '<td>'.$source['description'].'</td>';
     $srow .= '<td>'.$source['sourcetype'];
