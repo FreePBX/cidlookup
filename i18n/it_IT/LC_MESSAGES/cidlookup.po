@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-24 12:53-0800\n"
+"POT-Creation-Date: 2016-02-10 14:19-0800\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -92,15 +92,15 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:35
+#: views/grid.php:38
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:21
+#: views/grid.php:24
 msgid "Add CIDLookup Source"
 msgstr ""
 
-#: install.php:121
+#: install.php:122
 msgid "Adding opencnam account columns to the cidlookup table..."
 msgstr ""
 
@@ -142,19 +142,19 @@ msgstr "Sorgenti Risoluzione CID"
 msgid "Character Set"
 msgstr ""
 
-#: install.php:103
+#: install.php:104
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "Controllo"
 
-#: install.php:144
+#: install.php:145
 msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
 msgstr ""
 
-#: install.php:125
+#: install.php:126
 msgid "Could not add opencnam_account_sid column to cidlookup table."
 msgstr ""
 
-#: install.php:131
+#: install.php:132
 msgid "Could not add opencnam_auth_token column to cidlookup table."
 msgstr ""
 
@@ -179,11 +179,11 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:33
+#: views/grid.php:36
 msgid "Description"
 msgstr ""
 
-#: install.php:44 install.php:133 install.php:141 install.php:161
+#: install.php:45 install.php:134 install.php:142 install.php:162
 msgid "Done!"
 msgstr ""
 
@@ -191,7 +191,7 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:90
+#: install.php:91
 msgid "ERROR: failed: "
 msgstr "ERRORE: fallito:"
 
@@ -199,11 +199,11 @@ msgstr "ERRORE: fallito:"
 msgid "Enter a description for this source."
 msgstr "Immettere una descrizione per questa sorgente."
 
-#: install.php:81
+#: install.php:82
 msgid "FATAL: failed to transform old routes: "
 msgstr "FATALE: fallita trasformazione vecchie rotte:"
 
-#: install.php:41 install.php:139
+#: install.php:42 install.php:140
 msgid "Failed to add OpenCNAM CallerID Lookup Source: "
 msgstr ""
 
@@ -223,7 +223,7 @@ msgstr ""
 msgid "Host name or IP address"
 msgstr "Nome host o Indirizzo IP"
 
-#: install.php:37 install.php:135
+#: install.php:38 install.php:136
 msgid "Installing OpenCNAM CallerID Lookup Sources..."
 msgstr ""
 
@@ -243,7 +243,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:73
+#: install.php:74
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Migrazione rotta canali verso rotta Selezione Passante Zap.."
 
@@ -271,11 +271,11 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:99 functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:342
 msgid "None"
 msgstr "Nessuna"
 
-#: install.php:97
+#: install.php:98
 msgid "Not Needed"
 msgstr "Non Necessario"
 
@@ -283,12 +283,16 @@ msgstr "Non Necessario"
 msgid "Not yet implemented"
 msgstr "Non ancora implementato"
 
-#: install.php:83 install.php:92
+#: install.php:84 install.php:93
 msgid "OK"
 msgstr "OK"
 
 #: views/form.php:80
 msgid "OpenCNAM"
+msgstr ""
+
+#: functions.inc.php:199
+msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
 #: bin/opencnam-alert.php:25
@@ -353,7 +357,7 @@ msgstr ""
 "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di "
 "telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:86
+#: install.php:87
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Rimozione campo canale obsoleto dall'entrata.."
 
@@ -393,8 +397,14 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: views/grid.php:34
+#: views/grid.php:37
 msgid "Type"
+msgstr ""
+
+#: functions.inc.php:199
+msgid ""
+"Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
+"Open CNAM account to continue using their API"
 msgstr ""
 
 #: views/form.php:141
@@ -436,11 +446,11 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:107
+#: install.php:108
 msgid "not present"
 msgstr "non presente"
 
-#: install.php:109
+#: install.php:110
 msgid "removed"
 msgstr "rimosso"
 
