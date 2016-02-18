@@ -50,14 +50,6 @@ $('#sourcetype').focus(function () {
     prev_source = source;
 });
 
-$('[name="opencnam_professional_tier"').change(function() {
-    if($(this).val() == '1') {
-        $('.opencnam_pro').show();
-    } else {
-        $('.opencnam_pro').hide();
-    }
-});
-
 function displayInitalSourceParameters() {
     $.each(cid_modules, function(index, value) {
       $('#'+value).hide();

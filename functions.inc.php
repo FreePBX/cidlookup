@@ -38,22 +38,10 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 			<div class="row">
 				<div class="col-md-12">
 					<span id="cidlookup_id-help" class="help-block fpbx-help-block">'. _("Sources can be added in Caller Name Lookup Sources section").'</span>
-					<div class="well well-info hidden" id="opencnam_hobbyist_note">
-						<b>NOTE:</b> OpenCNAM\'s Hobbyist Tier only allows you to do 10 cached CID lookups per hour. If you get more than 10 incoming calls per hour, or want real-time CID information (which is more accurate), you should use the Professional Tier, which is configurable via the CallerID Lookup Sources menu.
-					</div>
 				</div>
 			</div>
 		</div>
 		<!--END CID Lookup Source-->
-		<script type="text/javascript">
-			function openCNAMNoteDisplay(source, key) {
-				if (source.options[key].text === "OpenCNAM") {
-					$("#opencnam_hobbyist_note").removeClass("hidden");
-				} else {
-					$("#opencnam_hobbyist_note").addClass("hidden");
-		 		}
-			}
-		</script>
 		<!--END cidlookup hook-->
 		';
 /*
@@ -222,7 +210,7 @@ function cidlookup_get_config($engine) {
 								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_execif('$["${last_query_hour}" != "${current_hour}"]', 'Set', 'DB(cidlookup/opencnam_total_hourly_queries)=0'));
 								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_execif('$["${total_hourly_queries}" = ""]', 'Set', 'DB(cidlookup/opencnam_total_hourly_queries)=0'));
 								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('DB(cidlookup/opencnam_total_hourly_queries)', '${MATH(${DB(cidlookup/opencnam_total_hourly_queries)}+1,i)}'));
-								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_execif('$[${DB(cidlookup/opencnam_total_hourly_queries)} >= 60]', 'System', '${ASTVARLIBDIR}/bin/opencnam-alert.php'));
+								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_execif('$[${DB(cidlookup/opencnam_total_hourly_queries)} >= 10]', 'System', '${ASTVARLIBDIR}/bin/opencnam-alert.php'));
 								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('DB(cidlookup/opencnam_last_query_hour)', '${current_hour}'));
 							}
 
@@ -379,9 +367,7 @@ function cidlookup_add($post){
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
 	$opencnam_auth_token = $db->escapeSimple($post['opencnam_auth_token']);
-
 	$cache = isset($post['cache']) ? $db->escapeSimple($post['cache']) : 0;
-
 	$results = sql("
 		INSERT INTO cidlookup
 			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token)
@@ -408,17 +394,10 @@ function cidlookup_edit($id,$post){
 	$mysql_username = $db->escapeSimple($post['mysql_username']);
 	$mysql_password = $db->escapeSimple($post['mysql_password']);
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
-	$opencnam_account_sid = $db->escapeSimple($post['opencnam_professional_tier']) ? $db->escapeSimple($post['opencnam_account_sid']) : '';
-	$opencnam_auth_token = $db->escapeSimple($post['opencnam_professional_tier']) ? $db->escapeSimple($post['opencnam_auth_token']) : '';
+	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
+	$opencnam_auth_token =  $db->escapeSimple($post['opencnam_auth_token']);
+	$cache  = isset($post['cache'])?$db->escapeSimple($post['cache']):1;
 
-  if (!isset($post['cache'])) {
-   $cache = 0;
-  }
-  else {
-   if($sourcetype != "internal" || $sourcetype != "opencnam") {
-		 $cache = 1;
-	 }
-  }
 	$results = sql("
 		UPDATE cidlookup
 		SET
