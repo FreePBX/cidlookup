@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-10 14:19-0800\n"
+"POT-Creation-Date: 2016-02-29 11:35-0800\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,19 +49,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: views/form.php:20
+#: views/form.php:22
 msgid ""
 " It executes an HTTP GET passing the caller number as argument to retrieve "
 "the correct name"
 msgstr " 名前を抽出するために、着信番号を入れてHTTP GETを実行します。"
 
-#: views/form.php:21
+#: views/form.php:23
 msgid ""
 " It executes an HTTPS GET passing the caller number as argument to retrieve "
 "the correct name"
 msgstr " 名前を抽出するために、発信者番号を入れてHTTPS GETを実行します。"
 
-#: views/form.php:19
+#: views/form.php:21
 msgid ""
 " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
 "enum.conf"
@@ -69,35 +69,16 @@ msgstr ""
 " enum.confで設定したENUMルックアップゾーンを元にDNS経由で発信者情報を取得しま"
 "す。"
 
-#: views/form.php:17
-msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr " OpenCNAMを使用 [https://www.opencnam.com/]"
-
-#: views/form.php:18
+#: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr " astdbから情報を取得します。phonebookモジュールから情報を登録します。"
 
 #: views/form.php:131
 msgid ""
-"<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 "
-"cached CallerID lookups per hour. If you get more than 60 incoming calls per "
-"hour, or want real-time CallerID information (more accurate), you should use "
-"the Professional Tier.</p>"
+"<p>If you need to create an OpenCNAM account, you can visit their website: "
+"<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
+"opencnam.com/register</a></p>"
 msgstr ""
-"<p><b>注意:</b> OpenCNAMの Hobbyist Tier (デフォルト) では、1時間で最大 60件 "
-"の検索しかできません。1時間で60件以上の着信を見込む場合や、リアルタイムで更新"
-"されるCID情報がひつような場合は、OpenCNAMの Professional Tier をおすすめしま"
-"す。</p>"
-
-#: views/form.php:132
-msgid ""
-"<p>If you'd like to create an OpenCNAM Professional Tier account, you can do "
-"so on their website: <a href=\"https://www.opencnam.com/register\" target="
-"\"_blank\">https://www.opencnam.com/register</a></p>"
-msgstr ""
-"<p>OpenCNAM Professional Tier アカウントをお持ちでない場合は、OpenCNAMのホー"
-"ムページから新規登録ができます: <a href=\"https://www.opencnam.com/register"
-"\" target=\"_blank\">https://www.opencnam.com/register</a></p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -115,7 +96,7 @@ msgstr ""
 "ジュールをインストールすることもできます。注意、名前の検索はPBXを遅くすること"
 "があります。"
 
-#: views/form.php:168
+#: views/form.php:140
 msgid "Account SID:"
 msgstr "アカウントSID:"
 
@@ -143,7 +124,7 @@ msgstr ""
 "別のソースに対して、着信呼の発信者番号の検索を許可する（OpenCNAM, MySQL、"
 "HTTP、ENUM、電話帳のモジュール）"
 
-#: views/form.php:192
+#: views/form.php:164
 msgid "Auth Token"
 msgstr "認証トークン"
 
@@ -167,7 +148,7 @@ msgstr "発信者番号検索"
 msgid "CallerID Lookup Sources"
 msgstr "発信者番号検索ソース"
 
-#: views/form.php:488
+#: views/form.php:460
 msgid "Character Set"
 msgstr "文字コード"
 
@@ -187,11 +168,11 @@ msgstr "opencnam_account_sidコラムをcidlookupテーブルに追加できま�
 msgid "Could not add opencnam_auth_token column to cidlookup table."
 msgstr "opencnam_auth_tokenコラムをcidlookupテーブルに追加できませんでした。"
 
-#: views/form.php:392
+#: views/form.php:364
 msgid "Database"
 msgstr "データベース"
 
-#: views/form.php:404
+#: views/form.php:376
 msgid "Database Name"
 msgstr "データベース名"
 
@@ -215,7 +196,7 @@ msgstr "説明"
 msgid "Done!"
 msgstr "完了"
 
-#: views/form.php:19
+#: views/form.php:21
 msgid "ENUM:"
 msgstr "ENUM:"
 
@@ -223,7 +204,7 @@ msgstr "ENUM:"
 msgid "ERROR: failed: "
 msgstr "ERROR： 失敗："
 
-#: views/form.php:63
+#: views/form.php:65
 msgid "Enter a description for this source."
 msgstr "このソースの説明を入力。"
 
@@ -235,19 +216,19 @@ msgstr "FATAL： 古い経路の変換に失敗しました："
 msgid "Failed to add OpenCNAM CallerID Lookup Source: "
 msgstr "OpenCNAM発信者番号検索ソースの追加に失敗しました。"
 
-#: views/form.php:20
+#: views/form.php:22
 msgid "HTTP:"
 msgstr "HTTP:"
 
-#: views/form.php:21
+#: views/form.php:23
 msgid "HTTPS:"
 msgstr "HTTPS:"
 
-#: views/form.php:220 views/form.php:368
+#: views/form.php:192 views/form.php:340
 msgid "Host"
 msgstr "ホスト名"
 
-#: views/form.php:232
+#: views/form.php:204
 msgid "Host name or IP address"
 msgstr "ホスト名 or IPアドレス"
 
@@ -255,15 +236,15 @@ msgstr "ホスト名 or IPアドレス"
 msgid "Installing OpenCNAM CallerID Lookup Sources..."
 msgstr "OpenCNAM発信者番号検索ソースをインストール中…"
 
-#: views/form.php:81
+#: views/form.php:83
 msgid "Internal"
 msgstr "内部"
 
-#: views/form.php:18
+#: views/form.php:20
 msgid "Internal:"
 msgstr "内部:"
 
-#: views/form.php:22
+#: views/form.php:24
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr "MySQLデータベースにクエリをかけて発信者情報を取得します。"
 
@@ -275,31 +256,31 @@ msgstr ""
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "チャネルルーティングからZapダイヤルインルーティングに移行.."
 
-#: views/form.php:500
+#: views/form.php:472
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr "MySQLの文字コード。空にすると、MySQLデフォルトのlatin1に設定されます"
 
-#: views/form.php:380
+#: views/form.php:352
 msgid "MySQL Host"
 msgstr "MySQL ホスト"
 
-#: views/form.php:476
+#: views/form.php:448
 msgid "MySQL Password"
 msgstr "MySQLパスワード"
 
-#: views/form.php:452
+#: views/form.php:424
 msgid "MySQL Username"
 msgstr "MySQLユーザー名"
 
-#: views/form.php:22
+#: views/form.php:24
 msgid "MySQL:"
 msgstr "MySQL:"
 
-#: views/form.php:115 views/form.php:148
+#: views/form.php:115
 msgid "No"
 msgstr "いいえ"
 
-#: Cidlookup.class.php:99 functions.inc.php:342
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "なし"
 
@@ -307,7 +288,7 @@ msgstr "なし"
 msgid "Not Needed"
 msgstr "必要なし"
 
-#: views/form.php:509 views/form.php:514
+#: views/form.php:481 views/form.php:486
 msgid "Not yet implemented"
 msgstr "未実装"
 
@@ -315,11 +296,11 @@ msgstr "未実装"
 msgid "OK"
 msgstr "OK"
 
-#: views/form.php:80
+#: views/form.php:10
 msgid "OpenCNAM"
 msgstr "OpenCNAM"
 
-#: functions.inc.php:199
+#: functions.inc.php:187
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -327,31 +308,19 @@ msgstr ""
 msgid "OpenCNAM Throttle Reached!"
 msgstr "OpenCNAM 制限に達しました！"
 
-#: views/form.php:156
-msgid ""
-"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
-"you want, for a small fee. This is recommended for business users."
-msgstr ""
-"OpenCNAMのProfessional Tierでは、CNAMリアルタイムクエリーの制限がないため、ビ"
-"ジネス利用の場合はお勧めです。"
-
-#: views/form.php:17
-msgid "OpenCNAM:"
-msgstr "OpenCNAM:"
-
-#: views/form.php:292 views/form.php:464
+#: views/form.php:264 views/form.php:436
 msgid "Password"
 msgstr "パスワード"
 
-#: views/form.php:304
+#: views/form.php:276
 msgid "Password to use in HTTP authentication"
 msgstr "HTTP認証で使用するパスワード"
 
-#: views/form.php:316
+#: views/form.php:288
 msgid "Path"
 msgstr "パス"
 
-#: views/form.php:328
+#: views/form.php:300
 msgid ""
 "Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
 "will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
@@ -359,21 +328,21 @@ msgid ""
 "will be replaced with channel language"
 msgstr ""
 
-#: views/form.php:244
+#: views/form.php:216
 msgid "Port"
 msgstr "ポート"
 
-#: views/form.php:256
+#: views/form.php:228
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 "HTTP、若しくはHTTPSサーバーが待ち構えているポート番号 (デフォルト http 80、"
 "https 443)"
 
-#: views/form.php:340 views/form.php:416
+#: views/form.php:312 views/form.php:388
 msgid "Query"
 msgstr "クエリ"
 
-#: views/form.php:352
+#: views/form.php:324
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
@@ -384,7 +353,7 @@ msgstr ""
 "ます。<br/>例: number=[NUMBER]&source=crm<br/>'[NAME]' をかけると既存のCID名"
 "に上書きします。<br/>'[LANGUAGE]' はAsteriskチャネルの言語になります。"
 
-#: views/form.php:428
+#: views/form.php:400
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -400,7 +369,7 @@ msgstr "着信から、重複チャネルフィールドを削除.."
 msgid "Reset"
 msgstr "リセット"
 
-#: views/form.php:15
+#: views/form.php:17
 msgid "Select the source type, you can choose between:"
 msgstr "ソースの種類を以下から選択してください。"
 
@@ -408,11 +377,11 @@ msgstr "ソースの種類を以下から選択してください。"
 msgid "Source"
 msgstr "ソース"
 
-#: views/form.php:51
+#: views/form.php:53
 msgid "Source Description"
 msgstr "ソースの説明"
 
-#: views/form.php:75
+#: views/form.php:77
 msgid "Source type"
 msgstr "ソースの種類"
 
@@ -424,7 +393,7 @@ msgstr "ソースは発信者名検索ソースセクションで追加できま
 msgid "Submit"
 msgstr "送信"
 
-#: views/form.php:34
+#: views/form.php:36
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
@@ -437,25 +406,21 @@ msgstr ""
 msgid "Type"
 msgstr "種類"
 
-#: functions.inc.php:199
+#: functions.inc.php:187
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "Open CNAM account to continue using their API"
 msgstr ""
 
-#: views/form.php:141
-msgid "Use Professional Tier"
-msgstr "Professional Tierを使用"
-
-#: views/form.php:268 views/form.php:440
+#: views/form.php:240 views/form.php:412
 msgid "Username"
 msgstr "ユーザー名"
 
-#: views/form.php:280
+#: views/form.php:252
 msgid "Username to use in HTTP authentication"
 msgstr "HTTP認証で使用するユーザー名"
 
-#: views/form.php:113 views/form.php:146
+#: views/form.php:113
 msgid "Yes"
 msgstr "はい"
 
@@ -476,7 +441,7 @@ msgstr ""
 "CallerIDルックアップソースのメニューを開き、アカウント情報(OpenCNAM "
 "Professional Tier credentials)を入力してください。<br/>"
 
-#: views/form.php:180
+#: views/form.php:152
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
@@ -484,7 +449,7 @@ msgstr ""
 "OpenCNAMのアカウントSID。OpenCNAMのダッシュボードページで確認できます："
 "https://www.opencnam.com/dashboard"
 
-#: views/form.php:204
+#: views/form.php:176
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
@@ -499,6 +464,42 @@ msgstr "存在しません"
 #: install.php:110
 msgid "removed"
 msgstr "削除済み"
+
+#~ msgid " Use OpenCNAM [https://www.opencnam.com/]"
+#~ msgstr " OpenCNAMを使用 [https://www.opencnam.com/]"
+
+#~ msgid ""
+#~ "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do "
+#~ "60 cached CallerID lookups per hour. If you get more than 60 incoming "
+#~ "calls per hour, or want real-time CallerID information (more accurate), "
+#~ "you should use the Professional Tier.</p>"
+#~ msgstr ""
+#~ "<p><b>注意:</b> OpenCNAMの Hobbyist Tier (デフォルト) では、1時間で最大 60"
+#~ "件 の検索しかできません。1時間で60件以上の着信を見込む場合や、リアルタイム"
+#~ "で更新されるCID情報がひつような場合は、OpenCNAMの Professional Tier をおす"
+#~ "すめします。</p>"
+
+#~ msgid ""
+#~ "<p>If you'd like to create an OpenCNAM Professional Tier account, you can "
+#~ "do so on their website: <a href=\"https://www.opencnam.com/register\" "
+#~ "target=\"_blank\">https://www.opencnam.com/register</a></p>"
+#~ msgstr ""
+#~ "<p>OpenCNAM Professional Tier アカウントをお持ちでない場合は、OpenCNAMの"
+#~ "ホームページから新規登録ができます: <a href=\"https://www.opencnam.com/"
+#~ "register\" target=\"_blank\">https://www.opencnam.com/register</a></p>"
+
+#~ msgid ""
+#~ "OpenCNAM's Professional Tier lets you do as many real-time CNAM queries "
+#~ "as you want, for a small fee. This is recommended for business users."
+#~ msgstr ""
+#~ "OpenCNAMのProfessional Tierでは、CNAMリアルタイムクエリーの制限がないた"
+#~ "め、ビジネス利用の場合はお勧めです。"
+
+#~ msgid "OpenCNAM:"
+#~ msgstr "OpenCNAM:"
+
+#~ msgid "Use Professional Tier"
+#~ msgstr "Professional Tierを使用"
 
 #~ msgid "List CIDLookup Sources"
 #~ msgstr "CIDLookupソースを一覧表示"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-10 14:19-0800\n"
+"POT-Creation-Date: 2016-02-29 11:35-0800\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -30,45 +30,33 @@ msgstr ""
 "X-Poedit-Country: HUNGARY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/form.php:20
+#: views/form.php:22
 msgid ""
 " It executes an HTTP GET passing the caller number as argument to retrieve "
 "the correct name"
 msgstr ""
 
-#: views/form.php:21
+#: views/form.php:23
 msgid ""
 " It executes an HTTPS GET passing the caller number as argument to retrieve "
 "the correct name"
 msgstr ""
 
-#: views/form.php:19
+#: views/form.php:21
 msgid ""
 " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
 "enum.conf"
 msgstr ""
 
-#: views/form.php:17
-msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr ""
-
-#: views/form.php:18
+#: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
 
 #: views/form.php:131
 msgid ""
-"<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 "
-"cached CallerID lookups per hour. If you get more than 60 incoming calls per "
-"hour, or want real-time CallerID information (more accurate), you should use "
-"the Professional Tier.</p>"
-msgstr ""
-
-#: views/form.php:132
-msgid ""
-"<p>If you'd like to create an OpenCNAM Professional Tier account, you can do "
-"so on their website: <a href=\"https://www.opencnam.com/register\" target="
-"\"_blank\">https://www.opencnam.com/register</a></p>"
+"<p>If you need to create an OpenCNAM account, you can visit their website: "
+"<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
+"opencnam.com/register</a></p>"
 msgstr ""
 
 #: page.cidlookup.php:8
@@ -88,7 +76,7 @@ msgstr ""
 "kapcsolatot tudsz kialakítani. Hátránya, hogy a névfeloldás lassabbá teheti "
 "a PBX rendszert."
 
-#: views/form.php:168
+#: views/form.php:140
 msgid "Account SID:"
 msgstr ""
 
@@ -114,7 +102,7 @@ msgid ""
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
 
-#: views/form.php:192
+#: views/form.php:164
 msgid "Auth Token"
 msgstr ""
 
@@ -138,7 +126,7 @@ msgstr ""
 msgid "CallerID Lookup Sources"
 msgstr ""
 
-#: views/form.php:488
+#: views/form.php:460
 msgid "Character Set"
 msgstr ""
 
@@ -158,11 +146,11 @@ msgstr ""
 msgid "Could not add opencnam_auth_token column to cidlookup table."
 msgstr ""
 
-#: views/form.php:392
+#: views/form.php:364
 msgid "Database"
 msgstr ""
 
-#: views/form.php:404
+#: views/form.php:376
 msgid "Database Name"
 msgstr ""
 
@@ -186,7 +174,7 @@ msgstr ""
 msgid "Done!"
 msgstr ""
 
-#: views/form.php:19
+#: views/form.php:21
 msgid "ENUM:"
 msgstr ""
 
@@ -194,7 +182,7 @@ msgstr ""
 msgid "ERROR: failed: "
 msgstr ""
 
-#: views/form.php:63
+#: views/form.php:65
 msgid "Enter a description for this source."
 msgstr "Adj meg egy nevet ehhez a forráshoz."
 
@@ -206,19 +194,19 @@ msgstr ""
 msgid "Failed to add OpenCNAM CallerID Lookup Source: "
 msgstr ""
 
-#: views/form.php:20
+#: views/form.php:22
 msgid "HTTP:"
 msgstr ""
 
-#: views/form.php:21
+#: views/form.php:23
 msgid "HTTPS:"
 msgstr ""
 
-#: views/form.php:220 views/form.php:368
+#: views/form.php:192 views/form.php:340
 msgid "Host"
 msgstr ""
 
-#: views/form.php:232
+#: views/form.php:204
 msgid "Host name or IP address"
 msgstr "Gépnév vagy IP-cím"
 
@@ -226,15 +214,15 @@ msgstr "Gépnév vagy IP-cím"
 msgid "Installing OpenCNAM CallerID Lookup Sources..."
 msgstr ""
 
-#: views/form.php:81
+#: views/form.php:83
 msgid "Internal"
 msgstr ""
 
-#: views/form.php:18
+#: views/form.php:20
 msgid "Internal:"
 msgstr ""
 
-#: views/form.php:22
+#: views/form.php:24
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
@@ -246,31 +234,31 @@ msgstr ""
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr ""
 
-#: views/form.php:500
+#: views/form.php:472
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
 
-#: views/form.php:380
+#: views/form.php:352
 msgid "MySQL Host"
 msgstr "MySQL gép"
 
-#: views/form.php:476
+#: views/form.php:448
 msgid "MySQL Password"
 msgstr "MySQL jelszó"
 
-#: views/form.php:452
+#: views/form.php:424
 msgid "MySQL Username"
 msgstr "MySQL felhasználónév"
 
-#: views/form.php:22
+#: views/form.php:24
 msgid "MySQL:"
 msgstr ""
 
-#: views/form.php:115 views/form.php:148
+#: views/form.php:115
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:99 functions.inc.php:342
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "Nincs"
 
@@ -278,7 +266,7 @@ msgstr "Nincs"
 msgid "Not Needed"
 msgstr ""
 
-#: views/form.php:509 views/form.php:514
+#: views/form.php:481 views/form.php:486
 msgid "Not yet implemented"
 msgstr ""
 
@@ -286,11 +274,11 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: views/form.php:80
+#: views/form.php:10
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:199
+#: functions.inc.php:187
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -298,29 +286,19 @@ msgstr ""
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
-#: views/form.php:156
-msgid ""
-"OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as "
-"you want, for a small fee. This is recommended for business users."
-msgstr ""
-
-#: views/form.php:17
-msgid "OpenCNAM:"
-msgstr ""
-
-#: views/form.php:292 views/form.php:464
+#: views/form.php:264 views/form.php:436
 msgid "Password"
 msgstr ""
 
-#: views/form.php:304
+#: views/form.php:276
 msgid "Password to use in HTTP authentication"
 msgstr "Jelszó a HTTP azonosításhoz"
 
-#: views/form.php:316
+#: views/form.php:288
 msgid "Path"
 msgstr ""
 
-#: views/form.php:328
+#: views/form.php:300
 msgid ""
 "Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
 "will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
@@ -328,19 +306,19 @@ msgid ""
 "will be replaced with channel language"
 msgstr ""
 
-#: views/form.php:244
+#: views/form.php:216
 msgid "Port"
 msgstr ""
 
-#: views/form.php:256
+#: views/form.php:228
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: views/form.php:340 views/form.php:416
+#: views/form.php:312 views/form.php:388
 msgid "Query"
 msgstr ""
 
-#: views/form.php:352
+#: views/form.php:324
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
@@ -348,7 +326,7 @@ msgid ""
 "language"
 msgstr ""
 
-#: views/form.php:428
+#: views/form.php:400
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -364,7 +342,7 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:15
+#: views/form.php:17
 msgid "Select the source type, you can choose between:"
 msgstr ""
 
@@ -372,11 +350,11 @@ msgstr ""
 msgid "Source"
 msgstr "Forrás"
 
-#: views/form.php:51
+#: views/form.php:53
 msgid "Source Description"
 msgstr ""
 
-#: views/form.php:75
+#: views/form.php:77
 msgid "Source type"
 msgstr ""
 
@@ -388,7 +366,7 @@ msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:34
+#: views/form.php:36
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
@@ -399,25 +377,21 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:199
+#: functions.inc.php:187
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "Open CNAM account to continue using their API"
 msgstr ""
 
-#: views/form.php:141
-msgid "Use Professional Tier"
-msgstr ""
-
-#: views/form.php:268 views/form.php:440
+#: views/form.php:240 views/form.php:412
 msgid "Username"
 msgstr ""
 
-#: views/form.php:280
+#: views/form.php:252
 msgid "Username to use in HTTP authentication"
 msgstr "Felhasználónév a HTTP azonosításhoz"
 
-#: views/form.php:113 views/form.php:146
+#: views/form.php:113
 msgid "Yes"
 msgstr ""
 
@@ -432,13 +406,13 @@ msgid ""
 "<br/>"
 msgstr ""
 
-#: views/form.php:180
+#: views/form.php:152
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: views/form.php:204
+#: views/form.php:176
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
