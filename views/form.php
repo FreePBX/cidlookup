@@ -7,14 +7,16 @@ if (!empty($itemid)){
     $dids_using_arr = cidlookup_did_list($itemid);
     $dids_using = count($dids_using_arr);
     $thisItem_description = isset($thisItem['description']) ? htmlspecialchars($thisItem['description']):'';
+    $opencnamopt = ($thisItem['sourcetype'] == 'opencnam')?'<option value="opencnam" selected>'. _("OpenCNAM").'</option>':'';
 } else {
     $thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null, 'itemid' => null, 'opencnam_account_sid' => null);
     $thisItem_description = '';
     $itemid = '';
+    $opencnamopt = '';
 }
 $sthelphtml = _("Select the source type, you can choose between:")
 .'<ul>'
-.'<li>'. _("OpenCNAM:") . _(" Use OpenCNAM [https://www.opencnam.com/]").'</li>'
+//.'<li>'. _("OpenCNAM:") . _(" Use OpenCNAM [https://www.opencnam.com/]").'</li>'
 .'<li>'. _("Internal:") . _(" use astdb as lookup source, use phonebook module to populate it").'</li>'
 .'<li>'. _("ENUM:") . _(" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf").'</li>'
 .'<li>'. _("HTTP:") . _(" It executes an HTTP GET passing the caller number as argument to retrieve the correct name").'</li>'
@@ -77,14 +79,12 @@ if ($itemid && $dids_using > 0){
 					</div>
 					<div class="col-md-9">
 						<select id="sourcetype" name="sourcetype" class="form-control">
-							<option value="opencnam" <?php echo ($thisItem['sourcetype'] == 'opencnam' ? 'selected' : '')?>><?php echo _("OpenCNAM")?></option>
+              <?php echo $opencnamopt?>
 							<option value="internal" <?php echo ($thisItem['sourcetype'] == 'internal' ? 'selected' : '')?>><?php echo _("Internal")?></option>
 							<option value="enum" <?php echo ($thisItem['sourcetype'] == 'enum' ? 'selected' : '')?>>ENUM</option>
 							<option value="http" <?php echo ($thisItem['sourcetype'] == 'http' ? 'selected' : '')?>>HTTP</option>
 							<option value="https" <?php echo ($thisItem['sourcetype'] == 'https' ? 'selected' : '')?>>HTTPS</option>
 							<option value="mysql" <?php echo ($thisItem['sourcetype'] == 'mysql' ? 'selected' : '')?>>MySQL</option>
-							<option value="sugarcrm" <?php echo ($thisItem['sourcetype'] == 'sugarcrm' ? 'selected' : '')?>>SugarCRM</option>
-							<option value="superfecta" <?php echo ($thisItem['sourcetype'] == 'superfecta' ? 'superfecta' : '')?>>Superfecta</option>
 						</select>
 					</div>
 				</div>
