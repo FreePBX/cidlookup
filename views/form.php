@@ -111,7 +111,7 @@ if ($itemid && $dids_using > 0){
 					<div class="col-md-9 radioset">
 						<input type="radio" name="cache" id="cacheyes" value="1" <?php echo ($thisItem['cache'] == "1"?"CHECKED":"") ?>>
 						<label for="cacheyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="cache" id="cacheno" <?php echo ($thisItem['cache'] == "1"?"":"CHECKED") ?> value="">
+						<input type="radio" name="cache" id="cacheno" <?php echo ($thisItem['cache'] == "1"?"":"CHECKED") ?> value="0">
 						<label for="cacheno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -128,38 +128,10 @@ if ($itemid && $dids_using > 0){
 <!--OPEN CNAM ELEMENTS-->
 <div id="opencnam" style="display: none">
 <div class="well">
-	<?php echo _("<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do 60 cached CallerID lookups per hour. If you get more than 60 incoming calls per hour, or want real-time CallerID information (more accurate), you should use the Professional Tier.</p>")?>
-    <?php echo _("<p>If you'd like to create an OpenCNAM Professional Tier account, you can do so on their website: <a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www.opencnam.com/register</a></p>")?>
+    <?php echo _("<p>If you need to create an OpenCNAM account, you can visit their website: <a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www.opencnam.com/register</a></p>")?>
 </div>
-<!--Use Professional Tier-->
-<div class="element-container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="form-group">
-					<div class="col-md-3">
-						<label class="control-label" for="opencnam_professional_tier"><?php echo _("Use Professional Tier") ?></label>
-						<i class="fa fa-question-circle fpbx-help-icon" data-for="opencnam_professional_tier"></i>
-					</div>
-					<div class="col-md-9 radioset">
-						<input type="radio" name="opencnam_professional_tier" id="opencnam_professional_tieryes" value="1" <?php echo $cnampro?"checked":"" ?>>
-						<label for="opencnam_professional_tieryes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opencnam_professional_tier" id="opencnam_professional_tierno" <?php echo $cnampro?"":"checked"?> value="0">
-						<label for="opencnam_professional_tierno"><?php echo _("No");?></label>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<span id="opencnam_professional_tier-help" class="help-block fpbx-help-block"><?php echo _("OpenCNAM's Professional Tier lets you do as many real-time CNAM queries as you want, for a small fee. This is recommended for business users.")?></span>
-		</div>
-	</div>
-</div>
-<!--END Use Professional Tier-->
 <!--Account SID:-->
-<div class="element-container opencnam_pro">
+<div class="element-container opencnam">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
@@ -183,7 +155,7 @@ if ($itemid && $dids_using > 0){
 </div>
 <!--END Account SID:-->
 <!--Auth Token-->
-<div class="element-container opencnam_pro">
+<div class="element-container opencnam">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
