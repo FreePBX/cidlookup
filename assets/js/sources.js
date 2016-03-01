@@ -30,7 +30,7 @@ function edit_onsubmit() {
         if (!$.trim($('#mysql_username').val()).length)
 			return warnInvalid($('#mysql_username'), "Please enter a valid MySQL Username");
 	}
-	if ($('#sourcetype').val() == 'opencnam' && $('#opencnam_professional_tier').is(':checked'))	{
+	if ($('#sourcetype').val() == 'opencnam')	{
         if (!$.trim($('#opencnam_account_sid').val()).length)
 			return warnInvalid($('#opencnam_account_sid'), "Please enter a valid Account SID");
 
@@ -48,13 +48,10 @@ $('#sourcetype').focus(function () {
 	source = (source == 'https') ? 'http' : source;
     $('#'+source).show();
     prev_source = source;
-});
-
-$('[name="opencnam_professional_tier"').change(function() {
-    if($(this).val() == '1') {
-        $('.opencnam_pro').show();
+    if (source == 'opencnam') {
+        $('.opencnam_cache').hide();
     } else {
-        $('.opencnam_pro').hide();
+        $('.opencnam_cache').show();
     }
 });
 
@@ -72,7 +69,7 @@ $(function() {
     $('#form_description').alphanumeric();
     displayInitalSourceParameters();
     // By default, don't display OpenCNAM professional stuff unless needed.
-    if($('#opencnam_professional_tier').val() != '1') {
-        $('.opencnam_pro').hide();
+    if($('#sourcetype').val() == 'opencnam') {
+        $('.opencnam_cache').hide();
     }
 });

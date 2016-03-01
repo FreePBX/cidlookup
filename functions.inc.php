@@ -39,7 +39,7 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 				<div class="col-md-12">
 					<span id="cidlookup_id-help" class="help-block fpbx-help-block">'. _("Sources can be added in Caller Name Lookup Sources section").'</span>
 					<div class="well well-info hidden" id="opencnam_hobbyist_note">
-						<b>NOTE:</b> OpenCNAM\'s Hobbyist Tier only allows you to do 10 cached CID lookups per hour. If you get more than 10 incoming calls per hour, or want real-time CID information (which is more accurate), you should use the Professional Tier, which is configurable via the CallerID Lookup Sources menu.
+						<b>NOTE:</b> OpenCNAM\'s Hobbyist Tier is no longer available.  Account credentials must be entered in the CallerID Lookup Sources section.
 					</div>
 				</div>
 			</div>
@@ -201,7 +201,7 @@ function cidlookup_get_config($engine) {
 								$auth = '';
 							}
 
-							$url = sprintf('https://%sapi.opencnam.com/v2/phone/${CALLERID(num)}?format=pbx&ref=freepbx', $auth);
+							$url = sprintf('https://%sapi.opencnam.com/v3/phone/${CALLERID(num)}?format=pbx&ref=freepbx', $auth);
 							$curl = sprintf('${CURL(%s)}', $url);
 
 							// Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
@@ -408,8 +408,8 @@ function cidlookup_edit($id,$post){
 	$mysql_username = $db->escapeSimple($post['mysql_username']);
 	$mysql_password = $db->escapeSimple($post['mysql_password']);
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
-	$opencnam_account_sid = $db->escapeSimple($post['opencnam_professional_tier']) ? $db->escapeSimple($post['opencnam_account_sid']) : '';
-	$opencnam_auth_token = $db->escapeSimple($post['opencnam_professional_tier']) ? $db->escapeSimple($post['opencnam_auth_token']) : '';
+	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
+	$opencnam_auth_token = $db->escapeSimple($post['opencnam_auth_token']);
 
   if (!isset($post['cache'])) {
    $cache = 0;
