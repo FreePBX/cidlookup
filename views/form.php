@@ -14,7 +14,7 @@ if (!empty($itemid)){
 }
 $sthelphtml = _("Select the source type, you can choose between:")
 .'<ul>'
-.'<li>'. _("OpenCNAM:") . _(" Use OpenCNAM [https://www.opencnam.com/]").'</li>'
+.'<li>'. _("OpenCNAM:") . _(" Use OpenCNAM [<a href=\"https://www.opencnam.com/\" target=\"blank\">https://www.opencnam.com/</a>]").'</li>'
 .'<li>'. _("Internal:") . _(" use astdb as lookup source, use phonebook module to populate it").'</li>'
 .'<li>'. _("ENUM:") . _(" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf").'</li>'
 .'<li>'. _("HTTP:") . _(" It executes an HTTP GET passing the caller number as argument to retrieve the correct name").'</li>'
@@ -129,7 +129,7 @@ if ($itemid && $dids_using > 0){
 <div id="opencnam" style="display: none">
 <div class="well">
 	<?php echo _("<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier is no longer available.  Account credentials must be entered below.</p>")?>
-    <?php echo _("<p>If you'd like to create an OpenCNAM account, you can do so on their website: <a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www.opencnam.com/register</a></p>")?>
+    <p><?php echo _("If you'd like to create an OpenCNAM account, you can do so on their website:")?> <a href="https://www.opencnam.com/register" target="_blank">https://www.opencnam.com/register</a></p>
 </div>
 <!--Account SID:-->
 <div class="element-container">
@@ -150,7 +150,7 @@ if ($itemid && $dids_using > 0){
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="opencnam_account_sid-help" class="help-block fpbx-help-block"><?php echo _("Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard")?></span>
+			<span id="opencnam_account_sid-help" class="help-block fpbx-help-block"><?php echo _("Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard page:")?> <a href="https://www.opencnam.com/dashboard" target="_blank">https://www.opencnam.com/dashboard</a></span>
 		</div>
 	</div>
 </div>
@@ -174,7 +174,7 @@ if ($itemid && $dids_using > 0){
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="opencnam_auth_token-help" class="help-block fpbx-help-block"><?php echo _("Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: https://www.opencnam.com/dashboard")?></span>
+			<span id="opencnam_auth_token-help" class="help-block fpbx-help-block"><?php echo _("Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page:")?> <a href="https://www.opencnam.com/dashboard" target="_blank">https://www.opencnam.com/dashboard</a></span>
 		</div>
 	</div>
 </div>
