@@ -128,8 +128,10 @@ if ($itemid && $dids_using > 0){
 <!--OPEN CNAM ELEMENTS-->
 <div id="opencnam" style="display: none">
 <div class="well">
-	<?php echo _("<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier is no longer available.  Account credentials must be entered below.</p>")?>
-    <p><?php echo _("If you'd like to create an OpenCNAM account, you can do so on their website:")?> <a href="https://www.opencnam.com/register" target="_blank">https://www.opencnam.com/register</a></p>
+	<?php echo _("<p><b>NOTE:</b> Once you have signed up for an account at ")?>
+	<a href="https://www.opencnam.com/register" target="_blank">https://www.opencnam.com/register</a>
+	<?php echo _(" you may use your Account SID and Token below to get started. New accounts begin with a small amount of free test credit and 30 days of Plus service at no additional charge. Manage your service level and add more credit through your account control panel at any time: ")?>
+	<a href="https://www.opencnam.com/dashboard" target="_blank">https://www.opencnam.com/dashboard</a>
 </div>
 <!--Account SID:-->
 <div class="element-container">
