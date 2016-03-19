@@ -399,7 +399,7 @@ msgstr ""
 #: functions.inc.php:199
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
-"Open CNAM account to continue using their API"
+"OpenCNAM account to continue using their API"
 msgstr ""
 
 #: views/form.php:141
