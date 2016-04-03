@@ -10,12 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-29 11:35-0800\n"
-"PO-Revision-Date: 2016-02-29 11:35-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-04-02 23:49+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/cidlookup/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/form.php:22
 msgid ""
@@ -58,11 +62,11 @@ msgstr ""
 
 #: views/form.php:140
 msgid "Account SID:"
-msgstr ""
+msgstr "حساب SID："
 
 #: views/grid.php:38
 msgid "Actions"
-msgstr ""
+msgstr "عملیات"
 
 #: views/grid.php:24
 msgid "Add CIDLookup Source"
@@ -74,7 +78,7 @@ msgstr ""
 
 #: cidlookup.i18n.php:6 cidlookup.i18n.php:12
 msgid "Admin"
-msgstr ""
+msgstr "مدیر"
 
 #: cidlookup.i18n.php:8
 msgid ""
@@ -84,7 +88,7 @@ msgstr ""
 
 #: views/form.php:164
 msgid "Auth Token"
-msgstr ""
+msgstr "تایید رمز"
 
 #: functions.inc.php:20
 msgid "CID Lookup Source"
@@ -96,7 +100,7 @@ msgstr ""
 
 #: views/form.php:108
 msgid "Cache Results"
-msgstr ""
+msgstr "نتایج کش"
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
@@ -128,11 +132,11 @@ msgstr ""
 
 #: views/form.php:364
 msgid "Database"
-msgstr ""
+msgstr "دیتابیس"
 
 #: views/form.php:376
 msgid "Database Name"
-msgstr ""
+msgstr "نام دیتابیس"
 
 #: views/form.php:123
 msgid ""
@@ -142,27 +146,27 @@ msgstr ""
 
 #: Cidlookup.class.php:70
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: views/grid.php:36
 msgid "Description"
-msgstr ""
+msgstr "شرح"
 
 #: install.php:45 install.php:134 install.php:142 install.php:162
 msgid "Done!"
-msgstr ""
+msgstr "انجام شد!"
 
 #: views/form.php:21
 msgid "ENUM:"
-msgstr ""
+msgstr "ENUM:"
 
 #: install.php:91
 msgid "ERROR: failed: "
-msgstr ""
+msgstr "خطا：شکست خورد： "
 
 #: views/form.php:65
 msgid "Enter a description for this source."
-msgstr ""
+msgstr "شرحی برای این منبع وارد کنید."
 
 #: install.php:82
 msgid "FATAL: failed to transform old routes: "
@@ -174,19 +178,19 @@ msgstr ""
 
 #: views/form.php:22
 msgid "HTTP:"
-msgstr ""
+msgstr "HTTP:"
 
 #: views/form.php:23
 msgid "HTTPS:"
-msgstr ""
+msgstr "HTTPS:"
 
 #: views/form.php:192 views/form.php:340
 msgid "Host"
-msgstr ""
+msgstr "هاست"
 
 #: views/form.php:204
 msgid "Host name or IP address"
-msgstr ""
+msgstr "نام هاست یا آدرس IP"
 
 #: install.php:38 install.php:136
 msgid "Installing OpenCNAM CallerID Lookup Sources..."
@@ -194,11 +198,11 @@ msgstr ""
 
 #: views/form.php:83
 msgid "Internal"
-msgstr ""
+msgstr "داخلی"
 
 #: views/form.php:20
 msgid "Internal:"
-msgstr ""
+msgstr "داخلی："
 
 #: views/form.php:24
 msgid "It queries a MySQL database to retrieve caller name"
@@ -206,7 +210,7 @@ msgstr ""
 
 #: views/bootnav.php:6
 msgid "List Sources"
-msgstr ""
+msgstr "فهرست منابع"
 
 #: install.php:74
 msgid "Migrating channel routing to Zap DID routing.."
@@ -218,31 +222,31 @@ msgstr ""
 
 #: views/form.php:352
 msgid "MySQL Host"
-msgstr ""
+msgstr "هاست MySQL"
 
 #: views/form.php:448
 msgid "MySQL Password"
-msgstr ""
+msgstr "کلمه عبور MySQL"
 
 #: views/form.php:424
 msgid "MySQL Username"
-msgstr ""
+msgstr "نام کاربری MySQL"
 
 #: views/form.php:24
 msgid "MySQL:"
-msgstr ""
+msgstr "MySQL:"
 
 #: views/form.php:115
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
-msgstr ""
+msgstr "هیچ"
 
 #: install.php:98
 msgid "Not Needed"
-msgstr ""
+msgstr "نیاز نیست"
 
 #: views/form.php:481 views/form.php:486
 msgid "Not yet implemented"
@@ -250,7 +254,7 @@ msgstr ""
 
 #: install.php:84 install.php:93
 msgid "OK"
-msgstr ""
+msgstr "تایید"
 
 #: views/form.php:10
 msgid "OpenCNAM"
@@ -266,7 +270,7 @@ msgstr ""
 
 #: views/form.php:264 views/form.php:436
 msgid "Password"
-msgstr ""
+msgstr "کلمه عبور"
 
 #: views/form.php:276
 msgid "Password to use in HTTP authentication"
@@ -274,7 +278,7 @@ msgstr ""
 
 #: views/form.php:288
 msgid "Path"
-msgstr ""
+msgstr "مسیر"
 
 #: views/form.php:300
 msgid ""
@@ -286,7 +290,7 @@ msgstr ""
 
 #: views/form.php:216
 msgid "Port"
-msgstr ""
+msgstr "پورت"
 
 #: views/form.php:228
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
@@ -294,7 +298,7 @@ msgstr ""
 
 #: views/form.php:312 views/form.php:388
 msgid "Query"
-msgstr ""
+msgstr "صف"
 
 #: views/form.php:324
 msgid ""
@@ -316,23 +320,23 @@ msgstr ""
 
 #: Cidlookup.class.php:80
 msgid "Reset"
-msgstr ""
+msgstr "بازگردانی"
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
-msgstr ""
+msgstr "انتخاب نوع منبع, میتوانید از بین این موارد انتخاب کنید："
 
 #: views/bootnav.php:16
 msgid "Source"
-msgstr ""
+msgstr "منبع"
 
 #: views/form.php:53
 msgid "Source Description"
-msgstr ""
+msgstr "شرح منبع"
 
 #: views/form.php:77
 msgid "Source type"
-msgstr ""
+msgstr "نوع منبع"
 
 #: functions.inc.php:40
 msgid "Sources can be added in Caller Name Lookup Sources section"
@@ -340,7 +344,7 @@ msgstr ""
 
 #: Cidlookup.class.php:75
 msgid "Submit"
-msgstr ""
+msgstr "ارسال"
 
 #: views/form.php:36
 #, php-format
@@ -351,7 +355,7 @@ msgstr ""
 
 #: views/grid.php:37
 msgid "Type"
-msgstr ""
+msgstr "نوع"
 
 #: functions.inc.php:187
 msgid ""
@@ -361,7 +365,7 @@ msgstr ""
 
 #: views/form.php:240 views/form.php:412
 msgid "Username"
-msgstr ""
+msgstr "نام کاربری"
 
 #: views/form.php:252
 msgid "Username to use in HTTP authentication"
@@ -369,7 +373,7 @@ msgstr ""
 
 #: views/form.php:113
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: bin/opencnam-alert.php:25
 msgid ""
@@ -400,4 +404,4 @@ msgstr ""
 
 #: install.php:110
 msgid "removed"
-msgstr ""
+msgstr "حذف شده"
