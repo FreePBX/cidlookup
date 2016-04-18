@@ -12,11 +12,11 @@ if (!empty($itemid)){
     $thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null, 'itemid' => null, 'opencnam_account_sid' => null);
     $thisItem_description = '';
     $itemid = '';
-    $opencnamopt = '';
+    $opencnamopt = '<option value="opencnam" selected>'. _("OpenCNAM").'</option>';
 }
 $sthelphtml = _("Select the source type, you can choose between:")
 .'<ul>'
-//.'<li>'. _("OpenCNAM:") . _(" Use OpenCNAM [https://www.opencnam.com/]").'</li>'
+.'<li>'. _("OpenCNAM:") . _(" Use OpenCNAM [https://www.opencnam.com/]").'</li>'
 .'<li>'. _("Internal:") . _(" use astdb as lookup source, use phonebook module to populate it").'</li>'
 .'<li>'. _("ENUM:") . _(" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in enum.conf").'</li>'
 .'<li>'. _("HTTP:") . _(" It executes an HTTP GET passing the caller number as argument to retrieve the correct name").'</li>'

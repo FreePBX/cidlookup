@@ -184,7 +184,7 @@ function cidlookup_get_config($engine) {
 								$rawname = 'cidlookup';
 								$uid = 'noauth';
 								if(!$nt->exists($rawname, $uid)) {
-									$nt->add_warning($rawname, $uid, _("OpenCNAM Requires Authentication"), _("Unauthenticated calls to the OpenCNAM API will soon fail. You will need an Open CNAM account to continue using their API"), "http://opencnam.com", true, true);
+									$nt->add_warning($rawname, $uid, _("OpenCNAM Requires Authentication"), _("Unauthenticated calls to the OpenCNAM API will soon fail. You will need an OpenCNAM account to continue using their API"), "http://opencnam.com", true, true);
 								}
 								$auth = '';
 							}
