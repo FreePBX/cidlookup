@@ -9,7 +9,7 @@
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
-		*13.0.10* FREEPBX-11552 - Fix cache logic. Also more opencnam cleanup. move rate limit to 10 based on current info from site..., FREEPBX-11718 Remove the ability to add new..			
+		*13.0.10* FREEPBX-11552 - Fix cache logic. Also more opencnam cleanup. move rate limit to 10 based on current info from site..., FREEPBX-11718 Remove the ability to add new..
 		*13.0.9* CallerID Lookup Sources 'None' entry uses OpenCNAM
 		*13.0.8* Use "/usr/bin/env php" to start script
 		*13.0.7* FREEPBX-10774
@@ -42,7 +42,7 @@
 	</menuitems>
 	<depends>
 		<engine>asterisk 1.6</engine>
-		<module>framework ge 13.0.5</module>
+		<module>framework ge 13.0.121</module>
 		<module>core ge 13.0.13</module>
 	</depends>
 	<supported>
