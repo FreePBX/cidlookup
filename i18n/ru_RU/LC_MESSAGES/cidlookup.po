@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-29 11:35-0800\n"
+"POT-Creation-Date: 2016-08-22 12:41-0700\n"
 "PO-Revision-Date: 2015-05-31 00:21+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -60,6 +60,10 @@ msgstr ""
 " Использовать DNS для поиска имен абонентов, он использует ENUM зоны поиска, "
 "как настроено в enum.conf"
 
+#: views/form.php:19
+msgid " Use OpenCNAM [https://www.opencnam.com/]"
+msgstr " Использовать OpenCNAM [https://www.opencnam.com/]"
+
 #: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
@@ -95,17 +99,13 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:38
+#: views/grid.php:40
 msgid "Actions"
 msgstr "Действия"
 
-#: views/grid.php:24
+#: views/grid.php:26
 msgid "Add CIDLookup Source"
 msgstr "Добавить источник поиска CID"
-
-#: install.php:122
-msgid "Adding opencnam account columns to the cidlookup table..."
-msgstr "Добавление колонок opencnam аккаунта к таблице cidlookup..."
 
 #: cidlookup.i18n.php:6 cidlookup.i18n.php:12
 msgid "Admin"
@@ -145,21 +145,9 @@ msgstr "Источники поиска Caller ID"
 msgid "Character Set"
 msgstr "Набор символов"
 
-#: install.php:104
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "Проверка поля cidlookup в структуре таблицы входящих.."
-
-#: install.php:145
-msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
-msgstr "Очистка дубликатов источников поиска OpenCNAM CallerID..."
-
-#: install.php:126
-msgid "Could not add opencnam_account_sid column to cidlookup table."
-msgstr "Не удалось добавить столбец opencnam_account_sid в таблицу cidlookup."
-
-#: install.php:132
-msgid "Could not add opencnam_auth_token column to cidlookup table."
-msgstr ""
 
 #: views/form.php:364
 msgid "Database"
@@ -182,19 +170,15 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:36
+#: views/grid.php:38
 msgid "Description"
-msgstr ""
-
-#: install.php:45 install.php:134 install.php:142 install.php:162
-msgid "Done!"
 msgstr ""
 
 #: views/form.php:21
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:91
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr "ОШИБКА: не получилось: "
 
@@ -202,13 +186,9 @@ msgstr "ОШИБКА: не получилось: "
 msgid "Enter a description for this source."
 msgstr "Создайте краткое описание источника."
 
-#: install.php:82
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr "НЕ СУДЬБА: ошибка при переносе старых маршрутов: "
-
-#: install.php:42 install.php:140
-msgid "Failed to add OpenCNAM CallerID Lookup Source: "
-msgstr ""
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -226,10 +206,6 @@ msgstr ""
 msgid "Host name or IP address"
 msgstr "Имя хоста или его IP адрес"
 
-#: install.php:38 install.php:136
-msgid "Installing OpenCNAM CallerID Lookup Sources..."
-msgstr ""
-
 #: views/form.php:83
 msgid "Internal"
 msgstr "Внутренний"
@@ -246,7 +222,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:74
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Перенос маршрутизации каналов в маршрутизацию по Zap DID.."
 
@@ -278,7 +254,7 @@ msgstr ""
 msgid "None"
 msgstr "Нет"
 
-#: install.php:98
+#: install.php:156
 msgid "Not Needed"
 msgstr "Не надобности"
 
@@ -286,11 +262,11 @@ msgstr "Не надобности"
 msgid "Not yet implemented"
 msgstr "Пока не обеспечивается"
 
-#: install.php:84 install.php:93
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr "ОК"
 
-#: views/form.php:10
+#: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
 msgstr ""
 
@@ -300,6 +276,10 @@ msgstr ""
 
 #: bin/opencnam-alert.php:25
 msgid "OpenCNAM Throttle Reached!"
+msgstr ""
+
+#: views/form.php:19
+msgid "OpenCNAM:"
 msgstr ""
 
 #: views/form.php:264 views/form.php:436
@@ -330,6 +310,10 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
+#: install.php:108
+msgid "Processing Database Tables"
+msgstr ""
+
 #: views/form.php:312 views/form.php:388
 msgid "Query"
 msgstr ""
@@ -350,7 +334,7 @@ msgstr ""
 "Строка запроса, содержащая '[NUMBER]', которая получает значение Caller ID "
 "<br/>например: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:87
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Удаление устаревшего поля канала из входящих.."
 
@@ -391,14 +375,14 @@ msgstr ""
 "Следующие номера DID %s не смогут больше использовать этот источник если он "
 "будет удалён."
 
-#: views/grid.php:37
+#: views/grid.php:39
 msgid "Type"
 msgstr ""
 
 #: functions.inc.php:187
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
-"Open CNAM account to continue using their API"
+"OpenCNAM account to continue using their API"
 msgstr ""
 
 #: views/form.php:240 views/form.php:412
@@ -436,16 +420,23 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:108
+#: install.php:166
 msgid "not present"
 msgstr "отсутствует"
 
-#: install.php:110
+#: install.php:168
 msgid "removed"
 msgstr "удалено"
 
-#~ msgid " Use OpenCNAM [https://www.opencnam.com/]"
-#~ msgstr " Использовать OpenCNAM [https://www.opencnam.com/]"
+#~ msgid "Adding opencnam account columns to the cidlookup table..."
+#~ msgstr "Добавление колонок opencnam аккаунта к таблице cidlookup..."
+
+#~ msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
+#~ msgstr "Очистка дубликатов источников поиска OpenCNAM CallerID..."
+
+#~ msgid "Could not add opencnam_account_sid column to cidlookup table."
+#~ msgstr ""
+#~ "Не удалось добавить столбец opencnam_account_sid в таблицу cidlookup."
 
 #~ msgid ""
 #~ "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do "

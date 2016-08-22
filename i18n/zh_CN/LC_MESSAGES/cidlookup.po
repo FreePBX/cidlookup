@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-29 11:35-0800\n"
+"POT-Creation-Date: 2016-08-22 12:41-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -34,6 +34,10 @@ msgstr ""
 msgid ""
 " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
 "enum.conf"
+msgstr ""
+
+#: views/form.php:19
+msgid " Use OpenCNAM [https://www.opencnam.com/]"
 msgstr ""
 
 #: views/form.php:20
@@ -65,16 +69,12 @@ msgstr ""
 msgid "Account SID:"
 msgstr ""
 
-#: views/grid.php:38
+#: views/grid.php:40
 msgid "Actions"
 msgstr ""
 
-#: views/grid.php:24
+#: views/grid.php:26
 msgid "Add CIDLookup Source"
-msgstr ""
-
-#: install.php:122
-msgid "Adding opencnam account columns to the cidlookup table..."
 msgstr ""
 
 #: cidlookup.i18n.php:6 cidlookup.i18n.php:12
@@ -115,21 +115,9 @@ msgstr "主叫ID查询"
 msgid "Character Set"
 msgstr ""
 
-#: install.php:104
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "正在检查incoming表的cidlookup字段。。。"
-
-#: install.php:145
-msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
-msgstr ""
-
-#: install.php:126
-msgid "Could not add opencnam_account_sid column to cidlookup table."
-msgstr ""
-
-#: install.php:132
-msgid "Could not add opencnam_auth_token column to cidlookup table."
-msgstr ""
 
 #: views/form.php:364
 msgid "Database"
@@ -149,19 +137,15 @@ msgstr "设置是否将查询结果缓存到astDB；它将覆盖当前设置。�
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:36
+#: views/grid.php:38
 msgid "Description"
-msgstr ""
-
-#: install.php:45 install.php:134 install.php:142 install.php:162
-msgid "Done!"
 msgstr ""
 
 #: views/form.php:21
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:91
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr "错误：失败："
 
@@ -169,13 +153,9 @@ msgstr "错误：失败："
 msgid "Enter a description for this source."
 msgstr "为此源添加描述。"
 
-#: install.php:82
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr "致命错误：无法转换旧的路由（线路）："
-
-#: install.php:42 install.php:140
-msgid "Failed to add OpenCNAM CallerID Lookup Source: "
-msgstr ""
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -193,10 +173,6 @@ msgstr ""
 msgid "Host name or IP address"
 msgstr "主机名或者IP地址"
 
-#: install.php:38 install.php:136
-msgid "Installing OpenCNAM CallerID Lookup Sources..."
-msgstr ""
-
 #: views/form.php:83
 msgid "Internal"
 msgstr ""
@@ -213,7 +189,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:74
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "正在将频道路由迁移到Zap DID路由。。。"
 
@@ -245,7 +221,7 @@ msgstr ""
 msgid "None"
 msgstr "无"
 
-#: install.php:98
+#: install.php:156
 msgid "Not Needed"
 msgstr "没有必要"
 
@@ -253,11 +229,11 @@ msgstr "没有必要"
 msgid "Not yet implemented"
 msgstr "尚未实现"
 
-#: install.php:84 install.php:93
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr "完成"
 
-#: views/form.php:10
+#: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
 msgstr ""
 
@@ -267,6 +243,10 @@ msgstr ""
 
 #: bin/opencnam-alert.php:25
 msgid "OpenCNAM Throttle Reached!"
+msgstr ""
+
+#: views/form.php:19
+msgid "OpenCNAM:"
 msgstr ""
 
 #: views/form.php:264 views/form.php:436
@@ -297,6 +277,10 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
+#: install.php:108
+msgid "Processing Database Tables"
+msgstr ""
+
 #: views/form.php:312 views/form.php:388
 msgid "Query"
 msgstr ""
@@ -317,7 +301,7 @@ msgstr ""
 "设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：SELECT name "
 "FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:87
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr "正在从incoming表中移除废弃的channel字段。。。"
 
@@ -356,14 +340,14 @@ msgid ""
 "deleted."
 msgstr ""
 
-#: views/grid.php:37
+#: views/grid.php:39
 msgid "Type"
 msgstr ""
 
 #: functions.inc.php:187
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
-"Open CNAM account to continue using their API"
+"OpenCNAM account to continue using their API"
 msgstr ""
 
 #: views/form.php:240 views/form.php:412
@@ -401,11 +385,11 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:108
+#: install.php:166
 msgid "not present"
 msgstr "没有出现"
 
-#: install.php:110
+#: install.php:168
 msgid "removed"
 msgstr "已移除"
 

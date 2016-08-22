@@ -19,15 +19,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-29 11:35-0800\n"
+"POT-Creation-Date: 2016-08-22 12:41-0700\n"
 "PO-Revision-Date: 2016-06-07 02:58+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/cidlookup/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"cidlookup/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 "X-Poedit-Language: Spanish\n"
@@ -58,6 +58,10 @@ msgstr ""
 " Use DNS para buscar nombre de quien llama,  usa busqueda de zonas ENUM tal "
 "como configurado en enum.conf"
 
+#: views/form.php:19
+msgid " Use OpenCNAM [https://www.opencnam.com/]"
+msgstr " Usa OpenCNAM [https://www.opencnam.com/]"
+
 #: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
@@ -71,8 +75,8 @@ msgid ""
 "opencnam.com/register</a></p>"
 msgstr ""
 "<p> Si necesitase crear una cuenta OpenCNAM, se puede visitar su página web: "
-"<a href=\"https://www.opencnam.com/register\" target=\"_blank\""
-">https://www.opencnam.com/register</a></p>"
+"<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
+"opencnam.com/register</a></p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -94,17 +98,13 @@ msgstr ""
 msgid "Account SID:"
 msgstr "Cuenta SID:"
 
-#: views/grid.php:38
+#: views/grid.php:40
 msgid "Actions"
 msgstr "Acciones"
 
-#: views/grid.php:24
+#: views/grid.php:26
 msgid "Add CIDLookup Source"
 msgstr "Agregar Fuente CIDLookup"
-
-#: install.php:122
-msgid "Adding opencnam account columns to the cidlookup table..."
-msgstr "Agregando columnas de cuenta opencnam  en la tabla cidlookup..."
 
 #: cidlookup.i18n.php:6 cidlookup.i18n.php:12
 msgid "Admin"
@@ -146,21 +146,9 @@ msgstr "Búsqueda de llamantes"
 msgid "Character Set"
 msgstr "Conjunto de Caracterees"
 
-#: install.php:104
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "Comprobando el campo cidlookup en la table entrante del núcleo.."
-
-#: install.php:145
-msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
-msgstr "Limpiando fuentes duplicadas de búsqueda CallerID en OpenCNAM..."
-
-#: install.php:126
-msgid "Could not add opencnam_account_sid column to cidlookup table."
-msgstr "No puede agregarse columna opencnam_account_sid a tabla cidlookup."
-
-#: install.php:132
-msgid "Could not add opencnam_auth_token column to cidlookup table."
-msgstr "No puede agregarse columna opencnam_auth_token en tabla cidlookup."
 
 #: views/form.php:364
 msgid "Database"
@@ -182,19 +170,15 @@ msgstr ""
 msgid "Delete"
 msgstr "Borrar"
 
-#: views/grid.php:36
+#: views/grid.php:38
 msgid "Description"
 msgstr "Descripción"
-
-#: install.php:45 install.php:134 install.php:142 install.php:162
-msgid "Done!"
-msgstr "Hecho!"
 
 #: views/form.php:21
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:91
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr "ERROR: Fallido: "
 
@@ -202,13 +186,9 @@ msgstr "ERROR: Fallido: "
 msgid "Enter a description for this source."
 msgstr "Introduzca una descripción para este origen."
 
-#: install.php:82
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr "FATAL: No se pudieron transformar las rutas antiguas: "
-
-#: install.php:42 install.php:140
-msgid "Failed to add OpenCNAM CallerID Lookup Source: "
-msgstr "Falla al agregar fuente de búsqueda OpenCNAM CallerID "
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -226,10 +206,6 @@ msgstr "Anfitrion"
 msgid "Host name or IP address"
 msgstr "Nombre del servidor o IP"
 
-#: install.php:38 install.php:136
-msgid "Installing OpenCNAM CallerID Lookup Sources..."
-msgstr "Instalando Fuentes de Búsqueda OpenCNAM CallerID..."
-
 #: views/form.php:83
 msgid "Internal"
 msgstr "Interno"
@@ -246,7 +222,7 @@ msgstr "Solicita a base de datos MySQL el recuperar el nombre de quien llamada"
 msgid "List Sources"
 msgstr "Lista de Fuentes"
 
-#: install.php:74
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
 
@@ -280,7 +256,7 @@ msgstr "No"
 msgid "None"
 msgstr "Ninguno"
 
-#: install.php:98
+#: install.php:156
 msgid "Not Needed"
 msgstr "No es necesario"
 
@@ -288,11 +264,11 @@ msgstr "No es necesario"
 msgid "Not yet implemented"
 msgstr "Este método no se ha implementado todavía"
 
-#: install.php:84 install.php:93
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr "OK"
 
-#: views/form.php:10
+#: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
 msgstr "OpenCNAM"
 
@@ -303,6 +279,10 @@ msgstr "OpenCNAM Requiere Autenticanción"
 #: bin/opencnam-alert.php:25
 msgid "OpenCNAM Throttle Reached!"
 msgstr "Aceleración OpenCNAM Alcanzada!"
+
+#: views/form.php:19
+msgid "OpenCNAM:"
+msgstr "OpenCNAM:"
 
 #: views/form.php:264 views/form.php:436
 msgid "Password"
@@ -339,6 +319,10 @@ msgstr ""
 "Puerto en el que server HTTP(s) esta escuchando (por defecto http:80, "
 "https:443)"
 
+#: install.php:108
+msgid "Processing Database Tables"
+msgstr ""
+
 #: views/form.php:312 views/form.php:388
 msgid "Query"
 msgstr "Solicitud"
@@ -364,7 +348,7 @@ msgstr ""
 "de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
 "number LIKE '%[NUMBER]%'"
 
-#: install.php:87
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Eliminando campo de canal obsoleto de entrantes..."
 
@@ -406,17 +390,15 @@ msgid ""
 msgstr ""
 "Hay %s DIDs usando esta fuente que no tendrá mas búsquedas si es eliminada."
 
-#: views/grid.php:37
+#: views/grid.php:39
 msgid "Type"
 msgstr "Tipo"
 
 #: functions.inc.php:187
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
-"Open CNAM account to continue using their API"
+"OpenCNAM account to continue using their API"
 msgstr ""
-"Llamadas no autenticadas contra API OpenCNAM fallaran tarde o temprano. "
-"Usted necesitara abrir una cuenta para continuar usando su API"
 
 #: views/form.php:240 views/form.php:412
 msgid "Username"
@@ -464,16 +446,41 @@ msgstr ""
 "Clave Autorización OpenCNAM. Esto peude ser encontrado en el tablero de "
 "OpenCNAM en: https://www.opencnam.com/dashboard"
 
-#: install.php:108
+#: install.php:166
 msgid "not present"
 msgstr "no está presente"
 
-#: install.php:110
+#: install.php:168
 msgid "removed"
 msgstr "eliminado"
 
-#~ msgid " Use OpenCNAM [https://www.opencnam.com/]"
-#~ msgstr " Usa OpenCNAM [https://www.opencnam.com/]"
+#~ msgid "Adding opencnam account columns to the cidlookup table..."
+#~ msgstr "Agregando columnas de cuenta opencnam  en la tabla cidlookup..."
+
+#~ msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
+#~ msgstr "Limpiando fuentes duplicadas de búsqueda CallerID en OpenCNAM..."
+
+#~ msgid "Could not add opencnam_account_sid column to cidlookup table."
+#~ msgstr "No puede agregarse columna opencnam_account_sid a tabla cidlookup."
+
+#~ msgid "Could not add opencnam_auth_token column to cidlookup table."
+#~ msgstr "No puede agregarse columna opencnam_auth_token en tabla cidlookup."
+
+#~ msgid "Done!"
+#~ msgstr "Hecho!"
+
+#~ msgid "Failed to add OpenCNAM CallerID Lookup Source: "
+#~ msgstr "Falla al agregar fuente de búsqueda OpenCNAM CallerID "
+
+#~ msgid "Installing OpenCNAM CallerID Lookup Sources..."
+#~ msgstr "Instalando Fuentes de Búsqueda OpenCNAM CallerID..."
+
+#~ msgid ""
+#~ "Unauthenticated calls to the OpenCNAM API will soon fail. You will need "
+#~ "an Open CNAM account to continue using their API"
+#~ msgstr ""
+#~ "Llamadas no autenticadas contra API OpenCNAM fallaran tarde o temprano. "
+#~ "Usted necesitara abrir una cuenta para continuar usando su API"
 
 #~ msgid ""
 #~ "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do "
@@ -502,9 +509,6 @@ msgstr "eliminado"
 #~ "El nivel profesional OpenCNAM les permite tantas búsquedas en tiempo real "
 #~ "CNAM como deseen por un pequeño costo. Es recomendado para usuarios "
 #~ "empresariales."
-
-#~ msgid "OpenCNAM:"
-#~ msgstr "OpenCNAM:"
 
 #~ msgid "Use Professional Tier"
 #~ msgstr "Use Nivel Profesional"
