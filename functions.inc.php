@@ -176,6 +176,12 @@ function cidlookup_get_config($engine) {
 
 						break;
 
+						case "contactmanager":
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi('contactmanager, ${CALLERID(num)},'.$item['cm_group'].','.$item['cm_format']));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', '${CMCID}'));
+
+						break;
+
 						case "opencnam":
 							if (!empty($item['opencnam_account_sid']) && !empty($item['opencnam_auth_token'])) {
 								$auth = sprintf('%s:%s@', urlencode($item['opencnam_account_sid']), urlencode($item['opencnam_auth_token']));
@@ -367,12 +373,14 @@ function cidlookup_add($post){
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
 	$opencnam_auth_token = $db->escapeSimple($post['opencnam_auth_token']);
+	$cm_group = $db->escapeSimple($post['cm_group']);
+	$cm_format = $db->escapeSimple($post['cm_format']);
 	$cache = isset($post['cache']) ? $db->escapeSimple($post['cache']) : 0;
 	$results = sql("
 		INSERT INTO cidlookup
-			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token)
+			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
 		VALUES
-			('$description', '$sourcetype', '$cache', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$mysql_charset', '$opencnam_account_sid', '$opencnam_auth_token')
+			('$description', '$sourcetype', '$cache', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$mysql_charset', '$opencnam_account_sid', '$opencnam_auth_token','$cm_group','$cm_format')
 		");
 }
 
@@ -396,6 +404,8 @@ function cidlookup_edit($id,$post){
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
 	$opencnam_auth_token =  $db->escapeSimple($post['opencnam_auth_token']);
+	$cm_group =  $db->escapeSimple($post['cm_group']);
+	$cm_format =  $db->escapeSimple($post['cm_format']);
 	$cache  = isset($post['cache'])?$db->escapeSimple($post['cache']):1;
 
 	$results = sql("
@@ -418,6 +428,8 @@ function cidlookup_edit($id,$post){
 			mysql_password  = '$mysql_password',
 			mysql_charset = '$mysql_charset',
 			opencnam_account_sid = '$opencnam_account_sid',
-			opencnam_auth_token = '$opencnam_auth_token'
+			opencnam_auth_token = '$opencnam_auth_token',
+			cm_group = '$cm_group',
+			cm_format = '$cm_format'
 		WHERE cidlookup_id = '$id'");
 }

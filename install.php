@@ -103,6 +103,18 @@ $cidlookup_cols = array(
 		"type" => "string",
 		"length" => 34,
 		"notnull" => false
+	),
+	"cm_group" => array(
+		"type" => "string",
+		"length" => 5,
+		"notnull" => false,
+		"default" => ''
+	),
+	"cm_format" => array(
+		"type" => "string",
+		"length" => 5,
+		"notnull" => false,
+		"default" => ''
 	)
 );
 outn(_("Processing Database Tables"));

@@ -31,17 +31,14 @@ class Cidlookup implements \BMO {
 				case "add":
 					cidlookup_add($request);
 					needreload();
-					redirect_standard();
 				break;
 				case "delete":
 					cidlookup_del($itemid);
 					needreload();
-					redirect_standard();
 				break;
 				case "edit":
 					cidlookup_edit($itemid,$request);
 					needreload();
-					redirect_standard('itemid');
 				break;
 				case "getJSON":
 					switch($request['jdata']){
