@@ -373,7 +373,7 @@ function cidlookup_add($post){
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
 	$opencnam_auth_token = $db->escapeSimple($post['opencnam_auth_token']);
-	$cm_group = $db->escapeSimple($post['cm_group']);
+	$cm_group = $db->escapeSimple(implode('_',$post['cm_group']));
 	$cm_format = $db->escapeSimple($post['cm_format']);
 	$cache = isset($post['cache']) ? $db->escapeSimple($post['cache']) : 0;
 	$results = sql("
@@ -404,7 +404,7 @@ function cidlookup_edit($id,$post){
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
 	$opencnam_auth_token =  $db->escapeSimple($post['opencnam_auth_token']);
-	$cm_group =  $db->escapeSimple($post['cm_group']);
+	$cm_group =  $db->escapeSimple(implode('_',$post['cm_group']));
 	$cm_format =  $db->escapeSimple($post['cm_format']);
 	$cache  = isset($post['cache'])?$db->escapeSimple($post['cache']):1;
 

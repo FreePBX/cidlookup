@@ -14,7 +14,11 @@ function get_groups($var){
 $base_dir = dirname(dirname(__FILE__));
 $agi = new AGI();
 $cm = FreePBX::Contactmanager();
-$data = $cm->getNamebyNumber($argv[1], $argv[2]);
+$data = $cm->getNamebyNumber($argv[1], explode('_',$argv[2]));
+if(empty($data)){
+	$agi->set_variable("CMCID", 'Unknown');
+	exit();
+}
 $first = !empty($data['fname'])?$data['fname']:'';
 $last = !empty($data['lname'])?$data['lname']:'';
 $company = !empty($data['company'])?$data['company']:'Unknown';

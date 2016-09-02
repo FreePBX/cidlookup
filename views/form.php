@@ -32,10 +32,10 @@ if($thisItem['opencnam_account_sid'] && $thisItem['opencnam_auth_token']){
 }
 
 if(FreePBX::Modules()->checkStatus('contactmanager')){
-    $cmopts = '<option>'._("Select a Group").'</option>';
     $groups = FreePBX::Contactmanager()->getGroups();
+    $groupselect = explode('_', $thisItem['cm_group']);
     foreach ($groups as $group) {
-        $selected = ($group['id'] == $thisItem['cm_group'])?'SELECTED':'';
+        $selected = in_array($group['id'], $groupselect)?'SELECTED':'';
         $cmopts .= '<option value = "'.$group['id'].'" '.$selected.'>'.$group['name'].'</option>';
     }
 }else{
@@ -148,11 +148,11 @@ if ($itemid && $dids_using > 0){
   			<div class="row">
   				<div class="form-group">
   					<div class="col-md-3">
-  						<label class="control-label" for="cm_group"><?php echo _("Contact Manager Group") ?></label>
+  						<label class="control-label" for="cm_group"><?php echo _("Contact Manager Group(s)") ?></label>
   						<i class="fa fa-question-circle fpbx-help-icon" data-for="cm_group"></i>
   					</div>
   					<div class="col-md-9">
-              <select id='cm_group' name = 'cm_group' class="form-control">
+              <select id='cm_group' name = 'cm_group[]' class="form-control" multiple="multiple">
                 <?php echo $cmopts?>
               </select>
   					</div>
@@ -162,7 +162,7 @@ if ($itemid && $dids_using > 0){
   	</div>
   	<div class="row">
   		<div class="col-md-12">
-  			<span id="cm_group-help" class="help-block fpbx-help-block"><?php echo _("The contact manager group to search")?></span>
+  			<span id="cm_group-help" class="help-block fpbx-help-block"><?php echo _("Filter results to these contact manager groups")?></span>
   		</div>
   	</div>
   </div>
