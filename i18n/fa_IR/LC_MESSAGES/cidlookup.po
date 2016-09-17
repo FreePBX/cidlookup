@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"POT-Creation-Date: 2016-09-16 19:07-0700\n"
 "PO-Revision-Date: 2016-08-26 03:09+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) "
-"<http://weblate.freepbx.org/projects/freepbx/cidlookup/fa_IR/>\n"
-"Language: fa_IR\n"
+"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
+"cidlookup/fa_IR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -55,7 +55,7 @@ msgstr ""
 " استفاده از بانک اطلاعاتی استریسک برای جستجوی منبع، استفاده ماژول دفترچه "
 "تلفن برای ایجاد آن"
 
-#: views/form.php:131
+#: views/form.php:204
 msgid ""
 "<p>If you need to create an OpenCNAM account, you can visit their website: "
 "<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
@@ -81,7 +81,7 @@ msgstr ""
 "small number <-> name association. Pay attention, name lookup may slow down "
 "your PBX"
 
-#: views/form.php:140
+#: views/form.php:213
 msgid "Account SID:"
 msgstr "حساب SID："
 
@@ -105,7 +105,7 @@ msgstr ""
 "Allows CallerID Lookup  of incoming calls against different sources "
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 
-#: views/form.php:164
+#: views/form.php:237
 msgid "Auth Token"
 msgstr "تایید رمز"
 
@@ -117,9 +117,13 @@ msgstr "منبع جستجوی CID"
 msgid "CIDLookup"
 msgstr "جستجوی CID"
 
-#: views/form.php:108
+#: views/form.php:122
 msgid "Cache Results"
 msgstr "نتایج کش"
+
+#: views/form.php:178
+msgid "Caller ID Format"
+msgstr ""
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
@@ -129,23 +133,43 @@ msgstr "جستجوی شماره تماس گیرنده"
 msgid "CallerID Lookup Sources"
 msgstr "منابع جستجوی شماره تماس گیرنده"
 
-#: views/form.php:460
+#: views/form.php:533
 msgid "Character Set"
 msgstr "مجموعه کاراکتر"
 
-#: install.php:162
+#: install.php:174
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "Checking for  cidlookup field in core's incoming table.."
 
-#: views/form.php:364
+#: views/form.php:185
+msgid "Company"
+msgstr ""
+
+#: views/form.php:97
+msgid "Contact Manager"
+msgstr ""
+
+#: views/form.php:151
+msgid "Contact Manager Group(s)"
+msgstr ""
+
+#: views/form.php:42
+msgid "Contact Manager Not Installed"
+msgstr ""
+
+#: views/form.php:25
+msgid "Contact Manager:"
+msgstr ""
+
+#: views/form.php:437
 msgid "Database"
 msgstr "دیتابیس"
 
-#: views/form.php:376
+#: views/form.php:449
 msgid "Database Name"
 msgstr "نام دیتابیس"
 
-#: views/form.php:123
+#: views/form.php:137
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
@@ -153,7 +177,7 @@ msgstr ""
 "Decide whether or  not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 
-#: Cidlookup.class.php:70
+#: Cidlookup.class.php:67
 msgid "Delete"
 msgstr "حذف"
 
@@ -161,21 +185,33 @@ msgstr "حذف"
 msgid "Description"
 msgstr "شرح"
 
+#: views/form.php:186
+msgid "Display Name"
+msgstr ""
+
 #: views/form.php:21
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:149
+#: install.php:161
 msgid "ERROR: failed: "
 msgstr "خطا：شکست خورد： "
 
-#: views/form.php:65
+#: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "شرحی برای این منبع وارد کنید."
 
-#: install.php:140
+#: install.php:152
 msgid "FATAL: failed to transform old routes: "
 msgstr "کشنده: شکست در انتقال مسیرهای قدیمی "
+
+#: views/form.php:165
+msgid "Filter results to these contact manager groups"
+msgstr ""
+
+#: views/form.php:183
+msgid "First Last"
+msgstr ""
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -185,15 +221,19 @@ msgstr "HTTP:"
 msgid "HTTPS:"
 msgstr "HTTPS:"
 
-#: views/form.php:192 views/form.php:340
+#: views/form.php:265 views/form.php:413
 msgid "Host"
 msgstr "هاست"
 
-#: views/form.php:204
+#: views/form.php:277
 msgid "Host name or IP address"
 msgstr "نام هاست یا آدرس IP"
 
-#: views/form.php:83
+#: views/form.php:195
+msgid "How to format the returned data"
+msgstr ""
+
+#: views/form.php:96
 msgid "Internal"
 msgstr "داخلی"
 
@@ -205,27 +245,31 @@ msgstr "داخلی："
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr "برای بازیابی نام تماس گیرنده به دیتابیس MySQL احتیاج داریم"
 
+#: views/form.php:184
+msgid "Last First"
+msgstr ""
+
 #: views/bootnav.php:6
 msgid "List Sources"
 msgstr "فهرست منابع"
 
-#: install.php:132
+#: install.php:144
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "در حال انتقال کانال مسیریابی به مسیر Zap DID.."
 
-#: views/form.php:472
+#: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr "مجموعه کاراکتر MySQL.  برای پیشفرض latin1 خالی بگذارید"
 
-#: views/form.php:352
+#: views/form.php:425
 msgid "MySQL Host"
 msgstr "هاست MySQL"
 
-#: views/form.php:448
+#: views/form.php:521
 msgid "MySQL Password"
 msgstr "کلمه عبور MySQL"
 
-#: views/form.php:424
+#: views/form.php:497
 msgid "MySQL Username"
 msgstr "نام کاربری MySQL"
 
@@ -233,23 +277,23 @@ msgstr "نام کاربری MySQL"
 msgid "MySQL:"
 msgstr "MySQL:"
 
-#: views/form.php:115
+#: views/form.php:129
 msgid "No"
 msgstr "خیر"
 
-#: Cidlookup.class.php:99 functions.inc.php:330
+#: Cidlookup.class.php:96 functions.inc.php:336
 msgid "None"
 msgstr "هیچ"
 
-#: install.php:156
+#: install.php:168
 msgid "Not Needed"
 msgstr "نیاز نیست"
 
-#: views/form.php:481 views/form.php:486
+#: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "هنوز اجرا نشده"
 
-#: install.php:142 install.php:151
+#: install.php:154 install.php:163
 msgid "OK"
 msgstr "تایید"
 
@@ -258,7 +302,7 @@ msgstr "تایید"
 msgid "OpenCNAM"
 msgstr "OpenCNAM"
 
-#: functions.inc.php:187
+#: functions.inc.php:193
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM به احراز هویت نیاز دارد"
 
@@ -271,19 +315,19 @@ msgstr "OpenCNAM Throttle  Reached!"
 msgid "OpenCNAM:"
 msgstr "OpenCNAM:"
 
-#: views/form.php:264 views/form.php:436
+#: views/form.php:337 views/form.php:509
 msgid "Password"
 msgstr "کلمه عبور"
 
-#: views/form.php:276
+#: views/form.php:349
 msgid "Password to use in HTTP authentication"
 msgstr "کلمه عبور استفاده شده برای احراز هویت HTTP"
 
-#: views/form.php:288
+#: views/form.php:361
 msgid "Path"
 msgstr "مسیر"
 
-#: views/form.php:300
+#: views/form.php:373
 msgid ""
 "Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
 "will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
@@ -295,23 +339,23 @@ msgstr ""
 ">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
 "will be  replaced with channel language"
 
-#: views/form.php:216
+#: views/form.php:289
 msgid "Port"
 msgstr "پورت"
 
-#: views/form.php:228
+#: views/form.php:301
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr "Port HTTP(s) server  is listening at (default http 80, https 443)"
 
-#: install.php:108
+#: install.php:120
 msgid "Processing Database Tables"
 msgstr "در حال پردازش جداول بانک اطلاعاتی"
 
-#: views/form.php:312 views/form.php:388
+#: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr "صف"
 
-#: views/form.php:324
+#: views/form.php:397
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
@@ -323,7 +367,7 @@ msgstr ""
 "with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
 "language"
 
-#: views/form.php:400
+#: views/form.php:473
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -331,13 +375,17 @@ msgstr ""
 "Query, special  token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:145
+#: install.php:157
 msgid "Removing deprecated channel field from incoming.."
 msgstr "حذف فیلد کانال منسوخ از تماس های ورودی.."
 
-#: Cidlookup.class.php:80
+#: Cidlookup.class.php:77
 msgid "Reset"
 msgstr "بازگردانی"
+
+#: views/form.php:25
+msgid "Searches a contact manager group"
+msgstr ""
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
@@ -347,11 +395,11 @@ msgstr "انتخاب نوع منبع, میتوانید از بین این موا
 msgid "Source"
 msgstr "منبع"
 
-#: views/form.php:53
+#: views/form.php:66
 msgid "Source Description"
 msgstr "شرح منبع"
 
-#: views/form.php:77
+#: views/form.php:90
 msgid "Source type"
 msgstr "نوع منبع"
 
@@ -359,11 +407,11 @@ msgstr "نوع منبع"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "منابع میتوانند اضافه شوند برای بخش جستجوی نام تماس گیرنده"
 
-#: Cidlookup.class.php:75
+#: Cidlookup.class.php:72
 msgid "Submit"
 msgstr "ارسال"
 
-#: views/form.php:36
+#: views/form.php:49
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
@@ -376,7 +424,7 @@ msgstr ""
 msgid "Type"
 msgstr "نوع"
 
-#: functions.inc.php:187
+#: functions.inc.php:193
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
@@ -384,15 +432,15 @@ msgstr ""
 "تماس های غیر مجاز در OpenCNAM API به زودی لغو میشود. شما باید از حساب "
 "OpenCNAM برای ادامه استفاده کنید"
 
-#: views/form.php:240 views/form.php:412
+#: views/form.php:313 views/form.php:485
 msgid "Username"
 msgstr "نام کاربری"
 
-#: views/form.php:252
+#: views/form.php:325
 msgid "Username to use in HTTP authentication"
 msgstr "نام کاربری استفاده شده برای احرازهویت HTTP"
 
-#: views/form.php:113
+#: views/form.php:127
 msgid "Yes"
 msgstr "بله"
 
@@ -414,7 +462,7 @@ msgstr ""
 "Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
 "<br/>"
 
-#: views/form.php:152
+#: views/form.php:225
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
@@ -422,7 +470,7 @@ msgstr ""
 "Your OpenCNAM Account SID. This can  be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 
-#: views/form.php:176
+#: views/form.php:249
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
@@ -430,11 +478,11 @@ msgstr ""
 "Your OpenCNAM Auth Token. This  can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 
-#: install.php:166
+#: install.php:178
 msgid "not present"
 msgstr "موجود نیست"
 
-#: install.php:168
+#: install.php:180
 msgid "removed"
 msgstr "حذف شده"
 
