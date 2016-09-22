@@ -1,8 +1,7 @@
 <?php
 namespace FreePBX\modules;
-if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2015 Sangoma Technologies.
+//	Copyright 2016 Sangoma Technologies.
 //
 class Cidlookup implements \BMO {
 	public function __construct($freepbx = null) {
@@ -17,12 +16,12 @@ class Cidlookup implements \BMO {
  			 $this->cid_modules[] = basename($filename);
 		}
 	}
-		public function install() {}
-		public function uninstall() {}
-		public function backup() {}
-		public function restore($backup) {}
-		public function doConfigPageInit($page) {
-			$request = $_REQUEST;
+	public function install() {}
+	public function uninstall() {}
+	public function backup() {}
+	public function restore($backup) {}
+	public function doConfigPageInit($page) {
+		$request = $_REQUEST;
 		isset($request['action']) ? ($action = $request['action']) : $action='';
 		isset($request['view']) ? ($view = $request['view']) : $view = 'form';
 		isset($request['itemid']) ? ($itemid = $request['itemid']) : $itemid='';
@@ -56,8 +55,8 @@ class Cidlookup implements \BMO {
 				break;
 			}
 		}
-		}
-			public function getActionBar($request){
+	}
+	public function getActionBar($request){
 		switch($request['display']){
 			case 'cidlookup':
 				$buttons = array(
@@ -76,45 +75,46 @@ class Cidlookup implements \BMO {
 						'id' => 'reset',
 						'value' => _('Reset')
 					)
-					);
-				break;
-			}
-			if (empty($request['extdisplay']) || $request['extdisplay'] == "") {
-				unset($buttons['delete']);
-			}
-			if(empty($request['view']) || $request['view'] != 'form'){
-				$buttons = array();
-			}
-			return $buttons;
+				);
+			break;
 		}
-		public function getRightNav($request){
-			if(isset($request['view'])){
-				return load_view(__DIR__.'/views/bootnav.php');
+		if (empty($request['extdisplay']) || $request['extdisplay'] == "") {
+			unset($buttons['delete']);
+		}
+		if(empty($request['view']) || $request['view'] != 'form'){
+			$buttons = array();
+		}
+		return $buttons;
+	}
+
+	public function getRightNav($request){
+		if(isset($request['view'])){
+			return load_view(__DIR__.'/views/bootnav.php');
+		}
+	}
+	public function getList($all=false) {
+		$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
+		$sql = "SELECT * FROM cidlookup";
+		$stmt = $this->database->prepare($sql);
+		$stmt->execute();
+		$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
+		if(is_array($results)){
+			foreach ($results as $key => $value) {
+				$allowed[] = $value;
 			}
 		}
-		function getList($all=false) {
-			$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
-			$sql = "SELECT * FROM cidlookup";
-			$stmt = $this->database->prepare($sql);
-			$stmt->execute();
-			$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
-			if(is_array($results)){
-				foreach ($results as $key => $value) {
-					$allowed[] = $value;
-				}
-			}
-			return $allowed;
+		return $allowed;
+	}
+	public function ajaxRequest($req, &$setting) {
+		switch ($req) {
+			case 'getJSON':
+				return true;
+			break;
+			default:
+				return false;
+			break;
 		}
-		public function ajaxRequest($req, &$setting) {
-			 switch ($req) {
-					 case 'getJSON':
-							 return true;
-					 break;
-					 default:
-							 return false;
-					 break;
-			 }
-	 }
+	}
 	public function ajaxHandler(){
 		switch ($_REQUEST['command']) {
 			case 'getJSON':

@@ -19,6 +19,36 @@
 		<module>framework ge 13.0.121</module>
 		<module>core ge 13.0.13</module>
 	</depends>
+	<database>
+	  <table name="cidlookup">
+	    <field name="cidlookup_id" type="integer" primaryKey="true" autoincrement="true"/>
+	    <field name="description" type="string" length="50"/>
+	    <field name="sourcetype" type="string" length="100"/>
+	    <field name="cache" type="smallint" default="0"/>
+	    <field name="deptname" type="string" length="30" notnull="false"/>
+	    <field name="http_host" type="string" length="30" notnull="false"/>
+	    <field name="http_port" type="string" length="30" notnull="false"/>
+	    <field name="http_username" type="string" length="30" notnull="false"/>
+	    <field name="http_password" type="string" length="30" notnull="false"/>
+	    <field name="http_path" type="string" length="100" notnull="false"/>
+	    <field name="http_query" type="string" length="100" notnull="false"/>
+	    <field name="mysql_host" type="string" length="60" notnull="false"/>
+	    <field name="mysql_dbname" type="string" length="60" notnull="false"/>
+	    <field name="mysql_query" type="string" length="255" notnull="false"/>
+	    <field name="mysql_username" type="string" length="30" notnull="false"/>
+	    <field name="mysql_password" type="string" length="30" notnull="false"/>
+	    <field name="mysql_charset" type="string" length="60" notnull="false"/>
+	    <field name="opencnam_account_sid" type="string" length="34" notnull="false"/>
+	    <field name="opencnam_auth_token" type="string" length="34" notnull="false"/>
+	    <field name="cm_group" type="string" length="5" default="" notnull="false"/>
+	    <field name="cm_format" type="string" length="5" default="" notnull="false"/>
+	  </table>
+		<table name="cidlookup_incoming">
+			<field name="cidlookup_id" type="integer"/>
+			<field name="extension" type="string" length="50" notnull="false"/>
+			<field name="cidnum" type="string" length="30" notnull="false"/>
+		</table>
+	</database>
 	<supported>
 		<version>14.0</version>
 	</supported>
