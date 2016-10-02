@@ -37,7 +37,7 @@ $cidlookup_cols = array(
 	),
 	"http_host" => array(
 		"type" => "string",
-		"length" => 30,
+		"length" => 100,
 		"notnull" => false
 	),
 	"http_port" => array(
@@ -47,12 +47,12 @@ $cidlookup_cols = array(
 	),
 	"http_username" => array(
 		"type" => "string",
-		"length" => 30,
+		"length" => 50,
 		"notnull" => false
 	),
 	"http_password" => array(
 		"type" => "string",
-		"length" => 30,
+		"length" => 50,
 		"notnull" => false
 	),
 	"http_path" => array(
