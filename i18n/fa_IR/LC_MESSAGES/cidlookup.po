@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-22 12:41-0700\n"
-"PO-Revision-Date: 2016-04-14 15:08+0200\n"
+"PO-Revision-Date: 2016-08-26 03:09+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
-"cidlookup/fa_IR/>\n"
+"Language-Team: Persian (Iran) "
+"<http://weblate.freepbx.org/projects/freepbx/cidlookup/fa_IR/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -47,7 +47,7 @@ msgstr ""
 
 #: views/form.php:19
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr ""
+msgstr " استفاده از OpenCNAM [https://www.opencnam.com/]"
 
 #: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
@@ -267,8 +267,9 @@ msgid "OpenCNAM Throttle Reached!"
 msgstr "OpenCNAM Throttle  Reached!"
 
 #: views/form.php:19
+#, fuzzy
 msgid "OpenCNAM:"
-msgstr ""
+msgstr "OpenCNAM:"
 
 #: views/form.php:264 views/form.php:436
 msgid "Password"
@@ -304,7 +305,7 @@ msgstr "Port HTTP(s) server  is listening at (default http 80, https 443)"
 
 #: install.php:108
 msgid "Processing Database Tables"
-msgstr ""
+msgstr "در حال پردازش جداول بانک اطلاعاتی"
 
 #: views/form.php:312 views/form.php:388
 msgid "Query"
@@ -380,6 +381,8 @@ msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
 msgstr ""
+"تماس های غیر مجاز در OpenCNAM API به زودی لغو میشود. شما باید از حساب "
+"OpenCNAM برای ادامه استفاده کنید"
 
 #: views/form.php:240 views/form.php:412
 msgid "Username"
