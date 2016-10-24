@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>13.0.12</version>
+	<version>13.0.12.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*13.0.12.1* FREEPBX-13255 add maxlength onto input box
 		*13.0.12* FREEPBX-13255: CallerIDLookup host field characters limit too low
 		*13.0.11* FREEPBX-12951 Remove auto-generated opencnam source. move db to doctrine
 		*13.0.10* FREEPBX-11552 - Fix cache logic. Also more opencnam cleanup. move rate limit to 10 based on current info from site..., FREEPBX-11718 Remove the ability to add new..

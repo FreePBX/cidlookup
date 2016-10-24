@@ -54,7 +54,7 @@ if ($itemid && $dids_using > 0){
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="form_description"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control" id="form_description" name="description" value="<?php echo $thisItem_description; ?>">
+						<input type="text" class="form-control" id="form_description" name="description" value="<?php echo $thisItem_description; ?>" maxlength="50">
 					</div>
 				</div>
 			</div>
@@ -193,7 +193,7 @@ if ($itemid && $dids_using > 0){
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_host"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control" id="http_host" name="http_host" value="<?php echo (isset($thisItem['http_host']) ? $thisItem['http_host'] : ''); ?>">
+						<input type="text" class="form-control" id="http_host" name="http_host" value="<?php echo (isset($thisItem['http_host']) ? $thisItem['http_host'] : ''); ?>" maxlength="100">
 					</div>
 				</div>
 			</div>
@@ -241,7 +241,7 @@ if ($itemid && $dids_using > 0){
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_username"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control" id="http_username" name="http_username" value="<?php echo (isset($thisItem['http_username']) ? $thisItem['http_username'] : ''); ?>">
+						<input type="text" class="form-control" id="http_username" name="http_username" value="<?php echo (isset($thisItem['http_username']) ? $thisItem['http_username'] : ''); ?>" maxlength="100">
 					</div>
 				</div>
 			</div>
@@ -265,7 +265,7 @@ if ($itemid && $dids_using > 0){
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_password"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="password" class="form-control" id="http_password" name="http_password" value="<?php echo (isset($thisItem['http_password']) ? $thisItem['http_password'] : ''); ?>">
+						<input type="password" class="form-control" id="http_password" name="http_password" value="<?php echo (isset($thisItem['http_password']) ? $thisItem['http_password'] : ''); ?>" maxlength="100">
 					</div>
 				</div>
 			</div>
