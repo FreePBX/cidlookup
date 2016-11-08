@@ -37,15 +37,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 19:07-0700\n"
+"POT-Creation-Date: 2016-11-08 02:32+0000\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
 "cidlookup/ja_JP/>\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -156,7 +156,7 @@ msgstr "発信者番号検索ソース"
 msgid "Character Set"
 msgstr "文字コード"
 
-#: install.php:174
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "コアの着信テーブルから発信者番号検索フィールドをチェック.."
 
@@ -196,7 +196,7 @@ msgstr ""
 "astDBへの結果をキャッシュするかどうかを決定します；現在の値を上書きします。イ"
 "ンターナルソースの挙動には影響しません。"
 
-#: Cidlookup.class.php:67
+#: Cidlookup.class.php:66
 msgid "Delete"
 msgstr "削除"
 
@@ -212,7 +212,7 @@ msgstr ""
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:161
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr "ERROR： 失敗："
 
@@ -220,7 +220,7 @@ msgstr "ERROR： 失敗："
 msgid "Enter a description for this source."
 msgstr "このソースの説明を入力。"
 
-#: install.php:152
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr "FATAL： 古い経路の変換に失敗しました："
 
@@ -272,7 +272,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:144
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "チャネルルーティングからZapダイヤルインルーティングに移行.."
 
@@ -300,11 +300,11 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "いいえ"
 
-#: Cidlookup.class.php:96 functions.inc.php:336
+#: Cidlookup.class.php:96
 msgid "None"
 msgstr "なし"
 
-#: install.php:168
+#: install.php:156
 msgid "Not Needed"
 msgstr "必要なし"
 
@@ -312,7 +312,7 @@ msgstr "必要なし"
 msgid "Not yet implemented"
 msgstr "未実装"
 
-#: install.php:154 install.php:163
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr "OK"
 
@@ -320,7 +320,7 @@ msgstr "OK"
 msgid "OpenCNAM"
 msgstr "OpenCNAM"
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -362,7 +362,7 @@ msgstr ""
 "HTTP、若しくはHTTPSサーバーが待ち構えているポート番号 (デフォルト http 80、"
 "https 443)"
 
-#: install.php:120
+#: install.php:108
 msgid "Processing Database Tables"
 msgstr ""
 
@@ -389,11 +389,11 @@ msgstr ""
 "クエリー、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例："
 "SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:157
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr "着信から、重複チャネルフィールドを削除.."
 
-#: Cidlookup.class.php:77
+#: Cidlookup.class.php:76
 msgid "Reset"
 msgstr "リセット"
 
@@ -421,7 +421,7 @@ msgstr "ソースの種類"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "ソースは発信者名検索ソースセクションで追加できます。"
 
-#: Cidlookup.class.php:72
+#: Cidlookup.class.php:71
 msgid "Submit"
 msgstr "送信"
 
@@ -438,7 +438,7 @@ msgstr ""
 msgid "Type"
 msgstr "種類"
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
@@ -489,11 +489,11 @@ msgstr ""
 "OpenCNAMの認証トークン。OpenCNAMのダッシュボードページで確認できます："
 "https://www.opencnam.com/dashboard"
 
-#: install.php:178
+#: install.php:166
 msgid "not present"
 msgstr "存在しません"
 
-#: install.php:180
+#: install.php:168
 msgid "removed"
 msgstr "削除済み"
 
@@ -613,8 +613,8 @@ msgstr "削除済み"
 
 #~ msgid ""
 #~ "Select the source type, you can choose between:<ul>\n"
-#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]"
-#~ "</li>\n"
+#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam."
+#~ "com/]</li>\n"
 #~ "                    <li>Internal: use astdb as lookup source, use "
 #~ "phonebook module to populate it</li>\n"
 #~ "                    <li>ENUM: Use DNS to lookup caller names, it uses "

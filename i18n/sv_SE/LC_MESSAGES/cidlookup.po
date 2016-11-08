@@ -19,10 +19,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 19:07-0700\n"
+"POT-Creation-Date: 2016-11-08 02:32+0000\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -133,7 +134,7 @@ msgstr "Källa f. nummerpresentation"
 msgid "Character Set"
 msgstr ""
 
-#: install.php:174
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr ""
 "Kontrollerar om det fältet cidlookup finns i tabellen för inkommande vägar.."
@@ -174,7 +175,7 @@ msgstr ""
 "Välj om du ska mellanlagra resultaten i astDB; det kommer att skriva över "
 "eventuella poster som redan finns. Används inte om källa är Internal."
 
-#: Cidlookup.class.php:67
+#: Cidlookup.class.php:66
 msgid "Delete"
 msgstr ""
 
@@ -190,7 +191,7 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:161
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr "FEL: misslyckades: "
 
@@ -198,7 +199,7 @@ msgstr "FEL: misslyckades: "
 msgid "Enter a description for this source."
 msgstr "Skriv en kortfattad beskrivning för denna källa."
 
-#: install.php:152
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr "FEL: kunde inte transformera gamla vägar: "
 
@@ -250,7 +251,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:144
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Migrerar kanalvägar till Zap direktvägar.."
 
@@ -278,11 +279,11 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96 functions.inc.php:336
+#: Cidlookup.class.php:96
 msgid "None"
 msgstr "Ingen"
 
-#: install.php:168
+#: install.php:156
 msgid "Not Needed"
 msgstr "Behövs inte"
 
@@ -290,7 +291,7 @@ msgstr "Behövs inte"
 msgid "Not yet implemented"
 msgstr "Inte implementerad"
 
-#: install.php:154 install.php:163
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr "OK"
 
@@ -298,7 +299,7 @@ msgstr "OK"
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -338,7 +339,7 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:120
+#: install.php:108
 msgid "Processing Database Tables"
 msgstr ""
 
@@ -360,14 +361,14 @@ msgid ""
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 "Fråga, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
-"nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE '%"
-"[NUMBER]%'"
+"nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE "
+"'%[NUMBER]%'"
 
-#: install.php:157
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
 
-#: Cidlookup.class.php:77
+#: Cidlookup.class.php:76
 msgid "Reset"
 msgstr ""
 
@@ -395,7 +396,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Källor kan läggas till i Källor för nummerpresentation"
 
-#: Cidlookup.class.php:72
+#: Cidlookup.class.php:71
 msgid "Submit"
 msgstr ""
 
@@ -412,7 +413,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
@@ -453,11 +454,11 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:178
+#: install.php:166
 msgid "not present"
 msgstr "inte tillgänglig"
 
-#: install.php:180
+#: install.php:168
 msgid "removed"
 msgstr "borttagen"
 

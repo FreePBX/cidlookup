@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 19:07-0700\n"
+"POT-Creation-Date: 2016-11-08 02:32+0000\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -131,7 +131,7 @@ msgstr ""
 msgid "Character Set"
 msgstr ""
 
-#: install.php:174
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr ""
 "החלט אם לשמור או לא לשמור את התוצאות ב astDB; פעולה זו תדרוס ערכים קיימים. "
 "היא אינה משפיעה על התנהגות המקורות הפנימיים"
 
-#: Cidlookup.class.php:67
+#: Cidlookup.class.php:66
 msgid "Delete"
 msgstr ""
 
@@ -187,7 +187,7 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:161
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr ""
 
@@ -195,7 +195,7 @@ msgstr ""
 msgid "Enter a description for this source."
 msgstr "הכנס תיאור עבור מקור זה."
 
-#: install.php:152
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:144
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr ""
 
@@ -275,11 +275,11 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96 functions.inc.php:336
+#: Cidlookup.class.php:96
 msgid "None"
 msgstr "אף אחד"
 
-#: install.php:168
+#: install.php:156
 msgid "Not Needed"
 msgstr ""
 
@@ -287,7 +287,7 @@ msgstr ""
 msgid "Not yet implemented"
 msgstr ""
 
-#: install.php:154 install.php:163
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgstr ""
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -335,7 +335,7 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:120
+#: install.php:108
 msgid "Processing Database Tables"
 msgstr ""
 
@@ -359,11 +359,11 @@ msgstr ""
 "שאילתא, כאשר הטוקן המיוחד '[NUMBER]' יוחלף במספר הטלפון של המתקשר<br /"
 ">לדוגמא: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:157
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr ""
 
-#: Cidlookup.class.php:77
+#: Cidlookup.class.php:76
 msgid "Reset"
 msgstr ""
 
@@ -391,7 +391,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
 
-#: Cidlookup.class.php:72
+#: Cidlookup.class.php:71
 msgid "Submit"
 msgstr ""
 
@@ -406,7 +406,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
@@ -447,11 +447,11 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:178
+#: install.php:166
 msgid "not present"
 msgstr ""
 
-#: install.php:180
+#: install.php:168
 msgid "removed"
 msgstr ""
 

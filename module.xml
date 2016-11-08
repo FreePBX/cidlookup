@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>14.0.1alpha1</version>
+	<version>14.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*14.0.1* FREEPBX-13255 add maxlength onto input box
 		*14.0.1alpha1* FREEPBX-12729 Add Contact Manager lookup
 	</changelog>
 	<menuitems>

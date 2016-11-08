@@ -19,10 +19,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 19:07-0700\n"
+"POT-Creation-Date: 2016-11-08 02:32+0000\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -134,7 +135,7 @@ msgstr ""
 msgid "Character Set"
 msgstr ""
 
-#: install.php:174
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr ""
 
@@ -174,7 +175,7 @@ msgstr ""
 "Legyen, vagy ne legyen a lekérdezés cachelve a belső astDB-ben; ez "
 "különbözhet az mindenkori értéktől. Nincs a belső adatbázisra értelmezve."
 
-#: Cidlookup.class.php:67
+#: Cidlookup.class.php:66
 msgid "Delete"
 msgstr ""
 
@@ -190,7 +191,7 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:161
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr ""
 
@@ -198,7 +199,7 @@ msgstr ""
 msgid "Enter a description for this source."
 msgstr "Adj meg egy nevet ehhez a forráshoz."
 
-#: install.php:152
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr ""
 
@@ -250,7 +251,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:144
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr ""
 
@@ -278,11 +279,11 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96 functions.inc.php:336
+#: Cidlookup.class.php:96
 msgid "None"
 msgstr "Nincs"
 
-#: install.php:168
+#: install.php:156
 msgid "Not Needed"
 msgstr ""
 
@@ -290,7 +291,7 @@ msgstr ""
 msgid "Not yet implemented"
 msgstr ""
 
-#: install.php:154 install.php:163
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr ""
 
@@ -298,7 +299,7 @@ msgstr ""
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -338,7 +339,7 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:120
+#: install.php:108
 msgid "Processing Database Tables"
 msgstr ""
 
@@ -362,11 +363,11 @@ msgstr ""
 "Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: SELECT name "
 "FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:157
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr ""
 
-#: Cidlookup.class.php:77
+#: Cidlookup.class.php:76
 msgid "Reset"
 msgstr ""
 
@@ -394,7 +395,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
 
-#: Cidlookup.class.php:72
+#: Cidlookup.class.php:71
 msgid "Submit"
 msgstr ""
 
@@ -409,7 +410,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
@@ -450,11 +451,11 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:178
+#: install.php:166
 msgid "not present"
 msgstr ""
 
-#: install.php:180
+#: install.php:168
 msgid "removed"
 msgstr ""
 
@@ -465,8 +466,8 @@ msgstr ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "
 #~ "number<br/>e.g.: number=[NUMBER]&source=crm"
 #~ msgstr ""
-#~ "Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: number="
-#~ "[NUMBER]&source=crm"
+#~ "Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: "
+#~ "number=[NUMBER]&source=crm"
 
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "CID-forrás hozzáadása"

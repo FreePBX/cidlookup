@@ -19,15 +19,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 19:07-0700\n"
+"POT-Creation-Date: 2016-11-08 02:32+0000\n"
 "PO-Revision-Date: 2016-06-07 02:58+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
 "cidlookup/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 "X-Poedit-Language: Spanish\n"
@@ -150,7 +150,7 @@ msgstr "Búsqueda de llamantes"
 msgid "Character Set"
 msgstr "Conjunto de Caracterees"
 
-#: install.php:174
+#: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
 msgstr "Comprobando el campo cidlookup en la table entrante del núcleo.."
 
@@ -190,7 +190,7 @@ msgstr ""
 "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
 "valores actuales. No afecta el comportamiento de la fuente interna"
 
-#: Cidlookup.class.php:67
+#: Cidlookup.class.php:66
 msgid "Delete"
 msgstr "Borrar"
 
@@ -206,7 +206,7 @@ msgstr ""
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:161
+#: install.php:149
 msgid "ERROR: failed: "
 msgstr "ERROR: Fallido: "
 
@@ -214,7 +214,7 @@ msgstr "ERROR: Fallido: "
 msgid "Enter a description for this source."
 msgstr "Introduzca una descripción para este origen."
 
-#: install.php:152
+#: install.php:140
 msgid "FATAL: failed to transform old routes: "
 msgstr "FATAL: No se pudieron transformar las rutas antiguas: "
 
@@ -266,7 +266,7 @@ msgstr ""
 msgid "List Sources"
 msgstr "Lista de Fuentes"
 
-#: install.php:144
+#: install.php:132
 msgid "Migrating channel routing to Zap DID routing.."
 msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
 
@@ -296,11 +296,11 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "No"
 
-#: Cidlookup.class.php:96 functions.inc.php:336
+#: Cidlookup.class.php:96
 msgid "None"
 msgstr "Ninguno"
 
-#: install.php:168
+#: install.php:156
 msgid "Not Needed"
 msgstr "No es necesario"
 
@@ -308,7 +308,7 @@ msgstr "No es necesario"
 msgid "Not yet implemented"
 msgstr "Este método no se ha implementado todavía"
 
-#: install.php:154 install.php:163
+#: install.php:142 install.php:151
 msgid "OK"
 msgstr "OK"
 
@@ -316,7 +316,7 @@ msgstr "OK"
 msgid "OpenCNAM"
 msgstr "OpenCNAM"
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM Requiere Autenticanción"
 
@@ -363,7 +363,7 @@ msgstr ""
 "Puerto en el que server HTTP(s) esta escuchando (por defecto http:80, "
 "https:443)"
 
-#: install.php:120
+#: install.php:108
 msgid "Processing Database Tables"
 msgstr ""
 
@@ -392,11 +392,11 @@ msgstr ""
 "de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
 "number LIKE '%[NUMBER]%'"
 
-#: install.php:157
+#: install.php:145
 msgid "Removing deprecated channel field from incoming.."
 msgstr "Eliminando campo de canal obsoleto de entrantes..."
 
-#: Cidlookup.class.php:77
+#: Cidlookup.class.php:76
 msgid "Reset"
 msgstr "Restablecer"
 
@@ -426,7 +426,7 @@ msgstr ""
 "Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres de "
 "llamantes"
 
-#: Cidlookup.class.php:72
+#: Cidlookup.class.php:71
 msgid "Submit"
 msgstr "Enviar"
 
@@ -442,7 +442,7 @@ msgstr ""
 msgid "Type"
 msgstr "Tipo"
 
-#: functions.inc.php:193
+#: functions.inc.php:192
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
@@ -494,11 +494,11 @@ msgstr ""
 "Clave Autorización OpenCNAM. Esto peude ser encontrado en el tablero de "
 "OpenCNAM en: https://www.opencnam.com/dashboard"
 
-#: install.php:178
+#: install.php:166
 msgid "not present"
 msgstr "no está presente"
 
-#: install.php:180
+#: install.php:168
 msgid "removed"
 msgstr "eliminado"
 
@@ -572,8 +572,8 @@ msgstr "eliminado"
 #~ "number<br/>e.g.: number=[NUMBER]&source=crm"
 #~ msgstr ""
 #~ "Cadena de la consulta, el campo \"[NUMBER]\" sera sustituido con el "
-#~ "número de la persona que llama.<br/>Por ejemplo, number=[NUMBER]"
-#~ "&source=crm"
+#~ "número de la persona que llama.<br/>Por ejemplo, "
+#~ "number=[NUMBER]&source=crm"
 
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "Añadir fuente de búsqueda de CID"
