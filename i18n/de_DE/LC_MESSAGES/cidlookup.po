@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-22 12:41-0700\n"
-"PO-Revision-Date: 2017-01-09 21:24+0200\n"
+"PO-Revision-Date: 2017-01-11 13:44+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/cidlookup/de_DE/>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: views/form.php:19
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr ""
+msgstr " Verwenden Sie OpenCNAM [https://www.opencnam.com/]"
 
 #: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
@@ -53,6 +53,9 @@ msgid ""
 "<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
 "opencnam.com/register</a></p>"
 msgstr ""
+"<p>Wenn Sie ein OpenCNAM-Konto erstellen müssen, können Sie folgende Website "
+"besuchen: <a href=\"https://www.opencnam.com/register\" target=\"_blank\""
+">https://www.opencnam.com/register</a></p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -97,31 +100,31 @@ msgstr ""
 
 #: views/form.php:164
 msgid "Auth Token"
-msgstr ""
+msgstr "Auth-Token"
 
 #: functions.inc.php:20
 msgid "CID Lookup Source"
-msgstr ""
+msgstr "CID-Suchquelle"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
-msgstr ""
+msgstr "CID-Suche"
 
 #: views/form.php:108
 msgid "Cache Results"
-msgstr ""
+msgstr "Cache Ergebnisse"
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
-msgstr ""
+msgstr "AnruferID-Suche"
 
 #: cidlookup.i18n.php:10
 msgid "CallerID Lookup Sources"
-msgstr ""
+msgstr "Anrufer-ID Suchquellen"
 
 #: views/form.php:460
 msgid "Character Set"
-msgstr ""
+msgstr "Zeichensatz"
 
 #: install.php:162
 msgid "Checking for cidlookup field in core's incoming table.."
@@ -140,6 +143,9 @@ msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
+"Entscheiden Sie, ob die Ergebnisse in astDB zwischengespeichert werden "
+"sollen; Es überschreibt die aktuellen Werte. Dies hat keine Auswirkungen auf "
+"das interne Quellverhalten."
 
 #: Cidlookup.class.php:70
 msgid "Delete"
@@ -151,7 +157,7 @@ msgstr "Beschreibung"
 
 #: views/form.php:21
 msgid "ENUM:"
-msgstr ""
+msgstr "ENUM:"
 
 #: install.php:149
 msgid "ERROR: failed: "
@@ -191,7 +197,7 @@ msgstr "Intern:"
 
 #: views/form.php:24
 msgid "It queries a MySQL database to retrieve caller name"
-msgstr ""
+msgstr "Die Abfrage des Anrufernamens erfolgt aus einer MySQL-Datenbank."
 
 #: views/bootnav.php:6
 msgid "List Sources"
@@ -243,11 +249,11 @@ msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
-msgstr ""
+msgstr "OpenCNAM"
 
 #: functions.inc.php:187
 msgid "OpenCNAM Requires Authentication"
-msgstr ""
+msgstr "OpenCNAM erfordert eine Authentifizierung"
 
 #: bin/opencnam-alert.php:25
 msgid "OpenCNAM Throttle Reached!"
@@ -255,7 +261,7 @@ msgstr ""
 
 #: views/form.php:19
 msgid "OpenCNAM:"
-msgstr ""
+msgstr "OpenCNAM:"
 
 #: views/form.php:264 views/form.php:436
 msgid "Password"
@@ -309,7 +315,7 @@ msgstr ""
 
 #: install.php:145
 msgid "Removing deprecated channel field from incoming.."
-msgstr ""
+msgstr "Entfernen des veralteten Kanalfeldes von eingehendem .."
 
 #: Cidlookup.class.php:80
 msgid "Reset"
@@ -385,12 +391,16 @@ msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 msgstr ""
+"Ihre OpenCNAM-Konto-SID. Diese finden Sie auf Ihrer OpenCNAM Dashboard-Seite:"
+" https://www.opencnam.com/dashboard"
 
 #: views/form.php:176
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
 msgstr ""
+"Ihren OpenCNAM Authentifizierungs-Token. Diesen finden Sie auf Ihrer "
+"OpenCNAM Dashboard-Seite: https://www.opencnam.com/dashboard"
 
 #: install.php:166
 msgid "not present"
