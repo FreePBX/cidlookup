@@ -27,10 +27,10 @@
 	    <field name="sourcetype" type="string" length="100"/>
 	    <field name="cache" type="smallint" default="0"/>
 	    <field name="deptname" type="string" length="30" notnull="false"/>
-	    <field name="http_host" type="string" length="30" notnull="false"/>
+	    <field name="http_host" type="string" length="100" notnull="false"/>
 	    <field name="http_port" type="string" length="30" notnull="false"/>
-	    <field name="http_username" type="string" length="30" notnull="false"/>
-	    <field name="http_password" type="string" length="30" notnull="false"/>
+	    <field name="http_username" type="string" length="50" notnull="false"/>
+	    <field name="http_password" type="string" length="50" notnull="false"/>
 	    <field name="http_path" type="string" length="100" notnull="false"/>
 	    <field name="http_query" type="string" length="100" notnull="false"/>
 	    <field name="mysql_host" type="string" length="60" notnull="false"/>
