@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2015-04-29 08:49+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -118,10 +118,6 @@ msgstr ""
 msgid "Character Set"
 msgstr ""
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr ""
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -172,16 +168,8 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr ""
-
 #: views/form.php:78
 msgid "Enter a description for this source."
-msgstr ""
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
 msgstr ""
 
 #: views/form.php:165
@@ -232,10 +220,6 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr ""
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -264,16 +248,8 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: install.php:156
-msgid "Not Needed"
-msgstr ""
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
-msgstr ""
-
-#: install.php:142 install.php:151
-msgid "OK"
 msgstr ""
 
 #: views/form.php:10 views/form.php:15
@@ -320,10 +296,6 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr ""
@@ -340,10 +312,6 @@ msgstr ""
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-msgstr ""
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
 msgstr ""
 
 #: Cidlookup.class.php:76
@@ -428,12 +396,4 @@ msgstr ""
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
-msgstr ""
-
-#: install.php:166
-msgid "not present"
-msgstr ""
-
-#: install.php:168
-msgid "removed"
 msgstr ""

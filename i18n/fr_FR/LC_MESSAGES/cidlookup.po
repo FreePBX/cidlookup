@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2016-02-06 07:16+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/cidlookup/"
@@ -135,10 +135,6 @@ msgstr "Sources Consult. ID Appelant"
 msgid "Character Set"
 msgstr ""
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Contôle du champ cidlookup dans la table entrants du coeur..."
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -191,17 +187,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "ERREUR : échoué :"
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "Entrez une description pour cette source."
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "FATAL : n'a pas réussi à transformer les anciennes routes :"
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -251,10 +239,6 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "Migration du routage de canal vers le routage Zap DID..."
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -283,17 +267,9 @@ msgstr ""
 msgid "None"
 msgstr "Aucun"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "Pas Nécessaire"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "Pas encore implémenté"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
@@ -339,10 +315,6 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr ""
@@ -363,10 +335,6 @@ msgstr ""
 "Requête, le signe spécial '[NUMBER]' sera remplacé par le numéro de "
 "l'appelant<br/>exemple : SELECT nom FROM annuaire WHERE numéro LIKE "
 "'%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "Suppression du champ canal obsolète de entrants..."
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -454,13 +422,32 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:166
-msgid "not present"
-msgstr "pas présent"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "Contôle du champ cidlookup dans la table entrants du coeur..."
 
-#: install.php:168
-msgid "removed"
-msgstr "éliminé"
+#~ msgid "ERROR: failed: "
+#~ msgstr "ERREUR : échoué :"
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "FATAL : n'a pas réussi à transformer les anciennes routes :"
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "Migration du routage de canal vers le routage Zap DID..."
+
+#~ msgid "Not Needed"
+#~ msgstr "Pas Nécessaire"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "Suppression du champ canal obsolète de entrants..."
+
+#~ msgid "not present"
+#~ msgstr "pas présent"
+
+#~ msgid "removed"
+#~ msgstr "éliminé"
 
 #~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 #~ msgstr "Chemin du fichier à OBTENIR<br/>exemple : /cidlookup.php"

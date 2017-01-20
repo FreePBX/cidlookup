@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2016-08-26 03:09+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -137,10 +137,6 @@ msgstr "منابع جستجوی شماره تماس گیرنده"
 msgid "Character Set"
 msgstr "مجموعه کاراکتر"
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Checking for  cidlookup field in core's incoming table.."
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -193,17 +189,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "خطا：شکست خورد： "
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "شرحی برای این منبع وارد کنید."
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "کشنده: شکست در انتقال مسیرهای قدیمی "
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -253,10 +241,6 @@ msgstr ""
 msgid "List Sources"
 msgstr "فهرست منابع"
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "در حال انتقال کانال مسیریابی به مسیر Zap DID.."
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr "مجموعه کاراکتر MySQL.  برای پیشفرض latin1 خالی بگذارید"
@@ -285,17 +269,9 @@ msgstr "خیر"
 msgid "None"
 msgstr "هیچ"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "نیاز نیست"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "هنوز اجرا نشده"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "تایید"
 
 #: views/form.php:10 views/form.php:15
 #, fuzzy
@@ -347,10 +323,6 @@ msgstr "پورت"
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr "Port HTTP(s) server  is listening at (default http 80, https 443)"
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr "در حال پردازش جداول بانک اطلاعاتی"
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr "صف"
@@ -374,10 +346,6 @@ msgid ""
 msgstr ""
 "Query, special  token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "حذف فیلد کانال منسوخ از تماس های ورودی.."
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -478,13 +446,35 @@ msgstr ""
 "Your OpenCNAM Auth Token. This  can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 
-#: install.php:166
-msgid "not present"
-msgstr "موجود نیست"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "Checking for  cidlookup field in core's incoming table.."
 
-#: install.php:168
-msgid "removed"
-msgstr "حذف شده"
+#~ msgid "ERROR: failed: "
+#~ msgstr "خطا：شکست خورد： "
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "کشنده: شکست در انتقال مسیرهای قدیمی "
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "در حال انتقال کانال مسیریابی به مسیر Zap DID.."
+
+#~ msgid "Not Needed"
+#~ msgstr "نیاز نیست"
+
+#~ msgid "OK"
+#~ msgstr "تایید"
+
+#~ msgid "Processing Database Tables"
+#~ msgstr "در حال پردازش جداول بانک اطلاعاتی"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "حذف فیلد کانال منسوخ از تماس های ورودی.."
+
+#~ msgid "not present"
+#~ msgstr "موجود نیست"
+
+#~ msgid "removed"
+#~ msgstr "حذف شده"
 
 #~ msgid "Adding opencnam account columns to the cidlookup table..."
 #~ msgstr "Adding opencnam  account columns to the cidlookup table..."

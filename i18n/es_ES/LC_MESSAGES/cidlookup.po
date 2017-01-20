@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2016-06-07 02:58+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -150,10 +150,6 @@ msgstr "Búsqueda de llamantes"
 msgid "Character Set"
 msgstr "Conjunto de Caracterees"
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Comprobando el campo cidlookup en la table entrante del núcleo.."
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -206,17 +202,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "ERROR: Fallido: "
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "Introduzca una descripción para este origen."
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "FATAL: No se pudieron transformar las rutas antiguas: "
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -266,10 +254,6 @@ msgstr ""
 msgid "List Sources"
 msgstr "Lista de Fuentes"
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -300,17 +284,9 @@ msgstr "No"
 msgid "None"
 msgstr "Ninguno"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "No es necesario"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "Este método no se ha implementado todavía"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
@@ -363,10 +339,6 @@ msgstr ""
 "Puerto en el que server HTTP(s) esta escuchando (por defecto http:80, "
 "https:443)"
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr "Solicitud"
@@ -391,10 +363,6 @@ msgstr ""
 "Cadena de la consulta, el campo \"[NUMBER]\" sera sustituido con el número "
 "de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
 "number LIKE '%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "Eliminando campo de canal obsoleto de entrantes..."
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -494,13 +462,32 @@ msgstr ""
 "Clave Autorización OpenCNAM. Esto peude ser encontrado en el tablero de "
 "OpenCNAM en: https://www.opencnam.com/dashboard"
 
-#: install.php:166
-msgid "not present"
-msgstr "no está presente"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "Comprobando el campo cidlookup en la table entrante del núcleo.."
 
-#: install.php:168
-msgid "removed"
-msgstr "eliminado"
+#~ msgid "ERROR: failed: "
+#~ msgstr "ERROR: Fallido: "
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "FATAL: No se pudieron transformar las rutas antiguas: "
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
+
+#~ msgid "Not Needed"
+#~ msgstr "No es necesario"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "Eliminando campo de canal obsoleto de entrantes..."
+
+#~ msgid "not present"
+#~ msgstr "no está presente"
+
+#~ msgid "removed"
+#~ msgstr "eliminado"
 
 #~ msgid "Adding opencnam account columns to the cidlookup table..."
 #~ msgstr "Agregando columnas de cuenta opencnam  en la tabla cidlookup..."

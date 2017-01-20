@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -134,11 +134,6 @@ msgstr "Källa f. nummerpresentation"
 msgid "Character Set"
 msgstr ""
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr ""
-"Kontrollerar om det fältet cidlookup finns i tabellen för inkommande vägar.."
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -191,17 +186,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "FEL: misslyckades: "
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "Skriv en kortfattad beskrivning för denna källa."
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "FEL: kunde inte transformera gamla vägar: "
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -251,10 +238,6 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "Migrerar kanalvägar till Zap direktvägar.."
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -283,17 +266,9 @@ msgstr ""
 msgid "None"
 msgstr "Ingen"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "Behövs inte"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "Inte implementerad"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
@@ -339,10 +314,6 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr ""
@@ -363,10 +334,6 @@ msgstr ""
 "Fråga, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
 "nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE "
 "'%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -454,13 +421,34 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:166
-msgid "not present"
-msgstr "inte tillgänglig"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr ""
+#~ "Kontrollerar om det fältet cidlookup finns i tabellen för inkommande "
+#~ "vägar.."
 
-#: install.php:168
-msgid "removed"
-msgstr "borttagen"
+#~ msgid "ERROR: failed: "
+#~ msgstr "FEL: misslyckades: "
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "FEL: kunde inte transformera gamla vägar: "
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "Migrerar kanalvägar till Zap direktvägar.."
+
+#~ msgid "Not Needed"
+#~ msgstr "Behövs inte"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
+
+#~ msgid "not present"
+#~ msgstr "inte tillgänglig"
+
+#~ msgid "removed"
+#~ msgstr "borttagen"
 
 #~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 #~ msgstr "Sökväg till filen via GET<br>t.ex. /cidlookup.php"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -135,10 +135,6 @@ msgstr ""
 msgid "Character Set"
 msgstr ""
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr ""
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -191,17 +187,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr ""
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "Adj meg egy nevet ehhez a forráshoz."
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr ""
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -251,10 +239,6 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr ""
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -283,16 +267,8 @@ msgstr ""
 msgid "None"
 msgstr "Nincs"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr ""
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
-msgstr ""
-
-#: install.php:142 install.php:151
-msgid "OK"
 msgstr ""
 
 #: views/form.php:10 views/form.php:15
@@ -339,10 +315,6 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr ""
@@ -362,10 +334,6 @@ msgid ""
 msgstr ""
 "Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: SELECT name "
 "FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr ""
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -449,14 +417,6 @@ msgstr ""
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
-msgstr ""
-
-#: install.php:166
-msgid "not present"
-msgstr ""
-
-#: install.php:168
-msgid "removed"
 msgstr ""
 
 #~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"

@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -156,10 +156,6 @@ msgstr "発信者番号検索ソース"
 msgid "Character Set"
 msgstr "文字コード"
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "コアの着信テーブルから発信者番号検索フィールドをチェック.."
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -212,17 +208,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "ERROR： 失敗："
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "このソースの説明を入力。"
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "FATAL： 古い経路の変換に失敗しました："
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -272,10 +260,6 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "チャネルルーティングからZapダイヤルインルーティングに移行.."
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr "MySQLの文字コード。空にすると、MySQLデフォルトのlatin1に設定されます"
@@ -304,17 +288,9 @@ msgstr "いいえ"
 msgid "None"
 msgstr "なし"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "必要なし"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "未実装"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
@@ -362,10 +338,6 @@ msgstr ""
 "HTTP、若しくはHTTPSサーバーが待ち構えているポート番号 (デフォルト http 80、"
 "https 443)"
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr "クエリ"
@@ -388,10 +360,6 @@ msgid ""
 msgstr ""
 "クエリー、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例："
 "SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "着信から、重複チャネルフィールドを削除.."
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -489,13 +457,32 @@ msgstr ""
 "OpenCNAMの認証トークン。OpenCNAMのダッシュボードページで確認できます："
 "https://www.opencnam.com/dashboard"
 
-#: install.php:166
-msgid "not present"
-msgstr "存在しません"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "コアの着信テーブルから発信者番号検索フィールドをチェック.."
 
-#: install.php:168
-msgid "removed"
-msgstr "削除済み"
+#~ msgid "ERROR: failed: "
+#~ msgstr "ERROR： 失敗："
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "FATAL： 古い経路の変換に失敗しました："
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "チャネルルーティングからZapダイヤルインルーティングに移行.."
+
+#~ msgid "Not Needed"
+#~ msgstr "必要なし"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "着信から、重複チャネルフィールドを削除.."
+
+#~ msgid "not present"
+#~ msgstr "存在しません"
+
+#~ msgid "removed"
+#~ msgstr "削除済み"
 
 #~ msgid "Adding opencnam account columns to the cidlookup table..."
 #~ msgstr "opencnamアカウントコラムをcidlookupテーブルに追加中.."

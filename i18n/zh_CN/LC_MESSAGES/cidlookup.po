@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -120,10 +120,6 @@ msgstr "主叫ID查询"
 msgid "Character Set"
 msgstr ""
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "正在检查incoming表的cidlookup字段。。。"
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -174,17 +170,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "错误：失败："
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "为此源添加描述。"
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "致命错误：无法转换旧的路由（线路）："
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -234,10 +222,6 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "正在将频道路由迁移到Zap DID路由。。。"
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -266,17 +250,9 @@ msgstr ""
 msgid "None"
 msgstr "无"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "没有必要"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "尚未实现"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "完成"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
@@ -322,10 +298,6 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr ""
@@ -345,10 +317,6 @@ msgid ""
 msgstr ""
 "设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：SELECT name "
 "FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "正在从incoming表中移除废弃的channel字段。。。"
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -434,13 +402,32 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:166
-msgid "not present"
-msgstr "没有出现"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "正在检查incoming表的cidlookup字段。。。"
 
-#: install.php:168
-msgid "removed"
-msgstr "已移除"
+#~ msgid "ERROR: failed: "
+#~ msgstr "错误：失败："
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "致命错误：无法转换旧的路由（线路）："
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "正在将频道路由迁移到Zap DID路由。。。"
+
+#~ msgid "Not Needed"
+#~ msgstr "没有必要"
+
+#~ msgid "OK"
+#~ msgstr "完成"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "正在从incoming表中移除废弃的channel字段。。。"
+
+#~ msgid "not present"
+#~ msgstr "没有出现"
+
+#~ msgid "removed"
+#~ msgstr "已移除"
 
 #~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 #~ msgstr "要请求的文件的路径<br/>例如：/cidlookup.php"

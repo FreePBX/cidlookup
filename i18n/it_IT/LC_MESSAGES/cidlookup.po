@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -135,10 +135,6 @@ msgstr "Sorgenti Risoluzione CID"
 msgid "Character Set"
 msgstr ""
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Controllo"
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -192,17 +188,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr ""
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "ERRORE: fallito:"
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "Immettere una descrizione per questa sorgente."
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "FATALE: fallita trasformazione vecchie rotte:"
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -252,10 +240,6 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "Migrazione rotta canali verso rotta Selezione Passante Zap.."
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -284,17 +268,9 @@ msgstr ""
 msgid "None"
 msgstr "Nessuna"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "Non Necessario"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "Non ancora implementato"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
@@ -340,10 +316,6 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr ""
@@ -363,10 +335,6 @@ msgid ""
 msgstr ""
 "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di "
 "telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "Rimozione campo canale obsoleto dall'entrata.."
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -453,13 +421,32 @@ msgid ""
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: install.php:166
-msgid "not present"
-msgstr "non presente"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "Controllo"
 
-#: install.php:168
-msgid "removed"
-msgstr "rimosso"
+#~ msgid "ERROR: failed: "
+#~ msgstr "ERRORE: fallito:"
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "FATALE: fallita trasformazione vecchie rotte:"
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "Migrazione rotta canali verso rotta Selezione Passante Zap.."
+
+#~ msgid "Not Needed"
+#~ msgstr "Non Necessario"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "Rimozione campo canale obsoleto dall'entrata.."
+
+#~ msgid "not present"
+#~ msgstr "non presente"
+
+#~ msgid "removed"
+#~ msgstr "rimosso"
 
 #~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 #~ msgstr "Il percorso del file GET<br/>e.s.: /cidlookup.php"

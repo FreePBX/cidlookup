@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-08 02:32+0000\n"
+"POT-Creation-Date: 2017-01-20 12:54-0800\n"
 "PO-Revision-Date: 2015-05-31 00:21+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -152,10 +152,6 @@ msgstr "Источники поиска Caller ID"
 msgid "Character Set"
 msgstr "Набор символов"
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "Проверка поля cidlookup в структуре таблицы входящих.."
-
 #: views/form.php:185
 msgid "Company"
 msgstr ""
@@ -209,17 +205,9 @@ msgstr ""
 msgid "ENUM:"
 msgstr "Нумерация:"
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "ОШИБКА: не получилось: "
-
 #: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "Создайте краткое описание источника."
-
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "НЕ СУДЬБА: ошибка при переносе старых маршрутов: "
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -271,10 +259,6 @@ msgstr ""
 msgid "List Sources"
 msgstr "Список источников"
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "Перенос маршрутизации каналов в маршрутизацию по Zap DID.."
-
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
@@ -305,17 +289,9 @@ msgstr "Нет"
 msgid "None"
 msgstr "Нет"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "Не надобности"
-
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "Пока не обеспечивается"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "ОК"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
@@ -365,10 +341,6 @@ msgstr "Порт"
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr "Порт HTTP(s) сервера (по умолчанию  http 80, https 443)"
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
 #: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr "Запрос"
@@ -392,10 +364,6 @@ msgid ""
 msgstr ""
 "Строка запроса, содержащая '[NUMBER]', которая получает значение Caller ID "
 "<br/>например: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
-
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "Удаление устаревшего поля канала из входящих.."
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -494,13 +462,32 @@ msgstr ""
 "Ваш авторизационный токен  OpenCNAM. Его можно посмотреть на странице : "
 "https://www.opencnam.com/dashboard"
 
-#: install.php:166
-msgid "not present"
-msgstr "отсутствует"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "Проверка поля cidlookup в структуре таблицы входящих.."
 
-#: install.php:168
-msgid "removed"
-msgstr "удалено"
+#~ msgid "ERROR: failed: "
+#~ msgstr "ОШИБКА: не получилось: "
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "НЕ СУДЬБА: ошибка при переносе старых маршрутов: "
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "Перенос маршрутизации каналов в маршрутизацию по Zap DID.."
+
+#~ msgid "Not Needed"
+#~ msgstr "Не надобности"
+
+#~ msgid "OK"
+#~ msgstr "ОК"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "Удаление устаревшего поля канала из входящих.."
+
+#~ msgid "not present"
+#~ msgstr "отсутствует"
+
+#~ msgid "removed"
+#~ msgstr "удалено"
 
 #~ msgid ""
 #~ "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do "
