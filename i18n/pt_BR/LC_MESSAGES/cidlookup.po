@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-22 12:41-0700\n"
-"PO-Revision-Date: 2016-12-11 05:37+0200\n"
-"Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
+"PO-Revision-Date: 2017-03-23 19:56+0200\n"
+"Last-Translator: Luis <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/cidlookup/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -128,7 +128,7 @@ msgstr "Pesquisa de ID Chamador"
 
 #: cidlookup.i18n.php:10
 msgid "CallerID Lookup Sources"
-msgstr "Fonte de Pesquisa de ID Chamador"
+msgstr "Fonte de Pesquisa CID"
 
 #: views/form.php:460
 msgid "Character Set"
