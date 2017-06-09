@@ -1,0 +1,388 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for cidlookup
+# Copyright (C) 2008-2016 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"PO-Revision-Date: 2016-08-22 12:41-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: views/form.php:22
+msgid ""
+" It executes an HTTP GET passing the caller number as argument to retrieve "
+"the correct name"
+msgstr ""
+
+#: views/form.php:23
+msgid ""
+" It executes an HTTPS GET passing the caller number as argument to retrieve "
+"the correct name"
+msgstr ""
+
+#: views/form.php:21
+msgid ""
+" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
+"enum.conf"
+msgstr ""
+
+#: views/form.php:19
+msgid " Use OpenCNAM [https://www.opencnam.com/]"
+msgstr ""
+
+#: views/form.php:20
+msgid " use astdb as lookup source, use phonebook module to populate it"
+msgstr ""
+
+#: views/form.php:131
+msgid ""
+"<p>If you need to create an OpenCNAM account, you can visit their website: "
+"<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
+"opencnam.com/register</a></p>"
+msgstr ""
+
+#: page.cidlookup.php:8
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric CallerIDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with information taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+
+#: views/form.php:140
+msgid "Account SID:"
+msgstr ""
+
+#: views/grid.php:40
+msgid "Actions"
+msgstr ""
+
+#: views/grid.php:26
+msgid "Add CIDLookup Source"
+msgstr ""
+
+#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+msgid "Admin"
+msgstr ""
+
+#: cidlookup.i18n.php:8
+msgid ""
+"Allows CallerID Lookup of incoming calls against different sources "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
+#: views/form.php:164
+msgid "Auth Token"
+msgstr ""
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr ""
+
+#: page.cidlookup.php:7
+msgid "CIDLookup"
+msgstr ""
+
+#: views/form.php:108
+msgid "Cache Results"
+msgstr ""
+
+#: cidlookup.i18n.php:4
+msgid "CallerID Lookup"
+msgstr ""
+
+#: cidlookup.i18n.php:10
+msgid "CallerID Lookup Sources"
+msgstr ""
+
+#: views/form.php:460
+msgid "Character Set"
+msgstr ""
+
+#: install.php:162
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr ""
+
+#: views/form.php:364
+msgid "Database"
+msgstr ""
+
+#: views/form.php:376
+msgid "Database Name"
+msgstr ""
+
+#: views/form.php:123
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+
+#: Cidlookup.class.php:70
+msgid "Delete"
+msgstr ""
+
+#: views/grid.php:38
+msgid "Description"
+msgstr ""
+
+#: views/form.php:21
+msgid "ENUM:"
+msgstr ""
+
+#: install.php:149
+msgid "ERROR: failed: "
+msgstr ""
+
+#: views/form.php:65
+msgid "Enter a description for this source."
+msgstr ""
+
+#: install.php:140
+msgid "FATAL: failed to transform old routes: "
+msgstr ""
+
+#: views/form.php:22
+msgid "HTTP:"
+msgstr ""
+
+#: views/form.php:23
+msgid "HTTPS:"
+msgstr ""
+
+#: views/form.php:192 views/form.php:340
+msgid "Host"
+msgstr ""
+
+#: views/form.php:204
+msgid "Host name or IP address"
+msgstr ""
+
+#: views/form.php:83
+msgid "Internal"
+msgstr ""
+
+#: views/form.php:20
+msgid "Internal:"
+msgstr ""
+
+#: views/form.php:24
+msgid "It queries a MySQL database to retrieve caller name"
+msgstr ""
+
+#: views/bootnav.php:6
+msgid "List Sources"
+msgstr ""
+
+#: install.php:132
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr ""
+
+#: views/form.php:472
+msgid "MySQL Character Set. Leave blank for MySQL default latin1"
+msgstr ""
+
+#: views/form.php:352
+msgid "MySQL Host"
+msgstr ""
+
+#: views/form.php:448
+msgid "MySQL Password"
+msgstr ""
+
+#: views/form.php:424
+msgid "MySQL Username"
+msgstr ""
+
+#: views/form.php:24
+msgid "MySQL:"
+msgstr ""
+
+#: views/form.php:115
+msgid "No"
+msgstr ""
+
+#: Cidlookup.class.php:99 functions.inc.php:330
+msgid "None"
+msgstr ""
+
+#: install.php:156
+msgid "Not Needed"
+msgstr ""
+
+#: views/form.php:481 views/form.php:486
+msgid "Not yet implemented"
+msgstr ""
+
+#: install.php:142 install.php:151
+msgid "OK"
+msgstr ""
+
+#: views/form.php:10 views/form.php:15
+msgid "OpenCNAM"
+msgstr ""
+
+#: functions.inc.php:187
+msgid "OpenCNAM Requires Authentication"
+msgstr ""
+
+#: bin/opencnam-alert.php:25
+msgid "OpenCNAM Throttle Reached!"
+msgstr ""
+
+#: views/form.php:19
+msgid "OpenCNAM:"
+msgstr ""
+
+#: views/form.php:264 views/form.php:436
+msgid "Password"
+msgstr ""
+
+#: views/form.php:276
+msgid "Password to use in HTTP authentication"
+msgstr ""
+
+#: views/form.php:288
+msgid "Path"
+msgstr ""
+
+#: views/form.php:300
+msgid ""
+"Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
+"will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
+">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
+"will be replaced with channel language"
+msgstr ""
+
+#: views/form.php:216
+msgid "Port"
+msgstr ""
+
+#: views/form.php:228
+msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
+msgstr ""
+
+#: install.php:108
+msgid "Processing Database Tables"
+msgstr ""
+
+#: views/form.php:312 views/form.php:388
+msgid "Query"
+msgstr ""
+
+#: views/form.php:324
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
+"with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
+"language"
+msgstr ""
+
+#: views/form.php:400
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+
+#: install.php:145
+msgid "Removing deprecated channel field from incoming.."
+msgstr ""
+
+#: Cidlookup.class.php:80
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:17
+msgid "Select the source type, you can choose between:"
+msgstr ""
+
+#: views/bootnav.php:16
+msgid "Source"
+msgstr ""
+
+#: views/form.php:53
+msgid "Source Description"
+msgstr ""
+
+#: views/form.php:77
+msgid "Source type"
+msgstr ""
+
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr ""
+
+#: Cidlookup.class.php:75
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:36
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#: views/grid.php:39
+msgid "Type"
+msgstr ""
+
+#: functions.inc.php:187
+msgid ""
+"Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
+"OpenCNAM account to continue using their API"
+msgstr ""
+
+#: views/form.php:240 views/form.php:412
+msgid "Username"
+msgstr ""
+
+#: views/form.php:252
+msgid "Username to use in HTTP authentication"
+msgstr ""
+
+#: views/form.php:113
+msgid "Yes"
+msgstr ""
+
+#: bin/opencnam-alert.php:25
+msgid ""
+"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
+"getting caller ID name information, you need to create an OpenCNAM "
+"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
+"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
+"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
+"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
+"<br/>"
+msgstr ""
+
+#: views/form.php:152
+msgid ""
+"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
+"page: https://www.opencnam.com/dashboard"
+msgstr ""
+
+#: views/form.php:176
+msgid ""
+"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
+"https://www.opencnam.com/dashboard"
+msgstr ""
+
+#: install.php:166
+msgid "not present"
+msgstr ""
+
+#: install.php:168
+msgid "removed"
+msgstr ""
