@@ -1,34 +1,25 @@
-# This s file is part of FreePBX.
+# This file is part of FreePBX.
 #
-#    FreePBX is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 2 of the License, or
-#    (at your option) any later version.
+# For licensing information, please see the file named LICENSE located in the module directory
 #
-#    FreePBX is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
-#
-# Copyright (C) 2009 Mikael Carlsson, mickecamino@gmail.com
+# FreePBX language template for cidlookup
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FreePBX cidlookup\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-20 12:54-0800\n"
-"PO-Revision-Date: 2011-04-14 00:00+0100\n"
-"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
-"Language-Team: \n"
-"Language: \n"
+"PO-Revision-Date: 2017-01-11 13:44+0200\n"
+"Last-Translator: Sven <spiderrs4@web.de>\n"
+"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/cidlookup/"
+"de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Swedish\n"
-"X-Poedit-Country: SWEDEN\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/form.php:22
 msgid ""
@@ -50,7 +41,7 @@ msgstr ""
 
 #: views/form.php:19
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr ""
+msgstr " Verwenden Sie OpenCNAM [https://www.opencnam.com/]"
 
 #: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
@@ -62,6 +53,9 @@ msgid ""
 "<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
 "opencnam.com/register</a></p>"
 msgstr ""
+"<p>Wenn Sie ein OpenCNAM-Konto erstellen müssen, können Sie folgende Website "
+"besuchen: <a href=\"https://www.opencnam.com/register\" target=\"_blank"
+"\">https://www.opencnam.com/register</a></p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -72,51 +66,53 @@ msgid ""
 "small number <-> name association. Pay attention, name lookup may slow down "
 "your PBX"
 msgstr ""
-"En källa för nummerpresentation ger dig en möjlighet att få uppslag på namn "
-"för inkommande samtal. Du kan sedan länka en inkommande väg till denna "
-"källa. På detta vis kan du få en mer detaljerad samtalsrapport med "
-"information t.ex. från ert eget CRM. Du kan också installera "
-"telefonboksmodulen där ett mindre antal telefonnummer med namn kan skrivas "
-"in. Tänk på att namnuppslag kan orsaka fördröjningar innan samtalet kopplas "
-"upp."
+"Mit einer Lookup Quelle können Sie eine Quelle für das Auflösen numerischer "
+"AnruferID's eingehender Anrufe angeben, anschließend können Sie eine Inbound "
+"Route mit einer bestimmten CID-Quelle verknüpfen. Auf diese Weise erhalten "
+"detailliertere CDR-Berichte mit Informationen direkt aus Ihren CRM. Sie "
+"können auch das Telefonbuch-Modul installieren, um kleine Nummern <-> "
+"Nameszuordnung zu haben. Achtung: Eine Namenssuche verlangsamt "
+"möglicherweise Ihre TK-Anlage."
 
 #: views/form.php:213
 msgid "Account SID:"
-msgstr ""
+msgstr "Konto SID:"
 
 #: views/grid.php:40
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: views/grid.php:26
 msgid "Add CIDLookup Source"
-msgstr ""
+msgstr "CID Lookup Quelle hinzufügen"
 
 #: cidlookup.i18n.php:6 cidlookup.i18n.php:12
 msgid "Admin"
-msgstr ""
+msgstr "Administrator"
 
 #: cidlookup.i18n.php:8
 msgid ""
 "Allows CallerID Lookup of incoming calls against different sources "
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
+"Ermöglicht bei eingehenden Anrufen eine AnruferID Suche mit verschiedenen "
+"Quellen (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)."
 
 #: views/form.php:237
 msgid "Auth Token"
-msgstr ""
+msgstr "Auth-Token"
 
 #: functions.inc.php:20
 msgid "CID Lookup Source"
-msgstr "Källa för nummerpresentation"
+msgstr "CID-Suchquelle"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
-msgstr ""
+msgstr "CID-Suche"
 
 #: views/form.php:122
 msgid "Cache Results"
-msgstr ""
+msgstr "Cache Ergebnisse"
 
 #: views/form.php:178
 msgid "Caller ID Format"
@@ -124,15 +120,15 @@ msgstr ""
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
-msgstr "Nummerpresentation"
+msgstr "AnruferID-Suche"
 
 #: cidlookup.i18n.php:10
 msgid "CallerID Lookup Sources"
-msgstr "Källa f. nummerpresentation"
+msgstr "Anrufer-ID Suchquellen"
 
 #: views/form.php:533
 msgid "Character Set"
-msgstr ""
+msgstr "Zeichensatz"
 
 #: views/form.php:185
 msgid "Company"
@@ -156,27 +152,28 @@ msgstr ""
 
 #: views/form.php:437
 msgid "Database"
-msgstr ""
+msgstr "Datenbank"
 
 #: views/form.php:449
 msgid "Database Name"
-msgstr ""
+msgstr "Datenbankname"
 
 #: views/form.php:137
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
-"Välj om du ska mellanlagra resultaten i astDB; det kommer att skriva över "
-"eventuella poster som redan finns. Används inte om källa är Internal."
+"Entscheiden Sie, ob die Ergebnisse in astDB zwischengespeichert werden "
+"sollen; Es überschreibt die aktuellen Werte. Dies hat keine Auswirkungen auf "
+"das interne Quellverhalten."
 
 #: Cidlookup.class.php:66
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: views/grid.php:38
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: views/form.php:186
 msgid "Display Name"
@@ -184,11 +181,11 @@ msgstr ""
 
 #: views/form.php:21
 msgid "ENUM:"
-msgstr ""
+msgstr "ENUM:"
 
 #: views/form.php:78
 msgid "Enter a description for this source."
-msgstr "Skriv en kortfattad beskrivning för denna källa."
+msgstr "Geben Sie eine Beschreibung für diese Quelle ein."
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -200,19 +197,19 @@ msgstr ""
 
 #: views/form.php:22
 msgid "HTTP:"
-msgstr ""
+msgstr "HTTP:"
 
 #: views/form.php:23
 msgid "HTTPS:"
-msgstr ""
+msgstr "HTTPS:"
 
 #: views/form.php:265 views/form.php:413
 msgid "Host"
-msgstr ""
+msgstr "Host"
 
 #: views/form.php:277
 msgid "Host name or IP address"
-msgstr "Datornamn eller IP-adress"
+msgstr "Hostname oder IP Adresse"
 
 #: views/form.php:195
 msgid "How to format the returned data"
@@ -224,11 +221,11 @@ msgstr "Intern"
 
 #: views/form.php:20
 msgid "Internal:"
-msgstr ""
+msgstr "Intern:"
 
 #: views/form.php:24
 msgid "It queries a MySQL database to retrieve caller name"
-msgstr ""
+msgstr "Die Abfrage des Anrufernamens erfolgt aus einer MySQL-Datenbank."
 
 #: views/form.php:184
 msgid "Last First"
@@ -236,7 +233,7 @@ msgstr ""
 
 #: views/bootnav.php:6
 msgid "List Sources"
-msgstr ""
+msgstr "Quellen auflisten"
 
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
@@ -244,39 +241,39 @@ msgstr ""
 
 #: views/form.php:425
 msgid "MySQL Host"
-msgstr "MySQL-dator"
+msgstr "MySQL Host"
 
 #: views/form.php:521
 msgid "MySQL Password"
-msgstr "Lösenord för MySQL"
+msgstr "MySQL Passwort"
 
 #: views/form.php:497
 msgid "MySQL Username"
-msgstr "Användarnamn för MySQL"
+msgstr "MySQL Benutzername"
 
 #: views/form.php:24
 msgid "MySQL:"
-msgstr ""
+msgstr "MySQL:"
 
 #: views/form.php:129
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: Cidlookup.class.php:96
 msgid "None"
-msgstr "Ingen"
+msgstr "keine"
 
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
-msgstr "Inte implementerad"
+msgstr "Noch nicht implementiert"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
-msgstr ""
+msgstr "OpenCNAM"
 
 #: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
-msgstr ""
+msgstr "OpenCNAM erfordert eine Authentifizierung"
 
 #: bin/opencnam-alert.php:25
 msgid "OpenCNAM Throttle Reached!"
@@ -284,19 +281,19 @@ msgstr ""
 
 #: views/form.php:19
 msgid "OpenCNAM:"
-msgstr ""
+msgstr "OpenCNAM:"
 
 #: views/form.php:337 views/form.php:509
 msgid "Password"
-msgstr ""
+msgstr "Passwort"
 
 #: views/form.php:349
 msgid "Password to use in HTTP authentication"
-msgstr "Lösenord att använda vid HTTP-autentisering"
+msgstr "Passwort für die HTTP-Authentifizierung"
 
 #: views/form.php:361
 msgid "Path"
-msgstr ""
+msgstr "Pfad"
 
 #: views/form.php:373
 msgid ""
@@ -308,15 +305,15 @@ msgstr ""
 
 #: views/form.php:289
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: views/form.php:301
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
-msgstr ""
+msgstr "Der verwendete HTTP(s) Server Port (Standard http 80, https 443)"
 
 #: views/form.php:385 views/form.php:461
 msgid "Query"
-msgstr ""
+msgstr "Abfrage"
 
 #: views/form.php:397
 msgid ""
@@ -331,13 +328,10 @@ msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
-"Fråga, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
-"nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE "
-"'%[NUMBER]%'"
 
 #: Cidlookup.class.php:76
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: views/form.php:25
 msgid "Searches a contact manager group"
@@ -345,27 +339,28 @@ msgstr ""
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
-msgstr ""
+msgstr "Wählen Sie den Quelltyp. Sie können wählen zwischen:"
 
 #: views/bootnav.php:16
 msgid "Source"
-msgstr "Källa"
+msgstr "Quelle"
 
 #: views/form.php:66
 msgid "Source Description"
-msgstr ""
+msgstr "Quellenbeschreibung"
 
 #: views/form.php:90
 msgid "Source type"
-msgstr ""
+msgstr "Quellentyp"
 
 #: functions.inc.php:40
 msgid "Sources can be added in Caller Name Lookup Sources section"
-msgstr "Källor kan läggas till i Källor för nummerpresentation"
+msgstr ""
+"Quellen können im Abschnitt \"Anrufer-ID Suchquellen\" hinzugefügt werden."
 
 #: Cidlookup.class.php:71
 msgid "Submit"
-msgstr ""
+msgstr "Bestätigen"
 
 #: views/form.php:49
 #, php-format
@@ -373,12 +368,10 @@ msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
 "deleted."
 msgstr ""
-"Det finns %s Inkommande vägar för denna källa, om denna källa tas bort "
-"kommmer ingen nummeruppslagning att ske"
 
 #: views/grid.php:39
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: functions.inc.php:192
 msgid ""
@@ -388,15 +381,15 @@ msgstr ""
 
 #: views/form.php:313 views/form.php:485
 msgid "Username"
-msgstr ""
+msgstr "Benutzername"
 
 #: views/form.php:325
 msgid "Username to use in HTTP authentication"
-msgstr "Användarnamn att använda vid HTTP-autentisering"
+msgstr "Benutzername für die HTTP-Authentifizierung"
 
 #: views/form.php:127
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: bin/opencnam-alert.php:25
 msgid ""
@@ -414,142 +407,34 @@ msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 msgstr ""
+"Ihre OpenCNAM-Konto-SID. Diese finden Sie auf Ihrer OpenCNAM Dashboard-"
+"Seite: https://www.opencnam.com/dashboard"
 
 #: views/form.php:249
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
 msgstr ""
-
-#~ msgid "Checking for cidlookup field in core's incoming table.."
-#~ msgstr ""
-#~ "Kontrollerar om det fältet cidlookup finns i tabellen för inkommande "
-#~ "vägar.."
+"Ihren OpenCNAM Authentifizierungs-Token. Diesen finden Sie auf Ihrer "
+"OpenCNAM Dashboard-Seite: https://www.opencnam.com/dashboard"
 
 #~ msgid "ERROR: failed: "
-#~ msgstr "FEL: misslyckades: "
-
-#~ msgid "FATAL: failed to transform old routes: "
-#~ msgstr "FEL: kunde inte transformera gamla vägar: "
-
-#~ msgid "Migrating channel routing to Zap DID routing.."
-#~ msgstr "Migrerar kanalvägar till Zap direktvägar.."
+#~ msgstr "FEHLER: Gescheitert: "
 
 #~ msgid "Not Needed"
-#~ msgstr "Behövs inte"
+#~ msgstr "Nicht benötigt"
 
 #~ msgid "OK"
 #~ msgstr "OK"
 
+#~ msgid "Processing Database Tables"
+#~ msgstr "Datenbanktabellen verarbeiten"
+
 #~ msgid "Removing deprecated channel field from incoming.."
-#~ msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
+#~ msgstr "Entfernen des veralteten Kanalfeldes von eingehendem .."
 
 #~ msgid "not present"
-#~ msgstr "inte tillgänglig"
+#~ msgstr "nicht vorhanden"
 
 #~ msgid "removed"
-#~ msgstr "borttagen"
-
-#~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
-#~ msgstr "Sökväg till filen via GET<br>t.ex. /cidlookup.php"
-
-#~ msgid ""
-#~ "Query string, special token '[NUMBER]' will be replaced with caller "
-#~ "number<br/>e.g.: number=[NUMBER]&source=crm"
-#~ msgstr ""
-#~ "Frågesträng, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
-#~ "nummerpresentation<br>t.ex. nummer=[NUMBER]&source=crm"
-
-#~ msgid "Add CID Lookup Source"
-#~ msgstr "Lägg till källa för nummerpresentation"
-
-#~ msgid "Add Source"
-#~ msgstr "Lägg till källa"
-
-#~ msgid "Cache results:"
-#~ msgstr "Lagra resultat"
-
-#~ msgid "Database name"
-#~ msgstr "Databasnamn"
-
-#~ msgid "Database:"
-#~ msgstr "Databas:"
-
-#~ msgid "Delete CID Lookup source"
-#~ msgstr "Ta bort källa för nummerpresentation"
-
-#~ msgid "Edit Source"
-#~ msgstr "Redigera källa"
-
-#~ msgid "Host:"
-#~ msgstr "Dator:"
-
-#~ msgid "MySQL"
-#~ msgstr "MySQL"
-
-#~ msgid "Password:"
-#~ msgstr "Lösenord:"
-
-#~ msgid "Path:"
-#~ msgstr "Sökväg:"
-
-#~ msgid "Port HTTP server is listening at (default 80)"
-#~ msgstr "Porten HTTP-servern lyssnar på (standard 80)"
-
-#~ msgid "Port:"
-#~ msgstr "Port:"
-
-#~ msgid "Query:"
-#~ msgstr "Fråga:"
-
-#~ msgid "Source Description:"
-#~ msgstr "Källbeskrivning:"
-
-#~ msgid "Source type:"
-#~ msgstr "Källtyp:"
-
-#~ msgid "Source: %s (id %s)"
-#~ msgstr "Källa: %s (id %s)"
-
-#~ msgid "Submit Changes"
-#~ msgstr "Spara ändringar"
-
-#~ msgid "SugarCRM"
-#~ msgstr "SugarCRM"
-
-#~ msgid "Username:"
-#~ msgstr "Användarnamn:"
-
-#~ msgid ""
-#~ "Allows CallerID Lookup of incoming calls against different sources "
-#~ "(MySQL, HTTP, ENUM, Phonebook Module)"
-#~ msgstr ""
-#~ "Tillhandahåller uppslag av nummerpresentation mot olika källor (MySQL, "
-#~ "HTTP, ENUM, Telefonboksmodulen)"
-
-#~ msgid "CID Lookup source"
-#~ msgstr "Källa för nummerpresentation"
-
-#~ msgid "HTTP"
-#~ msgstr "HTTP"
-
-#~ msgid "Inbound Call Control"
-#~ msgstr "Inkommande samtal"
-
-#~ msgid ""
-#~ "Select the source type, you can choose between:<ul><li>Internal: use "
-#~ "astdb as lookup source, use phonebook module to populate it</li><li>ENUM: "
-#~ "Use DNS to lookup caller names, it uses ENUM lookup zones as configured "
-#~ "in enum.conf</li><li>HTTP: It executes an HTTP GET passing the caller "
-#~ "number as argument to retrieve the correct name</li><li>MySQL: It queries "
-#~ "a MySQL database to retrieve caller name</li></ul>"
-#~ msgstr ""
-#~ "Välj källtyp, du kan välja mellan:<ul><li>Intern: använder astdb som "
-#~ "källa för nummeruppslag, använd telefonboks-modulen för att skriva in "
-#~ "telefonnummer och namn.</li><li>ENUM: Använder DNS för att få fram "
-#~ "nummerpresentation. ENUM-zoner konfigureras i enum.conf.</li><li>HTTP: "
-#~ "använder HTTP GET med uppringarens nummer som argument</li><li>MySQL: "
-#~ "använder en MySQLdatabas för att slå upp namn</li></ul>"
-
-#~ msgid "deleted"
-#~ msgstr "borttagen"
+#~ msgstr "Entfernt"
