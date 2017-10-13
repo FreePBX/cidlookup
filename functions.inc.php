@@ -228,13 +228,16 @@ function cidlookup_get_config($engine) {
 
 							if (!empty($item['http_port']))
 								$host = sprintf('%s:%d', $item['http_host'], $item['http_port']);
+							elseif ($item['sourcetype'] == 'https')
+								$host = $item['http_host'].':443';
 							else
 								$host = $item['http_host'].':80';
 
 							if (substr($item['http_path'], 0, 1) == '/')
 								$path = substr($item['http_path'], 1);
 							else
-							$path = $item['http_path'];
+								$path = $item['http_path'];
+
 							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]');
 							$values = array('${CALLERID(num)}','${CALLERID(name)}','${CHANNEL(language)}');
 							$query = str_replace($tempst, $values, $item['http_query']);
