@@ -9,7 +9,7 @@ if (!empty($itemid)){
     $thisItem_description = isset($thisItem['description']) ? htmlspecialchars($thisItem['description']):'';
     $opencnamopt = ($thisItem['sourcetype'] == 'opencnam')?'<option value="opencnam" selected>'. _("OpenCNAM").'</option>':'';
 } else {
-    $thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null, 'itemid' => null, 'opencnam_account_sid' => null);
+    $thisItem = Array( 'description' => '', 'sourcetype' => null, 'cache' => null, 'itemid' => null, 'opencnam_account_sid' => null, 'cm_group' => '', 'cm_format' => '4');
     $thisItem_description = '';
     $itemid = '';
     $opencnamopt = '<option value="opencnam" selected>'. _("OpenCNAM").'</option>';
@@ -22,6 +22,7 @@ $sthelphtml = _("Select the source type, you can choose between:")
 .'<li>'. _("HTTP:") . _(" It executes an HTTP GET passing the caller number as argument to retrieve the correct name").'</li>'
 .'<li>'. _("HTTPS:") . _(" It executes an HTTPS GET passing the caller number as argument to retrieve the correct name").'</li>'
 .'<li>'. _("MySQL:") . _("It queries a MySQL database to retrieve caller name").'</li>'
+.'<li>'. _("Contact Manager:") . _("Searches a contact manager group").'</li>'
 .'</ul>';
 
 //OpenCNAM PRO
@@ -29,6 +30,18 @@ $cnampro = false;
 if($thisItem['opencnam_account_sid'] && $thisItem['opencnam_auth_token']){
 	$cnampro = true;
 }
+
+if(FreePBX::Modules()->checkStatus('contactmanager')){
+    $groups = FreePBX::Contactmanager()->getGroups();
+    $groupselect = explode('_', $thisItem['cm_group']);
+    foreach ($groups as $group) {
+        $selected = in_array($group['id'], $groupselect)?'SELECTED':'';
+        $cmopts .= '<option value = "'.$group['id'].'" '.$selected.'>'.$group['name'].'</option>';
+    }
+}else{
+  $cmopts = '<option value = "" disabled>'._("Contact Manager Not Installed").'</option>';
+}
+
 
 //In Use Data
 if ($itemid && $dids_using > 0){
@@ -81,6 +94,7 @@ if ($itemid && $dids_using > 0){
 						<select id="sourcetype" name="sourcetype" class="form-control">
               <?php echo $opencnamopt?>
 							<option value="internal" <?php echo ($thisItem['sourcetype'] == 'internal' ? 'selected' : '')?>><?php echo _("Internal")?></option>
+							<option value="contactmanager" <?php echo ($thisItem['sourcetype'] == 'contactmanager' ? 'selected' : '')?>><?php echo _("Contact Manager")?></option>
 							<option value="enum" <?php echo ($thisItem['sourcetype'] == 'enum' ? 'selected' : '')?>>ENUM</option>
 							<option value="http" <?php echo ($thisItem['sourcetype'] == 'http' ? 'selected' : '')?>>HTTP</option>
 							<option value="https" <?php echo ($thisItem['sourcetype'] == 'https' ? 'selected' : '')?>>HTTPS</option>
@@ -125,6 +139,65 @@ if ($itemid && $dids_using > 0){
 	</div>
 </div>
 <!--END Cache Results-->
+<!--Contact Manager-->
+<div id="contactmanager" style="display: none">
+  <!--Group-->
+  <div class="element-container cm">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<div class="row">
+  				<div class="form-group">
+  					<div class="col-md-3">
+  						<label class="control-label" for="cm_group"><?php echo _("Contact Manager Group(s)") ?></label>
+  						<i class="fa fa-question-circle fpbx-help-icon" data-for="cm_group"></i>
+  					</div>
+  					<div class="col-md-9">
+              <select id='cm_group' name = 'cm_group[]' class="form-control" multiple="multiple">
+                <?php echo $cmopts?>
+              </select>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-12">
+  			<span id="cm_group-help" class="help-block fpbx-help-block"><?php echo _("Filter results to these contact manager groups")?></span>
+  		</div>
+  	</div>
+  </div>
+  <!--END Group-->
+
+  <!--Format-->
+  <div class="element-container cm">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<div class="row">
+  				<div class="form-group">
+  					<div class="col-md-3">
+  						<label class="control-label" for="cm_format"><?php echo _("Caller ID Format") ?></label>
+  						<i class="fa fa-question-circle fpbx-help-icon" data-for="cm_format"></i>
+  					</div>
+  					<div class="col-md-9">
+              <select id='cm_format' name = 'cm_format' class="form-control">
+                <option value "4" <?php echo ($thisItem['cm_group'] == '4')?'SELECTED':'';?>><?php echo _("First Last")?></option>
+                <option value "3" <?php echo ($thisItem['cm_group'] == '3')?'SELECTED':'';?>><?php echo _("Last First")?></option>
+                <option value "2" <?php echo ($thisItem['cm_group'] == '2')?'SELECTED':'';?>><?php echo _("Company")?></option>
+                <option value "1" <?php echo ($thisItem['cm_group'] == '1')?'SELECTED':'';?>><?php echo _("Display Name")?></option>
+              </select>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-12">
+  			<span id="cm_format-help" class="help-block fpbx-help-block"><?php echo _("How to format the returned data")?></span>
+  		</div>
+  	</div>
+  </div>
+  <!--END Group-->
+</div>
 <!--OPEN CNAM ELEMENTS-->
 <div id="opencnam" style="display: none">
 <div class="well">

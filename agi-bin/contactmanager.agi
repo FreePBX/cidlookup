@@ -1,0 +1,46 @@
+#!/usr/bin/php -q
+<?php
+$restrict_mods = true;
+if (!@include_once(getenv('FREEPBX_CONF') ? getenv('FREEPBX_CONF') : '/etc/freepbx.conf')) {
+	include_once('/etc/asterisk/freepbx.conf');
+}
+$agidir = FreePBX::Config()->get('ASTAGIDIR');
+require_once $agidir."/phpagi.php";
+
+function get_groups($var){
+	return (strpos($var,'agi_arg_') !== FALSE);
+}
+
+$base_dir = dirname(dirname(__FILE__));
+$agi = new AGI();
+$cm = FreePBX::Contactmanager();
+$data = $cm->getNamebyNumber($argv[1], explode('_',$argv[2]));
+if(empty($data)){
+	$agi->set_variable("CMCID", 'Unknown');
+	exit();
+}
+$first = !empty($data['fname'])?$data['fname']:'';
+$last = !empty($data['lname'])?$data['lname']:'';
+$company = !empty($data['company'])?$data['company']:'Unknown';
+$displayname = !empty($data['displayname'])?$data['displayname']:'Unknown';
+
+if(empty($first) && empty($last)){
+  $first = 'Unknown';
+}
+switch($argv3){
+  case '1':
+    $agi->set_variable("CMCID", $displayname);
+  break;
+  case '2':
+    $agi->set_variable("CMCID", $company);
+  break;
+  case '3':
+    $agi->set_variable("CMCID", $last .' ' .$first);
+  break;
+  case '4':
+  default:
+    $agi->set_variable("CMCID", $first .' ' .$last);
+  break;
+}
+
+exit();
