@@ -2,7 +2,7 @@
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2013 Schmooze Com Inc.
-//	Copyright (C) 2006 WeBRainstorm S.r.l. (ask@webrainstorm.it)
+//  Copyright (C) 2006 WeBRainstorm S.r.l. (ask@webrainstorm.it)
 
 function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 	// TODO: add option to avoid CallerID lookup if the telco already supply a CallerID name (Overwrite checkbox ? )
@@ -23,7 +23,7 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 							<div class="col-md-9">
 								<select name="cidlookup_id" id="cidlookup_id" class="form-control" onChange="javascript:openCNAMNoteDisplay(this, this.selectedIndex)">
 								';
-								$sources = FreePBX::Cidlookup()->getList();
+								$sources = cidlookup_list();
 								$current = cidlookup_did_get($viewing_itemid);
 								foreach ($sources as $source){
 									$html .= sprintf('<option value="%d" %s>%s</option>', $source['cidlookup_id'], ($current == $source['cidlookup_id']?'selected':''), $source['description']);
@@ -82,8 +82,8 @@ function cidlookup_hookProcess_core($viewing_itemid, $request) {
 			case 'delIncoming':
 				$extarray = explode('/', $request['extdisplay'], 2);
 				cidlookup_did_del($extarray[0], $extarray[1]);
-								break;
-			case 'edtIncoming':		 // deleting and adding as in core module
+                break;
+			case 'edtIncoming':     // deleting and adding as in core module
 				$extarray = explode('/', $request['extdisplay'], 2);
 				$invalidDIDChars = array('<', '>');
 				$extension = trim(str_replace($invalidDIDChars, "", $request['extension']));
@@ -97,7 +97,7 @@ function cidlookup_hookProcess_core($viewing_itemid, $request) {
 function cidlookup_hookGet_config($engine) {
 	// TODO: integrating with direct extension <-> DID association
 	// TODO: add option to avoid CallerID lookup if the telco already supply a CallerID name (GosubIf)
-	global $ext;	// is this the best way to pass this?
+	global $ext;  // is this the best way to pass this?
 
 	switch($engine) {
 		case "asterisk":
@@ -120,11 +120,11 @@ function cidlookup_hookGet_config($engine) {
 						}
 						$context = ($pricid) ? "ext-did-0001":"ext-did-0002";
 
-												if (function_exists('empty_freepbx')) {
-														$exten = (empty_freepbx($exten)?"s":$exten);
-												} else {
-														$exten = (empty($exten)?"s":$exten);
-												}
+                        if (function_exists('empty_freepbx')) {
+                            $exten = (empty_freepbx($exten)?"s":$exten);
+                        } else {
+                            $exten = (empty($exten)?"s":$exten);
+                        }
 						$exten = $exten.(empty($cidnum)?"":"/".$cidnum); //if a CID num is defined, add it
 
 						$ext->splice($context, $exten, 'did-cid-hook', new ext_gosub('1', 'cidlookup_'.$item['cidlookup_id'], 'cidlookup'));
@@ -147,13 +147,14 @@ function cidlookup_hookGet_config($engine) {
 
 function cidlookup_get_config($engine) {
 	// TODO: discuss if mysql and http lookup should be implemented in dialplan or in an external AGI
-	global $ext;	// is this the best way to pass this?
+	global $ext;  // is this the best way to pass this?
 	global $asterisk_conf;
-	global $version;
+  global $version;
 	switch($engine) {
 		case "asterisk":
-			$sources = FreePBX::Cidlookup()->getList(true);
+			$sources = cidlookup_list(true);
 			if(is_array($sources)) {
+        $ast_ge_162 = version_compare($version,'1.6.2','ge');
 				foreach($sources as $item) {
 
 					// Search for number in the cache, if found lookupcidnum and return
@@ -170,14 +171,8 @@ function cidlookup_get_config($engine) {
 						break;
 
 						case "enum":
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_setvar('CALLERID(name)', '${TXTCIDNAME(${CALLERID(num)})}'));
+              $ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_setvar('CALLERID(name)', '${TXTCIDNAME(${CALLERID(num)})}'));
 
-
-						break;
-
-						case "contactmanager":
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi('contactmanager, ${CALLERID(num)},'.$item['cm_group'].','.$item['cm_format']));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', '${CMCID}'));
 
 						break;
 
@@ -199,7 +194,9 @@ function cidlookup_get_config($engine) {
 
 							// Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
 							//
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CURLOPT(httptimeout)', '7'));
+							if ($ast_ge_162) {
+								$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CURLOPT(httptimeout)', '7'));
+							}
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', $curl));
 
 							// If the user is using the OpenCNAM Hobbyist Tier,
@@ -228,16 +225,13 @@ function cidlookup_get_config($engine) {
 
 							if (!empty($item['http_port']))
 								$host = sprintf('%s:%d', $item['http_host'], $item['http_port']);
-							elseif ($item['sourcetype'] == 'https')
-								$host = $item['http_host'].':443';
 							else
 								$host = $item['http_host'].':80';
 
 							if (substr($item['http_path'], 0, 1) == '/')
 								$path = substr($item['http_path'], 1);
 							else
-								$path = $item['http_path'];
-
+							$path = $item['http_path'];
 							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]');
 							$values = array('${CALLERID(num)}','${CALLERID(name)}','${CHANNEL(language)}');
 							$query = str_replace($tempst, $values, $item['http_query']);
@@ -246,32 +240,35 @@ function cidlookup_get_config($engine) {
 							$url = sprintf('%s://%s%s/%s%s', $item['sourcetype'],$auth, $host, $path, $query);
 							$curl = sprintf('${CURL(%s)}', $url);
 
-							// Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
-							//
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CURLOPT(httptimeout)', '7'));
+              // Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
+              //
+              if ($ast_ge_162) {
+							  $ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CURLOPT(httptimeout)', '7'));
+              }
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '',new ext_set('CALLERID(name)','${STRREPLACE(CALLERID(name), ,%20)}'));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', $curl));
 						break;
 
 						case "mysql":
-										if (version_compare($version, "1.6", "lt")) {
-											//Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
-											$replacements = array (
-												'\\' => '\\\\',
-												'"' => '\\"',
-												'\'' => '\\\'',
-												' ' => '\\ ',
-												',' => '\\,',
-												'(' => '\\(',
-												')' => '\\)',
-												'.' => '\\.',
-												'|' => '\\|'
-											);
-											$query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
-										} else {
-											$query = $item['mysql_query'];
-										}
+			              if (version_compare($version, "1.6", "lt")) {
+										  //Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
+										  $replacements = array (
+										  	'\\' => '\\\\',
+										  	'"' => '\\"',
+										  	'\'' => '\\\'',
+										  	' ' => '\\ ',
+										  	',' => '\\,',
+										  	'(' => '\\(',
+										  	')' => '\\)',
+										  	'.' => '\\.',
+										  	'|' => '\\|'
+										  );
+			                $query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
+			              } else {
+			                $query = $item['mysql_query'];
+			              }
 							$query = str_replace('[NUMBER]', '${CALLERID(num)}', $query);
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_connect('connid', $item['mysql_host'],	$item['mysql_username'],	$item['mysql_password'],	$item['mysql_dbname'],	$item['mysql_charset']));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_connect('connid', $item['mysql_host'],  $item['mysql_username'],  $item['mysql_password'],  $item['mysql_dbname'],  $item['mysql_charset']));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_query('resultid', 'connid', $query));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_fetch('fetchid', 'resultid', 'CALLERID(name)'));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_clear('resultid'));
@@ -322,16 +319,23 @@ function cidlookup_did_list($id=false) {
 	INNER JOIN incoming b
 	ON a.extension = b.extension AND a.cidnum = b.cidnum
 	";
-	if ($id !== false && ctype_digit($id)) {
-		$sql .= " WHERE cidlookup_id = '$id'";
-	}
+  if ($id !== false && ctype_digit($id)) {
+    $sql .= " WHERE cidlookup_id = '$id'";
+  }
 
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 	return is_array($results)?$results:array();
 }
 
 function cidlookup_list($all=false) {
-	return FreePBX::Cidlookup()->getList($all);
+	$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
+	$results = sql("SELECT * FROM cidlookup","getAll",DB_FETCHMODE_ASSOC);
+	if(is_array($results)){
+		foreach ($results as $key => $value) {
+			$allowed[] = $value;
+		}
+	}
+	return $allowed;
 }
 
 function cidlookup_get($id){
@@ -364,14 +368,12 @@ function cidlookup_add($post){
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
 	$opencnam_auth_token = $db->escapeSimple($post['opencnam_auth_token']);
-	$cm_group = $db->escapeSimple(implode('_',$post['cm_group']?$post['cm_group']:array()));
-	$cm_format = $db->escapeSimple($post['cm_format']);
 	$cache = isset($post['cache']) ? $db->escapeSimple($post['cache']) : 0;
 	$results = sql("
 		INSERT INTO cidlookup
-			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
+			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token)
 		VALUES
-			('$description', '$sourcetype', '$cache', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$mysql_charset', '$opencnam_account_sid', '$opencnam_auth_token','$cm_group','$cm_format')
+			('$description', '$sourcetype', '$cache', '$http_host', '$http_port', '$http_username', '$http_password', '$http_path', '$http_query', '$mysql_host', '$mysql_dbname', '$mysql_query', '$mysql_username', '$mysql_password', '$mysql_charset', '$opencnam_account_sid', '$opencnam_auth_token')
 		");
 }
 
@@ -394,10 +396,8 @@ function cidlookup_edit($id,$post){
 	$mysql_password = $db->escapeSimple($post['mysql_password']);
 	$mysql_charset = $db->escapeSimple($post['mysql_charset']);
 	$opencnam_account_sid = $db->escapeSimple($post['opencnam_account_sid']);
-	$opencnam_auth_token =	$db->escapeSimple($post['opencnam_auth_token']);
-	$cm_group =	$db->escapeSimple(implode('_',$post['cm_group']?$post['cm_group']:array()));
-	$cm_format =	$db->escapeSimple($post['cm_format']);
-	$cache	= isset($post['cache'])?$db->escapeSimple($post['cache']):1;
+	$opencnam_auth_token =  $db->escapeSimple($post['opencnam_auth_token']);
+	$cache  = isset($post['cache'])?$db->escapeSimple($post['cache']):1;
 
 	$results = sql("
 		UPDATE cidlookup
@@ -406,7 +406,7 @@ function cidlookup_edit($id,$post){
 			deptname = '$deptname',
 			sourcetype = '$sourcetype' ,
 			cache = '$cache',
-				http_host = '$http_host',
+		    http_host = '$http_host',
 			http_port = '$http_port',
 			http_username = '$http_username',
 			http_password = '$http_password',
@@ -416,11 +416,9 @@ function cidlookup_edit($id,$post){
 			mysql_dbname = '$mysql_dbname',
 			mysql_query = '$mysql_query',
 			mysql_username = '$mysql_username',
-			mysql_password	= '$mysql_password',
+			mysql_password  = '$mysql_password',
 			mysql_charset = '$mysql_charset',
 			opencnam_account_sid = '$opencnam_account_sid',
-			opencnam_auth_token = '$opencnam_auth_token',
-			cm_group = '$cm_group',
-			cm_format = '$cm_format'
+			opencnam_auth_token = '$opencnam_auth_token'
 		WHERE cidlookup_id = '$id'");
 }

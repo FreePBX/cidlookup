@@ -21,19 +21,18 @@
 # Использовать iconv cidlookup.pot -f UTF-8 -t ISO-8859-5 -o cidlookup.po
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.3\n"
+"Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-20 12:54-0800\n"
-"PO-Revision-Date: 2015-05-31 00:21+0200\n"
-"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
-"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
-"cidlookup/ru_RU/>\n"
-"Language: ru_RU\n"
+"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"PO-Revision-Date: 2016-02-09 12:08+0300\n"
+"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
+"Language-Team: Russian <team@postmet.ruframework/ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: views/form.php:22
@@ -70,7 +69,7 @@ msgstr ""
 " использовать astdb как источник поиска, воспользуйтесь модулем телефонной "
 "книги для заполнения"
 
-#: views/form.php:204
+#: views/form.php:131
 msgid ""
 "<p>If you need to create an OpenCNAM account, you can visit their website: "
 "<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
@@ -95,7 +94,7 @@ msgstr ""
 "имен. Внимание! Сервис поиска может затормаживать быстродействие вашей ИП-"
 "АТС, если её ресурсы скромны"
 
-#: views/form.php:213
+#: views/form.php:140
 msgid "Account SID:"
 msgstr "SID аккаунта:"
 
@@ -120,7 +119,7 @@ msgstr ""
 "абонента, используя различные источники (OpenCNAM, MySQL, HTTP-запрос, "
 "сервис ENUM, или внутренний модуль Телефонная книга Астериск)"
 
-#: views/form.php:237
+#: views/form.php:164
 msgid "Auth Token"
 msgstr "Авт. маркер"
 
@@ -132,13 +131,9 @@ msgstr "Источник поиска CID"
 msgid "CIDLookup"
 msgstr "Поиск CID"
 
-#: views/form.php:122
+#: views/form.php:108
 msgid "Cache Results"
 msgstr "Результаты кеша"
-
-#: views/form.php:178
-msgid "Caller ID Format"
-msgstr ""
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
@@ -148,39 +143,23 @@ msgstr "Поиск по Caller ID"
 msgid "CallerID Lookup Sources"
 msgstr "Источники поиска Caller ID"
 
-#: views/form.php:533
+#: views/form.php:460
 msgid "Character Set"
 msgstr "Набор символов"
 
-#: views/form.php:185
-msgid "Company"
-msgstr ""
+#: install.php:162
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr "Проверка поля cidlookup в структуре таблицы входящих.."
 
-#: views/form.php:97
-msgid "Contact Manager"
-msgstr ""
-
-#: views/form.php:151
-msgid "Contact Manager Group(s)"
-msgstr ""
-
-#: views/form.php:42
-msgid "Contact Manager Not Installed"
-msgstr ""
-
-#: views/form.php:25
-msgid "Contact Manager:"
-msgstr ""
-
-#: views/form.php:437
+#: views/form.php:364
 msgid "Database"
 msgstr "База данных"
 
-#: views/form.php:449
+#: views/form.php:376
 msgid "Database Name"
 msgstr "Имя базы данных"
 
-#: views/form.php:137
+#: views/form.php:123
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
@@ -189,7 +168,7 @@ msgstr ""
 "кеш могут не всегда совпадать с действительными. Не влияет на поведение и "
 "достоверность внутренних источников"
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr "Удалить"
 
@@ -197,25 +176,21 @@ msgstr "Удалить"
 msgid "Description"
 msgstr "Описание"
 
-#: views/form.php:186
-msgid "Display Name"
-msgstr ""
-
 #: views/form.php:21
 msgid "ENUM:"
 msgstr "Нумерация:"
 
-#: views/form.php:78
+#: install.php:149
+msgid "ERROR: failed: "
+msgstr "ОШИБКА: не получилось: "
+
+#: views/form.php:65
 msgid "Enter a description for this source."
 msgstr "Создайте краткое описание источника."
 
-#: views/form.php:165
-msgid "Filter results to these contact manager groups"
-msgstr ""
-
-#: views/form.php:183
-msgid "First Last"
-msgstr ""
+#: install.php:140
+msgid "FATAL: failed to transform old routes: "
+msgstr "НЕ СУДЬБА: ошибка при переносе старых маршрутов: "
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -225,19 +200,15 @@ msgstr "HTTP:"
 msgid "HTTPS:"
 msgstr "HTTPS:"
 
-#: views/form.php:265 views/form.php:413
+#: views/form.php:192 views/form.php:340
 msgid "Host"
 msgstr "Хост"
 
-#: views/form.php:277
+#: views/form.php:204
 msgid "Host name or IP address"
 msgstr "Имя хоста или его IP адрес"
 
-#: views/form.php:195
-msgid "How to format the returned data"
-msgstr ""
-
-#: views/form.php:96
+#: views/form.php:83
 msgid "Internal"
 msgstr "Внутренний"
 
@@ -251,29 +222,29 @@ msgstr ""
 "Это делает запрос к базе данных MySQL по номеру вызывающей стороны для "
 "получения имени"
 
-#: views/form.php:184
-msgid "Last First"
-msgstr ""
-
 #: views/bootnav.php:6
 msgid "List Sources"
 msgstr "Список источников"
 
-#: views/form.php:545
+#: install.php:132
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "Перенос маршрутизации каналов в маршрутизацию по Zap DID.."
+
+#: views/form.php:472
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
 "Набор символов MySQL. Оставьте пустым для установки значения по умолчанию  "
 "latin1"
 
-#: views/form.php:425
+#: views/form.php:352
 msgid "MySQL Host"
 msgstr "Хост MySQL"
 
-#: views/form.php:521
+#: views/form.php:448
 msgid "MySQL Password"
 msgstr "Пароль MySQL"
 
-#: views/form.php:497
+#: views/form.php:424
 msgid "MySQL Username"
 msgstr "Имя пользователя MySQL"
 
@@ -281,23 +252,31 @@ msgstr "Имя пользователя MySQL"
 msgid "MySQL:"
 msgstr "MySQL:"
 
-#: views/form.php:129
+#: views/form.php:115
 msgid "No"
 msgstr "Нет"
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "Нет"
 
-#: views/form.php:554 views/form.php:559
+#: install.php:156
+msgid "Not Needed"
+msgstr "Не надобности"
+
+#: views/form.php:481 views/form.php:486
 msgid "Not yet implemented"
 msgstr "Пока не обеспечивается"
+
+#: install.php:142 install.php:151
+msgid "OK"
+msgstr "ОК"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
 msgstr "Библиотека OpenCNAM"
 
-#: functions.inc.php:192
+#: functions.inc.php:187
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -309,19 +288,19 @@ msgstr "Слишком много запросов к сервису OpenCNAM!"
 msgid "OpenCNAM:"
 msgstr "Библиотека OpenCNAM:"
 
-#: views/form.php:337 views/form.php:509
+#: views/form.php:264 views/form.php:436
 msgid "Password"
 msgstr "Пароль"
 
-#: views/form.php:349
+#: views/form.php:276
 msgid "Password to use in HTTP authentication"
 msgstr "Пароль для аутентификации по HTTP"
 
-#: views/form.php:361
+#: views/form.php:288
 msgid "Path"
 msgstr "Путь"
 
-#: views/form.php:373
+#: views/form.php:300
 msgid ""
 "Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
 "will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
@@ -333,19 +312,23 @@ msgstr ""
 "cidlookup/[NUMBER]/<br/>'[NAME]' будет заменено существующим  именем "
 "вызывающей стороны <br/>'[LANGUAGE]' будет заменено языком канала"
 
-#: views/form.php:289
+#: views/form.php:216
 msgid "Port"
 msgstr "Порт"
 
-#: views/form.php:301
+#: views/form.php:228
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr "Порт HTTP(s) сервера (по умолчанию  http 80, https 443)"
 
-#: views/form.php:385 views/form.php:461
+#: install.php:108
+msgid "Processing Database Tables"
+msgstr ""
+
+#: views/form.php:312 views/form.php:388
 msgid "Query"
 msgstr "Запрос"
 
-#: views/form.php:397
+#: views/form.php:324
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
@@ -357,7 +340,7 @@ msgstr ""
 "существующим  именем вызывающей стороны <br/>'[LANGUAGE]' будет заменено "
 "языком канала"
 
-#: views/form.php:473
+#: views/form.php:400
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -365,13 +348,13 @@ msgstr ""
 "Строка запроса, содержащая '[NUMBER]', которая получает значение Caller ID "
 "<br/>например: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: install.php:145
+msgid "Removing deprecated channel field from incoming.."
+msgstr "Удаление устаревшего поля канала из входящих.."
+
+#: Cidlookup.class.php:80
 msgid "Reset"
 msgstr "Сброс"
-
-#: views/form.php:25
-msgid "Searches a contact manager group"
-msgstr ""
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
@@ -381,11 +364,11 @@ msgstr "Выберите тип источника, вы можете выбра
 msgid "Source"
 msgstr "Источник"
 
-#: views/form.php:66
+#: views/form.php:53
 msgid "Source Description"
 msgstr "Описание источника"
 
-#: views/form.php:90
+#: views/form.php:77
 msgid "Source type"
 msgstr "Тип источника"
 
@@ -393,11 +376,11 @@ msgstr "Тип источника"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Источник может быть добавлен в секцию Сервис поиска Caller ID"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr "Подтвердить"
 
-#: views/form.php:49
+#: views/form.php:36
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
@@ -410,21 +393,21 @@ msgstr ""
 msgid "Type"
 msgstr "Тип"
 
-#: functions.inc.php:192
+#: functions.inc.php:187
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
 msgstr ""
 
-#: views/form.php:313 views/form.php:485
+#: views/form.php:240 views/form.php:412
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: views/form.php:325
+#: views/form.php:252
 msgid "Username to use in HTTP authentication"
 msgstr "Имя пользователя для аутентификации по HTTP"
 
-#: views/form.php:127
+#: views/form.php:113
 msgid "Yes"
 msgstr "Да"
 
@@ -446,7 +429,7 @@ msgstr ""
 "источников просмотра CallerID и введите данные  OpenCNAM Professional Tier."
 "<br/>"
 
-#: views/form.php:225
+#: views/form.php:152
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
@@ -454,7 +437,7 @@ msgstr ""
 "SID вашего аккаунта OpenCNAM. Его можно посмотреть на странице : https://www."
 "opencnam.com/dashboard"
 
-#: views/form.php:249
+#: views/form.php:176
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
@@ -462,32 +445,23 @@ msgstr ""
 "Ваш авторизационный токен  OpenCNAM. Его можно посмотреть на странице : "
 "https://www.opencnam.com/dashboard"
 
-#~ msgid "Checking for cidlookup field in core's incoming table.."
-#~ msgstr "Проверка поля cidlookup в структуре таблицы входящих.."
+#: install.php:166
+msgid "not present"
+msgstr "отсутствует"
 
-#~ msgid "ERROR: failed: "
-#~ msgstr "ОШИБКА: не получилось: "
+#: install.php:168
+msgid "removed"
+msgstr "удалено"
 
-#~ msgid "FATAL: failed to transform old routes: "
-#~ msgstr "НЕ СУДЬБА: ошибка при переносе старых маршрутов: "
+#~ msgid "Adding opencnam account columns to the cidlookup table..."
+#~ msgstr "Добавление колонок opencnam аккаунта к таблице cidlookup..."
 
-#~ msgid "Migrating channel routing to Zap DID routing.."
-#~ msgstr "Перенос маршрутизации каналов в маршрутизацию по Zap DID.."
+#~ msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
+#~ msgstr "Очистка дубликатов источников поиска OpenCNAM CallerID..."
 
-#~ msgid "Not Needed"
-#~ msgstr "Не надобности"
-
-#~ msgid "OK"
-#~ msgstr "ОК"
-
-#~ msgid "Removing deprecated channel field from incoming.."
-#~ msgstr "Удаление устаревшего поля канала из входящих.."
-
-#~ msgid "not present"
-#~ msgstr "отсутствует"
-
-#~ msgid "removed"
-#~ msgstr "удалено"
+#~ msgid "Could not add opencnam_account_sid column to cidlookup table."
+#~ msgstr ""
+#~ "Не удалось добавить столбец opencnam_account_sid в таблицу cidlookup."
 
 #~ msgid ""
 #~ "<p><b>NOTE:</b> OpenCNAM's Hobbyist Tier (default) only allows you to do "
@@ -510,14 +484,21 @@ msgstr ""
 #~ "уровня, вы можете сделать это на сайте: <a href=\"https://www.opencnam."
 #~ "com/register\" target=\"_blank\">https://www.opencnam.com/register</a></p>"
 
+#~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+#~ msgstr "Путь к файлу для GET запроса<br/>например: /cidlookup.php"
+
+#~ msgid ""
+#~ "Query string, special token '[NUMBER]' will be replaced with caller "
+#~ "number<br/>e.g.: number=[NUMBER]&source=crm"
+#~ msgstr ""
+#~ "Переменная запроса, содержащая '[NUMBER]', которая получает значение "
+#~ "Caller  ID <br/>например: number=[NUMBER]&source=crm"
+
 #~ msgid "Add CID Lookup Source"
 #~ msgstr "Добавить источник поиска CID"
 
 #~ msgid "Add Source"
 #~ msgstr "Добавить Источник"
-
-#~ msgid "Adding opencnam account columns to the cidlookup table..."
-#~ msgstr "Добавление колонок opencnam аккаунта к таблице cidlookup..."
 
 #~ msgid ""
 #~ "Allows CallerID Lookup of incoming calls against different sources "
@@ -532,13 +513,6 @@ msgstr ""
 
 #~ msgid "Cache results:"
 #~ msgstr "Кэшированные результаты:"
-
-#~ msgid "Cleaning up duplicate OpenCNAM CallerID Lookup Sources..."
-#~ msgstr "Очистка дубликатов источников поиска OpenCNAM CallerID..."
-
-#~ msgid "Could not add opencnam_account_sid column to cidlookup table."
-#~ msgstr ""
-#~ "Не удалось добавить столбец opencnam_account_sid в таблицу cidlookup."
 
 #~ msgid "Database name"
 #~ msgstr "Имя базы данных"
@@ -567,9 +541,6 @@ msgstr ""
 #~ msgid "Password:"
 #~ msgstr "Пароль:"
 
-#~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
-#~ msgstr "Путь к файлу для GET запроса<br/>например: /cidlookup.php"
-
 #~ msgid "Path:"
 #~ msgstr "Путь:"
 
@@ -578,13 +549,6 @@ msgstr ""
 
 #~ msgid "Port:"
 #~ msgstr "Порт:"
-
-#~ msgid ""
-#~ "Query string, special token '[NUMBER]' will be replaced with caller "
-#~ "number<br/>e.g.: number=[NUMBER]&source=crm"
-#~ msgstr ""
-#~ "Переменная запроса, содержащая '[NUMBER]', которая получает значение "
-#~ "Caller  ID <br/>например: number=[NUMBER]&source=crm"
 
 #~ msgid "Query:"
 #~ msgstr "Запрос:"
