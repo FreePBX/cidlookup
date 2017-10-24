@@ -1,0 +1,437 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for cidlookup
+# Copyright (C) 2008-2016 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"PO-Revision-Date: 2017-07-14 10:19+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/cidlookup/vi/>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
+
+#: views/form.php:22
+msgid ""
+" It executes an HTTP GET passing the caller number as argument to retrieve "
+"the correct name"
+msgstr ""
+" Nó thực hiện một HTTP GET truyền qua số người gọi như một đối số để lấy tên "
+"chính xác"
+
+#: views/form.php:23
+msgid ""
+" It executes an HTTPS GET passing the caller number as argument to retrieve "
+"the correct name"
+msgstr ""
+" Nó thực hiện một HTTP GET truyền qua số người gọi như một đối số để lấy tên "
+"chính xác"
+
+#: views/form.php:21
+msgid ""
+" Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
+"enum.conf"
+msgstr ""
+" Sử dụng NDS để tra cứu tên người gọi, nó sử dụng những vùng tra cứu ENUM  "
+"như đã được cấu hình trong enum.conf"
+
+#: views/form.php:19
+msgid " Use OpenCNAM [https://www.opencnam.com/]"
+msgstr " Sử dụng OpenCNAM [https://www.opencnam.com/]"
+
+#: views/form.php:20
+msgid " use astdb as lookup source, use phonebook module to populate it"
+msgstr ""
+" Sử dụng astdb như nguồn tra cứu, sử dụng mô đun phonebook (danh bạ điện "
+"thoại) để đưa nó vào danh bạ"
+
+#: views/form.php:131
+msgid ""
+"<p>If you need to create an OpenCNAM account, you can visit their website: "
+"<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
+"opencnam.com/register</a></p>"
+msgstr ""
+"<p> Nếu bạn cần tạo môt tài khoản OpenCNAM, bạn có thể truy cập website <a "
+"href=\"https://www.opencnam.com/register\" target=\"_blank\""
+">https://www.opencnam.com/register</a></p>"
+
+#: page.cidlookup.php:8
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric CallerIDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with information taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+"Một nguồn tra cứu sẽ cho phép bạn xác định một nguồn để giải quyết các "
+"CallerIDs của các cuộc gọi đến, sau đó bạn có thể nối các tuyến gọi vào để "
+"xác định nguồn CID. Bằng cách này bán ẽ có các báo cáo CDR chi tiết hơn với "
+"các thông tin được thu thập trực tiếp tuwg CRM của bạn. Bạn cũng có thể cài "
+"đặt mô đun phonebook để có những số điện thoại nhỏ <-> Nhóm tên. Chú ý, tra "
+"cứu tên sẽ làm chậm PBX của bạn"
+
+#: views/form.php:140
+msgid "Account SID:"
+msgstr "Tài khoản SID:"
+
+#: views/grid.php:40
+msgid "Actions"
+msgstr "Các thao tác"
+
+#: views/grid.php:26
+msgid "Add CIDLookup Source"
+msgstr "Thêm ngồn tra cứu CID"
+
+#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+msgid "Admin"
+msgstr "Quản trị viên"
+
+#: cidlookup.i18n.php:8
+msgid ""
+"Allows CallerID Lookup of incoming calls against different sources "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+msgstr ""
+"Cho phép Tra cứu CallerID các cuộc gọi đến cho các nguồn khác nhau ("
+"OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+
+#: views/form.php:164
+msgid "Auth Token"
+msgstr "Thẻ xác thực"
+
+#: functions.inc.php:20
+msgid "CID Lookup Source"
+msgstr "Nguồn tra cứu CID"
+
+#: page.cidlookup.php:7
+msgid "CIDLookup"
+msgstr "Tra cứu CID"
+
+#: views/form.php:108
+msgid "Cache Results"
+msgstr "Kết quả Cache"
+
+#: cidlookup.i18n.php:4
+msgid "CallerID Lookup"
+msgstr "Tra cứu CallerID"
+
+#: cidlookup.i18n.php:10
+msgid "CallerID Lookup Sources"
+msgstr "Các nguồn tra cứu CallerID"
+
+#: views/form.php:460
+msgid "Character Set"
+msgstr "Bộ ký tự"
+
+#: install.php:162
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr "Đang kiểm tra trường tra cứu cid trong bảng đến của lõi..."
+
+#: views/form.php:364
+msgid "Database"
+msgstr "Cơ sở dữ liệu"
+
+#: views/form.php:376
+msgid "Database Name"
+msgstr "Tên cơ sở dữ liệu"
+
+#: views/form.php:123
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+"Quyết định có hay không các kết quả bộ nhớ cache đến astDB; Nó sẽ ghi đè lên "
+"các giá trị hiện tại. Nó không ảnh hưởng đến hành vi của nguồn nội bộ"
+
+#: Cidlookup.class.php:70
+msgid "Delete"
+msgstr "Xóa"
+
+#: views/grid.php:38
+msgid "Description"
+msgstr "Mô tả"
+
+#: views/form.php:21
+msgid "ENUM:"
+msgstr "ENUM:"
+
+#: install.php:149
+msgid "ERROR: failed: "
+msgstr "LỖI: Đã thất bại: "
+
+#: views/form.php:65
+msgid "Enter a description for this source."
+msgstr "Nhập một mô tả cho nguồn này."
+
+#: install.php:140
+msgid "FATAL: failed to transform old routes: "
+msgstr "FATAL: truyền tải các tuyến cũ thất bại: "
+
+#: views/form.php:22
+msgid "HTTP:"
+msgstr "HTTP:"
+
+#: views/form.php:23
+msgid "HTTPS:"
+msgstr "HTTPS:"
+
+#: views/form.php:192 views/form.php:340
+msgid "Host"
+msgstr "Host"
+
+#: views/form.php:204
+msgid "Host name or IP address"
+msgstr "Tên host hoặc địa chỉ IP"
+
+#: views/form.php:83
+msgid "Internal"
+msgstr "Nội bộ"
+
+#: views/form.php:20
+msgid "Internal:"
+msgstr "Nội bộ:"
+
+#: views/form.php:24
+msgid "It queries a MySQL database to retrieve caller name"
+msgstr "Nó yêu cầu một cơ sở dữ liệu MySQL để lấy tên người gọi"
+
+#: views/bootnav.php:6
+msgid "List Sources"
+msgstr "Danh sách các nguồn"
+
+#: install.php:132
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "Di chuyến tuyến kênh tới tuyến ap DID..."
+
+#: views/form.php:472
+msgid "MySQL Character Set. Leave blank for MySQL default latin1"
+msgstr "Bộ ký tự MySQL. Để trống cho mặc định MySQL la tinh 1"
+
+#: views/form.php:352
+msgid "MySQL Host"
+msgstr "Host MySQL"
+
+#: views/form.php:448
+msgid "MySQL Password"
+msgstr "Mật khẩu MySQL"
+
+#: views/form.php:424
+msgid "MySQL Username"
+msgstr "Tên người dùng MySQL"
+
+#: views/form.php:24
+msgid "MySQL:"
+msgstr "MySQL:"
+
+#: views/form.php:115
+msgid "No"
+msgstr "Không"
+
+#: Cidlookup.class.php:99 functions.inc.php:330
+msgid "None"
+msgstr "Không"
+
+#: install.php:156
+msgid "Not Needed"
+msgstr "Không cần thiết"
+
+#: views/form.php:481 views/form.php:486
+msgid "Not yet implemented"
+msgstr "Chưa được thực hiện"
+
+#: install.php:142 install.php:151
+msgid "OK"
+msgstr "OK"
+
+#: views/form.php:10 views/form.php:15
+msgid "OpenCNAM"
+msgstr "Dịch vụ tra cứu OpenCNAM"
+
+#: functions.inc.php:187
+msgid "OpenCNAM Requires Authentication"
+msgstr "OpenCNAM yêu cầu Xác thực"
+
+#: bin/opencnam-alert.php:25
+msgid "OpenCNAM Throttle Reached!"
+msgstr "Đã kết nối với OpenCNAM Throttle!"
+
+#: views/form.php:19
+msgid "OpenCNAM:"
+msgstr "Dịch vụ tra cứu OpenCNAM:"
+
+#: views/form.php:264 views/form.php:436
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: views/form.php:276
+msgid "Password to use in HTTP authentication"
+msgstr "Mật khẩu sử dụng trong xác thực HTTP"
+
+#: views/form.php:288
+msgid "Path"
+msgstr "Đường dẫn"
+
+#: views/form.php:300
+msgid ""
+"Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
+"will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
+">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
+"will be replaced with channel language"
+msgstr ""
+"Đường dẫn của tệp đến GET <br/>e.g.: /cidlookup.php<br>Special token "
+"'[NUMBER]' sẽ được thay thế bằng một số người gọi <br/>e.g.: \n"
+"/cidlookup/[NUMBER]/<br/>'[NAME]'  sẽ được thay thế với tên ID người gọi "
+"hiện có <br/>'[LANGUAGE]'  sẽ được thay thế bằng ngôn ngữ kênh"
+
+#: views/form.php:216
+msgid "Port"
+msgstr "Cổng giao tiếp"
+
+#: views/form.php:228
+msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
+msgstr "Cổng giao tiếp máy chủ HTTP đang nghe tại (default http 80, https 443)"
+
+#: install.php:108
+msgid "Processing Database Tables"
+msgstr "Đang xử lý các bảng cơ sở dữ liệu"
+
+#: views/form.php:312 views/form.php:388
+msgid "Query"
+msgstr "Truy vấn"
+
+#: views/form.php:324
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
+"with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
+"language"
+msgstr ""
+"Chuỗi truy vấn. token đặc biệt  '[NUMBER]' sẽ được thay thế với số người gọi "
+"<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' sẽ được thay thế với tên "
+"caller id hiện có <br/>'[LANGUAGE]' sẽ được thay thế với ngôn ngữ kênh"
+
+#: views/form.php:400
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+"Truy vấn, token đặc biệt '[NUMBER]' sẽ được thay thế với số người gọi "
+"<br/>e.g.:CHỌN tên TỪ danh bạ điện thoại NƠI số giống LIKE '%[NUMBER]%'"
+
+#: install.php:145
+msgid "Removing deprecated channel field from incoming.."
+msgstr "Đang xóa trường kênh từ cuộc gọi đến...."
+
+#: Cidlookup.class.php:80
+msgid "Reset"
+msgstr "Cài đặt lại"
+
+#: views/form.php:17
+msgid "Select the source type, you can choose between:"
+msgstr "Chọn kiểu nguồn, bạn có thể chọn giữa:"
+
+#: views/bootnav.php:16
+msgid "Source"
+msgstr "Nguồn"
+
+#: views/form.php:53
+msgid "Source Description"
+msgstr "Mô tả nguồn"
+
+#: views/form.php:77
+msgid "Source type"
+msgstr "Kiểu nguồn"
+
+#: functions.inc.php:40
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr ""
+"Các nguồn có thể được thêm trong phần Caller Name Lookup Sources ( Các nguồn "
+"tra cứu tên người gọi)"
+
+#: Cidlookup.class.php:75
+msgid "Submit"
+msgstr "Gửi đi"
+
+#: views/form.php:36
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+"Có %s DIDs đang sử dụng nguồn này nếu xóa điều này sẽ không được tra cứu nữa."
+
+#: views/grid.php:39
+msgid "Type"
+msgstr "Kiểu"
+
+#: functions.inc.php:187
+msgid ""
+"Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
+"OpenCNAM account to continue using their API"
+msgstr ""
+"Các cuộc gọi không được xác thực đến OpenCNAM API sẽ sớm thất bại. Bạn sẽ "
+"cần một tài khoản OpenCNAM để tiếp tục sử dụng API"
+
+#: views/form.php:240 views/form.php:412
+msgid "Username"
+msgstr "Tên người dùng"
+
+#: views/form.php:252
+msgid "Username to use in HTTP authentication"
+msgstr "Tên người dùng cho việc xác thực HTTP"
+
+#: views/form.php:113
+msgid "Yes"
+msgstr "Có"
+
+#: bin/opencnam-alert.php:25
+msgid ""
+"You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
+"getting caller ID name information, you need to create an OpenCNAM "
+"Professional Account.<br/><br/>You can create an OpenCNAM account at: <a "
+"href=\"https://www.opencnam.com/register\">https://www.opencnam.com/"
+"register</a>.<br/><br/>Once you have created an account, visit the CallerID "
+"Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
+"<br/>"
+msgstr ""
+"Bạn đã quá thời hạn sử dụng OpenCCAM miễn phí. <br/><br/> để tiếp tục có "
+"thông tin tên caller ID, bạn cần rạo một tài khoản OpenCNam chuyên nghiệp. "
+"<br/><br/> Bạn có thể tạo một tài khoản OpenCNAM tại <a href=\""
+"https://www.opencnam.com/register\""
+">https://www.opencnam.com/register</a>.<br/><br/>Khi bạn tạo một tài khoản, "
+"truy cập Menua nguồn tra cứu CallerID và nhập các thông tin đăng nhập  "
+"OpenCNAM Professional Tier  của mình.<br/>"
+
+#: views/form.php:152
+msgid ""
+"Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
+"page: https://www.opencnam.com/dashboard"
+msgstr ""
+"Mở SID tài khoản OpenCNAM của bạn. Điều này có thể tìm thấy trên trang điều "
+"khiển OpenCNAM của bạn: https://www.opencnam.com/dashboard"
+
+#: views/form.php:176
+msgid ""
+"Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
+"https://www.opencnam.com/dashboard"
+msgstr ""
+"Token xác thực OpenCNAM của bạn. Token này có sẽ được tìm thấy trên trang "
+"điều khiển OpenCNAM:  https://www.opencnam.com/dashboard"
+
+#: install.php:166
+msgid "not present"
+msgstr "Không có mặt"
+
+#: install.php:168
+msgid "removed"
+msgstr "Đã xóa"
