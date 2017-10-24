@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-20 12:54-0800\n"
+"POT-Creation-Date: 2017-10-24 11:55-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -89,7 +89,7 @@ msgstr ""
 msgid "Add CIDLookup Source"
 msgstr ""
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr ""
 
@@ -275,7 +275,7 @@ msgstr ""
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
@@ -392,7 +392,7 @@ msgstr "שם משתמש שבו יש להשתמש באימות HTTP"
 msgid "Yes"
 msgstr ""
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-20 12:54-0800\n"
+"POT-Creation-Date: 2017-10-24 11:55-0700\n"
 "PO-Revision-Date: 2017-01-11 13:44+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/cidlookup/"
@@ -86,7 +86,7 @@ msgstr "Aktionen"
 msgid "Add CIDLookup Source"
 msgstr "CID Lookup Quelle hinzufügen"
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr "Administrator"
 
@@ -275,7 +275,7 @@ msgstr "OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM erfordert eine Authentifizierung"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
@@ -391,7 +391,7 @@ msgstr "Benutzername für die HTTP-Authentifizierung"
 msgid "Yes"
 msgstr "Ja"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "

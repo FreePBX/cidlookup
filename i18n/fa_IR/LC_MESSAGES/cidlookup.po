@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-20 12:54-0800\n"
+"POT-Creation-Date: 2017-10-24 11:55-0700\n"
 "PO-Revision-Date: 2016-08-26 03:09+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -93,7 +93,7 @@ msgstr "عملیات"
 msgid "Add CIDLookup Source"
 msgstr "افزودن منبع جستجوی CID"
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr "مدیر"
 
@@ -282,7 +282,7 @@ msgstr "OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM به احراز هویت نیاز دارد"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr "OpenCNAM Throttle  Reached!"
 
@@ -412,7 +412,7 @@ msgstr "نام کاربری استفاده شده برای احرازهویت HT
 msgid "Yes"
 msgstr "بله"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "
