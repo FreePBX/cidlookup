@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"POT-Creation-Date: 2017-10-24 14:53-0400\n"
 "PO-Revision-Date: 2017-07-14 10:19+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/cidlookup/vi/>\n"
-"Language: vi\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"cidlookup/vi/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -62,8 +62,8 @@ msgid ""
 "opencnam.com/register</a></p>"
 msgstr ""
 "<p> Nếu bạn cần tạo môt tài khoản OpenCNAM, bạn có thể truy cập website <a "
-"href=\"https://www.opencnam.com/register\" target=\"_blank\""
-">https://www.opencnam.com/register</a></p>"
+"href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
+"opencnam.com/register</a></p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -93,7 +93,7 @@ msgstr "Các thao tác"
 msgid "Add CIDLookup Source"
 msgstr "Thêm ngồn tra cứu CID"
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr "Quản trị viên"
 
@@ -102,8 +102,8 @@ msgid ""
 "Allows CallerID Lookup of incoming calls against different sources "
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
-"Cho phép Tra cứu CallerID các cuộc gọi đến cho các nguồn khác nhau ("
-"OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+"Cho phép Tra cứu CallerID các cuộc gọi đến cho các nguồn khác nhau "
+"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 
 #: views/form.php:164
 msgid "Auth Token"
@@ -237,7 +237,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "Không"
 
-#: Cidlookup.class.php:99 functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:331
 msgid "None"
 msgstr "Không"
 
@@ -261,7 +261,7 @@ msgstr "Dịch vụ tra cứu OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM yêu cầu Xác thực"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr "Đã kết nối với OpenCNAM Throttle!"
 
@@ -325,8 +325,8 @@ msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
-"Truy vấn, token đặc biệt '[NUMBER]' sẽ được thay thế với số người gọi "
-"<br/>e.g.:CHỌN tên TỪ danh bạ điện thoại NƠI số giống LIKE '%[NUMBER]%'"
+"Truy vấn, token đặc biệt '[NUMBER]' sẽ được thay thế với số người gọi <br/>e."
+"g.:CHỌN tên TỪ danh bạ điện thoại NƠI số giống LIKE '%[NUMBER]%'"
 
 #: install.php:145
 msgid "Removing deprecated channel field from incoming.."
@@ -394,7 +394,7 @@ msgstr "Tên người dùng cho việc xác thực HTTP"
 msgid "Yes"
 msgstr "Có"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "
@@ -406,11 +406,10 @@ msgid ""
 msgstr ""
 "Bạn đã quá thời hạn sử dụng OpenCCAM miễn phí. <br/><br/> để tiếp tục có "
 "thông tin tên caller ID, bạn cần rạo một tài khoản OpenCNam chuyên nghiệp. "
-"<br/><br/> Bạn có thể tạo một tài khoản OpenCNAM tại <a href=\""
-"https://www.opencnam.com/register\""
-">https://www.opencnam.com/register</a>.<br/><br/>Khi bạn tạo một tài khoản, "
-"truy cập Menua nguồn tra cứu CallerID và nhập các thông tin đăng nhập  "
-"OpenCNAM Professional Tier  của mình.<br/>"
+"<br/><br/> Bạn có thể tạo một tài khoản OpenCNAM tại <a href=\"https://www."
+"opencnam.com/register\">https://www.opencnam.com/register</a>.<br/><br/>Khi "
+"bạn tạo một tài khoản, truy cập Menua nguồn tra cứu CallerID và nhập các "
+"thông tin đăng nhập  OpenCNAM Professional Tier  của mình.<br/>"
 
 #: views/form.php:152
 msgid ""

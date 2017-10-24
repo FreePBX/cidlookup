@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"POT-Creation-Date: 2017-10-24 14:53-0400\n"
 "PO-Revision-Date: 2016-06-07 02:58+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -106,7 +106,7 @@ msgstr "Acciones"
 msgid "Add CIDLookup Source"
 msgstr "Agregar Fuente CIDLookup"
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr "Admin"
 
@@ -252,7 +252,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "No"
 
-#: Cidlookup.class.php:99 functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:331
 msgid "None"
 msgstr "Ninguno"
 
@@ -276,7 +276,7 @@ msgstr "OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM Requiere Autenticanción"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr "Aceleración OpenCNAM Alcanzada!"
 
@@ -412,7 +412,7 @@ msgstr "Nombre de usuario que se usará en la autentificación HTTP"
 msgid "Yes"
 msgstr "Si"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "

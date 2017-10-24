@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"POT-Creation-Date: 2017-10-24 14:53-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -77,7 +77,7 @@ msgstr ""
 msgid "Add CIDLookup Source"
 msgstr ""
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:99 functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:331
 msgid "None"
 msgstr "无"
 
@@ -241,7 +241,7 @@ msgstr ""
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
@@ -362,7 +362,7 @@ msgstr "用于HTTP鉴权的用户名"
 msgid "Yes"
 msgstr ""
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "

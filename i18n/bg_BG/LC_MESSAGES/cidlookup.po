@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"POT-Creation-Date: 2017-10-24 14:53-0400\n"
 "PO-Revision-Date: 2014-07-21 15:37+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/cidlookup/"
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Add CIDLookup Source"
 msgstr ""
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr "Админ"
 
@@ -238,7 +238,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:99 functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:331
 msgid "None"
 msgstr "Няма"
 
@@ -262,7 +262,7 @@ msgstr ""
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
@@ -386,7 +386,7 @@ msgstr "Потребителско Име за HTTP оторизиране"
 msgid "Yes"
 msgstr ""
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "

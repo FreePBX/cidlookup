@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-22 12:41-0700\n"
+"POT-Creation-Date: 2017-10-24 14:53-0400\n"
 "PO-Revision-Date: 2016-02-09 12:08+0300\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <team@postmet.ruframework/ru_RU/>\n"
@@ -106,7 +106,7 @@ msgstr "Действия"
 msgid "Add CIDLookup Source"
 msgstr "Добавить источник поиска CID"
 
-#: cidlookup.i18n.php:6 cidlookup.i18n.php:12
+#: cidlookup.i18n.php:6
 msgid "Admin"
 msgstr "Админ"
 
@@ -256,7 +256,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "Нет"
 
-#: Cidlookup.class.php:99 functions.inc.php:330
+#: Cidlookup.class.php:99 functions.inc.php:331
 msgid "None"
 msgstr "Нет"
 
@@ -280,7 +280,7 @@ msgstr "Библиотека OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
 msgstr "Слишком много запросов к сервису OpenCNAM!"
 
@@ -411,7 +411,7 @@ msgstr "Имя пользователя для аутентификации по
 msgid "Yes"
 msgstr "Да"
 
-#: bin/opencnam-alert.php:25
+#: bin/opencnam-alert.php:23
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "
