@@ -249,6 +249,7 @@ function cidlookup_get_config($engine) {
 							// Hardcode for now, add configuration option in future. Setting 7 =~ 1 ring
 							//
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CURLOPT(httptimeout)', '7'));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '',new ext_set('CALLERID(name)','${STRREPLACE(CALLERID(name), ,%20)}'));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', $curl));
 						break;
 
