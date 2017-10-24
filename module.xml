@@ -2,16 +2,28 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>14.0.1.1</version>
+	<version>13.0.12.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
-		*14.0.1.1* FREEPBX-13576 use module xml table definitions
-		*14.0.1* FREEPBX-13255 add maxlength onto input box
-		*14.0.1alpha1* FREEPBX-12729 Add Contact Manager lookup
+		*13.0.12.1* FREEPBX-13255 add maxlength onto input box
+		*13.0.12* FREEPBX-13255: CallerIDLookup host field characters limit too low
+		*13.0.11* FREEPBX-12951 Remove auto-generated opencnam source. move db to doctrine
+		*13.0.10* FREEPBX-11552 - Fix cache logic. Also more opencnam cleanup. move rate limit to 10 based on current info from site..., FREEPBX-11718 Remove the ability to add new..
+		*13.0.9* CallerID Lookup Sources 'None' entry uses OpenCNAM
+		*13.0.8* Use "/usr/bin/env php" to start script
+		*13.0.7* FREEPBX-10774
+		*13.0.6* Floating menu update
+		*13.0.5* FREEPBX-8172 Add tokens to path to allow path style lookups
+		*13.0.4* FREEPBX-9575 Run after privacy manager.
+		*13.0.3* FREEPBX-9578 Field Query in CIDLookup settings is loaded from database incorrectly
+		*13.0.2* Version bump Beta
+		*13.0.1alpha3* Cleanup
+		*13.0.1alpha2* FREEPBX-9039 Remove Departments from FreePBX
+		*13.0.1alpha1* Visual Changes
 	</changelog>
 	<menuitems>
 		<cidlookup>CallerID Lookup Sources</cidlookup>
@@ -21,38 +33,8 @@
 		<module>framework ge 13.0.121</module>
 		<module>core ge 13.0.13</module>
 	</depends>
-	<database>
-	  <table name="cidlookup">
-	    <field name="cidlookup_id" type="integer" primaryKey="true" autoincrement="true"/>
-	    <field name="description" type="string" length="50"/>
-	    <field name="sourcetype" type="string" length="100"/>
-	    <field name="cache" type="smallint" default="0"/>
-	    <field name="deptname" type="string" length="30" notnull="false"/>
-	    <field name="http_host" type="string" length="100" notnull="false"/>
-	    <field name="http_port" type="string" length="30" notnull="false"/>
-	    <field name="http_username" type="string" length="50" notnull="false"/>
-	    <field name="http_password" type="string" length="50" notnull="false"/>
-	    <field name="http_path" type="string" length="100" notnull="false"/>
-	    <field name="http_query" type="string" length="100" notnull="false"/>
-	    <field name="mysql_host" type="string" length="60" notnull="false"/>
-	    <field name="mysql_dbname" type="string" length="60" notnull="false"/>
-	    <field name="mysql_query" type="string" length="255" notnull="false"/>
-	    <field name="mysql_username" type="string" length="30" notnull="false"/>
-	    <field name="mysql_password" type="string" length="30" notnull="false"/>
-	    <field name="mysql_charset" type="string" length="60" notnull="false"/>
-	    <field name="opencnam_account_sid" type="string" length="34" notnull="false"/>
-	    <field name="opencnam_auth_token" type="string" length="34" notnull="false"/>
-	    <field name="cm_group" type="string" length="5" default="" notnull="false"/>
-	    <field name="cm_format" type="string" length="5" default="" notnull="false"/>
-	  </table>
-		<table name="cidlookup_incoming">
-			<field name="cidlookup_id" type="integer"/>
-			<field name="extension" type="string" length="50" notnull="false"/>
-			<field name="cidnum" type="string" length="30" notnull="false"/>
-		</table>
-	</database>
 	<supported>
-		<version>14.0</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/cidlookup-2.11.1.7.tgz</location>
 	<md5sum>f559516b403088de2cfb2b7c517d2ff6</md5sum>

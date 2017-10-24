@@ -19,11 +19,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-20 12:54-0800\n"
+"POT-Creation-Date: 2016-08-22 12:41-0700\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,7 +55,7 @@ msgstr ""
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
 
-#: views/form.php:204
+#: views/form.php:131
 msgid ""
 "<p>If you need to create an OpenCNAM account, you can visit their website: "
 "<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
@@ -80,7 +79,7 @@ msgstr ""
 "in. Tänk på att namnuppslag kan orsaka fördröjningar innan samtalet kopplas "
 "upp."
 
-#: views/form.php:213
+#: views/form.php:140
 msgid "Account SID:"
 msgstr ""
 
@@ -102,7 +101,7 @@ msgid ""
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
 
-#: views/form.php:237
+#: views/form.php:164
 msgid "Auth Token"
 msgstr ""
 
@@ -114,12 +113,8 @@ msgstr "Källa för nummerpresentation"
 msgid "CIDLookup"
 msgstr ""
 
-#: views/form.php:122
+#: views/form.php:108
 msgid "Cache Results"
-msgstr ""
-
-#: views/form.php:178
-msgid "Caller ID Format"
 msgstr ""
 
 #: cidlookup.i18n.php:4
@@ -130,39 +125,24 @@ msgstr "Nummerpresentation"
 msgid "CallerID Lookup Sources"
 msgstr "Källa f. nummerpresentation"
 
-#: views/form.php:533
+#: views/form.php:460
 msgid "Character Set"
 msgstr ""
 
-#: views/form.php:185
-msgid "Company"
+#: install.php:162
+msgid "Checking for cidlookup field in core's incoming table.."
 msgstr ""
+"Kontrollerar om det fältet cidlookup finns i tabellen för inkommande vägar.."
 
-#: views/form.php:97
-msgid "Contact Manager"
-msgstr ""
-
-#: views/form.php:151
-msgid "Contact Manager Group(s)"
-msgstr ""
-
-#: views/form.php:42
-msgid "Contact Manager Not Installed"
-msgstr ""
-
-#: views/form.php:25
-msgid "Contact Manager:"
-msgstr ""
-
-#: views/form.php:437
+#: views/form.php:364
 msgid "Database"
 msgstr ""
 
-#: views/form.php:449
+#: views/form.php:376
 msgid "Database Name"
 msgstr ""
 
-#: views/form.php:137
+#: views/form.php:123
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
@@ -170,7 +150,7 @@ msgstr ""
 "Välj om du ska mellanlagra resultaten i astDB; det kommer att skriva över "
 "eventuella poster som redan finns. Används inte om källa är Internal."
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:70
 msgid "Delete"
 msgstr ""
 
@@ -178,25 +158,21 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: views/form.php:186
-msgid "Display Name"
-msgstr ""
-
 #: views/form.php:21
 msgid "ENUM:"
 msgstr ""
 
-#: views/form.php:78
+#: install.php:149
+msgid "ERROR: failed: "
+msgstr "FEL: misslyckades: "
+
+#: views/form.php:65
 msgid "Enter a description for this source."
 msgstr "Skriv en kortfattad beskrivning för denna källa."
 
-#: views/form.php:165
-msgid "Filter results to these contact manager groups"
-msgstr ""
-
-#: views/form.php:183
-msgid "First Last"
-msgstr ""
+#: install.php:140
+msgid "FATAL: failed to transform old routes: "
+msgstr "FEL: kunde inte transformera gamla vägar: "
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -206,19 +182,15 @@ msgstr ""
 msgid "HTTPS:"
 msgstr ""
 
-#: views/form.php:265 views/form.php:413
+#: views/form.php:192 views/form.php:340
 msgid "Host"
 msgstr ""
 
-#: views/form.php:277
+#: views/form.php:204
 msgid "Host name or IP address"
 msgstr "Datornamn eller IP-adress"
 
-#: views/form.php:195
-msgid "How to format the returned data"
-msgstr ""
-
-#: views/form.php:96
+#: views/form.php:83
 msgid "Internal"
 msgstr "Intern"
 
@@ -230,27 +202,27 @@ msgstr ""
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
-#: views/form.php:184
-msgid "Last First"
-msgstr ""
-
 #: views/bootnav.php:6
 msgid "List Sources"
 msgstr ""
 
-#: views/form.php:545
+#: install.php:132
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "Migrerar kanalvägar till Zap direktvägar.."
+
+#: views/form.php:472
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
 
-#: views/form.php:425
+#: views/form.php:352
 msgid "MySQL Host"
 msgstr "MySQL-dator"
 
-#: views/form.php:521
+#: views/form.php:448
 msgid "MySQL Password"
 msgstr "Lösenord för MySQL"
 
-#: views/form.php:497
+#: views/form.php:424
 msgid "MySQL Username"
 msgstr "Användarnamn för MySQL"
 
@@ -258,23 +230,31 @@ msgstr "Användarnamn för MySQL"
 msgid "MySQL:"
 msgstr ""
 
-#: views/form.php:129
+#: views/form.php:115
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:99 functions.inc.php:330
 msgid "None"
 msgstr "Ingen"
 
-#: views/form.php:554 views/form.php:559
+#: install.php:156
+msgid "Not Needed"
+msgstr "Behövs inte"
+
+#: views/form.php:481 views/form.php:486
 msgid "Not yet implemented"
 msgstr "Inte implementerad"
+
+#: install.php:142 install.php:151
+msgid "OK"
+msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:187
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -286,19 +266,19 @@ msgstr ""
 msgid "OpenCNAM:"
 msgstr ""
 
-#: views/form.php:337 views/form.php:509
+#: views/form.php:264 views/form.php:436
 msgid "Password"
 msgstr ""
 
-#: views/form.php:349
+#: views/form.php:276
 msgid "Password to use in HTTP authentication"
 msgstr "Lösenord att använda vid HTTP-autentisering"
 
-#: views/form.php:361
+#: views/form.php:288
 msgid "Path"
 msgstr ""
 
-#: views/form.php:373
+#: views/form.php:300
 msgid ""
 "Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
 "will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
@@ -306,19 +286,23 @@ msgid ""
 "will be replaced with channel language"
 msgstr ""
 
-#: views/form.php:289
+#: views/form.php:216
 msgid "Port"
 msgstr ""
 
-#: views/form.php:301
+#: views/form.php:228
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: views/form.php:385 views/form.php:461
+#: install.php:108
+msgid "Processing Database Tables"
+msgstr ""
+
+#: views/form.php:312 views/form.php:388
 msgid "Query"
 msgstr ""
 
-#: views/form.php:397
+#: views/form.php:324
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
@@ -326,21 +310,21 @@ msgid ""
 "language"
 msgstr ""
 
-#: views/form.php:473
+#: views/form.php:400
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 "Fråga, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
-"nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE "
-"'%[NUMBER]%'"
+"nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE '%"
+"[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: install.php:145
+msgid "Removing deprecated channel field from incoming.."
+msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
+
+#: Cidlookup.class.php:80
 msgid "Reset"
-msgstr ""
-
-#: views/form.php:25
-msgid "Searches a contact manager group"
 msgstr ""
 
 #: views/form.php:17
@@ -351,11 +335,11 @@ msgstr ""
 msgid "Source"
 msgstr "Källa"
 
-#: views/form.php:66
+#: views/form.php:53
 msgid "Source Description"
 msgstr ""
 
-#: views/form.php:90
+#: views/form.php:77
 msgid "Source type"
 msgstr ""
 
@@ -363,11 +347,11 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Källor kan läggas till i Källor för nummerpresentation"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:75
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:49
+#: views/form.php:36
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
@@ -380,21 +364,21 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:187
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
 msgstr ""
 
-#: views/form.php:313 views/form.php:485
+#: views/form.php:240 views/form.php:412
 msgid "Username"
 msgstr ""
 
-#: views/form.php:325
+#: views/form.php:252
 msgid "Username to use in HTTP authentication"
 msgstr "Användarnamn att använda vid HTTP-autentisering"
 
-#: views/form.php:127
+#: views/form.php:113
 msgid "Yes"
 msgstr ""
 
@@ -409,46 +393,25 @@ msgid ""
 "<br/>"
 msgstr ""
 
-#: views/form.php:225
+#: views/form.php:152
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: views/form.php:249
+#: views/form.php:176
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
 msgstr ""
 
-#~ msgid "Checking for cidlookup field in core's incoming table.."
-#~ msgstr ""
-#~ "Kontrollerar om det fältet cidlookup finns i tabellen för inkommande "
-#~ "vägar.."
+#: install.php:166
+msgid "not present"
+msgstr "inte tillgänglig"
 
-#~ msgid "ERROR: failed: "
-#~ msgstr "FEL: misslyckades: "
-
-#~ msgid "FATAL: failed to transform old routes: "
-#~ msgstr "FEL: kunde inte transformera gamla vägar: "
-
-#~ msgid "Migrating channel routing to Zap DID routing.."
-#~ msgstr "Migrerar kanalvägar till Zap direktvägar.."
-
-#~ msgid "Not Needed"
-#~ msgstr "Behövs inte"
-
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "Removing deprecated channel field from incoming.."
-#~ msgstr "Tar bort överblivna kanalfält från inkommande vägar.."
-
-#~ msgid "not present"
-#~ msgstr "inte tillgänglig"
-
-#~ msgid "removed"
-#~ msgstr "borttagen"
+#: install.php:168
+msgid "removed"
+msgstr "borttagen"
 
 #~ msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
 #~ msgstr "Sökväg till filen via GET<br>t.ex. /cidlookup.php"

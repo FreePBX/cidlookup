@@ -7,9 +7,7 @@ $.ajax({
     }
 });
 
-$(document).ready(function() {
-    $('#cm_group').multiselect();
-});
+
 
 function edit_onsubmit() {
 	defaultEmptyOK = false;
