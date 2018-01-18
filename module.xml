@@ -44,7 +44,7 @@
 	    <field name="mysql_charset" type="string" length="60" notnull="false"/>
 	    <field name="opencnam_account_sid" type="string" length="34" notnull="false"/>
 	    <field name="opencnam_auth_token" type="string" length="34" notnull="false"/>
-	    <field name="cm_group" type="string" length="5" default="" notnull="false"/>
+	    <field name="cm_group" type="string" length="60" default="" notnull="false"/>
 	    <field name="cm_format" type="string" length="5" default="" notnull="false"/>
 	  </table>
 		<table name="cidlookup_incoming">
