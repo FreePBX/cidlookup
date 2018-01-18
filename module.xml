@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>14.0.1.3</version>
+	<version>14.0.1.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*14.0.1.4* FREEPBX-16183 CIDLookup - selection of more the 3 groups 
 		*14.0.1.3* FREEPBX-16648
 		*14.0.1.2* FREEPBX-15832
 		*14.0.1.1* FREEPBX-13576 use module xml table definitions
