@@ -27,7 +27,7 @@ $displayname = !empty($data['displayname'])?$data['displayname']:'Unknown';
 if(empty($first) && empty($last)){
   $first = 'Unknown';
 }
-switch($argv3){
+switch($argv['3']){
   case '1':
     $agi->set_variable("CMCID", $displayname);
   break;
