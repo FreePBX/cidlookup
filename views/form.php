@@ -180,10 +180,10 @@ if ($itemid && $dids_using > 0){
   					</div>
   					<div class="col-md-9">
               <select id='cm_format' name = 'cm_format' class="form-control">
-                <option value "4" <?php echo ($thisItem['cm_group'] == '4')?'SELECTED':'';?>><?php echo _("First Last")?></option>
-                <option value "3" <?php echo ($thisItem['cm_group'] == '3')?'SELECTED':'';?>><?php echo _("Last First")?></option>
-                <option value "2" <?php echo ($thisItem['cm_group'] == '2')?'SELECTED':'';?>><?php echo _("Company")?></option>
-                <option value "1" <?php echo ($thisItem['cm_group'] == '1')?'SELECTED':'';?>><?php echo _("Display Name")?></option>
+                <option value="4" <?php echo ($thisItem['cm_format'] == '4')?'SELECTED':'';?>><?php echo _("First Last")?></option>
+                <option value="3" <?php echo ($thisItem['cm_format'] == '3')?'SELECTED':'';?>><?php echo _("Last First")?></option>
+                <option value="2" <?php echo ($thisItem['cm_format'] == '2')?'SELECTED':'';?>><?php echo _("Company")?></option>
+                <option value="1" <?php echo ($thisItem['cm_format'] == '1')?'SELECTED':'';?>><?php echo _("Display Name")?></option>
               </select>
   					</div>
   				</div>
