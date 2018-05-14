@@ -10,8 +10,8 @@
 	<category>Admin</category>
 	<changelog>
 		*14.0.1.6* Contact Manager Format Output var name fix
-		*14.0.1.5* FREEPBX-16649 Caller ID format not saved in CIDLookup sources of type Contact Manager 
-		*14.0.1.4* FREEPBX-16183 CIDLookup - selection of more the 3 groups 
+		*14.0.1.5* FREEPBX-16649 Caller ID format not saved in CIDLookup sources of type Contact Manager
+		*14.0.1.4* FREEPBX-16183 CIDLookup - selection of more the 3 groups
 		*14.0.1.3* FREEPBX-16648
 		*14.0.1.2* FREEPBX-15832
 		*14.0.1.1* FREEPBX-13576 use module xml table definitions
@@ -52,7 +52,7 @@
 	  </table>
 		<table name="cidlookup_incoming">
 			<field name="cidlookup_id" type="integer"/>
-			<field name="extension" type="string" length="50" notnull="false"/>
+			<field name="extension" type="string" length="100" notnull="false"/>
 			<field name="cidnum" type="string" length="30" notnull="false"/>
 		</table>
 	</database>
