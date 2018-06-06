@@ -5,7 +5,7 @@
 <div id='toolbar-cidrnav'>
   <a href="config.php?display=cidlookup" class="btn btn-default"><i class="fa fa-list"></i>&nbsp; <?php echo _("List Sources") ?></a>
 </div>
-<table data-url="ajax.php?module=cidlookup&amp;command=getJSON&amp;jdata=grid"
+<table data-url="ajax.php?module=cidlookup&amp;command=getJSON&amp;jdata=cid_modules"
   data-toolbar="#toolbar-cidrnav"
   data-cache="false"
   data-toggle="table"

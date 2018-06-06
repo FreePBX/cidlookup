@@ -52,7 +52,7 @@ if ($itemid && $dids_using > 0){
 }
 ?>
 
-<form autocomplete="off" class="fpbx-submit" name="edit" id="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();" data-fpbx-delete="config.php?display=cidlookup&view=form&amp;itemid=<?php echo $itemid?>&amp;action=delete"">
+<form autocomplete="off" class="fpbx-submit" name="edit" id="edit" action="?display=cidlookup" method="post" onsubmit="return edit_onsubmit();" data-fpbx-delete="config.php?display=cidlookup&view=form&amp;itemid=<?php echo $itemid?>&amp;action=delete"">
 <input type="hidden" name="display" value="cidlookup">
 <input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
 

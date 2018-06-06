@@ -1,6 +1,6 @@
 var cid_modules = {};
 $.ajax({
-    url: "/admin/config.php?display=cidlookup&action=getJSON&jdata=cid_modules&quietmode=1",
+    url: "ajax.php?module=cidlookup&command=getJSON&jdata=cid_modules",
     dataType: 'json',
     success: function(data) {
         cid_modules = data;

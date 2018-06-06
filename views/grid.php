@@ -1,7 +1,7 @@
 <?php
 //    License for all code of this FreePBX module can be found in the license file inside the module directory
 //    Copyright 2015 Sangoma Technologies.
-$cidsources = cidlookup_list();
+$cidsources = FreePBX::Cidlookup()->getList();
 $srow = "";
 foreach ($cidsources as $source) {
     if($source['sourcetype'] === null){
