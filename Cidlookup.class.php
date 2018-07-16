@@ -9,9 +9,9 @@ use PDO;
 
 use ext_gosub;
 class Cidlookup extends FreePBX_Helpers implements BMO {
+	public static $lookupFields = ['cidlookup_id', 'description', 'sourcetype', 'cache', 'http_host', 'http_port', 'http_username', 'http_password', 'http_path', 'http_query', 'mysql_host', 'mysql_dbname', 'mysql_query', 'mysql_username', 'mysql_password', 'mysql_charset', 'opencnam_account_sid', 'opencnam_auth_token', 'cm_group', 'cm_format'];
 	public function install() {}
 	public function uninstall() {}
-
 	public function doConfigPageInit($page) {
 		$action = $this->getReq('action',false);
 		$view = $this->getReq('view',false);
@@ -143,17 +143,19 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		return $this;
 	}
 	public function upsert($array){
-		foreach($array as $key => $value){
-			$array[':'.$key] = $value;
-			unset($array[$key]);
-		}
-		$sql = "INSERT INTO cidlookup
+		foreach(self::$lookupFields as $field){
+			if(isset($array[$field])){
+				continue;
+			}
+			$array[$field] = '';
+		}	
+		unset($array['deptname']);
+		$sql = "REPLACE INTO cidlookup
 			(cidlookup_id, description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
 		VALUES
-			(cidlookup_id:, description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
-		$sql .= " ON DUPLICATE KEY UPDATE cidlookup_id = VALUES(cidlookup_id),  description = VALUES(description),  sourcetype = VALUES(sourcetype),  cache = VALUES(cache),  http_host = VALUES(http_host),  http_port = VALUES(http_port),  http_username = VALUES(http_username),  http_password = VALUES(http_password),  http_path = VALUES(http_path),  http_query = VALUES(http_query),  mysql_host = VALUES(mysql_host),  mysql_dbname = VALUES(mysql_dbname),  mysql_query = VALUES(mysql_query),  mysql_username = VALUES(mysql_username),  mysql_password = VALUES(mysql_password),  mysql_charset = VALUES(mysql_charset),  opencnam_account_sid = VALUES(opencnam_account_sid),  opencnam_auth_token = VALUES(opencnam_auth_token),  cm_group = VALUES(cm_group),  cm_format = VALUES(cm_format)";
+			(:cidlookup_id, :description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
 		$stmt = $this->FreePBX->Database->prepare($sql);
-		$stmt->execute($insert);
+		$stmt->execute($array);
 		return $this;
 	}
 	
@@ -184,6 +186,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 				cm_format = :cm_format
 			WHERE cidlookup_id = :id
 			';
+echo($sql).PHP_EOL; print_r($array);
 			$stmt = $this->FreePBX->Database->prepare($sql);
 			$stmt->execute($insert);
 			return $this;
