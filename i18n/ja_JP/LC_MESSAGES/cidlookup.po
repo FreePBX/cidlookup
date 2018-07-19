@@ -37,15 +37,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 14:53-0400\n"
+"POT-Creation-Date: 2017-10-24 11:55-0700\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
 "cidlookup/ja_JP/>\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -77,7 +77,7 @@ msgstr " OpenCNAMを使用 [https://www.opencnam.com/]"
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr " astdbから情報を取得します。phonebookモジュールから情報を登録します。"
 
-#: views/form.php:131
+#: views/form.php:204
 msgid ""
 "<p>If you need to create an OpenCNAM account, you can visit their website: "
 "<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
@@ -100,7 +100,7 @@ msgstr ""
 "ジュールをインストールすることもできます。注意、名前の検索はPBXを遅くすること"
 "があります。"
 
-#: views/form.php:140
+#: views/form.php:213
 msgid "Account SID:"
 msgstr "アカウントSID:"
 
@@ -124,7 +124,7 @@ msgstr ""
 "別のソースに対して、着信呼の発信者番号の検索を許可する（OpenCNAM, MySQL、"
 "HTTP、ENUM、電話帳のモジュール）"
 
-#: views/form.php:164
+#: views/form.php:237
 msgid "Auth Token"
 msgstr "認証トークン"
 
@@ -136,9 +136,13 @@ msgstr "CID検索ソース"
 msgid "CIDLookup"
 msgstr "CIDLookup"
 
-#: views/form.php:108
+#: views/form.php:122
 msgid "Cache Results"
 msgstr "結果をキャッシュ"
+
+#: views/form.php:178
+msgid "Caller ID Format"
+msgstr ""
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
@@ -148,23 +152,39 @@ msgstr "発信者番号検索"
 msgid "CallerID Lookup Sources"
 msgstr "発信者番号検索ソース"
 
-#: views/form.php:460
+#: views/form.php:533
 msgid "Character Set"
 msgstr "文字コード"
 
-#: install.php:162
-msgid "Checking for cidlookup field in core's incoming table.."
-msgstr "コアの着信テーブルから発信者番号検索フィールドをチェック.."
+#: views/form.php:185
+msgid "Company"
+msgstr ""
 
-#: views/form.php:364
+#: views/form.php:97
+msgid "Contact Manager"
+msgstr ""
+
+#: views/form.php:151
+msgid "Contact Manager Group(s)"
+msgstr ""
+
+#: views/form.php:42
+msgid "Contact Manager Not Installed"
+msgstr ""
+
+#: views/form.php:25
+msgid "Contact Manager:"
+msgstr ""
+
+#: views/form.php:437
 msgid "Database"
 msgstr "データベース"
 
-#: views/form.php:376
+#: views/form.php:449
 msgid "Database Name"
 msgstr "データベース名"
 
-#: views/form.php:123
+#: views/form.php:137
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
@@ -172,7 +192,7 @@ msgstr ""
 "astDBへの結果をキャッシュするかどうかを決定します；現在の値を上書きします。イ"
 "ンターナルソースの挙動には影響しません。"
 
-#: Cidlookup.class.php:70
+#: Cidlookup.class.php:66
 msgid "Delete"
 msgstr "削除"
 
@@ -180,21 +200,25 @@ msgstr "削除"
 msgid "Description"
 msgstr "説明"
 
+#: views/form.php:186
+msgid "Display Name"
+msgstr ""
+
 #: views/form.php:21
 msgid "ENUM:"
 msgstr "ENUM:"
 
-#: install.php:149
-msgid "ERROR: failed: "
-msgstr "ERROR： 失敗："
-
-#: views/form.php:65
+#: views/form.php:78
 msgid "Enter a description for this source."
 msgstr "このソースの説明を入力。"
 
-#: install.php:140
-msgid "FATAL: failed to transform old routes: "
-msgstr "FATAL： 古い経路の変換に失敗しました："
+#: views/form.php:165
+msgid "Filter results to these contact manager groups"
+msgstr ""
+
+#: views/form.php:183
+msgid "First Last"
+msgstr ""
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -204,15 +228,19 @@ msgstr "HTTP:"
 msgid "HTTPS:"
 msgstr "HTTPS:"
 
-#: views/form.php:192 views/form.php:340
+#: views/form.php:265 views/form.php:413
 msgid "Host"
 msgstr "ホスト名"
 
-#: views/form.php:204
+#: views/form.php:277
 msgid "Host name or IP address"
 msgstr "ホスト名 or IPアドレス"
 
-#: views/form.php:83
+#: views/form.php:195
+msgid "How to format the returned data"
+msgstr ""
+
+#: views/form.php:96
 msgid "Internal"
 msgstr "内部"
 
@@ -224,27 +252,27 @@ msgstr "内部:"
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr "MySQLデータベースにクエリをかけて発信者情報を取得します。"
 
+#: views/form.php:184
+msgid "Last First"
+msgstr ""
+
 #: views/bootnav.php:6
 msgid "List Sources"
 msgstr ""
 
-#: install.php:132
-msgid "Migrating channel routing to Zap DID routing.."
-msgstr "チャネルルーティングからZapダイヤルインルーティングに移行.."
-
-#: views/form.php:472
+#: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr "MySQLの文字コード。空にすると、MySQLデフォルトのlatin1に設定されます"
 
-#: views/form.php:352
+#: views/form.php:425
 msgid "MySQL Host"
 msgstr "MySQL ホスト"
 
-#: views/form.php:448
+#: views/form.php:521
 msgid "MySQL Password"
 msgstr "MySQLパスワード"
 
-#: views/form.php:424
+#: views/form.php:497
 msgid "MySQL Username"
 msgstr "MySQLユーザー名"
 
@@ -252,31 +280,23 @@ msgstr "MySQLユーザー名"
 msgid "MySQL:"
 msgstr "MySQL:"
 
-#: views/form.php:115
+#: views/form.php:129
 msgid "No"
 msgstr "いいえ"
 
-#: Cidlookup.class.php:99 functions.inc.php:331
+#: Cidlookup.class.php:96
 msgid "None"
 msgstr "なし"
 
-#: install.php:156
-msgid "Not Needed"
-msgstr "必要なし"
-
-#: views/form.php:481 views/form.php:486
+#: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
 msgstr "未実装"
-
-#: install.php:142 install.php:151
-msgid "OK"
-msgstr "OK"
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
 msgstr "OpenCNAM"
 
-#: functions.inc.php:187
+#: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -288,19 +308,19 @@ msgstr "OpenCNAM 制限に達しました！"
 msgid "OpenCNAM:"
 msgstr "OpenCNAM:"
 
-#: views/form.php:264 views/form.php:436
+#: views/form.php:337 views/form.php:509
 msgid "Password"
 msgstr "パスワード"
 
-#: views/form.php:276
+#: views/form.php:349
 msgid "Password to use in HTTP authentication"
 msgstr "HTTP認証で使用するパスワード"
 
-#: views/form.php:288
+#: views/form.php:361
 msgid "Path"
 msgstr "パス"
 
-#: views/form.php:300
+#: views/form.php:373
 msgid ""
 "Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
 "will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
@@ -308,25 +328,21 @@ msgid ""
 "will be replaced with channel language"
 msgstr ""
 
-#: views/form.php:216
+#: views/form.php:289
 msgid "Port"
 msgstr "ポート"
 
-#: views/form.php:228
+#: views/form.php:301
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 "HTTP、若しくはHTTPSサーバーが待ち構えているポート番号 (デフォルト http 80、"
 "https 443)"
 
-#: install.php:108
-msgid "Processing Database Tables"
-msgstr ""
-
-#: views/form.php:312 views/form.php:388
+#: views/form.php:385 views/form.php:461
 msgid "Query"
 msgstr "クエリ"
 
-#: views/form.php:324
+#: views/form.php:397
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
@@ -337,7 +353,7 @@ msgstr ""
 "ます。<br/>例: number=[NUMBER]&source=crm<br/>'[NAME]' をかけると既存のCID名"
 "に上書きします。<br/>'[LANGUAGE]' はAsteriskチャネルの言語になります。"
 
-#: views/form.php:400
+#: views/form.php:473
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -345,13 +361,13 @@ msgstr ""
 "クエリー、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例："
 "SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: install.php:145
-msgid "Removing deprecated channel field from incoming.."
-msgstr "着信から、重複チャネルフィールドを削除.."
-
-#: Cidlookup.class.php:80
+#: Cidlookup.class.php:76
 msgid "Reset"
 msgstr "リセット"
+
+#: views/form.php:25
+msgid "Searches a contact manager group"
+msgstr ""
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
@@ -361,11 +377,11 @@ msgstr "ソースの種類を以下から選択してください。"
 msgid "Source"
 msgstr "ソース"
 
-#: views/form.php:53
+#: views/form.php:66
 msgid "Source Description"
 msgstr "ソースの説明"
 
-#: views/form.php:77
+#: views/form.php:90
 msgid "Source type"
 msgstr "ソースの種類"
 
@@ -373,11 +389,11 @@ msgstr "ソースの種類"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "ソースは発信者名検索ソースセクションで追加できます。"
 
-#: Cidlookup.class.php:75
+#: Cidlookup.class.php:71
 msgid "Submit"
 msgstr "送信"
 
-#: views/form.php:36
+#: views/form.php:49
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
@@ -390,21 +406,21 @@ msgstr ""
 msgid "Type"
 msgstr "種類"
 
-#: functions.inc.php:187
+#: functions.inc.php:192
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
 msgstr ""
 
-#: views/form.php:240 views/form.php:412
+#: views/form.php:313 views/form.php:485
 msgid "Username"
 msgstr "ユーザー名"
 
-#: views/form.php:252
+#: views/form.php:325
 msgid "Username to use in HTTP authentication"
 msgstr "HTTP認証で使用するユーザー名"
 
-#: views/form.php:113
+#: views/form.php:127
 msgid "Yes"
 msgstr "はい"
 
@@ -425,7 +441,7 @@ msgstr ""
 "CallerIDルックアップソースのメニューを開き、アカウント情報(OpenCNAM "
 "Professional Tier credentials)を入力してください。<br/>"
 
-#: views/form.php:152
+#: views/form.php:225
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
@@ -433,7 +449,7 @@ msgstr ""
 "OpenCNAMのアカウントSID。OpenCNAMのダッシュボードページで確認できます："
 "https://www.opencnam.com/dashboard"
 
-#: views/form.php:176
+#: views/form.php:249
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
@@ -441,13 +457,32 @@ msgstr ""
 "OpenCNAMの認証トークン。OpenCNAMのダッシュボードページで確認できます："
 "https://www.opencnam.com/dashboard"
 
-#: install.php:166
-msgid "not present"
-msgstr "存在しません"
+#~ msgid "Checking for cidlookup field in core's incoming table.."
+#~ msgstr "コアの着信テーブルから発信者番号検索フィールドをチェック.."
 
-#: install.php:168
-msgid "removed"
-msgstr "削除済み"
+#~ msgid "ERROR: failed: "
+#~ msgstr "ERROR： 失敗："
+
+#~ msgid "FATAL: failed to transform old routes: "
+#~ msgstr "FATAL： 古い経路の変換に失敗しました："
+
+#~ msgid "Migrating channel routing to Zap DID routing.."
+#~ msgstr "チャネルルーティングからZapダイヤルインルーティングに移行.."
+
+#~ msgid "Not Needed"
+#~ msgstr "必要なし"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Removing deprecated channel field from incoming.."
+#~ msgstr "着信から、重複チャネルフィールドを削除.."
+
+#~ msgid "not present"
+#~ msgstr "存在しません"
+
+#~ msgid "removed"
+#~ msgstr "削除済み"
 
 #~ msgid "Adding opencnam account columns to the cidlookup table..."
 #~ msgstr "opencnamアカウントコラムをcidlookupテーブルに追加中.."
@@ -565,8 +600,8 @@ msgstr "削除済み"
 
 #~ msgid ""
 #~ "Select the source type, you can choose between:<ul>\n"
-#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]"
-#~ "</li>\n"
+#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam."
+#~ "com/]</li>\n"
 #~ "                    <li>Internal: use astdb as lookup source, use "
 #~ "phonebook module to populate it</li>\n"
 #~ "                    <li>ENUM: Use DNS to lookup caller names, it uses "
