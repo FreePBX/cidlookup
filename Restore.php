@@ -12,4 +12,23 @@ class Restore Extends Base\RestoreBase{
       $CidLookup->upsert($source);
     }
   }
+  public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir)
+  {
+    $tables = array_flip($tables + $unknownTables);
+    if (!isset($tables['cid_lookup'])) {
+      return $this;
+    }
+    $cb = $this->FreePBX->Cidlookup;
+    $cb->setDatabase($pdo);
+    $configs['dids'] = $cb->didList();
+    $configs['sources'] = $cb->getList();
+    $cb->resetDatabase();
+    foreach ($configs['dids'] as $did) {
+      $cb->didAdd($did['cidlookup_id'], $did['extension'], $did['cidnum']);
+    }
+    foreach ($configs['sources'] as $source) {
+      $cb->upsert($source);
+    }
+    return $this;
+  }
 }

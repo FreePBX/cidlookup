@@ -30,6 +30,16 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 			needreload();
 		}
 	}
+
+	public function setDatabase($database){
+		$this->db = $database;
+		return $this;
+	}
+
+	public function resetDatabase(){
+		$this->db = FreePBX
+	}
+
 	public function getActionBar($request){
 		if('cidlookup' === $request['display']){
 			$buttons = [
@@ -121,7 +131,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 	public function getList($all = false){
 		$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
 		$sql = "SELECT * FROM cidlookup";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->dbe->prepare($sql);
 		$stmt->execute();
 		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if (is_array($results)) {
@@ -138,7 +148,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
 		VALUES
 			(:description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->dbe->prepare($sql);
 		$stmt->execute($insert);
 		return $this;
 	}
@@ -154,7 +164,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 			(cidlookup_id, description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
 		VALUES
 			(:cidlookup_id, :description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->dbe->prepare($sql);
 		$stmt->execute($array);
 		return $this;
 	}
@@ -187,7 +197,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 			WHERE cidlookup_id = :id
 			';
 echo($sql).PHP_EOL; print_r($array);
-			$stmt = $this->FreePBX->Database->prepare($sql);
+			$stmt = $this->dbe->prepare($sql);
 			$stmt->execute($insert);
 			return $this;
 	}
@@ -195,10 +205,10 @@ echo($sql).PHP_EOL; print_r($array);
 	public function delete($id)
 	{
 		$sql = "DELETE FROM cidlookup WHERE cidlookup_id = :id";
-		$this->FreePBX->Database->prepare($sql)
+		$this->dbe->prepare($sql)
 			->execute([':id' => $id]);
 		$sql = "DELETE FROM cidlookup_incoming WHERE cidlookup_id = :id";
-		$this->FreePBX->Database->prepare($sql)
+		$this->dbe->prepare($sql)
 			->execute([':id' => $id]);
 		return $this;
 	}
@@ -206,7 +216,7 @@ echo($sql).PHP_EOL; print_r($array);
 	public function getOne($id)
 	{
 		$sql = "SELECT * FROM cidlookup WHERE cidlookup_id = :id";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->dbe->prepare($sql);
 		$stmt->execute([':id' => $id]);
 		//Legacy behavior
 		if ($stmt->rowCount() === 0) {
@@ -218,7 +228,7 @@ echo($sql).PHP_EOL; print_r($array);
 
 	public function didAdd($cidlookupid, $extension, $cidnum){
 		$sql = 'INSERT INTO cidlookup_incoming(cidlookup_id, extension, cidnum) VALUES(:id, :extension, :cidnum)';
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->dbe->prepare($sql);
 		$stmt->execute([
 			':id' => $cidlookupid,
 			':extension' => $extension,
@@ -229,7 +239,7 @@ echo($sql).PHP_EOL; print_r($array);
 
 	public function didDelete($extension, $callerid){
 		$sql = "DELETE FROM cidlookup_incoming WHERE extension = :extension AND cidnum = :callerid";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->dbe->prepare($sql);
 		$stmt->execute([
 			':extension' => $extension,
 			':callerid' => $callerid,
@@ -249,7 +259,7 @@ echo($sql).PHP_EOL; print_r($array);
 			$sql .= " WHERE cidlookup_id = :id";
 		}
 
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->dbe->prepare($sql);
 		$stmt->execute([':id' => $id]);
 		//Legacy behavior
 		if ($stmt->rowCount() === 0) {
