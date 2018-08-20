@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-19 18:02-0400\n"
+"POT-Creation-Date: 2018-08-20 12:43-0400\n"
 "PO-Revision-Date: 2018-07-18 19:12+0000\n"
 "Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
 "Language-Team: French <http://*/projects/freepbx/cidlookup/fr/>\n"
@@ -106,7 +106,7 @@ msgstr ""
 msgid "Auth Token"
 msgstr ""
 
-#: functions.inc.php:20
+#: views/coreDIDHook.php:9
 msgid "CID Lookup Source"
 msgstr "Source de Consultation de CID"
 
@@ -170,7 +170,7 @@ msgstr ""
 "Décide de mettre en cache ou non les résultats dans astDB; cela écrasera les "
 "valeurs actuelles. N'affectera pas le comportement de source Interne"
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:49
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -262,7 +262,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:132
 msgid "None"
 msgstr "Aucun"
 
@@ -274,7 +274,7 @@ msgstr "Pas encore implémenté"
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -335,7 +335,7 @@ msgstr ""
 "l'appelant<br/>exemple : SELECT nom FROM annuaire WHERE numéro LIKE "
 "'%[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: Cidlookup.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -359,13 +359,13 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
-#: functions.inc.php:40
+#: views/coreDIDHook.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 "Les sources peuvent être ajoutées dans la section Sources de Consultation du "
 "Nom de l'Appelant"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:54
 msgid "Submit"
 msgstr ""
 
@@ -380,7 +380,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-19 18:02-0400\n"
+"POT-Creation-Date: 2018-08-20 12:43-0400\n"
 "PO-Revision-Date: 2018-05-29 07:40+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/cidlookup/it/>\n"
@@ -122,7 +122,7 @@ msgstr ""
 msgid "Auth Token"
 msgstr "Token di autenticazione"
 
-#: functions.inc.php:20
+#: views/coreDIDHook.php:9
 msgid "CID Lookup Source"
 msgstr "Sorgente Risoluzione ID"
 
@@ -187,7 +187,7 @@ msgstr ""
 "di eventuali dati già presenti. Questo non influisce sul comportamento della "
 "sorgente Interna."
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:49
 msgid "Delete"
 msgstr "Elimina"
 
@@ -279,7 +279,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "No"
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:132
 msgid "None"
 msgstr "Nessuna"
 
@@ -291,7 +291,7 @@ msgstr "Non ancora implementato"
 msgid "OpenCNAM"
 msgstr "openCNAM"
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM richiede autenticazione"
 
@@ -361,7 +361,7 @@ msgstr ""
 "Query, il campo speciale '[NUMBER]' sarà sostituito dal numero di "
 "telefono<br/>e.s.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: Cidlookup.class.php:59
 msgid "Reset"
 msgstr "Azzerare"
 
@@ -385,12 +385,12 @@ msgstr "Descrizione sorgente"
 msgid "Source type"
 msgstr "Tipo sorgente"
 
-#: functions.inc.php:40
+#: views/coreDIDHook.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 "Le sorgenti possono essere aggiunte nella sezione Risoluzione Nome Chiamante"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:54
 msgid "Submit"
 msgstr "Sottoscrivi"
 
@@ -407,7 +407,7 @@ msgstr ""
 msgid "Type"
 msgstr "Tipo"
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"

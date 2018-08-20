@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 11:55-0700\n"
+"POT-Creation-Date: 2018-08-20 12:43-0400\n"
 "PO-Revision-Date: 2015-05-31 00:21+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Auth Token"
 msgstr "Авт. маркер"
 
-#: functions.inc.php:20
+#: views/coreDIDHook.php:9
 msgid "CID Lookup Source"
 msgstr "Источник поиска CID"
 
@@ -189,7 +189,7 @@ msgstr ""
 "кеш могут не всегда совпадать с действительными. Не влияет на поведение и "
 "достоверность внутренних источников"
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:49
 msgid "Delete"
 msgstr "Удалить"
 
@@ -285,7 +285,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "Нет"
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:132
 msgid "None"
 msgstr "Нет"
 
@@ -297,7 +297,7 @@ msgstr "Пока не обеспечивается"
 msgid "OpenCNAM"
 msgstr "Библиотека OpenCNAM"
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -365,7 +365,7 @@ msgstr ""
 "Строка запроса, содержащая '[NUMBER]', которая получает значение Caller ID "
 "<br/>например: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: Cidlookup.class.php:59
 msgid "Reset"
 msgstr "Сброс"
 
@@ -389,11 +389,11 @@ msgstr "Описание источника"
 msgid "Source type"
 msgstr "Тип источника"
 
-#: functions.inc.php:40
+#: views/coreDIDHook.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Источник может быть добавлен в секцию Сервис поиска Caller ID"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:54
 msgid "Submit"
 msgstr "Подтвердить"
 
@@ -410,7 +410,7 @@ msgstr ""
 msgid "Type"
 msgstr "Тип"
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"

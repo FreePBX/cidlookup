@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 11:55-0700\n"
+"POT-Creation-Date: 2018-08-20 12:43-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Auth Token"
 msgstr ""
 
-#: functions.inc.php:20
+#: views/coreDIDHook.php:9
 msgid "CID Lookup Source"
 msgstr "CID查找源"
 
@@ -154,7 +154,7 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr "设置是否将查询结果缓存到astDB；它将覆盖当前设置。它不影响内部源的行为"
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:49
 msgid "Delete"
 msgstr ""
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:132
 msgid "None"
 msgstr "无"
 
@@ -258,7 +258,7 @@ msgstr "尚未实现"
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -318,7 +318,7 @@ msgstr ""
 "设置查询字符串，特殊标识符“[NUMBER]”会被替换成主叫号码<br/>例如：SELECT name "
 "FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: Cidlookup.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -342,11 +342,11 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
-#: functions.inc.php:40
+#: views/coreDIDHook.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "可以向呼叫者姓名查找源小节添加源"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:54
 msgid "Submit"
 msgstr ""
 
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"

@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 11:55-0700\n"
+"POT-Creation-Date: 2018-08-20 12:43-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Auth Token"
 msgstr ""
 
-#: functions.inc.php:20
+#: views/coreDIDHook.php:9
 msgid "CID Lookup Source"
 msgstr "מקור חיפוש זיהוי שיחה"
 
@@ -167,7 +167,7 @@ msgstr ""
 "החלט אם לשמור או לא לשמור את התוצאות ב astDB; פעולה זו תדרוס ערכים קיימים. "
 "היא אינה משפיעה על התנהגות המקורות הפנימיים"
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:49
 msgid "Delete"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:132
 msgid "None"
 msgstr "אף אחד"
 
@@ -271,7 +271,7 @@ msgstr ""
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -331,7 +331,7 @@ msgstr ""
 "שאילתא, כאשר הטוקן המיוחד '[NUMBER]' יוחלף במספר הטלפון של המתקשר<br /"
 ">לדוגמא: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: Cidlookup.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -355,11 +355,11 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
-#: functions.inc.php:40
+#: views/coreDIDHook.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:54
 msgid "Submit"
 msgstr ""
 
@@ -374,7 +374,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"

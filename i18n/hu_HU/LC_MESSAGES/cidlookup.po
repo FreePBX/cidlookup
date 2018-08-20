@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 11:55-0700\n"
+"POT-Creation-Date: 2018-08-20 12:43-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Auth Token"
 msgstr ""
 
-#: functions.inc.php:20
+#: views/coreDIDHook.php:9
 msgid "CID Lookup Source"
 msgstr "CID meghatározó forrás"
 
@@ -171,7 +171,7 @@ msgstr ""
 "Legyen, vagy ne legyen a lekérdezés cachelve a belső astDB-ben; ez "
 "különbözhet az mindenkori értéktől. Nincs a belső adatbázisra értelmezve."
 
-#: Cidlookup.class.php:66
+#: Cidlookup.class.php:49
 msgid "Delete"
 msgstr ""
 
@@ -263,7 +263,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:96
+#: Cidlookup.class.php:132
 msgid "None"
 msgstr "Nincs"
 
@@ -275,7 +275,7 @@ msgstr ""
 msgid "OpenCNAM"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
@@ -335,7 +335,7 @@ msgstr ""
 "Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: SELECT name "
 "FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:76
+#: Cidlookup.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -359,11 +359,11 @@ msgstr ""
 msgid "Source type"
 msgstr ""
 
-#: functions.inc.php:40
+#: views/coreDIDHook.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
 
-#: Cidlookup.class.php:71
+#: Cidlookup.class.php:54
 msgid "Submit"
 msgstr ""
 
@@ -378,7 +378,7 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: functions.inc.php:192
+#: functions.inc.php:97
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
