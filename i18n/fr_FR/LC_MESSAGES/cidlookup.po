@@ -19,17 +19,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 11:55-0700\n"
-"PO-Revision-Date: 2016-02-06 07:16+0200\n"
-"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
-"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/cidlookup/"
-"fr_FR/>\n"
+"POT-Creation-Date: 2018-07-19 18:02-0400\n"
+"PO-Revision-Date: 2018-07-18 19:12+0000\n"
+"Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
+"Language-Team: French <http://*/projects/freepbx/cidlookup/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: views/form.php:22
 msgid ""
@@ -173,7 +172,7 @@ msgstr ""
 
 #: Cidlookup.class.php:66
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 #: views/grid.php:38
 msgid "Description"
