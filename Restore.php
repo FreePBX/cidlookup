@@ -5,11 +5,15 @@ class Restore Extends Base\RestoreBase{
   public function runRestore($jobid){
     $CidLookup = $this->FreePBX->Cidlookup;
     $configs = reset($this->getConfigs());
-    foreach($configs['dids'] as $did){
-      $CidLookup->didAdd($did['cidlookup_id'], $did['extension'], $did['cidnum']);
+    if (!empty($configs['dids'])) {
+      foreach($configs['dids'] as $did){
+        $CidLookup->didAdd($did['cidlookup_id'], $did['extension'], $did['cidnum']);
+      }
     }
-    foreach($configs['sources'] as $source){
-      $CidLookup->upsert($source);
+    if (!empty($configs['sources'])) {
+      foreach($configs['sources'] as $source){
+        $CidLookup->upsert($source);
+      }
     }
   }
   public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir)
