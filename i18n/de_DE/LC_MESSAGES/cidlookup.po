@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-19 18:02-0400\n"
-"PO-Revision-Date: 2018-07-18 19:14+0000\n"
+"PO-Revision-Date: 2018-08-25 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/cidlookup/de/>\n"
 "Language: de_DE\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/form.php:22
 msgid ""
@@ -77,7 +77,7 @@ msgstr ""
 
 #: cidlookup.i18n.php:6
 msgid "Admin"
-msgstr "Admin"
+msgstr "Administrator"
 
 #: cidlookup.i18n.php:8
 msgid ""
@@ -161,7 +161,7 @@ msgstr "Beschreibung"
 
 #: views/form.php:186
 msgid "Display Name"
-msgstr ""
+msgstr "Anzeigename"
 
 #: views/form.php:21
 msgid "ENUM:"
@@ -345,7 +345,7 @@ msgstr ""
 
 #: Cidlookup.class.php:71
 msgid "Submit"
-msgstr ""
+msgstr "Absenden"
 
 #: views/form.php:49
 #, php-format
