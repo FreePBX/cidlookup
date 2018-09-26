@@ -13,9 +13,9 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 	public function install() {}
 	public function uninstall() {}
 	public function doConfigPageInit($page) {
-		$action = $this->getReq('action',false);
-		$view = $this->getReq('view',false);
-		$itemid = $this->getReq('itemid',false);
+		$action = isset($_REQUEST['action'])?$_REQUEST['action']:false;
+		$view = isset($_REQUEST['view'])?$_REQUEST['view']:false;
+		$itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:false;
 		if('add' === $action){
 			$this->add();
 		}
@@ -143,7 +143,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 	}
 
 	public function add(){
-		$insert = $this->getInsert();
+		$insert = $this->getInsert($_REQUEST);
 		$sql = "INSERT INTO cidlookup
 			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
 		VALUES
@@ -170,12 +170,11 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 	}
 	
 	public function edit($id){
-		$insert = $this->getInsert();
-		$insert[':id'] = $id;
+		$insert = $this->getInsert($_REQUEST);
+		$insert['id'] = $id;
 		$sql = 'UPDATE cidlookup
 			SET
 				description = :description,
-				deptname = :deptname,
 				sourcetype = :sourcetype ,
 				cache = :cache,
 				http_host = :http_host,
@@ -196,14 +195,12 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 				cm_format = :cm_format
 			WHERE cidlookup_id = :id
 			';
-echo($sql).PHP_EOL; print_r($array);
 			$stmt = $this->Database->prepare($sql);
 			$stmt->execute($insert);
 			return $this;
 	}
 
-	public function delete($id)
-	{
+	public function delete($id){
 		$sql = "DELETE FROM cidlookup WHERE cidlookup_id = :id";
 		$this->Database->prepare($sql)
 			->execute([':id' => $id]);
@@ -267,28 +264,36 @@ echo($sql).PHP_EOL; print_r($array);
 		}
 		return $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
-
-	public function getInsert(){
-		return [
-			":description" => $this->getReq("description",""),
-			":sourcetype" => $this->getReq("sourcetype",""),
-			":http_host" => $this->getReq("http_host",""),
-			":http_port" => $this->getReq("http_port",""),
-			":http_username" => $this->getReq("http_username",""),
-			":http_password" => $this->getReq("http_password",""),
-			":http_path" => $this->getReq("http_path",""),
-			":http_query" => $this->getReq("http_query",""),
-			":mysql_host" => $this->getReq("mysql_host",""),
-			":mysql_dbname" => $this->getReq("mysql_dbname",""),
-			":mysql_query" => $this->getReq("mysql_query",""),
-			":mysql_username" => $this->getReq("mysql_username",""),
-			":mysql_password" => $this->getReq("mysql_password",""),
-			":mysql_charset" => $this->getReq("mysql_charset",""),
-			":opencnam_account_sid" => $this->getReq("opencnam_account_sid",""),
-			":opencnam_auth_token" => $this->getReq("opencnam_auth_token",""),
-			":cm_group" => implode('_', $this->getReq("cm_group", [])),
-			":cm_format" => $this->getReq("cm_format", ""),
-			":cache" => $this->getReq("cache", 0),
+	
+	public function getInsert($request){
+		$defaults = [
+			"description" => "",
+			"sourcetype" => "",
+			"http_host" => "",
+			"http_port" => "",
+			"http_username" => "",
+			"http_password" => "",
+			"http_path" => "",
+			"http_query" => "",
+			"mysql_host" => "",
+			"mysql_dbname" => "",
+			"mysql_query" => "",
+			"mysql_username" => "",
+			"mysql_password" => "",
+			"mysql_charset" => "",
+			"opencnam_account_sid" => "",
+			"opencnam_auth_token" => "",
+			"cm_group" => [],
+			"cm_format" => "",
+			"cache" => 0,
 		];
+		$final = [];
+		foreach ($defaults as $key => $value) {
+			$final[$key] = isset($request[$key])?$request[$key]:$value;
+		}
+		if(!is_array($final['cm_group']) && !empty($final['cm_group'])){
+			$final['cm_group'] = implode('_', $final['cm_group']);
+		}
+		return $final;
 	}
 }

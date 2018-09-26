@@ -18,7 +18,7 @@ foreach ($cidsources as $source) {
     $srow .= '</td>';
     $srow .= '<td><a href="?display=cidlookup&view=form&itemid='.$source['cidlookup_id'].'&amp;extdisplay='.$source['cidlookup_id'].'"><i class="fa fa-edit"></i></a>';
     $srow .= '&nbsp;';
-    $srow .= '<a href="config.php?display=cidlookup&view=form&amp;itemid='.$source['cidlookup_id'].'&amp;action=delete"><i class="fa fa-trash"></i></a>';
+    $srow .= '<a href="config.php?display=cidlookup&amp;itemid='.$source['cidlookup_id'].'&amp;action=delete"><i class="fa fa-trash"></i></a>';
     $srow .= '</td></tr>';
 }
 ?>
