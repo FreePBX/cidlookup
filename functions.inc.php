@@ -7,7 +7,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 include __DIR__.'/deprecated.functions.php';
 
 function cidlookup_hook_core($viewing_itemid, $target_menuid) {
-	if('did' === $viewing_itemid){
+	if('did' == $target_menuid){
 		$vars['didIdOptions'] = '';
 		$sources = FreePBX::Cidlookup()->getList();
 		$current = cidlookup_did_get($viewing_itemid);
@@ -15,34 +15,34 @@ function cidlookup_hook_core($viewing_itemid, $target_menuid) {
 			$vars['didIdOptions'] .= sprintf('<option value="%d" %s>%s</option>', $source['cidlookup_id'], ($current == $source['cidlookup_id'] ? 'selected' : ''), $source['description']);
 		}
 
-		return load_view(__DIR__.'/views/coreDIDHook.php');
+		return load_view(__DIR__.'/views/coreDIDHook.php',$vars);
 	}
 }
 
 function cidlookup_hookProcess_core($viewing_itemid, $request) {
-
-		if (!isset($request['action']))
-			return;
-		switch ($request['action']) {
-			case 'addIncoming':
-				$invalidDIDChars = array('<', '>');
-				$extension = trim(str_replace($invalidDIDChars, "", $request['extension']));
-				$cidnum = trim(str_replace($invalidDIDChars, "", $request['cidnum']));
-				cidlookup_did_add($request['cidlookup_id'], $extension, $cidnum);
-				break;
-			case 'delIncoming':
-				$extarray = explode('/', $request['extdisplay'], 2);
-				cidlookup_did_del($extarray[0], $extarray[1]);
-								break;
-			case 'edtIncoming':		 // deleting and adding as in core module
-				$extarray = explode('/', $request['extdisplay'], 2);
-				$invalidDIDChars = array('<', '>');
-				$extension = trim(str_replace($invalidDIDChars, "", $request['extension']));
-				$cidnum = trim(str_replace($invalidDIDChars, "", $request['cidnum']));
-				cidlookup_did_del($extarray[0], $extarray[1]);
-				cidlookup_did_add($request['cidlookup_id'], $extension, $cidnum);
-				break;
-		}
+	$cidlookup = FreePBX::Cidlookup();
+	if (!isset($request['action']))
+		return;
+	switch ($request['action']) {
+		case 'addIncoming':
+			$invalidDIDChars = array('<', '>');
+			$extension = trim(str_replace($invalidDIDChars, "", $request['extension']));
+			$cidnum = trim(str_replace($invalidDIDChars, "", $request['cidnum']));
+			$cidlookup->didAdd($request['cidlookup_id'], $extension, $cidnum);
+			break;
+		case 'delIncoming':
+			$extarray = explode('/', $request['extdisplay'], 2);
+			$cidlookup->didDelete($extarray[0], $extarray[1]);
+			break;
+		case 'edtIncoming':		 // deleting and adding as in core module
+			$extarray = explode('/', $request['extdisplay'], 2);
+			$invalidDIDChars = array('<', '>');
+			$extension = trim(str_replace($invalidDIDChars, "", $request['extension']));
+			$cidnum = trim(str_replace($invalidDIDChars, "", $request['cidnum']));
+			$cidlookup->didDelete($extarray[0], $extarray[1]);
+			$cidlookup->didAdd($request['cidlookup_id'], $extension, $cidnum);
+			break;
+	}
 }
 
 
