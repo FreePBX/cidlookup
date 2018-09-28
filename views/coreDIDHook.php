@@ -11,7 +11,7 @@
 					</div>
 					<div class="col-md-9">
 						<select name="cidlookup_id" id="cidlookup_id" class="form-control" onChange="javascript:openCNAMNoteDisplay(this, this.selectedIndex)">
-							<?php echo $didIdOptions?>
+							<?php echo $didIdOptions ?>
 						</select>
 					</div>
 				</div>
