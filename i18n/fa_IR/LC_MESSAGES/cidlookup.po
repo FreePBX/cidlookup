@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-24 11:55-0700\n"
-"PO-Revision-Date: 2016-08-26 03:09+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
-"cidlookup/fa_IR/>\n"
+"PO-Revision-Date: 2019-01-25 14:41+0000\n"
+"Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
+"Language-Team: Persian <http://*/projects/freepbx/cidlookup/fa/>\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/form.php:22
 msgid ""
@@ -123,7 +122,7 @@ msgstr "نتایج کش"
 
 #: views/form.php:178
 msgid "Caller ID Format"
-msgstr ""
+msgstr "فرمت شناسه تماس گیرنده"
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
@@ -139,23 +138,23 @@ msgstr "مجموعه کاراکتر"
 
 #: views/form.php:185
 msgid "Company"
-msgstr ""
+msgstr "شرکت"
 
 #: views/form.php:97
 msgid "Contact Manager"
-msgstr ""
+msgstr "مدیر تماس"
 
 #: views/form.php:151
 msgid "Contact Manager Group(s)"
-msgstr ""
+msgstr "تماس با مدیر گروه(ها)"
 
 #: views/form.php:42
 msgid "Contact Manager Not Installed"
-msgstr ""
+msgstr "مدیر ارتباطی نصب نشده است"
 
 #: views/form.php:25
 msgid "Contact Manager:"
-msgstr ""
+msgstr "مدیر تماس:"
 
 #: views/form.php:437
 msgid "Database"
@@ -183,7 +182,7 @@ msgstr "شرح"
 
 #: views/form.php:186
 msgid "Display Name"
-msgstr ""
+msgstr "نام نمایشی"
 
 #: views/form.php:21
 msgid "ENUM:"
@@ -195,11 +194,11 @@ msgstr "شرحی برای این منبع وارد کنید."
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
-msgstr ""
+msgstr "فیلتر نتایج را به این گروه های مدیریت تماس"
 
 #: views/form.php:183
 msgid "First Last"
-msgstr ""
+msgstr "اول آخر"
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -219,7 +218,7 @@ msgstr "نام هاست یا آدرس IP"
 
 #: views/form.php:195
 msgid "How to format the returned data"
-msgstr ""
+msgstr "نحوه قالب بندی داده های بازگشتی"
 
 #: views/form.php:96
 msgid "Internal"
@@ -235,7 +234,7 @@ msgstr "برای بازیابی نام تماس گیرنده به دیتابیس
 
 #: views/form.php:184
 msgid "Last First"
-msgstr ""
+msgstr "آخر اول"
 
 #: views/bootnav.php:6
 msgid "List Sources"
@@ -274,9 +273,8 @@ msgid "Not yet implemented"
 msgstr "هنوز اجرا نشده"
 
 #: views/form.php:10 views/form.php:15
-#, fuzzy
 msgid "OpenCNAM"
-msgstr "OpenCNAM"
+msgstr "openCNAM"
 
 #: functions.inc.php:192
 msgid "OpenCNAM Requires Authentication"
@@ -287,9 +285,8 @@ msgid "OpenCNAM Throttle Reached!"
 msgstr "OpenCNAM Throttle  Reached!"
 
 #: views/form.php:19
-#, fuzzy
 msgid "OpenCNAM:"
-msgstr "OpenCNAM:"
+msgstr "openCNAM:"
 
 #: views/form.php:337 views/form.php:509
 msgid "Password"
@@ -353,7 +350,7 @@ msgstr "بازگردانی"
 
 #: views/form.php:25
 msgid "Searches a contact manager group"
-msgstr ""
+msgstr "جستجو گروه مدیریت مخاطبین"
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
