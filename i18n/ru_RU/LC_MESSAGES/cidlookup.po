@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2019-02-20 18:35-0500\n"
 "PO-Revision-Date: 2015-05-31 00:21+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -189,7 +189,7 @@ msgstr ""
 "кеш могут не всегда совпадать с действительными. Не влияет на поведение и "
 "достоверность внутренних источников"
 
-#: Cidlookup.class.php:49
+#: Cidlookup.class.php:40
 msgid "Delete"
 msgstr "Удалить"
 
@@ -285,7 +285,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "Нет"
 
-#: Cidlookup.class.php:132
+#: Cidlookup.class.php:123
 msgid "None"
 msgstr "Нет"
 
@@ -365,7 +365,7 @@ msgstr ""
 "Строка запроса, содержащая '[NUMBER]', которая получает значение Caller ID "
 "<br/>например: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:59
+#: Cidlookup.class.php:50
 msgid "Reset"
 msgstr "Сброс"
 
@@ -393,7 +393,7 @@ msgstr "Тип источника"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Источник может быть добавлен в секцию Сервис поиска Caller ID"
 
-#: Cidlookup.class.php:54
+#: Cidlookup.class.php:45
 msgid "Submit"
 msgstr "Подтвердить"
 

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2019-02-20 18:35-0500\n"
 "PO-Revision-Date: 2018-07-18 19:12+0000\n"
 "Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
 "Language-Team: French <http://*/projects/freepbx/cidlookup/fr/>\n"
@@ -170,7 +170,7 @@ msgstr ""
 "Décide de mettre en cache ou non les résultats dans astDB; cela écrasera les "
 "valeurs actuelles. N'affectera pas le comportement de source Interne"
 
-#: Cidlookup.class.php:49
+#: Cidlookup.class.php:40
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -262,7 +262,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:132
+#: Cidlookup.class.php:123
 msgid "None"
 msgstr "Aucun"
 
@@ -335,7 +335,7 @@ msgstr ""
 "l'appelant<br/>exemple : SELECT nom FROM annuaire WHERE numéro LIKE "
 "'%[NUMBER]%'"
 
-#: Cidlookup.class.php:59
+#: Cidlookup.class.php:50
 msgid "Reset"
 msgstr ""
 
@@ -365,7 +365,7 @@ msgstr ""
 "Les sources peuvent être ajoutées dans la section Sources de Consultation du "
 "Nom de l'Appelant"
 
-#: Cidlookup.class.php:54
+#: Cidlookup.class.php:45
 msgid "Submit"
 msgstr ""
 

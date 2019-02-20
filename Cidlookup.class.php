@@ -31,15 +31,6 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		}
 	}
 
-	public function setDatabase($database){
-		$this->Database = $database;
-		return $this;
-	}
-
-	public function resetDatabase(){
-		$this->Database = $this->FreePBX->Database;
-	}
-
 	public function getActionBar($request){
 		if('cidlookup' === $request['display']){
 			$buttons = [
@@ -158,7 +149,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 				continue;
 			}
 			$array[$field] = '';
-		}	
+		}
 		unset($array['deptname']);
 		$sql = "REPLACE INTO cidlookup
 			(cidlookup_id, description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
@@ -168,7 +159,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		$stmt->execute($array);
 		return $this;
 	}
-	
+
 	public function edit($id){
 		$insert = $this->getInsert($_REQUEST);
 		$insert['id'] = $id;
@@ -264,7 +255,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		}
 		return $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
-	
+
 	public function getInsert($request){
 		$defaults = [
 			"description" => "",

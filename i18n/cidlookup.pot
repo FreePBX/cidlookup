@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for cidlookup
-# Copyright (C) 2008-2018 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2019 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-27 20:39-0400\n"
+"POT-Creation-Date: 2019-02-20 18:35-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,7 +149,7 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 
-#: Cidlookup.class.php:49
+#: Cidlookup.class.php:40
 msgid "Delete"
 msgstr ""
 
@@ -242,7 +242,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:132
+#: Cidlookup.class.php:123
 msgid "None"
 msgstr ""
 
@@ -316,7 +316,7 @@ msgid ""
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 
-#: Cidlookup.class.php:59
+#: Cidlookup.class.php:50
 msgid "Reset"
 msgstr ""
 
@@ -344,7 +344,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
-#: Cidlookup.class.php:54
+#: Cidlookup.class.php:45
 msgid "Submit"
 msgstr ""
 

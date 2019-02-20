@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2019-02-20 18:35-0500\n"
 "PO-Revision-Date: 2016-06-07 02:58+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -186,7 +186,7 @@ msgstr ""
 "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
 "valores actuales. No afecta el comportamiento de la fuente interna"
 
-#: Cidlookup.class.php:49
+#: Cidlookup.class.php:40
 msgid "Delete"
 msgstr "Borrar"
 
@@ -280,7 +280,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "No"
 
-#: Cidlookup.class.php:132
+#: Cidlookup.class.php:123
 msgid "None"
 msgstr "Ninguno"
 
@@ -364,7 +364,7 @@ msgstr ""
 "de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
 "number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:59
+#: Cidlookup.class.php:50
 msgid "Reset"
 msgstr "Restablecer"
 
@@ -394,7 +394,7 @@ msgstr ""
 "Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres de "
 "llamantes"
 
-#: Cidlookup.class.php:54
+#: Cidlookup.class.php:45
 msgid "Submit"
 msgstr "Enviar"
 

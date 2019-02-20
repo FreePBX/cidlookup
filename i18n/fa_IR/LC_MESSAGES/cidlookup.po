@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2019-02-20 18:35-0500\n"
 "PO-Revision-Date: 2016-08-26 03:09+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -173,7 +173,7 @@ msgstr ""
 "Decide whether or  not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 
-#: Cidlookup.class.php:49
+#: Cidlookup.class.php:40
 msgid "Delete"
 msgstr "حذف"
 
@@ -265,7 +265,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "خیر"
 
-#: Cidlookup.class.php:132
+#: Cidlookup.class.php:123
 msgid "None"
 msgstr "هیچ"
 
@@ -347,7 +347,7 @@ msgstr ""
 "Query, special  token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:59
+#: Cidlookup.class.php:50
 msgid "Reset"
 msgstr "بازگردانی"
 
@@ -375,7 +375,7 @@ msgstr "نوع منبع"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "منابع میتوانند اضافه شوند برای بخش جستجوی نام تماس گیرنده"
 
-#: Cidlookup.class.php:54
+#: Cidlookup.class.php:45
 msgid "Submit"
 msgstr "ارسال"
 

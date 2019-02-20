@@ -1,25 +1,3 @@
-# This file is part of FreePBX.
-#
-# For licensing information, please see the file named LICENSE located in the module directory
-#
-# FreePBX language template for cidlookup
-# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
-#
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
-"PO-Revision-Date: 2018-07-18 19:14+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
-"Language-Team: German <http://*/projects/freepbx/cidlookup/de/>\n"
-"Language: de_DE\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
-
 #: views/form.php:22
 msgid ""
 " It executes an HTTP GET passing the caller number as argument to retrieve "
@@ -40,7 +18,7 @@ msgstr ""
 
 #: views/form.php:19
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
-msgstr " OpenCNAM [https://www.opencnam.com/] verwenden"
+msgstr ""
 
 #: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
@@ -69,7 +47,7 @@ msgstr ""
 
 #: views/grid.php:40
 msgid "Actions"
-msgstr "Aktionen"
+msgstr ""
 
 #: views/grid.php:26
 msgid "Add CIDLookup Source"
@@ -77,7 +55,7 @@ msgstr ""
 
 #: cidlookup.i18n.php:6
 msgid "Admin"
-msgstr "Admin"
+msgstr ""
 
 #: cidlookup.i18n.php:8
 msgid ""
@@ -87,7 +65,7 @@ msgstr ""
 
 #: views/form.php:237
 msgid "Auth Token"
-msgstr "Authentifizierungs-Token"
+msgstr ""
 
 #: views/coreDIDHook.php:9
 msgid "CID Lookup Source"
@@ -99,7 +77,7 @@ msgstr ""
 
 #: views/form.php:122
 msgid "Cache Results"
-msgstr "Ergebnisse zwischenspeichern"
+msgstr ""
 
 #: views/form.php:178
 msgid "Caller ID Format"
@@ -115,7 +93,7 @@ msgstr ""
 
 #: views/form.php:533
 msgid "Character Set"
-msgstr "Zeichensatz"
+msgstr ""
 
 #: views/form.php:185
 msgid "Company"
@@ -139,11 +117,11 @@ msgstr ""
 
 #: views/form.php:437
 msgid "Database"
-msgstr "Datenbank"
+msgstr ""
 
 #: views/form.php:449
 msgid "Database Name"
-msgstr "Datenbankname"
+msgstr ""
 
 #: views/form.php:137
 msgid ""
@@ -151,13 +129,13 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 
-#: Cidlookup.class.php:49
+#: Cidlookup.class.php:40
 msgid "Delete"
-msgstr "Löschen"
+msgstr ""
 
 #: views/grid.php:38
 msgid "Description"
-msgstr "Beschreibung"
+msgstr ""
 
 #: views/form.php:186
 msgid "Display Name"
@@ -165,11 +143,11 @@ msgstr ""
 
 #: views/form.php:21
 msgid "ENUM:"
-msgstr "ENUM:"
+msgstr ""
 
 #: views/form.php:78
 msgid "Enter a description for this source."
-msgstr "Geben Sie eine Beschreibung für diese Quelle ein."
+msgstr ""
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
@@ -181,19 +159,19 @@ msgstr ""
 
 #: views/form.php:22
 msgid "HTTP:"
-msgstr "HTTP:"
+msgstr ""
 
 #: views/form.php:23
 msgid "HTTPS:"
-msgstr "HTTPS:"
+msgstr ""
 
 #: views/form.php:265 views/form.php:413
 msgid "Host"
-msgstr "Host"
+msgstr ""
 
 #: views/form.php:277
 msgid "Host name or IP address"
-msgstr "Hostname oder IP-Adresse"
+msgstr ""
 
 #: views/form.php:195
 msgid "How to format the returned data"
@@ -201,15 +179,15 @@ msgstr ""
 
 #: views/form.php:96
 msgid "Internal"
-msgstr "Intern"
+msgstr ""
 
 #: views/form.php:20
 msgid "Internal:"
-msgstr "Intern:"
+msgstr ""
 
 #: views/form.php:24
 msgid "It queries a MySQL database to retrieve caller name"
-msgstr "Fragt eine MySQL-Datenbank ab, um den Namen des Anrufers zu ermitteln"
+msgstr ""
 
 #: views/form.php:184
 msgid "Last First"
@@ -217,49 +195,47 @@ msgstr ""
 
 #: views/bootnav.php:6
 msgid "List Sources"
-msgstr "Quellen auflisten"
+msgstr ""
 
 #: views/form.php:545
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
-"MySQL-Zeichensatz. Wird nichts eingegeben, wird der Standardzeichensatz "
-"Latin1 verwendet"
 
 #: views/form.php:425
 msgid "MySQL Host"
-msgstr "MySQL-Server"
+msgstr ""
 
 #: views/form.php:521
 msgid "MySQL Password"
-msgstr "MySQL-Passwort"
+msgstr ""
 
 #: views/form.php:497
 msgid "MySQL Username"
-msgstr "MySQL-Benutzername"
+msgstr ""
 
 #: views/form.php:24
 msgid "MySQL:"
-msgstr "MySQL:"
+msgstr ""
 
 #: views/form.php:129
 msgid "No"
-msgstr "Nein"
+msgstr ""
 
-#: Cidlookup.class.php:132
+#: Cidlookup.class.php:123
 msgid "None"
 msgstr ""
 
 #: views/form.php:554 views/form.php:559
 msgid "Not yet implemented"
-msgstr "Noch nicht implementiert"
+msgstr ""
 
 #: views/form.php:10 views/form.php:15
 msgid "OpenCNAM"
-msgstr "OpenCNAM"
+msgstr ""
 
 #: functions.inc.php:97
 msgid "OpenCNAM Requires Authentication"
-msgstr "OpenCNAM erfordert eine Authentifizierung"
+msgstr ""
 
 #: bin/opencnam-alert.php:23
 msgid "OpenCNAM Throttle Reached!"
@@ -267,19 +243,19 @@ msgstr ""
 
 #: views/form.php:19
 msgid "OpenCNAM:"
-msgstr "OpenCNAM:"
+msgstr ""
 
 #: views/form.php:337 views/form.php:509
 msgid "Password"
-msgstr "Passwort"
+msgstr ""
 
 #: views/form.php:349
 msgid "Password to use in HTTP authentication"
-msgstr "Passwort, das in der HTTP-Authentifizierung verwendet werden soll"
+msgstr ""
 
 #: views/form.php:361
 msgid "Path"
-msgstr "Pfad"
+msgstr ""
 
 #: views/form.php:373
 msgid ""
@@ -291,15 +267,15 @@ msgstr ""
 
 #: views/form.php:289
 msgid "Port"
-msgstr "Port"
+msgstr ""
 
 #: views/form.php:301
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
-msgstr "Port des HTTP(S)-Servers (standardmäßig 80 für HTTP, 443 für HTTPS)"
+msgstr ""
 
 #: views/form.php:385 views/form.php:461
 msgid "Query"
-msgstr "Abfrage"
+msgstr ""
 
 #: views/form.php:397
 msgid ""
@@ -315,9 +291,9 @@ msgid ""
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 
-#: Cidlookup.class.php:59
+#: Cidlookup.class.php:50
 msgid "Reset"
-msgstr "Zurücksetzen"
+msgstr ""
 
 #: views/form.php:25
 msgid "Searches a contact manager group"
@@ -325,25 +301,25 @@ msgstr ""
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
-msgstr "Wählen sie die Art der Quelle aus, die folgenden stehen zur Auswahl:"
+msgstr ""
 
 #: views/bootnav.php:16
 msgid "Source"
-msgstr "Quelle"
+msgstr ""
 
 #: views/form.php:66
 msgid "Source Description"
-msgstr "Beschreibung der Quelle"
+msgstr ""
 
 #: views/form.php:90
 msgid "Source type"
-msgstr "Art der Quelle"
+msgstr ""
 
 #: views/coreDIDHook.php:23
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
-#: Cidlookup.class.php:54
+#: Cidlookup.class.php:45
 msgid "Submit"
 msgstr ""
 
@@ -356,27 +332,25 @@ msgstr ""
 
 #: views/grid.php:39
 msgid "Type"
-msgstr "Typ"
+msgstr ""
 
 #: functions.inc.php:97
 msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
 msgstr ""
-"Unauthentifizierte Abfragen von OpenCNAM werden in Kürze fehlschlagen. Sie "
-"werden ein OpenCNAM-Konto benötigen, um die API weiter zu nutzen"
 
 #: views/form.php:313 views/form.php:485
 msgid "Username"
-msgstr "Benutzername"
+msgstr ""
 
 #: views/form.php:325
 msgid "Username to use in HTTP authentication"
-msgstr "Benutzername, der für die HTTP-Authentifizierung verwendet werden soll"
+msgstr ""
 
 #: views/form.php:127
 msgid "Yes"
-msgstr "Ja"
+msgstr ""
 
 #: bin/opencnam-alert.php:23
 msgid ""
@@ -400,24 +374,3 @@ msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
 msgstr ""
-
-#~ msgid "ERROR: failed: "
-#~ msgstr "FEHLER: fehlgeschlagen: "
-
-#~ msgid "FATAL: failed to transform old routes: "
-#~ msgstr "SCHWERWIEGEND: Konnte alte Routen nicht transformieren: "
-
-#~ msgid "Not Needed"
-#~ msgstr "Nicht benötigt"
-
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "Processing Database Tables"
-#~ msgstr "Verarbeite Datenbanktabellen"
-
-#~ msgid "not present"
-#~ msgstr "nicht vorhanden"
-
-#~ msgid "removed"
-#~ msgstr "entfernt"

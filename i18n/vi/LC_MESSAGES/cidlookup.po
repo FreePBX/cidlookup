@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2019-02-20 18:35-0500\n"
 "PO-Revision-Date: 2017-07-14 10:19+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -173,7 +173,7 @@ msgstr ""
 "Quyết định có hay không các kết quả bộ nhớ cache đến astDB; Nó sẽ ghi đè lên "
 "các giá trị hiện tại. Nó không ảnh hưởng đến hành vi của nguồn nội bộ"
 
-#: Cidlookup.class.php:49
+#: Cidlookup.class.php:40
 msgid "Delete"
 msgstr "Xóa"
 
@@ -265,7 +265,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "Không"
 
-#: Cidlookup.class.php:132
+#: Cidlookup.class.php:123
 msgid "None"
 msgstr "Không"
 
@@ -344,7 +344,7 @@ msgstr ""
 "Truy vấn, token đặc biệt '[NUMBER]' sẽ được thay thế với số người gọi <br/>e."
 "g.:CHỌN tên TỪ danh bạ điện thoại NƠI số giống LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:59
+#: Cidlookup.class.php:50
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -374,7 +374,7 @@ msgstr ""
 "Các nguồn có thể được thêm trong phần Caller Name Lookup Sources ( Các nguồn "
 "tra cứu tên người gọi)"
 
-#: Cidlookup.class.php:54
+#: Cidlookup.class.php:45
 msgid "Submit"
 msgstr "Gửi đi"
 
