@@ -19,10 +19,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 14:53-0400\n"
+"POT-Creation-Date: 2019-03-07 09:26+0530\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -234,7 +235,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:99 functions.inc.php:331
+#: Cidlookup.class.php:99 functions.inc.php:333
 msgid "None"
 msgstr "Ingen"
 
@@ -316,8 +317,8 @@ msgid ""
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 "Fråga, variabeln '[NUMBER]' kommer att bytas ut mot inkommande "
-"nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE '%"
-"[NUMBER]%'"
+"nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE "
+"'%[NUMBER]%'"
 
 #: install.php:145
 msgid "Removing deprecated channel field from incoming.."

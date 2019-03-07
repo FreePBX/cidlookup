@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 14:53-0400\n"
+"POT-Creation-Date: 2019-03-07 09:26+0530\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -231,7 +231,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:99 functions.inc.php:331
+#: Cidlookup.class.php:99 functions.inc.php:333
 msgid "None"
 msgstr "אף אחד"
 
