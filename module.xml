@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>14.0.1.7</version>
+	<version>14.0.1.8</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*14.0.1.8* Fixing FREEPBX-18685 CallerId Lookup does not urlencode plus(+) sign 
 		*14.0.1.7* FREEPBX-15832 CIDLookup tool not properly encoding GET variables 
 		*14.0.1.6* Contact Manager Format Output var name fix
 		*14.0.1.5* FREEPBX-16649 Caller ID format not saved in CIDLookup sources of type Contact Manager
