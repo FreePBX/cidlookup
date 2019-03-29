@@ -82,7 +82,7 @@ function cidlookup_get_config($engine) {
 
 						case "contactmanager":
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi('contactmanager.agi, ${CALLERID(num)},'.$item['cm_group'].','.$item['cm_format']));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', '${CMCID}'));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_execif('$["${CMCID}" != "Unknown"]','Set','CALLERID(name)='.'${CMCID}'));
 
 						break;
 
