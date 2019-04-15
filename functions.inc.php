@@ -239,7 +239,7 @@ function cidlookup_get_config($engine) {
 								$path = $item['http_path'];
 
 							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]');
-							$values = array('${CALLERID(num)}','${CALLERID(name)}','${CHANNEL(language)}');
+							$values = array('${STRREPLACE(CALLERID(num),"+",%2B)}','${CALLERID(name)}','${CHANNEL(language)}');
 							$query = str_replace($tempst, $values, $item['http_query']);
 							$query = empty($query)?'':'?'.$query;
 							$path = str_replace($tempst, $values, $item['http_path']);
@@ -251,7 +251,6 @@ function cidlookup_get_config($engine) {
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CURLOPT(httptimeout)', '7'));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '',new ext_set('CALLERID(name)','${STRREPLACE(CALLERID(name), ,%20)}'));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '',new ext_set('CALLERID(name)','${STRREPLACE(CALLERID(name),",",%2C)}'));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '',new ext_set('CALLERID(num)','${STRREPLACE(CALLERID(num),"+",%2B)}'));
 							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_set('CALLERID(name)', $curl));
 						break;
 
