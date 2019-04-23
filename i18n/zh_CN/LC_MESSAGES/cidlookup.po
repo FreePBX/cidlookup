@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-07 09:26+0530\n"
+"POT-Creation-Date: 2019-04-23 13:13+0530\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -218,7 +218,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:99 functions.inc.php:333
+#: Cidlookup.class.php:99 functions.inc.php:332
 msgid "None"
 msgstr "无"
 
