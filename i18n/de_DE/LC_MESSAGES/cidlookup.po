@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-19 18:02-0400\n"
-"PO-Revision-Date: 2018-10-19 13:00+0000\n"
+"PO-Revision-Date: 2019-05-03 14:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/cidlookup/de/>\n"
 "Language: de_DE\n"
@@ -128,11 +128,11 @@ msgstr "Zeichensatz"
 
 #: views/form.php:185
 msgid "Company"
-msgstr ""
+msgstr "Firma"
 
 #: views/form.php:97
 msgid "Contact Manager"
-msgstr ""
+msgstr "Kontaktverwaltung"
 
 #: views/form.php:151
 msgid "Contact Manager Group(s)"
@@ -140,11 +140,11 @@ msgstr ""
 
 #: views/form.php:42
 msgid "Contact Manager Not Installed"
-msgstr ""
+msgstr "Kontaktverwaltung nicht installiert"
 
 #: views/form.php:25
 msgid "Contact Manager:"
-msgstr ""
+msgstr "Kontaktverwaltung:"
 
 #: views/form.php:437
 msgid "Database"
