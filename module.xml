@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>15.0.10</version>
+	<version>15.0.11</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*15.0.11* FREEPBX-20004 Not able to select the Contact Manager Groups in CID lookup sources. 
 		*15.0.10* FREEPBX-20117 Unable to edit CallerID Lookup entry in FreePBX 15. 
 		*15.0.9* FREEPBX-19791 
 		*15.0.8* FREEPBX-19709 CID lookup to Contact Mgr returns 'unknown' instead of nothing 
