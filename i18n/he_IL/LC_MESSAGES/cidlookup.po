@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-20 18:35-0500\n"
+"POT-Creation-Date: 2019-06-12 14:59+0530\n"
 "PO-Revision-Date: 2011-04-14 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -167,7 +167,7 @@ msgstr ""
 "החלט אם לשמור או לא לשמור את התוצאות ב astDB; פעולה זו תדרוס ערכים קיימים. "
 "היא אינה משפיעה על התנהגות המקורות הפנימיים"
 
-#: Cidlookup.class.php:40
+#: Cidlookup.class.php:42
 msgid "Delete"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:123
+#: Cidlookup.class.php:125
 msgid "None"
 msgstr "אף אחד"
 
@@ -331,7 +331,7 @@ msgstr ""
 "שאילתא, כאשר הטוקן המיוחד '[NUMBER]' יוחלף במספר הטלפון של המתקשר<br /"
 ">לדוגמא: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:50
+#: Cidlookup.class.php:52
 msgid "Reset"
 msgstr ""
 
@@ -359,7 +359,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
 
-#: Cidlookup.class.php:45
+#: Cidlookup.class.php:47
 msgid "Submit"
 msgstr ""
 

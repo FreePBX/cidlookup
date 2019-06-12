@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-20 18:35-0500\n"
+"POT-Creation-Date: 2019-06-12 14:59+0530\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -192,7 +192,7 @@ msgstr ""
 "astDBへの結果をキャッシュするかどうかを決定します；現在の値を上書きします。イ"
 "ンターナルソースの挙動には影響しません。"
 
-#: Cidlookup.class.php:40
+#: Cidlookup.class.php:42
 msgid "Delete"
 msgstr "削除"
 
@@ -284,7 +284,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "いいえ"
 
-#: Cidlookup.class.php:123
+#: Cidlookup.class.php:125
 msgid "None"
 msgstr "なし"
 
@@ -361,7 +361,7 @@ msgstr ""
 "クエリー、特殊トークン'[NUMBER]'は、発信者番号に置き換わります。<br/>例："
 "SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:50
+#: Cidlookup.class.php:52
 msgid "Reset"
 msgstr "リセット"
 
@@ -389,7 +389,7 @@ msgstr "ソースの種類"
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "ソースは発信者名検索ソースセクションで追加できます。"
 
-#: Cidlookup.class.php:45
+#: Cidlookup.class.php:47
 msgid "Submit"
 msgstr "送信"
 

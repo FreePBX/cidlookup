@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 13:52+0530\n"
+"POT-Creation-Date: 2019-06-12 14:59+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,7 +149,7 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 
-#: Cidlookup.class.php:40
+#: Cidlookup.class.php:42
 msgid "Delete"
 msgstr ""
 
@@ -242,7 +242,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:123
+#: Cidlookup.class.php:125
 msgid "None"
 msgstr ""
 
@@ -316,7 +316,7 @@ msgid ""
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 
-#: Cidlookup.class.php:50
+#: Cidlookup.class.php:52
 msgid "Reset"
 msgstr ""
 
@@ -344,7 +344,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
-#: Cidlookup.class.php:45
+#: Cidlookup.class.php:47
 msgid "Submit"
 msgstr ""
 

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-20 18:35-0500\n"
+"POT-Creation-Date: 2019-06-12 14:59+0530\n"
 "PO-Revision-Date: 2014-07-21 15:37+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/cidlookup/"
@@ -174,7 +174,7 @@ msgstr ""
 "Преценете дали да кеширате или не резултатите в astDB; това ще отмени "
 "настоящите настройки. Не се отразява на  Вътрешните източници"
 
-#: Cidlookup.class.php:40
+#: Cidlookup.class.php:42
 msgid "Delete"
 msgstr ""
 
@@ -266,7 +266,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:123
+#: Cidlookup.class.php:125
 msgid "None"
 msgstr "Няма"
 
@@ -339,7 +339,7 @@ msgstr ""
 "обаждащия се<br/>например: SELECT name FROM phonebook WHERE number LIKE "
 "'%[NUMBER]%'"
 
-#: Cidlookup.class.php:50
+#: Cidlookup.class.php:52
 msgid "Reset"
 msgstr ""
 
@@ -367,7 +367,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Източниците могат да бъдат добавяни в меню 'CallerID Следене'"
 
-#: Cidlookup.class.php:45
+#: Cidlookup.class.php:47
 msgid "Submit"
 msgstr ""
 

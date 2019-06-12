@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-20 18:35-0500\n"
+"POT-Creation-Date: 2019-06-12 14:59+0530\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <support@freepbx.hu>\n"
@@ -171,7 +171,7 @@ msgstr ""
 "Legyen, vagy ne legyen a lekérdezés cachelve a belső astDB-ben; ez "
 "különbözhet az mindenkori értéktől. Nincs a belső adatbázisra értelmezve."
 
-#: Cidlookup.class.php:40
+#: Cidlookup.class.php:42
 msgid "Delete"
 msgstr ""
 
@@ -263,7 +263,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:123
+#: Cidlookup.class.php:125
 msgid "None"
 msgstr "Nincs"
 
@@ -335,7 +335,7 @@ msgstr ""
 "Lekérő string, ahol a '[NUMBER] jelöli a hívó számát.<br/>Pl.: SELECT name "
 "FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:50
+#: Cidlookup.class.php:52
 msgid "Reset"
 msgstr ""
 
@@ -363,7 +363,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Hozzáad egy forrást a CID meghatározó forrás részhez"
 
-#: Cidlookup.class.php:45
+#: Cidlookup.class.php:47
 msgid "Submit"
 msgstr ""
 
