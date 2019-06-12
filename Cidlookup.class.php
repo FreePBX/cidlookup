@@ -18,9 +18,11 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		$itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:false;
 		if('add' === $action){
 			$this->add();
+			unset($_REQUEST['view']);
 		}
 		if('edit' === $action){
 			$this->edit($itemid);
+			unset($_REQUEST['view']);
 		}
 
 		if('delete' === $action){
