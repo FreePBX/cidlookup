@@ -122,7 +122,11 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 	}
 
 	public function getList($all = false){
-		$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
+		if($all) {
+			$allowed = array();
+		} else {
+			$allowed = array(array('cidlookup_id' => 0, 'description' => _("None"), 'sourcetype' => null));
+		}
 		$sql = "SELECT * FROM cidlookup";
 		$stmt = $this->Database->prepare($sql);
 		$stmt->execute();
