@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-12 14:59+0530\n"
+"POT-Creation-Date: 2019-06-18 11:50+0530\n"
 "PO-Revision-Date: 2015-04-29 08:49+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -244,7 +244,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:125
+#: Cidlookup.class.php:128
 msgid "None"
 msgstr ""
 

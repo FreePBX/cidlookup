@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-12 14:59+0530\n"
+"POT-Creation-Date: 2019-06-18 11:50+0530\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -284,7 +284,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "いいえ"
 
-#: Cidlookup.class.php:125
+#: Cidlookup.class.php:128
 msgid "None"
 msgstr "なし"
 

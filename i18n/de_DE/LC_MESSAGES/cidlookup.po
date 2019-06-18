@@ -221,7 +221,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:125
+#: Cidlookup.class.php:128
 msgid "None"
 msgstr ""
 
