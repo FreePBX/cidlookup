@@ -2,7 +2,7 @@
 namespace FreePBX\modules\Cidlookup;
 use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
-	public function runRestore($jobid){
+	public function runRestore(){
 		$CidLookup = $this->FreePBX->Cidlookup;
 		$configs = $this->getConfigs();
 		if (!empty($configs['dids'])) {
