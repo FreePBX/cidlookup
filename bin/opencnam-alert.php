@@ -13,7 +13,6 @@
 // Bootstrap the FreePBX framework.
 include '/etc/freepbx.conf';
 
-
 /*
  * Fire off a FreePBX warning, alerting the user that they've gone past their
  * available OpenCNAM usage limits, and need to create a Professional Tier
