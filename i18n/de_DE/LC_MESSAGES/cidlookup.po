@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-19 18:02-0400\n"
+"POT-Creation-Date: 2019-12-26 22:59+0000\n"
 "PO-Revision-Date: 2019-08-07 12:00+0000\n"
 "Last-Translator: hammer125 <auswertung@mariner.at>\n"
 "Language-Team: German <http://*/projects/freepbx/cidlookup/de/>\n"
@@ -61,8 +61,8 @@ msgid ""
 "opencnam.com/register</a></p>"
 msgstr ""
 "<p>Wenn Sie ein OpenCNAM-Konto benötigen, können Sie diesen auf der Webseite "
-"<a href=\"https://www.opencnam.com/register\" target=\"_blank\""
-">https://www.opencnam.com/register</a> anlegen.</p>"
+"<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
+"opencnam.com/register</a> anlegen.</p>"
 
 #: page.cidlookup.php:8
 msgid ""
@@ -277,7 +277,7 @@ msgstr "OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM erfordert eine Authentifizierung"
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
@@ -394,7 +394,7 @@ msgstr "Benutzername, der für die HTTP-Authentifizierung verwendet werden soll"
 msgid "Yes"
 msgstr "Ja"
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "
@@ -404,8 +404,8 @@ msgid ""
 "Lookup Sources menu and enter your OpenCNAM Professional Tier credentials."
 "<br/>"
 msgstr ""
-"Sie haben das Limit für die kostenlose Nutzung von OpenCNAM überschritten.<"
-"br /><br />Um weiterhin Namensinformationen zu Anrufer-IDs (CallerIDs) zu "
+"Sie haben das Limit für die kostenlose Nutzung von OpenCNAM überschritten."
+"<br /><br />Um weiterhin Namensinformationen zu Anrufer-IDs (CallerIDs) zu "
 "erhalten, müssen Sie ein OpenCNAM-Professional-Konto anlegen.<br /><br /> "
 "Unter <a href=\"https://www.opencnam.com/register\">https://www.opnecnam.com/"
 "register</a> können Sie ein OpenCNAM-Konto anlegen.<br /><br />Sobald Sie "

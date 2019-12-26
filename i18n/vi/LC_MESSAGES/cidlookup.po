@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 11:55-0700\n"
+"POT-Creation-Date: 2019-12-26 22:59+0000\n"
 "PO-Revision-Date: 2017-07-14 10:19+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -281,7 +281,7 @@ msgstr "Dịch vụ tra cứu OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr "OpenCNAM yêu cầu Xác thực"
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid "OpenCNAM Throttle Reached!"
 msgstr "Đã kết nối với OpenCNAM Throttle!"
 
@@ -410,7 +410,7 @@ msgstr "Tên người dùng cho việc xác thực HTTP"
 msgid "Yes"
 msgstr "Có"
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "
