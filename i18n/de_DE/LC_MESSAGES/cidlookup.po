@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-19 18:02-0400\n"
-"PO-Revision-Date: 2018-10-19 13:00+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"PO-Revision-Date: 2019-08-07 12:00+0000\n"
+"Last-Translator: hammer125 <auswertung@mariner.at>\n"
 "Language-Team: German <http://*/projects/freepbx/cidlookup/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -41,6 +41,8 @@ msgid ""
 " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
 "enum.conf"
 msgstr ""
+" Verwende DNS, um Anrufernamen nachzuschauen, es verwendet ENUM-"
+"Nachschlagezonen wie in enum.conf konfiguriert"
 
 #: views/form.php:19
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
@@ -49,6 +51,8 @@ msgstr " OpenCNAM [https://www.opencnam.com/] verwenden"
 #: views/form.php:20
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
+" verwende astdb als Nachschlagequelle, verwende Telefonbuchmodule, um sie zu "
+"bestücken"
 
 #: views/form.php:204
 msgid ""
@@ -80,7 +84,7 @@ msgstr "Aktionen"
 
 #: views/grid.php:26
 msgid "Add CIDLookup Source"
-msgstr ""
+msgstr "Füge CID-Nachschlagquelle hinzu"
 
 #: cidlookup.i18n.php:6
 msgid "Admin"
@@ -100,7 +104,7 @@ msgstr "Authentifizierungs-Token"
 
 #: functions.inc.php:20
 msgid "CID Lookup Source"
-msgstr ""
+msgstr "CID-Nachschlagequelle"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
@@ -112,7 +116,7 @@ msgstr "Ergebnisse zwischenspeichern"
 
 #: views/form.php:178
 msgid "Caller ID Format"
-msgstr ""
+msgstr "Format der Anrufer-ID"
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
@@ -120,7 +124,7 @@ msgstr ""
 
 #: cidlookup.i18n.php:10
 msgid "CallerID Lookup Sources"
-msgstr ""
+msgstr "AnruferID Nachschlagquelle"
 
 #: views/form.php:533
 msgid "Character Set"
@@ -128,23 +132,23 @@ msgstr "Zeichensatz"
 
 #: views/form.php:185
 msgid "Company"
-msgstr ""
+msgstr "Firma"
 
 #: views/form.php:97
 msgid "Contact Manager"
-msgstr ""
+msgstr "Kontaktverwaltung"
 
 #: views/form.php:151
 msgid "Contact Manager Group(s)"
-msgstr ""
+msgstr "Kontaktverwaltungsgruppe(n)"
 
 #: views/form.php:42
 msgid "Contact Manager Not Installed"
-msgstr ""
+msgstr "Kontaktverwaltung nicht installiert"
 
 #: views/form.php:25
 msgid "Contact Manager:"
-msgstr ""
+msgstr "Kontaktverwaltung:"
 
 #: views/form.php:437
 msgid "Database"
@@ -159,6 +163,9 @@ msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
 msgstr ""
+"Entscheide, ob die Ergebnisse in die astDB zwischengespeichert werden oder "
+"nicht; das wird die aktuellen Werte überschreiben. Es beeinflusst nicht das "
+"Verhalten der internen Quellen"
 
 #: Cidlookup.class.php:66
 msgid "Delete"
@@ -186,7 +193,7 @@ msgstr ""
 
 #: views/form.php:183
 msgid "First Last"
-msgstr ""
+msgstr "Erster Letzter"
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -206,7 +213,7 @@ msgstr "Hostname oder IP-Adresse"
 
 #: views/form.php:195
 msgid "How to format the returned data"
-msgstr ""
+msgstr "Wie die zurückgegebenen Daten formatiert werden"
 
 #: views/form.php:96
 msgid "Internal"
