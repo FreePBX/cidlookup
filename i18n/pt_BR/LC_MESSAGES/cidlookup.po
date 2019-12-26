@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-18 11:50+0530\n"
+"POT-Creation-Date: 2019-12-26 22:18+0000\n"
 "PO-Revision-Date: 2015-04-29 08:49+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -260,7 +260,7 @@ msgstr ""
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
@@ -375,7 +375,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "
