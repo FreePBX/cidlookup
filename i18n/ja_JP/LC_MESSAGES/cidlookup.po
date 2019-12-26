@@ -37,15 +37,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-23 13:13+0530\n"
+"POT-Creation-Date: 2019-12-26 17:56-0500\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
 "cidlookup/ja_JP/>\n"
-"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -280,7 +280,7 @@ msgstr "OpenCNAM"
 msgid "OpenCNAM Requires Authentication"
 msgstr ""
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid "OpenCNAM Throttle Reached!"
 msgstr "OpenCNAM 制限に達しました！"
 
@@ -408,7 +408,7 @@ msgstr "HTTP認証で使用するユーザー名"
 msgid "Yes"
 msgstr "はい"
 
-#: bin/opencnam-alert.php:23
+#: bin/opencnam-alert.php:22
 msgid ""
 "You have gone past the free OpenCNAM usage limits.<br/><br/>To continue "
 "getting caller ID name information, you need to create an OpenCNAM "
@@ -565,8 +565,8 @@ msgstr "削除済み"
 
 #~ msgid ""
 #~ "Select the source type, you can choose between:<ul>\n"
-#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam."
-#~ "com/]</li>\n"
+#~ "                    <li>OpenCNAM: Use OpenCNAM [https://www.opencnam.com/]"
+#~ "</li>\n"
 #~ "                    <li>Internal: use astdb as lookup source, use "
 #~ "phonebook module to populate it</li>\n"
 #~ "                    <li>ENUM: Use DNS to lookup caller names, it uses "
