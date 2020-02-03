@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-26 22:59+0000\n"
 "PO-Revision-Date: 2020-02-04 10:00+0000\n"
-"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
+"Last-Translator: hammer125 <auswertung@mariner.at>\n"
 "Language-Team: German <http://*/projects/freepbx/cidlookup/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -115,7 +115,7 @@ msgstr "CID-Nachschlagequelle"
 
 #: page.cidlookup.php:7
 msgid "CIDLookup"
-msgstr ""
+msgstr "CID nachschlagen"
 
 #: views/form.php:122
 msgid "Cache Results"
@@ -127,7 +127,7 @@ msgstr "Format der Anrufer-ID"
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
-msgstr ""
+msgstr "AnruferID nachschlagen"
 
 #: cidlookup.i18n.php:10
 msgid "CallerID Lookup Sources"
@@ -196,7 +196,7 @@ msgstr "Geben Sie eine Beschreibung für diese Quelle ein."
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
-msgstr ""
+msgstr "Filter die Ergebnisse nach diesen Kontaktverwaltungsgruppen"
 
 #: views/form.php:183
 msgid "First Last"
