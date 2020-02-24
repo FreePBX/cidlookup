@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-26 22:59+0000\n"
-"PO-Revision-Date: 2020-02-04 10:00+0000\n"
-"Last-Translator: hammer125 <auswertung@mariner.at>\n"
+"PO-Revision-Date: 2020-02-11 09:25+0000\n"
+"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/cidlookup/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -236,7 +236,7 @@ msgstr "Fragt eine MySQL-Datenbank ab, um den Namen des Anrufers zu ermitteln"
 
 #: views/form.php:184
 msgid "Last First"
-msgstr ""
+msgstr "Letztes zuerst"
 
 #: views/bootnav.php:6
 msgid "List Sources"
@@ -286,7 +286,7 @@ msgstr "OpenCNAM erfordert eine Authentifizierung"
 
 #: bin/opencnam-alert.php:22
 msgid "OpenCNAM Throttle Reached!"
-msgstr ""
+msgstr "OpenCNAM-Drosselung erreicht!"
 
 #: views/form.php:19
 msgid "OpenCNAM:"
@@ -311,6 +311,10 @@ msgid ""
 ">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
 "will be replaced with channel language"
 msgstr ""
+"Pfad der Datei, die abgerufen werden soll <br/> zB: /cidlookup.php <br> "
+"Sonderzeichen '[NUMBER]' wird durch die Anrufernummer ersetzt <br/> zB: / "
+"cidlookup / [NUMBER] / <br/> ' [NAME] 'wird durch den vorhandenen "
+"Anrufernamen ersetzt <br/>' [SPRACHE] 'wird durch die Kanalsprache ersetzt"
 
 #: views/form.php:289
 msgid "Port"
@@ -331,12 +335,19 @@ msgid ""
 "with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
 "language"
 msgstr ""
+"Abfragezeichenfolge, spezielles Token \"[NUMBER]\" wird durch die "
+"Anrufernummer ersetzt <br/> Beispiel: Nummer = [NUMBER] & Quelle = crm <br/> "
+"\"[NAME]\" wird durch den vorhandenen Anrufernamen ersetzt <br/> '[SPRACHE]' "
+"wird durch die Kanalsprache ersetzt"
 
 #: views/form.php:473
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
+"Abfrage, spezielles Token \"[NUMMER]\" wird durch die Rufnummer des Anrufers "
+"ersetzt <br/> z. B .:  SELECT name FROM phonebook WHERE number LIKE "
+"'%[NUMBER]%'"
 
 #: Cidlookup.class.php:76
 msgid "Reset"
@@ -376,6 +387,8 @@ msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
 "deleted."
 msgstr ""
+"Es gibt %s DIDs, die diese Quelle verwenden und die beim Löschen keine Suche "
+"mehr ausführen."
 
 #: views/grid.php:39
 msgid "Type"
