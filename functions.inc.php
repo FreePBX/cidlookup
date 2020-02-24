@@ -141,8 +141,8 @@ function cidlookup_get_config($engine) {
 							else
 								$path = $item['http_path'];
 
-							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]');
-							$values = array('${STRREPLACE(CALLERID(num),"+",%2B)}','${CALLERID(name)}','${CHANNEL(language)}');
+							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]','[UNIQUEID]');
+							$values = array('${STRREPLACE(CALLERID(num),"+",%2B)}','${CALLERID(name)}','${CHANNEL(language)}','${UNIQUEID}');
 							$query = str_replace($tempst, $values, $item['http_query']);
 							$query = empty($query)?'':'?'.$query;
 							$path = str_replace($tempst, $values, $item['http_path']);
