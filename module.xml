@@ -2,13 +2,14 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>16.0.1</version>
+	<version>16.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
 	<category>Admin</category>
 	<changelog>
+		*16.0.2* FREEI-1397 To avoid duplicate entry of cidlookup 
 		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
 	<menuitems>
