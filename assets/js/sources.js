@@ -12,9 +12,14 @@ $(document).ready(function() {
 });
 
 function edit_onsubmit() {
-	defaultEmptyOK = false;
+    defaultEmptyOK = false;
     if (!$.trim($('#form_description').val()).length)
         return warnInvalid($('#form_description'), "Description Can Not Be Blank!");
+        for (var key in cidlookuplist){
+            if($('#form_description').val() === cidlookuplist[key].description && $('#itemid').val() != cidlookuplist[key].cidlookup_id){
+                return warnInvalid($("#form_description"),_("Source Description Already Exist"));
+            }
+        }
 	if ($('#sourcetype').val() == 'http' || $('#sourcetype').val() == 'https')	{
 		if (!$.trim($('#http_host').val()).length)
 			return warnInvalid($('#http_host'), "Please enter a valid HTTP(S) Host name");
