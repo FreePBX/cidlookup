@@ -2,13 +2,15 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>15.0.17</version>
+	<version>15.0.18</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>Allows CallerID Lookup of incoming calls against different sources (OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/CallerID+Lookup+Sources+Module</more-info>
 	<category>Admin</category>
 	<changelog>
+		*15.0.18* Packaging of ver 15.0.18
 		*15.0.17* FREEI-1667  modify cidlookup &amp;amp; adding delAction class 
 		*15.0.16* FREEI-1397 To avoid duplicate entry of cidlookup 
 		*15.0.15* Feature/FREEPBX-21165 
