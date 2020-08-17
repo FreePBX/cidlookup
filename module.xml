@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>13.0.12.5</version>
+	<version>13.0.12.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
   	<more-info>https://wiki.freepbx.org/display/F2/CallerID+Lookup+Sources+Module</more-info>
 	<category>Admin</category>
 	<changelog>
+		*13.0.12.6* Packaging of ver 13.0.12.6
 		*13.0.12.5* Small whitespace change for release testing.
 		*13.0.12.4* FREEPBX-19791 CallerID Lookup leaves number URL encoded after latest update 
 		*13.0.12.3* Fixing FREEPBX-18685 CallerId Lookup does not urlencode plus(+) sign 
