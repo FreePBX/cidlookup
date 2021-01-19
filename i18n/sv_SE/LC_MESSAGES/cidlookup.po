@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 03:23+0000\n"
+"POT-Creation-Date: 2020-09-28 02:08+0000\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,33 +30,33 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: views/form.php:22
+#: views/form.php:26
 msgid ""
 " It executes an HTTP GET passing the caller number as argument to retrieve "
 "the correct name"
 msgstr ""
 
-#: views/form.php:23
+#: views/form.php:27
 msgid ""
 " It executes an HTTPS GET passing the caller number as argument to retrieve "
 "the correct name"
 msgstr ""
 
-#: views/form.php:21
+#: views/form.php:25
 msgid ""
 " Use DNS to lookup caller names, it uses ENUM lookup zones as configured in "
 "enum.conf"
 msgstr ""
 
-#: views/form.php:19
+#: views/form.php:23
 msgid " Use OpenCNAM [https://www.opencnam.com/]"
 msgstr ""
 
-#: views/form.php:20
+#: views/form.php:24
 msgid " use astdb as lookup source, use phonebook module to populate it"
 msgstr ""
 
-#: views/form.php:205
+#: views/form.php:209
 msgid ""
 "<p>If you need to create an OpenCNAM account, you can visit their website: "
 "<a href=\"https://www.opencnam.com/register\" target=\"_blank\">https://www."
@@ -80,7 +80,7 @@ msgstr ""
 "in. Tänk på att namnuppslag kan orsaka fördröjningar innan samtalet kopplas "
 "upp."
 
-#: views/form.php:214
+#: views/form.php:218
 msgid "Account SID:"
 msgstr ""
 
@@ -102,7 +102,7 @@ msgid ""
 "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
 msgstr ""
 
-#: views/form.php:238
+#: views/form.php:242
 msgid "Auth Token"
 msgstr ""
 
@@ -114,11 +114,11 @@ msgstr "Källa för nummerpresentation"
 msgid "CIDLookup"
 msgstr ""
 
-#: views/form.php:123
+#: views/form.php:127
 msgid "Cache Results"
 msgstr ""
 
-#: views/form.php:179
+#: views/form.php:183
 msgid "Caller ID Format"
 msgstr ""
 
@@ -130,39 +130,39 @@ msgstr "Nummerpresentation"
 msgid "CallerID Lookup Sources"
 msgstr "Källa f. nummerpresentation"
 
-#: views/form.php:534
+#: views/form.php:538
 msgid "Character Set"
 msgstr ""
 
-#: views/form.php:186
+#: views/form.php:190
 msgid "Company"
 msgstr ""
 
-#: views/form.php:98
+#: views/form.php:102
 msgid "Contact Manager"
 msgstr ""
 
-#: views/form.php:152
+#: views/form.php:156
 msgid "Contact Manager Group(s)"
 msgstr ""
 
-#: views/form.php:42
+#: views/form.php:46
 msgid "Contact Manager Not Installed"
 msgstr ""
 
-#: views/form.php:25
+#: views/form.php:29
 msgid "Contact Manager:"
 msgstr ""
 
-#: views/form.php:438
+#: views/form.php:442
 msgid "Database"
 msgstr ""
 
-#: views/form.php:450
+#: views/form.php:454
 msgid "Database Name"
 msgstr ""
 
-#: views/form.php:138
+#: views/form.php:142
 msgid ""
 "Decide whether or not cache the results to astDB; it will overwrite present "
 "values. It does not affect Internal source behavior"
@@ -178,59 +178,59 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: views/form.php:187
+#: views/form.php:191
 msgid "Display Name"
 msgstr ""
 
-#: views/form.php:21
+#: views/form.php:25
 msgid "ENUM:"
 msgstr ""
 
-#: views/form.php:79
+#: views/form.php:83
 msgid "Enter a description for this source."
 msgstr "Skriv en kortfattad beskrivning för denna källa."
 
-#: views/form.php:166
+#: views/form.php:170
 msgid "Filter results to these contact manager groups"
 msgstr ""
 
-#: views/form.php:184
+#: views/form.php:188
 msgid "First Last"
 msgstr ""
 
-#: views/form.php:22
+#: views/form.php:26
 msgid "HTTP:"
 msgstr ""
 
-#: views/form.php:23
+#: views/form.php:27
 msgid "HTTPS:"
 msgstr ""
 
-#: views/form.php:266 views/form.php:414
+#: views/form.php:270 views/form.php:418
 msgid "Host"
 msgstr ""
 
-#: views/form.php:278
+#: views/form.php:282
 msgid "Host name or IP address"
 msgstr "Datornamn eller IP-adress"
 
-#: views/form.php:196
+#: views/form.php:200
 msgid "How to format the returned data"
 msgstr ""
 
-#: views/form.php:97
+#: views/form.php:101
 msgid "Internal"
 msgstr "Intern"
 
-#: views/form.php:20
+#: views/form.php:24
 msgid "Internal:"
 msgstr ""
 
-#: views/form.php:24
+#: views/form.php:28
 msgid "It queries a MySQL database to retrieve caller name"
 msgstr ""
 
-#: views/form.php:185
+#: views/form.php:189
 msgid "Last First"
 msgstr ""
 
@@ -238,27 +238,27 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: views/form.php:546
+#: views/form.php:550
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
 
-#: views/form.php:426
+#: views/form.php:430
 msgid "MySQL Host"
 msgstr "MySQL-dator"
 
-#: views/form.php:522
+#: views/form.php:526
 msgid "MySQL Password"
 msgstr "Lösenord för MySQL"
 
-#: views/form.php:498
+#: views/form.php:502
 msgid "MySQL Username"
 msgstr "Användarnamn för MySQL"
 
-#: views/form.php:24
+#: views/form.php:28
 msgid "MySQL:"
 msgstr ""
 
-#: views/form.php:130
+#: views/form.php:134
 msgid "No"
 msgstr ""
 
@@ -266,11 +266,11 @@ msgstr ""
 msgid "None"
 msgstr "Ingen"
 
-#: views/form.php:555 views/form.php:560
+#: views/form.php:559 views/form.php:564
 msgid "Not yet implemented"
 msgstr "Inte implementerad"
 
-#: views/form.php:10 views/form.php:15
+#: views/form.php:14 views/form.php:19
 msgid "OpenCNAM"
 msgstr ""
 
@@ -282,23 +282,23 @@ msgstr ""
 msgid "OpenCNAM Throttle Reached!"
 msgstr ""
 
-#: views/form.php:19
+#: views/form.php:23
 msgid "OpenCNAM:"
 msgstr ""
 
-#: views/form.php:338 views/form.php:510
+#: views/form.php:342 views/form.php:514
 msgid "Password"
 msgstr ""
 
-#: views/form.php:350
+#: views/form.php:354
 msgid "Password to use in HTTP authentication"
 msgstr "Lösenord att använda vid HTTP-autentisering"
 
-#: views/form.php:362
+#: views/form.php:366
 msgid "Path"
 msgstr ""
 
-#: views/form.php:374
+#: views/form.php:378
 msgid ""
 "Path of the file to GET<br/>e.g.: /cidlookup.php<br>Special token '[NUMBER]' "
 "will be replaced with caller number<br/>e.g.: /cidlookup/[NUMBER]/<br/"
@@ -306,19 +306,19 @@ msgid ""
 "will be replaced with channel language"
 msgstr ""
 
-#: views/form.php:290
+#: views/form.php:294
 msgid "Port"
 msgstr ""
 
-#: views/form.php:302
+#: views/form.php:306
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: views/form.php:386 views/form.php:462
+#: views/form.php:390 views/form.php:466
 msgid "Query"
 msgstr ""
 
-#: views/form.php:398
+#: views/form.php:402
 msgid ""
 "Query string, special token '[NUMBER]' will be replaced with caller "
 "number<br/>e.g.: number=[NUMBER]&source=crm<br/>'[NAME]' will be replaced "
@@ -326,7 +326,7 @@ msgid ""
 "language<br/>'[UNIQUEID]' will be replaced with unique Asterisk callID"
 msgstr ""
 
-#: views/form.php:474
+#: views/form.php:478
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -339,11 +339,11 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:25
+#: views/form.php:29
 msgid "Searches a contact manager group"
 msgstr ""
 
-#: views/form.php:17
+#: views/form.php:21
 msgid "Select the source type, you can choose between:"
 msgstr ""
 
@@ -351,7 +351,7 @@ msgstr ""
 msgid "Source"
 msgstr "Källa"
 
-#: views/form.php:67
+#: views/form.php:71
 msgid "Source Description"
 msgstr ""
 
@@ -359,7 +359,7 @@ msgstr ""
 msgid "Source Description Already Exist"
 msgstr ""
 
-#: views/form.php:91
+#: views/form.php:95
 msgid "Source type"
 msgstr ""
 
@@ -371,7 +371,7 @@ msgstr "Källor kan läggas till i Källor för nummerpresentation"
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:49
+#: views/form.php:53
 #, php-format
 msgid ""
 "There are %s DIDs using this source that will no longer have lookups if "
@@ -390,15 +390,15 @@ msgid ""
 "OpenCNAM account to continue using their API"
 msgstr ""
 
-#: views/form.php:314 views/form.php:486
+#: views/form.php:318 views/form.php:490
 msgid "Username"
 msgstr ""
 
-#: views/form.php:326
+#: views/form.php:330
 msgid "Username to use in HTTP authentication"
 msgstr "Användarnamn att använda vid HTTP-autentisering"
 
-#: views/form.php:128
+#: views/form.php:132
 msgid "Yes"
 msgstr ""
 
@@ -413,13 +413,13 @@ msgid ""
 "<br/>"
 msgstr ""
 
-#: views/form.php:226
+#: views/form.php:230
 msgid ""
 "Your OpenCNAM Account SID. This can be found on your OpenCNAM dashboard "
 "page: https://www.opencnam.com/dashboard"
 msgstr ""
 
-#: views/form.php:250
+#: views/form.php:254
 msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"

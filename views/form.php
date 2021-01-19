@@ -4,8 +4,12 @@
 extract($request);
 if (!empty($itemid)){
     $thisItem = cidlookup_get($itemid);
-    $dids_using_arr = cidlookup_did_list($itemid);
-    $dids_using = count($dids_using_arr);
+    $dids_using_arr = cidlookup_did_list($itemid); 
+    if (is_array($dids_using_arr)) {
+	    $dids_using = count($dids_using_arr);
+    } else {
+	    $dids_using = 0;
+    }
     $thisItem_description = isset($thisItem['description']) ? htmlspecialchars($thisItem['description']):'';
     $opencnamopt = ($thisItem['sourcetype'] == 'opencnam')?'<option value="opencnam" selected>'. _("OpenCNAM").'</option>':'';
 } else {
