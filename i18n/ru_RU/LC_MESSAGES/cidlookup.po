@@ -24,17 +24,17 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-24 14:58+0530\n"
-"PO-Revision-Date: 2015-05-31 00:21+0200\n"
-"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
+"PO-Revision-Date: 2021-11-23 08:00+0000\n"
+"Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
-"cidlookup/ru_RU/>\n"
+"cidlookup/ru/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/form.php:22
 msgid ""
@@ -391,7 +391,7 @@ msgstr "Источник может быть добавлен в секцию С
 
 #: Cidlookup.class.php:71
 msgid "Submit"
-msgstr "Подтвердить"
+msgstr "Применить"
 
 #: views/form.php:49
 #, php-format
