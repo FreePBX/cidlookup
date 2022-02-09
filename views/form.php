@@ -456,6 +456,30 @@ if ($itemid && $dids_using > 0){
 	</div>
 </div>
 <!--END Database-->
+<!--Port-->
+<div class="element-container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="form-group">
+					<div class="col-md-3">
+						<label class="control-label" for="mysql_port"><?php echo _("Port") ?></label>
+						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_port"></i>
+					</div>
+					<div class="col-md-9">
+						<input type="number" max="65535" class="form-control" id="mysql_port" name="mysql_port" value="<?php echo (isset($thisItem['mysql_port']) ? $thisItem['mysql_port'] : '3306'); ?>">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<span id="mysql_port-help" class="help-block fpbx-help-block"><?php echo _("MySQL Port")?></span>
+		</div>
+	</div>
+</div>
+<!--END Port-->
 <!--Query-->
 <div class="element-container">
 	<div class="row">

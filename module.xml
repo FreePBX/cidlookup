@@ -53,6 +53,7 @@
 	    	<field name="http_path" type="string" length="100" notnull="false"/>
 	    	<field name="http_query" type="string" length="100" notnull="false"/>
 	    	<field name="mysql_host" type="string" length="60" notnull="false"/>
+			<field name="mysql_port" type="string" length="5" notnull="false"/>
 	    	<field name="mysql_dbname" type="string" length="60" notnull="false"/>
 	    	<field name="mysql_query" type="string" length="255" notnull="false"/>
 	    	<field name="mysql_username" type="string" length="30" notnull="false"/>
