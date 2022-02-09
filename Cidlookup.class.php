@@ -9,7 +9,7 @@ use PDO;
 
 use ext_gosub;
 class Cidlookup extends FreePBX_Helpers implements BMO {
-	public static $lookupFields = ['cidlookup_id', 'description', 'sourcetype', 'cache', 'http_host', 'http_port', 'http_username', 'http_password', 'http_path', 'http_query', 'mysql_host', 'mysql_dbname', 'mysql_query', 'mysql_username', 'mysql_password', 'mysql_charset', 'opencnam_account_sid', 'opencnam_auth_token', 'cm_group', 'cm_format'];
+	public static $lookupFields = ['cidlookup_id', 'description', 'sourcetype', 'cache', 'http_host', 'http_port', 'http_username', 'http_password', 'http_path', 'http_query', 'mysql_host', 'mysql_port', 'mysql_dbname', 'mysql_query', 'mysql_username', 'mysql_password', 'mysql_charset', 'opencnam_account_sid', 'opencnam_auth_token', 'cm_group', 'cm_format'];
 	public function install() {}
 	public function uninstall() {}
 	public function doConfigPageInit($page) {
@@ -142,9 +142,9 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 	public function add(){
 		$insert = $this->getInsert($_REQUEST);
 		$sql = "INSERT INTO cidlookup
-			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
+			(description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_port, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
 		VALUES
-			(:description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
+			(:description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_port, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
 		$stmt = $this->Database->prepare($sql);
 		$stmt->execute($insert);
 		return $this;
@@ -158,9 +158,9 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		}
 		unset($array['deptname']);
 		$sql = "REPLACE INTO cidlookup
-			(cidlookup_id, description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
+			(cidlookup_id, description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_port, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
 		VALUES
-			(:cidlookup_id, :description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
+			(:cidlookup_id, :description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_port, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
 		$stmt = $this->Database->prepare($sql);
 		$stmt->execute($array);
 		return $this;
@@ -181,6 +181,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 				http_path = :http_path,
 				http_query = :http_query,
 				mysql_host = :mysql_host,
+				mysql_port = :mysql_port,
 				mysql_dbname = :mysql_dbname,
 				mysql_query = :mysql_query,
 				mysql_username = :mysql_username,
@@ -273,6 +274,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 			"http_path" => "",
 			"http_query" => "",
 			"mysql_host" => "",
+			"mysql_port" => "3306",
 			"mysql_dbname" => "",
 			"mysql_query" => "",
 			"mysql_username" => "",

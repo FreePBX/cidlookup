@@ -1,0 +1,61 @@
+#!/usr/bin/php -q
+<?php
+  $restrict_mods = true;
+  if (!@include_once(getenv('FREEPBX_CONF') ? getenv('FREEPBX_CONF') : '/etc/freepbx.conf')) {
+    include_once('/etc/asterisk/freepbx.conf');
+  }
+  $logsdir  = FreePBX::Config()->get('ASTLOGDIR');
+  $agidir   = FreePBX::Config()->get('ASTAGIDIR');
+  require_once($agidir."/phpagi.php");
+
+  $agi      = new AGI();
+  $host     = trim($argv[1]);
+  $port     = empty(trim($argv[2])) ? "3306" : trim($argv[2]);
+  $username = trim($argv[3]);
+  $password = trim($argv[4]);
+  $dbname   = trim($argv[5]);
+  $charset  = empty(trim($argv[6])) ? "" : ";charset=".trim($argv[6]);
+  $query    = $argv[7];  
+  $error    = "";
+  $error    = empty($host)      ? $error.", host"      : $error."";
+  $error    = empty($dbname)    ? $error.", dbname"    : $error."";
+  $error    = empty($username)  ? $error.", username"  : $error."";
+  $error    = empty($query)     ? $error.", query"     : $error."";
+  if($error != ""){
+    $agi->verbose('--- Error: Missing argument'.$error.'. ----');
+    exit(1);
+  }
+
+  try {
+    $pdo    = new PDO("mysql:host=$host;port=$port;dbname=$dbname$charset", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  } catch (Exception $e) {
+      error_log($e->getMessage()."\n", 3, $logsdir."/freepbx_dbug");
+  }
+
+  try {
+    $stm    = $pdo->prepare($query);
+  } catch (Exception $e) {
+    error_log($e->getMessage()."\n", 3, $logsdir."/freepbx_dbug");
+  } 
+
+  $stm->execute();
+  $ret      = $stm->fetch(\PDO::FETCH_ASSOC);
+  $name     = _("Unknown"); 
+  
+  foreach($ret as $key => $val){
+    $name   = $val;
+    break;
+  }
+
+  if(is_string($name)){
+      $agi->set_variable("CALLERID(name)", $name);
+  }
+  else{
+    $agi->verbose('--- Error: name is '.gettype($name).', string type expected ----');
+    $agi->set_variable("CALLERID(name)", _("Unknown"));
+  }
+  
+  $pdo->close(); 
+  exit(0);
+?>
