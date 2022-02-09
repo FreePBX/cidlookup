@@ -156,29 +156,25 @@ function cidlookup_get_config($engine) {
 						break;
 
 						case "mysql":
-										if (version_compare($version, "1.6", "lt")) {
-											//Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
-											$replacements = array (
-												'\\' => '\\\\',
-												'"' => '\\"',
-												'\'' => '\\\'',
-												' ' => '\\ ',
-												',' => '\\,',
-												'(' => '\\(',
-												')' => '\\)',
-												'.' => '\\.',
-												'|' => '\\|'
-											);
-											$query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
-										} else {
-											$query = $item['mysql_query'];
-										}
+							if (version_compare($version, "1.6", "lt")) {
+								//Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
+								$replacements = array (
+									'\\' => '\\\\',
+									'"' => '\\"',
+									'\'' => '\\\'',
+									' ' => '\\ ',
+									',' => '\\,',
+									'(' => '\\(',
+									')' => '\\)',
+									'.' => '\\.',
+									'|' => '\\|'
+								);
+								$query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
+							} else {
+								$query = $item['mysql_query'];
+							}
 							$query = str_replace('[NUMBER]', '${CALLERID(num)}', $query);
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_connect('connid', $item['mysql_host'],	$item['mysql_username'],	$item['mysql_password'],	$item['mysql_dbname'],	$item['mysql_charset']));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_query('resultid', 'connid', $query));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_fetch('fetchid', 'resultid', 'CALLERID(name)'));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_clear('resultid'));
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_mysql_disconnect('connid'));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi("cidlookup_mysql.agi,{$item['mysql_host']},{$item['mysql_port']},{$item['mysql_username']},{$item['mysql_password']},{$item['mysql_dbname']},{$item['mysql_charset']},$query"));
 						break;
 					}
 
