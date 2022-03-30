@@ -9,7 +9,7 @@ use PDO;
 
 use ext_gosub;
 class Cidlookup extends FreePBX_Helpers implements BMO {
-	public static $lookupFields = ['cidlookup_id', 'description', 'sourcetype', 'cache', 'http_host', 'http_port', 'http_username', 'http_password', 'http_path', 'http_query', 'mysql_host', 'mysql_port', 'mysql_dbname', 'mysql_query', 'mysql_username', 'mysql_password', 'mysql_charset', 'opencnam_account_sid', 'opencnam_auth_token', 'cm_group', 'cm_format'];
+	public static $lookupFields = ['cidlookup_id', 'description', 'sourcetype', 'cache', 'http_host', 'http_port', 'http_username', 'http_password', 'http_path', 'http_query', 'mysql_host', 'mysql_port', 'mysql_dbname', 'mysql_query', 'mysql_username', 'mysql_password', 'mysql_charset', 'opencnam_account_sid', 'opencnam_auth_token', 'cm_group', 'cm_format','deptname'];
 	public function install() {}
 	public function uninstall() {}
 	public function doConfigPageInit($page) {
@@ -156,11 +156,10 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 			}
 			$array[$field] = '';
 		}
-		unset($array['deptname']);
 		$sql = "REPLACE INTO cidlookup
-			(cidlookup_id, description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_port, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format)
+			(cidlookup_id, description, sourcetype, cache, http_host, http_port, http_username, http_password, http_path, http_query, mysql_host, mysql_port, mysql_dbname, mysql_query, mysql_username, mysql_password, mysql_charset, opencnam_account_sid, opencnam_auth_token, cm_group, cm_format,deptname)
 		VALUES
-			(:cidlookup_id, :description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_port, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format)";
+			(:cidlookup_id, :description, :sourcetype, :cache, :http_host, :http_port, :http_username, :http_password, :http_path, :http_query, :mysql_host, :mysql_port, :mysql_dbname, :mysql_query, :mysql_username, :mysql_password, :mysql_charset, :opencnam_account_sid, :opencnam_auth_token, :cm_group, :cm_format,:deptname)";
 		$stmt = $this->Database->prepare($sql);
 		$stmt->execute($array);
 		return $this;
