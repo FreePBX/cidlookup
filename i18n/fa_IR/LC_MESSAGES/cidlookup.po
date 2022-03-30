@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 02:08+0000\n"
+"POT-Creation-Date: 2022-03-30 07:51+0000\n"
 "PO-Revision-Date: 2016-08-26 03:09+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -133,7 +133,7 @@ msgstr "جستجوی شماره تماس گیرنده"
 msgid "CallerID Lookup Sources"
 msgstr "منابع جستجوی شماره تماس گیرنده"
 
-#: views/form.php:538
+#: views/form.php:562
 msgid "Character Set"
 msgstr "مجموعه کاراکتر"
 
@@ -241,7 +241,7 @@ msgstr ""
 msgid "List Sources"
 msgstr "فهرست منابع"
 
-#: views/form.php:550
+#: views/form.php:574
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr "مجموعه کاراکتر MySQL.  برای پیشفرض latin1 خالی بگذارید"
 
@@ -249,11 +249,15 @@ msgstr "مجموعه کاراکتر MySQL.  برای پیشفرض latin1 خال�
 msgid "MySQL Host"
 msgstr "هاست MySQL"
 
-#: views/form.php:526
+#: views/form.php:550
 msgid "MySQL Password"
 msgstr "کلمه عبور MySQL"
 
-#: views/form.php:502
+#: views/form.php:478
+msgid "MySQL Port"
+msgstr ""
+
+#: views/form.php:526
 msgid "MySQL Username"
 msgstr "نام کاربری MySQL"
 
@@ -269,7 +273,7 @@ msgstr "خیر"
 msgid "None"
 msgstr "هیچ"
 
-#: views/form.php:559 views/form.php:564
+#: views/form.php:583 views/form.php:588
 msgid "Not yet implemented"
 msgstr "هنوز اجرا نشده"
 
@@ -291,7 +295,7 @@ msgstr "OpenCNAM Throttle  Reached!"
 msgid "OpenCNAM:"
 msgstr "OpenCNAM:"
 
-#: views/form.php:342 views/form.php:514
+#: views/form.php:342 views/form.php:538
 msgid "Password"
 msgstr "کلمه عبور"
 
@@ -315,7 +319,7 @@ msgstr ""
 ">'[NAME]' will be replaced with existing caller id name<br/>'[LANGUAGE]' "
 "will be  replaced with channel language"
 
-#: views/form.php:294
+#: views/form.php:294 views/form.php:466
 msgid "Port"
 msgstr "پورت"
 
@@ -323,7 +327,7 @@ msgstr "پورت"
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr "Port HTTP(s) server  is listening at (default http 80, https 443)"
 
-#: views/form.php:390 views/form.php:466
+#: views/form.php:390 views/form.php:490
 msgid "Query"
 msgstr "صف"
 
@@ -335,7 +339,7 @@ msgid ""
 "language<br/>'[UNIQUEID]' will be replaced with unique Asterisk callID"
 msgstr ""
 
-#: views/form.php:478
+#: views/form.php:502
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -400,7 +404,7 @@ msgstr ""
 "تماس های غیر مجاز در OpenCNAM API به زودی لغو میشود. شما باید از حساب "
 "OpenCNAM برای ادامه استفاده کنید"
 
-#: views/form.php:318 views/form.php:490
+#: views/form.php:318 views/form.php:514
 msgid "Username"
 msgstr "نام کاربری"
 

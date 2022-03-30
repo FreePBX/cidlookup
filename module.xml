@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>16.0.5</version>
+	<version>16.0.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
   	<more-info>https://wiki.freepbx.org/display/F2/CallerID+Lookup+Sources+Module</more-info>
 	<category>Admin</category>
 	<changelog>
+		*16.0.6* FREEPBX-23206 CID Lookup module relies on app_mysql
 		*16.0.5* Packaging of ver 16.0.5
 		*16.0.4* Packaging of ver 16.0.4
 		*16.0.3* FREEI-1667  modify cidlookup &amp;amp; adding delAction class 
