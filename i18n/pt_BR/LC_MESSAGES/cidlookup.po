@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 02:08+0000\n"
+"POT-Creation-Date: 2022-03-30 07:51+0000\n"
 "PO-Revision-Date: 2015-04-29 08:49+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -114,7 +114,7 @@ msgstr ""
 msgid "CallerID Lookup Sources"
 msgstr ""
 
-#: views/form.php:538
+#: views/form.php:562
 msgid "Character Set"
 msgstr ""
 
@@ -220,7 +220,7 @@ msgstr ""
 msgid "List Sources"
 msgstr ""
 
-#: views/form.php:550
+#: views/form.php:574
 msgid "MySQL Character Set. Leave blank for MySQL default latin1"
 msgstr ""
 
@@ -228,11 +228,15 @@ msgstr ""
 msgid "MySQL Host"
 msgstr ""
 
-#: views/form.php:526
+#: views/form.php:550
 msgid "MySQL Password"
 msgstr ""
 
-#: views/form.php:502
+#: views/form.php:478
+msgid "MySQL Port"
+msgstr ""
+
+#: views/form.php:526
 msgid "MySQL Username"
 msgstr ""
 
@@ -248,7 +252,7 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: views/form.php:559 views/form.php:564
+#: views/form.php:583 views/form.php:588
 msgid "Not yet implemented"
 msgstr ""
 
@@ -268,7 +272,7 @@ msgstr ""
 msgid "OpenCNAM:"
 msgstr ""
 
-#: views/form.php:342 views/form.php:514
+#: views/form.php:342 views/form.php:538
 msgid "Password"
 msgstr ""
 
@@ -288,7 +292,7 @@ msgid ""
 "will be replaced with channel language"
 msgstr ""
 
-#: views/form.php:294
+#: views/form.php:294 views/form.php:466
 msgid "Port"
 msgstr ""
 
@@ -296,7 +300,7 @@ msgstr ""
 msgid "Port HTTP(s) server is listening at (default http 80, https 443)"
 msgstr ""
 
-#: views/form.php:390 views/form.php:466
+#: views/form.php:390 views/form.php:490
 msgid "Query"
 msgstr ""
 
@@ -308,7 +312,7 @@ msgid ""
 "language<br/>'[UNIQUEID]' will be replaced with unique Asterisk callID"
 msgstr ""
 
-#: views/form.php:478
+#: views/form.php:502
 msgid ""
 "Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
@@ -367,7 +371,7 @@ msgid ""
 "OpenCNAM account to continue using their API"
 msgstr ""
 
-#: views/form.php:318 views/form.php:490
+#: views/form.php:318 views/form.php:514
 msgid "Username"
 msgstr ""
 

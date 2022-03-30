@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>15.0.20</version>
+	<version>15.0.21</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
   	<more-info>https://wiki.freepbx.org/display/FPG/CallerID+Lookup+Sources+Module</more-info>
 	<category>Admin</category>
 	<changelog>
+		*15.0.21* FREEPBX-23206 CID Lookup module relies on app_mysql
 		*15.0.20* Packaging of ver 15.0.20
 		*15.0.19* Packaging of ver 15.0.19
 		*15.0.18* Packaging of ver 15.0.18
