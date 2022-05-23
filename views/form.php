@@ -65,8 +65,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="form_description"><?php echo _("Source Description") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="form_description"></i>
@@ -89,8 +89,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="sourcetype"><?php echo _("Source type") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="sourcetype"></i>
@@ -121,8 +121,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="cache"><?php echo _("Cache Results") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="cache"></i>
@@ -150,8 +150,8 @@ if ($itemid && $dids_using > 0){
   <div class="element-container cm">
   	<div class="row">
   		<div class="col-md-12">
-  			<div class="">
-  				<div class="row form-group">
+  			<div class="row">
+  				<div class="form-group">
   					<div class="col-md-3">
   						<label class="control-label" for="cm_group"><?php echo _("Contact Manager Group(s)") ?></label>
   						<i class="fa fa-question-circle fpbx-help-icon" data-for="cm_group"></i>
@@ -177,8 +177,8 @@ if ($itemid && $dids_using > 0){
   <div class="element-container cm">
   	<div class="row">
   		<div class="col-md-12">
-  			<div class="">
-  				<div class="row form-group">
+  			<div class="row">
+  				<div class="form-group">
   					<div class="col-md-3">
   						<label class="control-label" for="cm_format"><?php echo _("Caller ID Format") ?></label>
   						<i class="fa fa-question-circle fpbx-help-icon" data-for="cm_format"></i>
@@ -212,8 +212,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container opencnam">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opencnam_account_sid"><?php echo _("Account SID:") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opencnam_account_sid"></i>
@@ -236,8 +236,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container opencnam">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opencnam_auth_token"><?php echo _("Auth Token") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opencnam_auth_token"></i>
@@ -264,8 +264,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="http_host"><?php echo _("Host") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_host"></i>
@@ -288,8 +288,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="http_port"><?php echo _("Port") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_port"></i>
@@ -312,8 +312,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="http_username"><?php echo _("Username") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_username"></i>
@@ -336,8 +336,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="http_password"><?php echo _("Password") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_password"></i>
@@ -360,8 +360,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="http_path"><?php echo _("Path") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_path"></i>
@@ -384,8 +384,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="http_query"><?php echo _("Query") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="http_query"></i>
@@ -412,8 +412,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="mysql_host"><?php echo _("Host") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_host"></i>
@@ -436,8 +436,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="mysql_dbname"><?php echo _("Database") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_dbname"></i>
@@ -460,8 +460,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="mysql_port"><?php echo _("Port") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_port"></i>
@@ -484,8 +484,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="mysql_query"><?php echo _("Query") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_query"></i>
@@ -508,8 +508,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="mysql_username"><?php echo _("Username") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_username"></i>
@@ -532,8 +532,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="mysql_password"><?php echo _("Password") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_password"></i>
@@ -556,8 +556,8 @@ if ($itemid && $dids_using > 0){
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="row form-group">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="mysql_charset"><?php echo _("Character Set") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="mysql_charset"></i>
