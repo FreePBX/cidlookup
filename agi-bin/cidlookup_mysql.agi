@@ -41,7 +41,6 @@
 
   $stm->execute();
   $ret      = $stm->fetch(\PDO::FETCH_ASSOC);
-  $name     = _("Unknown"); 
   
   foreach($ret as $key => $val){
     $name   = $val;
@@ -52,8 +51,7 @@
       $agi->set_variable("CALLERID(name)", $name);
   }
   else{
-    $agi->verbose('--- Error: name is '.gettype($name).', string type expected ----');
-    $agi->set_variable("CALLERID(name)", _("Unknown"));
+    $agi->verbose('--- Name not found ----');
   }
   
   $pdo->close(); 
