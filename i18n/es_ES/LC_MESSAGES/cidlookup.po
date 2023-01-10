@@ -20,16 +20,16 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-24 14:58+0530\n"
-"PO-Revision-Date: 2016-06-07 02:58+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"PO-Revision-Date: 2023-01-10 12:04+0000\n"
+"Last-Translator: Santiago Pioli <spioli@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
-"cidlookup/es_ES/>\n"
+"cidlookup/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -136,7 +136,7 @@ msgstr "Resultados Cache"
 
 #: views/form.php:178
 msgid "Caller ID Format"
-msgstr ""
+msgstr "Formato de Identificación de Llamadas"
 
 #: cidlookup.i18n.php:4
 msgid "CallerID Lookup"
@@ -152,23 +152,23 @@ msgstr "Conjunto de Caracterees"
 
 #: views/form.php:185
 msgid "Company"
-msgstr ""
+msgstr "Empresa"
 
 #: views/form.php:97
 msgid "Contact Manager"
-msgstr ""
+msgstr "Administrador de Contactos"
 
 #: views/form.php:151
 msgid "Contact Manager Group(s)"
-msgstr ""
+msgstr "Grupo(s) de Administrador de Contactos"
 
 #: views/form.php:42
 msgid "Contact Manager Not Installed"
-msgstr ""
+msgstr "Administrador de Contactos no está instalado"
 
 #: views/form.php:25
 msgid "Contact Manager:"
-msgstr ""
+msgstr "Administrador de Contactos:"
 
 #: views/form.php:437
 msgid "Database"
@@ -196,7 +196,7 @@ msgstr "Descripción"
 
 #: views/form.php:186
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre para mostrar"
 
 #: views/form.php:21
 msgid "ENUM:"
@@ -208,11 +208,11 @@ msgstr "Introduzca una descripción para este origen."
 
 #: views/form.php:165
 msgid "Filter results to these contact manager groups"
-msgstr ""
+msgstr "Filtrar resultados a estos grupos de administrador de contactos"
 
 #: views/form.php:183
 msgid "First Last"
-msgstr ""
+msgstr "Primer Último"
 
 #: views/form.php:22
 msgid "HTTP:"
@@ -232,7 +232,7 @@ msgstr "Nombre del servidor o IP"
 
 #: views/form.php:195
 msgid "How to format the returned data"
-msgstr ""
+msgstr "Cómo formatear a los datos devueltos"
 
 #: views/form.php:96
 msgid "Internal"
@@ -248,7 +248,7 @@ msgstr "Solicita a base de datos MySQL el recuperar el nombre de quien llamada"
 
 #: views/form.php:184
 msgid "Last First"
-msgstr ""
+msgstr "Último Primero"
 
 #: views/bootnav.php:6
 msgid "List Sources"
@@ -350,6 +350,12 @@ msgid ""
 "with existing caller id name<br/>'[LANGUAGE]' will be replaced with channel "
 "language<br/>'[UNIQUEID]' will be replaced with unique Asterisk callID"
 msgstr ""
+"Cadena de consulta, tóken especial '[NUMBER]' se reemplazará con el número "
+"de la persona que llama<br/> por ejemplo: número=[NUMBER]&source=crm<br/"
+">'[NAME]' será reemplazado con el nombre de identificación de llamadas "
+"existente<br/>'[LANGUAGE]' será reemplazado con el idioma del canal<br/"
+">'[UNIQUEID]' será reemplazado con el identificador de llamada únido de "
+"Asterisk"
 
 #: views/form.php:473
 msgid ""
@@ -366,7 +372,7 @@ msgstr "Restablecer"
 
 #: views/form.php:25
 msgid "Searches a contact manager group"
-msgstr ""
+msgstr "Busca un grupo de administrador de contacto"
 
 #: views/form.php:17
 msgid "Select the source type, you can choose between:"
@@ -411,6 +417,8 @@ msgid ""
 "Unauthenticated calls to the OpenCNAM API will soon fail. You will need an "
 "OpenCNAM account to continue using their API"
 msgstr ""
+"Llamadas no autenticadas a la API OpenCNAM pronto fallarán. Necesitará una "
+"cuenta OpenCNAM para continuar usando su API"
 
 #: views/form.php:313 views/form.php:485
 msgid "Username"
