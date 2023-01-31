@@ -173,9 +173,10 @@ function cidlookup_get_config($engine) {
 							} else {
 								$query = $item['mysql_query'];
 							}
-							$query = rtrim($query,';');// we dont want ; semi colon on dialplan as part of query that will break the syntax
-							$query = str_replace('[NUMBER]', '${CALLERID(num)}', $query);
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi("cidlookup_mysql.agi,{$item['mysql_host']},{$item['mysql_port']},{$item['mysql_username']},{$item['mysql_password']},{$item['mysql_dbname']},{$item['mysql_charset']},$query"));
+
+							$query = rtrim($query,';'); // we dont want ; semi colon on dialplan as part of query that will break the syntax
+							$query = base64_encode($query);
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi("cidlookup_mysql.agi,{$item['mysql_host']},{$item['mysql_port']},{$item['mysql_username']},{$item['mysql_password']},{$item['mysql_dbname']},{$item['mysql_charset']},{$query}, \${CALLERID(num)}"));
 						break;
 					}
 
