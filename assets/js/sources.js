@@ -9,6 +9,9 @@ $.ajax({
 
 $(document).ready(function() {
     $('#cm_group').multiselect();
+    source = $('#sourcetype').val();
+    source = (source == 'https') ? 'http' : source;
+    $('#'+source).show();
 });
 
 function edit_onsubmit() {
