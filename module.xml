@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>15.0.25</version>
+	<version>15.0.26</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
   	<more-info>https://wiki.freepbx.org/display/FPG/CallerID+Lookup+Sources+Module</more-info>
 	<category>Admin</category>
 	<changelog>
+		*15.0.26* FREEPBX-23954 
 		*15.0.25* FREEPBX-23578 CallerID Lookup Module No Longer Passing Default Caller ID Through 
 		*15.0.24* FREEPBX-23429 CallerID Lookup after update doesn't substitute [NUMBER] 
 		*15.0.23* FREEI-4692 

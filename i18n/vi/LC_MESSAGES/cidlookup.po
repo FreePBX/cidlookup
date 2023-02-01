@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 07:51+0000\n"
+"POT-Creation-Date: 2023-02-01 03:41+0000\n"
 "PO-Revision-Date: 2017-07-14 10:19+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -365,7 +365,7 @@ msgstr "Nguồn"
 msgid "Source Description"
 msgstr "Mô tả nguồn"
 
-#: assets/js/sources.js:20
+#: assets/js/sources.js:23
 msgid "Source Description Already Exist"
 msgstr ""
 
