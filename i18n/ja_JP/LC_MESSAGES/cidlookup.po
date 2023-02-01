@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 07:51+0000\n"
+"POT-Creation-Date: 2023-02-01 03:41+0000\n"
 "PO-Revision-Date: 2015-07-27 13:28+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -382,7 +382,7 @@ msgstr "ソース"
 msgid "Source Description"
 msgstr "ソースの説明"
 
-#: assets/js/sources.js:20
+#: assets/js/sources.js:23
 msgid "Source Description Already Exist"
 msgstr ""
 
