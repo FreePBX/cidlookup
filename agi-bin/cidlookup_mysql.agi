@@ -5,19 +5,21 @@
     include_once('/etc/asterisk/freepbx.conf');
   }
 
-  $logsdir  = FreePBX::Config()->get('ASTLOGDIR');
-  $agidir   = FreePBX::Config()->get('ASTAGIDIR');
-  require_once($agidir."/phpagi.php");
+ $agidir   = FreePBX::Config()->get('ASTAGIDIR');
+ $lookupid = $argv[1];
+ $number   = $argv[2];
+ $cidlook = FreePBX::Cidlookup()->getOne($lookupid);
+ require_once $agidir."/phpagi.php";
+ $agi      = new AGI();
+  // get all infromation from database instead of passing through AGI
 
-  $agi      = new AGI();
-  $host     = trim($argv[1]);
-  $port     = empty(trim($argv[2])) ? "3306" : trim($argv[2]);
-  $username = trim($argv[3]);
-  $password = trim($argv[4]);
-  $dbname   = trim($argv[5]);
-  $charset  = empty(trim($argv[6])) ? "" : ";charset=".trim($argv[6]);
-  $number   = $argv[8];
-  $query    = str_replace('[NUMBER]', $number, base64_decode($argv[7]));
+  $host     = trim($cidlook['mysql_host']);
+  $port     = empty(trim($cidlook['mysql_port'])) ? "3306" : trim($cidlook['mysql_port']);
+  $username = trim($cidlook['mysql_username']);
+  $password = trim($cidlook['mysql_password']);
+  $dbname   = trim($cidlook['mysql_dbname']);
+  $charset  = empty(trim($cidlook['mysql_charset'])) ? "" : ";charset=".trim($cidlook['mysql_charset']);
+  $query    = str_replace('[NUMBER]', $number, $cidlook['mysql_query']);
   $error    = "";
   $error    = empty($host)      ? $error.", host"      : $error."";
   $error    = empty($dbname)    ? $error.", dbname"    : $error."";
@@ -30,24 +32,24 @@
   }
 
   try {
-    $pdo    = new PDO("mysql:host=$host;port=$port;dbname=$dbname$charset", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $remotepdo    = new PDO("mysql:host=$host;port=$port;dbname=$dbname$charset", $username, $password);
+    $remotepdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   } catch (Exception $e) {
-      error_log($e->getMessage()."\n", 3, $logsdir."/freepbx_dbug");
+      dbug($e->getMessage());
   }
 
   try {
-    $stm    = $pdo->prepare($query);
+    $stm    = $remotepdo->prepare($query);
   } catch (Exception $e) {
-    error_log($e->getMessage()."\n", 3, $logsdir."/freepbx_dbug");
-  } 
+    dbug($e->getMessage());
+    } 
 
   try {
     $stm->execute();
     $ret    = $stm->fetch(\PDO::FETCH_ASSOC);
   } catch (Exception $e) {
-    error_log($e->getMessage()."\n", 3, $logsdir."/freepbx_dbug");
-  }
+    dbug($e->getMessage());
+    }
 
   $name     = _("Unknown"); 
   

@@ -156,27 +156,7 @@ function cidlookup_get_config($engine) {
 						break;
 
 						case "mysql":
-							if (version_compare($version, "1.6", "lt")) {
-								//Escaping MySQL query - thanks to http://www.asteriskgui.com/index.php?get=utilities-mysqlscape
-								$replacements = array (
-									'\\' => '\\\\',
-									'"' => '\\"',
-									'\'' => '\\\'',
-									' ' => '\\ ',
-									',' => '\\,',
-									'(' => '\\(',
-									')' => '\\)',
-									'.' => '\\.',
-									'|' => '\\|'
-								);
-								$query = str_replace(array_keys($replacements), array_values($replacements), $item['mysql_query']);
-							} else {
-								$query = $item['mysql_query'];
-							}
-
-							$query = rtrim($query,';'); // we dont want ; semi colon on dialplan as part of query that will break the syntax
-							$query = base64_encode($query);
-							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi("cidlookup_mysql.agi,{$item['mysql_host']},{$item['mysql_port']},{$item['mysql_username']},{$item['mysql_password']},{$item['mysql_dbname']},{$item['mysql_charset']},{$query}, \${CALLERID(num)}"));
+							$ext->add('cidlookup', 'cidlookup_'.$item['cidlookup_id'], '', new ext_agi("cidlookup_mysql.agi,".$item['cidlookup_id'].",\${CALLERID(num)}"));
 						break;
 					}
 
