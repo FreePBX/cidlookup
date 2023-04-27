@@ -254,7 +254,9 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		}
 
 		$stmt = $this->Database->prepare($sql);
-		$stmt->execute([':id' => $id]);
+		if ($id !== false && ctype_digit($id)) {
+			$stmt->execute([':id' => $id]);
+		}
 		//Legacy behavior
 		if ($stmt->rowCount() === 0) {
 			return null;
@@ -289,8 +291,8 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		foreach ($defaults as $key => $value) {
 			$final[$key] = isset($request[$key])?$request[$key]:$value;
 		}
-		if(is_array($final['cm_group']) && !empty($final['cm_group'])){
-			$final['cm_group'] = implode('_', $final['cm_group']);
+		if (is_array($final['cm_group'])) {
+			$final['cm_group'] = !empty($final['cm_group']) ? implode('_', $final['cm_group']) : "";
 		}
 		return $final;
 	}
