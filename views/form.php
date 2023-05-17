@@ -34,7 +34,7 @@ $cnampro = false;
 if($thisItem['opencnam_account_sid'] && $thisItem['opencnam_auth_token']){
 	$cnampro = true;
 }
-
+$cmopts = "";
 if(FreePBX::Modules()->checkStatus('contactmanager')){
     $groups = FreePBX::Contactmanager()->getGroups();
     $groupselect = explode('_', $thisItem['cm_group']);
