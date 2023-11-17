@@ -10,13 +10,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-17 02:57+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-11-18 16:01+0000\n"
+"Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
+"Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/cidlookup/"
+"pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/form.php:22
 msgid ""
@@ -67,7 +71,7 @@ msgstr ""
 
 #: views/grid.php:40
 msgid "Actions"
-msgstr ""
+msgstr "Działania"
 
 #: views/grid.php:26
 msgid "Add CIDLookup Source"
@@ -75,7 +79,7 @@ msgstr ""
 
 #: cidlookup.i18n.php:6
 msgid "Admin"
-msgstr ""
+msgstr "Administrator"
 
 #: cidlookup.i18n.php:8
 msgid ""
