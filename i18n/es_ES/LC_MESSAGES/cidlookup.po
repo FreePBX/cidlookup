@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 03:41+0000\n"
+"POT-Creation-Date: 2024-03-07 13:38+0000\n"
 "PO-Revision-Date: 2016-06-07 02:58+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -106,18 +106,6 @@ msgstr "Acciones"
 msgid "Add CIDLookup Source"
 msgstr "Agregar Fuente CIDLookup"
 
-#: cidlookup.i18n.php:6
-msgid "Admin"
-msgstr "Admin"
-
-#: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
-"Permite búsqueda CallerID de las llamadas entrantes contra de diferentes "
-"fuentes (OpenCNAM, MySQL, HTTP, ENUM, Módulo de la guía telefónica)"
-
 #: views/form.php:242
 msgid "Auth Token"
 msgstr "Clave Autorizacion"
@@ -137,14 +125,6 @@ msgstr "Resultados Cache"
 #: views/form.php:183
 msgid "Caller ID Format"
 msgstr ""
-
-#: cidlookup.i18n.php:4
-msgid "CallerID Lookup"
-msgstr "Búsqueda de identificador de llamante"
-
-#: cidlookup.i18n.php:10
-msgid "CallerID Lookup Sources"
-msgstr "Búsqueda de llamantes"
 
 #: views/form.php:562
 msgid "Character Set"
@@ -465,6 +445,22 @@ msgid ""
 msgstr ""
 "Clave Autorización OpenCNAM. Esto peude ser encontrado en el tablero de "
 "OpenCNAM en: https://www.opencnam.com/dashboard"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid ""
+#~ "Allows CallerID Lookup of incoming calls against different sources "
+#~ "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+#~ msgstr ""
+#~ "Permite búsqueda CallerID de las llamadas entrantes contra de diferentes "
+#~ "fuentes (OpenCNAM, MySQL, HTTP, ENUM, Módulo de la guía telefónica)"
+
+#~ msgid "CallerID Lookup"
+#~ msgstr "Búsqueda de identificador de llamante"
+
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "Búsqueda de llamantes"
 
 #~ msgid ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "

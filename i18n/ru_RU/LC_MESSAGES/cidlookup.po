@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 03:41+0000\n"
+"POT-Creation-Date: 2024-03-07 13:38+0000\n"
 "PO-Revision-Date: 2015-05-31 00:21+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -107,19 +107,6 @@ msgstr "Действия"
 msgid "Add CIDLookup Source"
 msgstr "Добавить источник поиска CID"
 
-#: cidlookup.i18n.php:6
-msgid "Admin"
-msgstr "Админ"
-
-#: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
-"Даёт возможность выполнить поиск номера при входящем звонке и подставить имя "
-"абонента, используя различные источники (OpenCNAM, MySQL, HTTP-запрос, "
-"сервис ENUM, или внутренний модуль Телефонная книга Астериск)"
-
 #: views/form.php:242
 msgid "Auth Token"
 msgstr "Авт. маркер"
@@ -139,14 +126,6 @@ msgstr "Результаты кеша"
 #: views/form.php:183
 msgid "Caller ID Format"
 msgstr ""
-
-#: cidlookup.i18n.php:4
-msgid "CallerID Lookup"
-msgstr "Поиск по Caller ID"
-
-#: cidlookup.i18n.php:10
-msgid "CallerID Lookup Sources"
-msgstr "Источники поиска Caller ID"
 
 #: views/form.php:562
 msgid "Character Set"
@@ -465,6 +444,23 @@ msgid ""
 msgstr ""
 "Ваш авторизационный токен  OpenCNAM. Его можно посмотреть на странице : "
 "https://www.opencnam.com/dashboard"
+
+#~ msgid "Admin"
+#~ msgstr "Админ"
+
+#~ msgid ""
+#~ "Allows CallerID Lookup of incoming calls against different sources "
+#~ "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+#~ msgstr ""
+#~ "Даёт возможность выполнить поиск номера при входящем звонке и подставить "
+#~ "имя абонента, используя различные источники (OpenCNAM, MySQL, HTTP-"
+#~ "запрос, сервис ENUM, или внутренний модуль Телефонная книга Астериск)"
+
+#~ msgid "CallerID Lookup"
+#~ msgstr "Поиск по Caller ID"
+
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "Источники поиска Caller ID"
 
 #~ msgid ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "

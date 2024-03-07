@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 03:41+0000\n"
+"POT-Creation-Date: 2024-03-07 13:38+0000\n"
 "PO-Revision-Date: 2018-05-29 07:40+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/cidlookup/it/>\n"
@@ -106,18 +106,6 @@ msgstr "Azioni"
 msgid "Add CIDLookup Source"
 msgstr "Aggiungi fonte CIDLookup"
 
-#: cidlookup.i18n.php:6
-msgid "Admin"
-msgstr "Amministratore"
-
-#: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
-"Permette la ricerca del chiamante delle chiamate in arrivo su fonti diverse "
-"(OpenCNAM, MySQL, HTTP, ENUM, modulo della rubrica)"
-
 #: views/form.php:242
 msgid "Auth Token"
 msgstr "Token di autenticazione"
@@ -137,14 +125,6 @@ msgstr "Risultati della cache"
 #: views/form.php:183
 msgid "Caller ID Format"
 msgstr ""
-
-#: cidlookup.i18n.php:4
-msgid "CallerID Lookup"
-msgstr "Risoluzione ID Chiamante (CID)"
-
-#: cidlookup.i18n.php:10
-msgid "CallerID Lookup Sources"
-msgstr "Sorgenti Risoluzione CID"
 
 #: views/form.php:562
 msgid "Character Set"
@@ -464,6 +444,22 @@ msgid ""
 msgstr ""
 "Il tuo token di autenticazione OpenCNAM. Questo può essere trovato sulla tua "
 "pagina dashboard OpenCNAM: https://www.opencnam.com/dashboard"
+
+#~ msgid "Admin"
+#~ msgstr "Amministratore"
+
+#~ msgid ""
+#~ "Allows CallerID Lookup of incoming calls against different sources "
+#~ "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+#~ msgstr ""
+#~ "Permette la ricerca del chiamante delle chiamate in arrivo su fonti "
+#~ "diverse (OpenCNAM, MySQL, HTTP, ENUM, modulo della rubrica)"
+
+#~ msgid "CallerID Lookup"
+#~ msgstr "Risoluzione ID Chiamante (CID)"
+
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "Sorgenti Risoluzione CID"
 
 #~ msgid ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "

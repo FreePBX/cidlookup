@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 03:41+0000\n"
+"POT-Creation-Date: 2024-03-07 13:38+0000\n"
 "PO-Revision-Date: 2017-07-14 10:19+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -93,18 +93,6 @@ msgstr "Các thao tác"
 msgid "Add CIDLookup Source"
 msgstr "Thêm ngồn tra cứu CID"
 
-#: cidlookup.i18n.php:6
-msgid "Admin"
-msgstr "Quản trị viên"
-
-#: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
-"Cho phép Tra cứu CallerID các cuộc gọi đến cho các nguồn khác nhau "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-
 #: views/form.php:242
 msgid "Auth Token"
 msgstr "Thẻ xác thực"
@@ -124,14 +112,6 @@ msgstr "Kết quả Cache"
 #: views/form.php:183
 msgid "Caller ID Format"
 msgstr ""
-
-#: cidlookup.i18n.php:4
-msgid "CallerID Lookup"
-msgstr "Tra cứu CallerID"
-
-#: cidlookup.i18n.php:10
-msgid "CallerID Lookup Sources"
-msgstr "Các nguồn tra cứu CallerID"
 
 #: views/form.php:562
 msgid "Character Set"
@@ -447,6 +427,22 @@ msgid ""
 msgstr ""
 "Token xác thực OpenCNAM của bạn. Token này có sẽ được tìm thấy trên trang "
 "điều khiển OpenCNAM:  https://www.opencnam.com/dashboard"
+
+#~ msgid "Admin"
+#~ msgstr "Quản trị viên"
+
+#~ msgid ""
+#~ "Allows CallerID Lookup of incoming calls against different sources "
+#~ "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+#~ msgstr ""
+#~ "Cho phép Tra cứu CallerID các cuộc gọi đến cho các nguồn khác nhau "
+#~ "(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
+
+#~ msgid "CallerID Lookup"
+#~ msgstr "Tra cứu CallerID"
+
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "Các nguồn tra cứu CallerID"
 
 #~ msgid ""
 #~ "Query string, special token '[NUMBER]' will be replaced with caller "

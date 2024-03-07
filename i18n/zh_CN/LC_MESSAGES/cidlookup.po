@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 03:41+0000\n"
+"POT-Creation-Date: 2024-03-07 13:38+0000\n"
 "PO-Revision-Date: 2011-04-14 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -78,16 +78,6 @@ msgstr ""
 msgid "Add CIDLookup Source"
 msgstr ""
 
-#: cidlookup.i18n.php:6
-msgid "Admin"
-msgstr ""
-
-#: cidlookup.i18n.php:8
-msgid ""
-"Allows CallerID Lookup of incoming calls against different sources "
-"(OpenCNAM, MySQL, HTTP, ENUM, Phonebook Module)"
-msgstr ""
-
 #: views/form.php:242
 msgid "Auth Token"
 msgstr ""
@@ -107,14 +97,6 @@ msgstr ""
 #: views/form.php:183
 msgid "Caller ID Format"
 msgstr ""
-
-#: cidlookup.i18n.php:4
-msgid "CallerID Lookup"
-msgstr "主叫ID查询"
-
-#: cidlookup.i18n.php:10
-msgid "CallerID Lookup Sources"
-msgstr "主叫ID查询"
 
 #: views/form.php:562
 msgid "Character Set"
@@ -409,6 +391,12 @@ msgid ""
 "Your OpenCNAM Auth Token. This can be found on your OpenCNAM dashboard page: "
 "https://www.opencnam.com/dashboard"
 msgstr ""
+
+#~ msgid "CallerID Lookup"
+#~ msgstr "主叫ID查询"
+
+#~ msgid "CallerID Lookup Sources"
+#~ msgstr "主叫ID查询"
 
 #~ msgid "Checking for cidlookup field in core's incoming table.."
 #~ msgstr "正在检查incoming表的cidlookup字段。。。"
