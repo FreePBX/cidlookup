@@ -51,14 +51,12 @@
     dbug($e->getMessage());
     }
 
-  $name     = _("Unknown"); 
-  
   foreach($ret as $key => $val){
     $name   = $val;
     break;
   }
 
-  if(is_string($name)){
+  if(isset($name) && is_string($name)){
       $agi->set_variable("CALLERID(name)", $name);
   }
   else{
