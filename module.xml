@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>17.0.1</version>
+	<version>17.0.1.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,7 +10,7 @@
   	<more-info>https://wiki.freepbx.org/display/F2/CallerID+Lookup+Sources+Module</more-info>
 	<category>Admin</category>
 	<changelog>
-		*17.0.1* 17.0.1  release
+		*17.0.1.1* 17.0.1.1  release
 	</changelog>
 	<menuitems>
 		<cidlookup>CallerID Lookup Sources</cidlookup>
