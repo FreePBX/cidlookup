@@ -256,6 +256,8 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 		$stmt = $this->Database->prepare($sql);
 		if ($id !== false && ctype_digit($id)) {
 			$stmt->execute([':id' => $id]);
+		}else {
+			$stmt->execute();
 		}
 		//Legacy behavior
 		if ($stmt->rowCount() === 0) {
