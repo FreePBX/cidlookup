@@ -136,16 +136,18 @@ function cidlookup_get_config($engine) {
 							else
 								$host = $item['http_host'].':80';
 
-							if (substr($item['http_path'], 0, 1) == '/')
-								$path = substr($item['http_path'], 1);
+							$http_path = (string) ($item['http_path'] ?? '');
+							$http_query = (string) ($item['http_query'] ?? '');
+							if (substr($http_path, 0, 1) == '/')
+								$path = substr($http_path, 1);
 							else
-								$path = $item['http_path'];
+								$path = $http_path;
 
 							$tempst = array('[NUMBER]','[NAME]','[LANGUAGE]','[UNIQUEID]');
 							$values = array('${STRREPLACE(CALLERID(num),"+",%2B)}','${CALLERID(name)}','${CHANNEL(language)}','${UNIQUEID}');
-							$query = str_replace($tempst, $values, $item['http_query']);
+							$query = str_replace($tempst, $values, $http_query);
 							$query = empty($query)?'':'?'.$query;
-							$path = str_replace($tempst, $values, $item['http_path']);
+							$path = str_replace($tempst, $values, $http_path);
 							$url = sprintf('%s://%s%s/%s%s', $item['sourcetype'],$auth, $host, $path, $query);
 							$curl = sprintf('${CURL(%s)}', $url);
 

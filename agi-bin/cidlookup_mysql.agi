@@ -13,13 +13,20 @@
  $agi      = new AGI();
   // get all infromation from database instead of passing through AGI
 
-  $host     = trim($cidlook['mysql_host']);
-  $port     = empty(trim($cidlook['mysql_port'])) ? "3306" : trim($cidlook['mysql_port']);
-  $username = trim($cidlook['mysql_username']);
-  $password = trim($cidlook['mysql_password']);
-  $dbname   = trim($cidlook['mysql_dbname']);
-  $charset  = empty(trim($cidlook['mysql_charset'])) ? "" : ";charset=".trim($cidlook['mysql_charset']);
-  $query    = str_replace('[NUMBER]', $number, $cidlook['mysql_query']);
+  if (empty($cidlook) || !is_array($cidlook)) {
+    $agi->verbose('--- Error: CID lookup source not found. ----');
+    exit(1);
+  }
+
+  $host     = trim((string) ($cidlook['mysql_host'] ?? ''));
+  $port     = trim((string) ($cidlook['mysql_port'] ?? ''));
+  $port     = $port === '' ? "3306" : $port;
+  $username = trim((string) ($cidlook['mysql_username'] ?? ''));
+  $password = trim((string) ($cidlook['mysql_password'] ?? ''));
+  $dbname   = trim((string) ($cidlook['mysql_dbname'] ?? ''));
+  $charset_raw = trim((string) ($cidlook['mysql_charset'] ?? ''));
+  $charset  = $charset_raw === '' ? "" : ";charset=".$charset_raw;
+  $query    = str_replace('[NUMBER]', $number, (string) ($cidlook['mysql_query'] ?? ''));
   $error    = "";
   $error    = empty($host)      ? $error.", host"      : $error."";
   $error    = empty($dbname)    ? $error.", dbname"    : $error."";
@@ -34,26 +41,21 @@
   try {
     $remotepdo    = new PDO("mysql:host=$host;port=$port;dbname=$dbname$charset", $username, $password);
     $remotepdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  } catch (Exception $e) {
-      dbug($e->getMessage());
-  }
-
-  try {
     $stm    = $remotepdo->prepare($query);
-  } catch (Exception $e) {
-    dbug($e->getMessage());
-    } 
-
-  try {
     $stm->execute();
     $ret    = $stm->fetch(\PDO::FETCH_ASSOC);
   } catch (Exception $e) {
-    dbug($e->getMessage());
-    }
+      dbug($e->getMessage());
+      $agi->verbose('--- Error: MySQL CID lookup failed. ----');
+      exit(1);
+  }
 
-  foreach($ret as $key => $val){
-    $name   = $val;
-    break;
+  $name = null;
+  if (is_array($ret)) {
+    foreach($ret as $key => $val){
+      $name   = $val;
+      break;
+    }
   }
 
   if(isset($name) && is_string($name)){
@@ -62,7 +64,5 @@
   else{
     $agi->verbose('--- Name not found ----');
   }
-  
-  $pdo->close(); 
+
   exit(0);
-?>

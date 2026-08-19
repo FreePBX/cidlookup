@@ -10,6 +10,18 @@ use PDO;
 use ext_gosub;
 class Cidlookup extends FreePBX_Helpers implements BMO {
 	public static $lookupFields = ['cidlookup_id', 'description', 'sourcetype', 'cache', 'http_host', 'http_port', 'http_username', 'http_password', 'http_path', 'http_query', 'mysql_host', 'mysql_port', 'mysql_dbname', 'mysql_query', 'mysql_username', 'mysql_password', 'mysql_charset', 'opencnam_account_sid', 'opencnam_auth_token', 'cm_group', 'cm_format','deptname'];
+
+	private $FreePBX;
+	private $Database;
+
+	public function __construct($freepbx = null) {
+		if ($freepbx == null) {
+			throw new \Exception("Not given a FreePBX Object");
+		}
+		$this->FreePBX = $freepbx;
+		$this->Database = $freepbx->Database;
+	}
+
 	public function install() {}
 	public function uninstall() {}
 	public function doConfigPageInit($page) {
@@ -60,6 +72,7 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 			}
 			return $buttons;
 		}
+		return [];
 	}
 
 	public function myDialplanHooks(){
@@ -73,8 +86,8 @@ class Cidlookup extends FreePBX_Helpers implements BMO {
 				if ($item['cidlookup_id'] != 0) {
 
 						// Code from modules/core/functions.inc.php core_get_config inbound routes
-					$exten = trim($item['extension']);
-					$cidnum = trim($item['cidnum']);
+					$exten = trim((string) ($item['extension'] ?? ''));
+					$cidnum = trim((string) ($item['cidnum'] ?? ''));
 
 					if ($cidnum != '' && $exten == '') {
 						$exten = 's';
