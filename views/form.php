@@ -37,7 +37,7 @@ if($thisItem['opencnam_account_sid'] && $thisItem['opencnam_auth_token']){
 $cmopts = "";
 if(FreePBX::Modules()->checkStatus('contactmanager')){
     $groups = FreePBX::Contactmanager()->getGroups();
-    $groupselect = explode('_', $thisItem['cm_group']);
+    $groupselect = explode('_', (string) ($thisItem['cm_group'] ?? ''));
     foreach ($groups as $group) {
         $selected = in_array($group['id'], $groupselect)?'SELECTED':'';
         $cmopts .= '<option value = "'.$group['id'].'" '.$selected.'>'.$group['name'].'</option>';
