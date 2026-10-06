@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-22 23:16-0500\n"
+"POT-Creation-Date: 2026-10-06 06:24-0400\n"
 "PO-Revision-Date: 2023-11-18 16:01+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/cidlookup/"
@@ -153,7 +153,7 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 
-#: Cidlookup.class.php:42
+#: Cidlookup.class.php:54
 msgid "Delete"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:128
+#: Cidlookup.class.php:141
 msgid "None"
 msgstr ""
 
@@ -319,7 +319,7 @@ msgid ""
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 
-#: Cidlookup.class.php:52
+#: Cidlookup.class.php:64
 msgid "Reset"
 msgstr ""
 
@@ -351,7 +351,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
-#: Cidlookup.class.php:47
+#: Cidlookup.class.php:59
 msgid "Submit"
 msgstr ""
 

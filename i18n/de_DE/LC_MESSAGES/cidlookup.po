@@ -129,7 +129,7 @@ msgid ""
 "values. It does not affect Internal source behavior"
 msgstr ""
 
-#: Cidlookup.class.php:42
+#: Cidlookup.class.php:54
 msgid "Delete"
 msgstr ""
 
@@ -225,7 +225,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:128
+#: Cidlookup.class.php:141
 msgid "None"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgid ""
 "g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
 msgstr ""
 
-#: Cidlookup.class.php:52
+#: Cidlookup.class.php:64
 msgid "Reset"
 msgstr ""
 
@@ -327,7 +327,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr ""
 
-#: Cidlookup.class.php:47
+#: Cidlookup.class.php:59
 msgid "Submit"
 msgstr ""
 

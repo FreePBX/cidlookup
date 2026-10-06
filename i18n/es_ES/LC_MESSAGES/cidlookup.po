@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 03:41+0000\n"
+"POT-Creation-Date: 2026-10-06 06:24-0400\n"
 "PO-Revision-Date: 2016-06-07 02:58+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -186,7 +186,7 @@ msgstr ""
 "Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
 "valores actuales. No afecta el comportamiento de la fuente interna"
 
-#: Cidlookup.class.php:42
+#: Cidlookup.class.php:54
 msgid "Delete"
 msgstr "Borrar"
 
@@ -284,7 +284,7 @@ msgstr "MySQL:"
 msgid "No"
 msgstr "No"
 
-#: Cidlookup.class.php:128
+#: Cidlookup.class.php:141
 msgid "None"
 msgstr "Ninguno"
 
@@ -364,7 +364,7 @@ msgstr ""
 "de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
 "number LIKE '%[NUMBER]%'"
 
-#: Cidlookup.class.php:52
+#: Cidlookup.class.php:64
 msgid "Reset"
 msgstr "Restablecer"
 
@@ -398,7 +398,7 @@ msgstr ""
 "Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres de "
 "llamantes"
 
-#: Cidlookup.class.php:47
+#: Cidlookup.class.php:59
 msgid "Submit"
 msgstr "Enviar"
 
@@ -549,8 +549,8 @@ msgstr ""
 #~ "target=\"_blank\">https://www.opencnam.com/register</a></p>"
 #~ msgstr ""
 #~ "<p>si desea crear una cuenta nivel profesional de OpenCNAM, puede hacerlo "
-#~ "en su pagina web: <a href=\"https://www.opencnam.com/register\" target="
-#~ "\"_blank\">https://www.opencnam.com/register</a></p>"
+#~ "en su pagina web: <a href=\"https://www.opencnam.com/register\" "
+#~ "target=\"_blank\">https://www.opencnam.com/register</a></p>"
 
 #~ msgid ""
 #~ "OpenCNAM's Professional Tier lets you do as many real-time CNAM queries "

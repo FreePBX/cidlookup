@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX cidlookup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 03:41+0000\n"
+"POT-Creation-Date: 2026-10-06 06:24-0400\n"
 "PO-Revision-Date: 2011-04-14 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -170,7 +170,7 @@ msgstr ""
 "Välj om du ska mellanlagra resultaten i astDB; det kommer att skriva över "
 "eventuella poster som redan finns. Används inte om källa är Internal."
 
-#: Cidlookup.class.php:42
+#: Cidlookup.class.php:54
 msgid "Delete"
 msgstr ""
 
@@ -266,7 +266,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Cidlookup.class.php:128
+#: Cidlookup.class.php:141
 msgid "None"
 msgstr "Ingen"
 
@@ -339,7 +339,7 @@ msgstr ""
 "nummerpresentation<br>t.ex.: SELECT name FROM phonebook WHERE number LIKE "
 "'%[NUMBER]%'"
 
-#: Cidlookup.class.php:52
+#: Cidlookup.class.php:64
 msgid "Reset"
 msgstr ""
 
@@ -371,7 +371,7 @@ msgstr ""
 msgid "Sources can be added in Caller Name Lookup Sources section"
 msgstr "Källor kan läggas till i Källor för nummerpresentation"
 
-#: Cidlookup.class.php:47
+#: Cidlookup.class.php:59
 msgid "Submit"
 msgstr ""
 
