@@ -180,14 +180,16 @@ function cidlookup_get_config($engine) {
 
 
 function cidlookup_did_get($did){
+	global $db;
+
 	$extarray = explode('/', $did, 2);
 	$count = count($extarray);
 	if(2 !== $count){
 		return 0;
 	}
 	if( 2 === $count){ // differentiate beetween '//' (Any did / any cid and '' empty string)
-		$sql = sprintf("SELECT cidlookup_id FROM cidlookup_incoming WHERE extension = '%s' AND cidnum = '%s'", $extarray[0], $extarray[1]);
-		$result = sql($sql, "getRow", DB_FETCHMODE_ASSOC);
+		$sql = 'SELECT cidlookup_id FROM cidlookup_incoming WHERE extension = ? AND cidnum = ?';
+		$result = $db->getRow($sql, $extarray, DB_FETCHMODE_ASSOC);
 		if(is_array($result)){
 			return $result['cidlookup_id'];
 		}
