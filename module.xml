@@ -2,7 +2,7 @@
 	<rawname>cidlookup</rawname>
 	<repo>standard</repo>
 	<name>CallerID Lookup</name>
-	<version>17.0.1.1</version>
+	<version>17.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
   	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/19991124/PBX+GUI+-+CallerID+Lookup+Sources+Module</more-info>
 	<category>Admin</category>
 	<changelog>
+		*17.0.2* FREEI-3293 FREEI-3247 SQL injection prevention
 		*17.0.1.1* 17.0.1.1  release
 	</changelog>
 	<menuitems>
