@@ -6,11 +6,27 @@
   }
 
  $agidir   = FreePBX::Config()->get('ASTAGIDIR');
- $lookupid = $argv[1];
- $number   = $argv[2];
+ $lookupid = isset($argv[1]) ? $argv[1] : '';
+ $number   = isset($argv[2]) ? (string)$argv[2] : '';
  $cidlook = FreePBX::Cidlookup()->getOne($lookupid);
  require_once $agidir."/phpagi.php";
  $agi      = new AGI();
+
+  // Inbound CALLERID(num) is attacker-controlled. The admin query embeds
+  // [NUMBER] inside SQL string literals (for example WHERE number = '[NUMBER]'
+  // or LIKE '%[NUMBER]%'), so the token cannot be replaced with a bound '?'.
+  // Allow only a phone number, then escape it with the remote server's quoting
+  // rules before it is interpolated. prepare() runs on that finished SQL.
+  if (!preg_match('/^[0-9+*#]+\z/', $number)) {
+    $agi->verbose('--- Error: Rejected caller number for MySQL CID lookup ----');
+    exit(0);
+  }
+
+  if (!is_array($cidlook)) {
+    $agi->verbose('--- Error: CID lookup source not found ----');
+    exit(1);
+  }
+
   // get all infromation from database instead of passing through AGI
 
   $host     = trim($cidlook['mysql_host']);
@@ -19,41 +35,69 @@
   $password = trim($cidlook['mysql_password']);
   $dbname   = trim($cidlook['mysql_dbname']);
   $charset  = empty(trim($cidlook['mysql_charset'])) ? "" : ";charset=".trim($cidlook['mysql_charset']);
-  $query    = str_replace('[NUMBER]', $number, $cidlook['mysql_query']);
+  $template = isset($cidlook['mysql_query']) ? (string)$cidlook['mysql_query'] : '';
   $error    = "";
   $error    = empty($host)      ? $error.", host"      : $error."";
   $error    = empty($dbname)    ? $error.", dbname"    : $error."";
   $error    = empty($username)  ? $error.", username"  : $error."";
-  $error    = empty($query)     ? $error.", query"     : $error."";
+  $error    = empty($template)  ? $error.", query"     : $error."";
 
   if($error != ""){
     $agi->verbose('--- Error: Missing argument'.$error.'. ----');
     exit(1);
   }
 
+  $remotepdo = null;
   try {
-    $remotepdo    = new PDO("mysql:host=$host;port=$port;dbname=$dbname$charset", $username, $password);
-    $remotepdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+    // Stacked queries are not part of CID lookup. Force them off where the driver allows it.
+    if (defined('PDO::MYSQL_ATTR_MULTI_STATEMENTS')) {
+      $options[PDO::MYSQL_ATTR_MULTI_STATEMENTS] = false;
+    }
+    $remotepdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname$charset", $username, $password, $options);
   } catch (Exception $e) {
       dbug($e->getMessage());
   }
 
+  if (!$remotepdo instanceof PDO) {
+    $agi->verbose('--- Error: Could not connect to MySQL CID source ----');
+    exit(1);
+  }
+
+  // quote() returns a fully quoted literal. Strip the wrapping quotes because
+  // the saved template already supplies them around [NUMBER].
+  $quoted = $remotepdo->quote($number);
+  if ($quoted === false || strlen($quoted) < 2 || $quoted[0] !== "'" || substr($quoted, -1) !== "'") {
+    $agi->verbose('--- Error: Could not quote caller number ----');
+    exit(1);
+  }
+  $query = str_replace('[NUMBER]', substr($quoted, 1, -1), $template);
+
+  $stm = null;
   try {
     $stm    = $remotepdo->prepare($query);
   } catch (Exception $e) {
     dbug($e->getMessage());
-    } 
+  }
 
+  if (!$stm instanceof PDOStatement) {
+    $agi->verbose('--- Error: MySQL CID lookup query failed ----');
+    exit(1);
+  }
+
+  $ret = false;
   try {
     $stm->execute();
     $ret    = $stm->fetch(\PDO::FETCH_ASSOC);
   } catch (Exception $e) {
     dbug($e->getMessage());
-    }
+  }
 
-  foreach($ret as $key => $val){
-    $name   = $val;
-    break;
+  if (is_array($ret)) {
+    foreach($ret as $key => $val){
+      $name   = $val;
+      break;
+    }
   }
 
   if(isset($name) && is_string($name)){
