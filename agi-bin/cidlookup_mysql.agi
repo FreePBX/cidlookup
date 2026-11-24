@@ -107,6 +107,7 @@
     $agi->verbose('--- Name not found ----');
   }
   
-  $pdo->close(); 
+  $stm       = null;
+  $remotepdo = null;
   exit(0);
 ?>
